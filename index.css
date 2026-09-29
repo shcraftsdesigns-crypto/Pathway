@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --bg: 250 247 242; --card: 255 255 255; --ink: 34 32 28; --mute: 107 102 93; --line: 230 223 210; --acc: 138 90 31; --accbg: 244 233 214; --on: 255 255 255; }
+  .dark { --bg: 21 19 15; --card: 30 27 22; --ink: 240 235 225; --mute: 164 157 143; --line: 51 46 37; --acc: 224 178 106; --accbg: 44 36 22; --on: 21 19 15; }
+  body { @apply bg-bg font-sans text-ink antialiased pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0; }
+  h1, h2, h3 { @apply font-serif leading-tight; }
+  :focus-visible { @apply outline outline-[3px] outline-offset-2 outline-acc; }
+}
+@layer components {
+  .card { @apply rounded-2xl border border-line bg-card p-5; }
+  .tag { @apply inline-block rounded-full bg-accbg px-2.5 py-0.5 text-xs font-medium text-acc; }
+}
