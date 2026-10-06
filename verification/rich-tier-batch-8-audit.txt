@@ -1,0 +1,135 @@
+=== PATHWAY RICH-TIER BATCH 8 SCRIPTURE AUDIT ===
+
+================================================================================
+Jephthah | Jephthah_1
+PASS   | Introduced as a valiant warrior | Judges 11:1-3 | exact-ID tagged at verse(s): 1, 2, 3
+PASS   | Elders seek his leadership | Judges 11:5-8 | exact-ID tagged at verse(s): 5, 6, 7, 8
+PASS   | Becomes head over Gilead | Judges 11:9-11 | exact-ID tagged at verse(s): 9, 10, 11
+PASS   | Sends message to Ammon | Judges 11:12-15 | exact-ID tagged at verse(s): 12, 13, 14, 15
+PASS   | Spirit of the Lord comes upon him | Judges 11:28-29 | exact-ID tagged at verse(s): 28, 29
+PASS   | Makes his vow | Judges 11:30 | exact-ID tagged at verse(s): 30
+PASS   | Defeats the Ammonites | Judges 11:32-33 | exact-ID tagged at verse(s): 32
+PASS   | Returns home | Judges 11:34-40 | exact-ID tagged at verse(s): 34, 40
+PASS   | Conflict with Ephraim | Judges 12:1-4 | exact-ID tagged at verse(s): 1, 2, 4
+PASS   | Death of Jephthah | Judges 12:7 | exact-ID tagged at verse(s): 7
+PASS   | Remembered among people of faith | Hebrews 11:32 | exact-ID tagged at verse(s): 32
+
+================================================================================
+Joash | Joash_3
+PASS   | Hidden from Athaliah | 2 Kings 11:1-2 | exact-ID tagged at verse(s): 2
+PASS   | Becomes king | 2 Kings 11:21 | exact-ID tagged at verse(s): 21
+PASS   | Does right under Jehoiada’s instruction | 2 Kings 12:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Orders temple repairs | 2 Kings 12:4-7 | exact-ID tagged at verse(s): 4, 6, 7
+PASS   | Temple repair system reorganized | 2 Kings 12:7-12 | exact-ID tagged at verse(s): 7
+PASS   | Gives treasures to Hazael | 2 Kings 12:17-18 | exact-ID tagged at verse(s): 18
+PASS   | Turns after Jehoiada’s death | 2 Chronicles 24:15-22 | exact-ID tagged at verse(s): 22
+PASS   | Zechariah killed | 2 Chronicles 24:20-22 | exact-ID tagged at verse(s): 22
+PASS   | Wounded during Aramean invasion | 2 Chronicles 24:23-25 | exact-ID tagged at verse(s): 24
+PASS   | Assassinated by his servants | 2 Kings 12:19-20 | exact-ID tagged at verse(s): 19, 20
+
+================================================================================
+Timothy | Timothy_1
+PASS   | Introduced at Lystra | Acts 16:1 | exact-ID tagged at verse(s): 1
+PASS   | Travels with Paul | Acts 16:1-3 | exact-ID tagged at verse(s): 1
+PASS   | Remains behind in Berea | Acts 17:14-15 | exact-ID tagged at verse(s): 14, 15
+PASS   | Sent to strengthen Thessalonica | 1 Thessalonians 3:1-2 | exact-ID tagged at verse(s): 2
+PASS   | Returns with news | 1 Thessalonians 3:6 | exact-ID tagged at verse(s): 6
+PASS   | Called Paul’s beloved and faithful child | 1 Corinthians 4:17 | exact-ID tagged at verse(s): 17
+PASS   | Expected at Corinth | 1 Corinthians 16:10-11 | exact-ID tagged at verse(s): 10
+PASS   | Named as Paul’s coworker | 1 Thessalonians 1:1 | exact-ID tagged at verse(s): 1
+PASS   | Addressed as Paul’s true child in faith | 1 Timothy 1:2 | exact-ID tagged at verse(s): 2
+PASS   | Charged to guard his trust | 1 Timothy 6:20 | exact-ID tagged at verse(s): 20
+
+================================================================================
+Ahaziah | Ahaziah_2
+PASS   | Succeeds Jehoram | 2 Kings 8:24-25 | exact-ID tagged at verse(s): 24, 25
+PASS   | Begins his reign | 2 Kings 8:25-26 | exact-ID tagged at verse(s): 25, 26
+PASS   | Joins Joram against Aram | 2 Chronicles 22:5-6 | exact-ID tagged at verse(s): 6
+PASS   | Visits wounded Joram | 2 Chronicles 22:6 | exact-ID tagged at verse(s): 6
+PASS   | Caught in Jehu’s judgment | 2 Chronicles 22:7-8 | exact-ID tagged at verse(s): 7, 8
+PASS   | Flees from Jehu | 2 Kings 9:21-23 | exact-ID tagged at verse(s): 21, 23
+PASS   | Killed during Jehu’s revolt | 2 Kings 9:27 | exact-ID tagged at verse(s): 27
+PASS   | Death recorded in Chronicles | 2 Chronicles 22:8-9 | exact-ID tagged at verse(s): 8, 9
+PASS   | Athaliah acts after his death | 2 Chronicles 22:10-11 | exact-ID tagged at verse(s): 10, 11
+
+================================================================================
+Darius | Darius_1
+PASS   | Darius named in the Persian-period record | Ezra 4:5 | exact-ID tagged at verse(s): 5
+PASS   | Work resumes during his reign | Ezra 4:24 | exact-ID tagged at verse(s): 24
+PASS   | Officials write to Darius | Ezra 5:5-7 | exact-ID tagged at verse(s): 5, 6, 7
+PASS   | Orders a search of the archives | Ezra 6:1 | exact-ID tagged at verse(s): 1
+PASS   | Issues instructions concerning the temple | Ezra 6:6-12 | exact-ID tagged at verse(s): 12
+PASS   | Temple completed | Ezra 6:13-15 | exact-ID tagged at verse(s): 13, 14, 15
+PASS   | Reign used to date Haggai’s prophecy | Haggai 1:1 | exact-ID tagged at verse(s): 1
+PASS   | Reign used to date Zechariah’s prophecy | Zechariah 1:1-7 | exact-ID tagged at verse(s): 1, 7
+PASS   | Darius named in Daniel | Daniel 5:31 | exact-ID tagged at verse(s): 31
+PASS   | Daniel serves during his reign | Daniel 6:1-9 | exact-ID tagged at verse(s): 1, 6, 9
+
+================================================================================
+Ezra | Ezra_1
+PASS   | Genealogy introduced | Ezra 7:1-5 | exact-ID tagged at verse(s): 1
+PASS   | Skilled scribe in the Law | Ezra 7:6 | exact-ID tagged at verse(s): 6
+PASS   | Devoted to study, practice, and teaching | Ezra 7:10 | exact-ID tagged at verse(s): 10
+PASS   | Receives royal commission | Ezra 7:11-12 | exact-ID tagged at verse(s): 11, 12
+PASS   | Given authority to appoint officials | Ezra 7:25 | exact-ID tagged at verse(s): 25
+PASS   | Prays over the people’s unfaithfulness | Ezra 10:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Calls the people to action | Ezra 10:10-11 | exact-ID tagged at verse(s): 10
+PASS   | Participates in the investigation | Ezra 10:16 | exact-ID tagged at verse(s): 16
+PASS   | Reads the Law publicly | Nehemiah 8:1-5 | exact-ID tagged at verse(s): 1, 2, 4, 5
+PASS   | Leads worship around the reading | Nehemiah 8:5-6 | exact-ID tagged at verse(s): 5, 6
+PASS   | Meets with family leaders | Nehemiah 8:13 | exact-ID tagged at verse(s): 13
+
+================================================================================
+Issachar | Issachar_1
+PASS   | Birth and naming | Genesis 30:17-18 | exact-ID tagged at verse(s): 18
+PASS   | Named among Jacob’s sons | Genesis 35:23 | exact-ID tagged at verse(s): 23
+PASS   | Goes to Egypt | Genesis 46:8-13 | exact-ID tagged at verse(s): 13
+PASS   | Jacob speaks concerning Issachar | Genesis 49:14-15 | exact-ID tagged at verse(s): 14
+PASS   | Remembered among Israel’s sons | 1 Chronicles 2:1 | exact-ID tagged at verse(s): 1
+
+================================================================================
+Jehoiada | Jehoiada_2
+PASS   | Organizes support for Joash | 2 Kings 11:4 | exact-ID tagged at verse(s): 4
+PASS   | Commands the guards | 2 Kings 11:9 | exact-ID tagged at verse(s): 9
+PASS   | Joash crowned | 2 Chronicles 23:8-11 | exact-ID tagged at verse(s): 8, 9, 11
+PASS   | Athaliah removed | 2 Kings 11:15 | exact-ID tagged at verse(s): 15
+PASS   | Makes a covenant | 2 Kings 11:17 | exact-ID tagged at verse(s): 17
+PASS   | Restores temple oversight | 2 Chronicles 23:16-18 | exact-ID tagged at verse(s): 16, 18
+PASS   | Guides Joash | 2 Kings 12:2 | exact-ID tagged at verse(s): 2
+PASS   | Works with Joash on temple repairs | 2 Kings 12:7-9 | exact-ID tagged at verse(s): 7, 9
+PASS   | Temple restored during his lifetime | 2 Chronicles 24:4-14 | exact-ID tagged at verse(s): 6, 12, 14
+PASS   | Death and honored burial | 2 Chronicles 24:15-16 | exact-ID tagged at verse(s): 15
+
+================================================================================
+Joash | Joash_4
+PASS   | Succeeds Jehoahaz | 2 Kings 13:9-10 | exact-ID tagged at verse(s): 9, 10
+PASS   | Reign summarized | 2 Kings 13:10-13 | exact-ID tagged at verse(s): 10, 12, 13
+PASS   | Visits the dying Elisha | 2 Kings 13:14 | exact-ID tagged at verse(s): 14
+PASS   | Receives symbolic instruction | 2 Kings 13:15-18 | exact-ID tagged at verse(s): 16, 18
+PASS   | Recovers cities from Aram | 2 Kings 13:25 | exact-ID tagged at verse(s): 25
+PASS   | Challenged by Amaziah | 2 Kings 14:8-9 | exact-ID tagged at verse(s): 8, 9
+PASS   | Defeats Judah | 2 Kings 14:11-13 | exact-ID tagged at verse(s): 11, 13
+PASS   | Breaks Jerusalem’s wall and takes treasures | 2 Kings 14:13-14 | exact-ID tagged at verse(s): 13
+PASS   | Death of Joash | 2 Kings 14:15-16 | exact-ID tagged at verse(s): 15, 16
+
+================================================================================
+Judas Iscariot | Judas_1
+PASS   | Named among the Twelve | Matthew 10:2-4 | exact-ID tagged at verse(s): 4
+PASS   | Agrees to betray Jesus | Matthew 26:14-16 | exact-ID tagged at verse(s): 14
+PASS   | Identified at the meal | Matthew 26:20-25 | exact-ID tagged at verse(s): 25
+PASS   | Satan enters Judas | Luke 22:3-6 | exact-ID tagged at verse(s): 3
+PASS   | Receives the morsel | John 13:21-29 | exact-ID tagged at verse(s): 26, 29
+PASS   | Leads the arresting group | John 18:2-5 | exact-ID tagged at verse(s): 2, 3, 5
+PASS   | Betrays Jesus with a greeting | Matthew 26:47-49 | exact-ID tagged at verse(s): 47, 49
+PASS   | Remorse and returned silver | Matthew 27:3-5 | exact-ID tagged at verse(s): 3
+PASS   | Betrayal remembered after the ascension | Acts 1:15-16 | exact-ID tagged at verse(s): 16
+PASS   | Vacancy among the Twelve | Acts 1:24-25 | exact-ID tagged at verse(s): 25
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 95
+PASS: 95
+REVIEW: 0
+Result: ALL EVENTS HAVE EXACT-ID SUPPORT

@@ -1,0 +1,175 @@
+=== PATHWAY RICH-TIER BATCH 8 EVIDENCE ===
+
+================================================================================
+Jephthah | Jephthah_1
+Reference count: 26
+Unique attribute: a valiant warrior (JDG 11:1)
+Tribe: 
+Notes: judge of Israel and a valiant warrior (JDG 11:1)
+
+Strongest chapters:
+  JDG 11  | 20 tagged verses | JDG 11:1, JDG 11:2, JDG 11:3, JDG 11:5, JDG 11:6, JDG 11:7, JDG 11:8, JDG 11:9, JDG 11:10, JDG 11:11, JDG 11:12, JDG 11:13, JDG 11:14, JDG 11:15, JDG 11:28, JDG 11:29, JDG 11:30, JDG 11:32, JDG 11:34, JDG 11:40
+  JDG 12  |  4 tagged verses | JDG 12:1, JDG 12:2, JDG 12:4, JDG 12:7
+  1SA 12  |  1 tagged verses | 1SA 12:11
+  HEB 11  |  1 tagged verses | HEB 11:32
+
+================================================================================
+Joash | Joash_3
+Reference count: 26
+Unique attribute: King of Judah (2KI 11:21), son of Ahaziah (2KI 11:2)
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  2KI 12  |  8 tagged verses | 2KI 12:1, 2KI 12:2, 2KI 12:4, 2KI 12:6, 2KI 12:7, 2KI 12:18, 2KI 12:19, 2KI 12:20
+  2CH 24  |  5 tagged verses | 2CH 24:1, 2CH 24:2, 2CH 24:4, 2CH 24:22, 2CH 24:24
+  2KI 14  |  5 tagged verses | 2KI 14:1, 2KI 14:3, 2KI 14:13, 2KI 14:17, 2KI 14:23
+  2CH 25  |  2 tagged verses | 2CH 25:23, 2CH 25:25
+  2KI 11  |  2 tagged verses | 2KI 11:2, 2KI 11:21
+  2KI 13  |  2 tagged verses | 2KI 13:1, 2KI 13:10
+  1CH 3   |  1 tagged verses | 1CH 3:11
+  2CH 22  |  1 tagged verses | 2CH 22:11
+
+================================================================================
+Timothy | Timothy_1
+Reference count: 26
+Unique attribute: a disciple and Paul's companion (ACT 16:1)
+Tribe: 
+Notes: had a Jewish mother and Greek father (ACT 16:1)
+
+Strongest chapters:
+  1TH 3   |  2 tagged verses | 1TH 3:2, 1TH 3:6
+  1TI 1   |  2 tagged verses | 1TI 1:2, 1TI 1:18
+  1TI 6   |  2 tagged verses | 1TI 6:11, 1TI 6:20
+  2CO 1   |  2 tagged verses | 2CO 1:1, 2CO 1:19
+  ACT 17  |  2 tagged verses | ACT 17:14, ACT 17:15
+  1CO 4   |  1 tagged verses | 1CO 4:17
+  1CO 16  |  1 tagged verses | 1CO 16:10
+  1TH 1   |  1 tagged verses | 1TH 1:1
+  2TH 1   |  1 tagged verses | 2TH 1:1
+  2TI 1   |  1 tagged verses | 2TI 1:2
+  2TI 3   |  1 tagged verses | 2TI 3:17
+  ACT 16  |  1 tagged verses | ACT 16:1
+
+================================================================================
+Ahaziah | Ahaziah_2
+Reference count: 25
+Unique attribute: King of Judah, youngest (2CH 21:17) son of Jehoram (2KI 8:24) son of Jehoshapat
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  2CH 22  |  8 tagged verses | 2CH 22:1, 2CH 22:2, 2CH 22:6, 2CH 22:7, 2CH 22:8, 2CH 22:9, 2CH 22:10, 2CH 22:11
+  2KI 9   |  5 tagged verses | 2KI 9:16, 2KI 9:21, 2KI 9:23, 2KI 9:27, 2KI 9:29
+  2KI 8   |  3 tagged verses | 2KI 8:24, 2KI 8:25, 2KI 8:26
+  2KI 11  |  2 tagged verses | 2KI 11:1, 2KI 11:2
+  1CH 3   |  1 tagged verses | 1CH 3:11
+  2CH 21  |  1 tagged verses | 2CH 21:17
+  2CH 25  |  1 tagged verses | 2CH 25:23
+  2KI 10  |  1 tagged verses | 2KI 10:13
+  2KI 12  |  1 tagged verses | 2KI 12:18
+  2KI 13  |  1 tagged verses | 2KI 13:1
+  2KI 14  |  1 tagged verses | 2KI 14:13
+
+================================================================================
+Darius | Darius_1
+Reference count: 25
+Unique attribute: King of Persia (EZR 4:5)
+Tribe: 
+Notes: likely Darius III, the last King of Persia, conquered by Alexander the Great
+
+Strongest chapters:
+  EZR 6   |  6 tagged verses | EZR 6:1, EZR 6:12, EZR 6:13, EZR 6:14, EZR 6:15, EZR 6:22
+  DAN 6   |  5 tagged verses | DAN 6:1, DAN 6:6, DAN 6:9, DAN 6:25, DAN 6:28
+  EZR 5   |  3 tagged verses | EZR 5:5, EZR 5:6, EZR 5:7
+  EZR 4   |  2 tagged verses | EZR 4:5, EZR 4:24
+  HAG 1   |  2 tagged verses | HAG 1:1, HAG 1:15
+  ZEC 1   |  2 tagged verses | ZEC 1:1, ZEC 1:7
+  DAN 5   |  1 tagged verses | DAN 5:31
+  DAN 11  |  1 tagged verses | DAN 11:1
+  HAG 2   |  1 tagged verses | HAG 2:10
+  NEH 12  |  1 tagged verses | NEH 12:22
+  ZEC 7   |  1 tagged verses | ZEC 7:1
+
+================================================================================
+Ezra | Ezra_1
+Reference count: 25
+Unique attribute: son of Seraiah (EZR 7:1), scribe skilled in the Law (EZR 7:6)
+Tribe: Levi
+Notes: as "priest" would be a descendant of Aaron
+
+Strongest chapters:
+  EZR 7   |  7 tagged verses | EZR 7:1, EZR 7:6, EZR 7:10, EZR 7:11, EZR 7:12, EZR 7:21, EZR 7:25
+  NEH 8   |  7 tagged verses | NEH 8:1, NEH 8:2, NEH 8:4, NEH 8:5, NEH 8:6, NEH 8:9, NEH 8:13
+  EZR 10  |  6 tagged verses | EZR 10:1, EZR 10:2, EZR 10:5, EZR 10:6, EZR 10:10, EZR 10:16
+  NEH 12  |  5 tagged verses | NEH 12:1, NEH 12:13, NEH 12:26, NEH 12:33, NEH 12:36
+
+================================================================================
+Issachar | Issachar_1
+Reference count: 25
+Unique attribute: ninth-born son of Jacob (GEN 30:17), son of Leah
+Tribe: Issachar
+Notes: 
+
+Strongest chapters:
+  NUM 1   |  3 tagged verses | NUM 1:8, NUM 1:28, NUM 1:29
+  1CH 6   |  2 tagged verses | 1CH 6:62, 1CH 6:72
+  1CH 7   |  2 tagged verses | 1CH 7:1, 1CH 7:5
+  JOS 19  |  2 tagged verses | JOS 19:17, JOS 19:23
+  JOS 21  |  2 tagged verses | JOS 21:6, JOS 21:28
+  1CH 2   |  1 tagged verses | 1CH 2:1
+  1CH 12  |  1 tagged verses | 1CH 12:32
+  1KI 15  |  1 tagged verses | 1KI 15:27
+  EXO 1   |  1 tagged verses | EXO 1:3
+  GEN 30  |  1 tagged verses | GEN 30:18
+  GEN 35  |  1 tagged verses | GEN 35:23
+  GEN 46  |  1 tagged verses | GEN 46:13
+
+================================================================================
+Jehoiada | Jehoiada_2
+Reference count: 25
+Unique attribute: the priest (2KI 11:9) who protected Joash in his youth (2KI 11:4)
+Tribe: Levi
+Notes: 
+
+Strongest chapters:
+  2CH 24  | 10 tagged verses | 2CH 24:2, 2CH 24:3, 2CH 24:6, 2CH 24:12, 2CH 24:14, 2CH 24:15, 2CH 24:17, 2CH 24:20, 2CH 24:22, 2CH 24:25
+  2CH 23  |  7 tagged verses | 2CH 23:1, 2CH 23:8, 2CH 23:9, 2CH 23:11, 2CH 23:14, 2CH 23:16, 2CH 23:18
+  2KI 11  |  4 tagged verses | 2KI 11:4, 2KI 11:9, 2KI 11:15, 2KI 11:17
+  2KI 12  |  3 tagged verses | 2KI 12:2, 2KI 12:7, 2KI 12:9
+  2CH 22  |  1 tagged verses | 2CH 22:11
+
+================================================================================
+Joash | Joash_4
+Reference count: 25
+Unique attribute: King of Israel, son of Jehoahaz (2KI 13:9)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  2KI 14  | 10 tagged verses | 2KI 14:1, 2KI 14:8, 2KI 14:9, 2KI 14:11, 2KI 14:13, 2KI 14:15, 2KI 14:16, 2KI 14:17, 2KI 14:23, 2KI 14:27
+  2KI 13  |  8 tagged verses | 2KI 13:9, 2KI 13:10, 2KI 13:12, 2KI 13:13, 2KI 13:14, 2KI 13:16, 2KI 13:18, 2KI 13:25
+  2CH 25  |  5 tagged verses | 2CH 25:17, 2CH 25:18, 2CH 25:21, 2CH 25:23, 2CH 25:25
+  AMO 1   |  1 tagged verses | AMO 1:1
+  HOS 1   |  1 tagged verses | HOS 1:1
+
+================================================================================
+Judas | Judas_1
+Reference count: 25
+Unique attribute: disciple of the Messiah (MAT 10:4) who betrayed Him (MAT 10:4)
+Tribe: 
+Notes: one of the Twelve (MAT 10:2), from Kerioth (MAT 10:4)
+
+Strongest chapters:
+  MAT 26  |  4 tagged verses | MAT 26:14, MAT 26:25, MAT 26:47, MAT 26:49
+  JHN 13  |  3 tagged verses | JHN 13:2, JHN 13:26, JHN 13:29
+  JHN 18  |  3 tagged verses | JHN 18:2, JHN 18:3, JHN 18:5
+  LUK 22  |  3 tagged verses | LUK 22:3, LUK 22:47, LUK 22:48
+  MRK 14  |  3 tagged verses | MRK 14:10, MRK 14:43, MRK 14:45
+  ACT 1   |  2 tagged verses | ACT 1:16, ACT 1:25
+  JHN 6   |  1 tagged verses | JHN 6:71
+  JHN 12  |  1 tagged verses | JHN 12:4
+  JHN 14  |  1 tagged verses | JHN 14:22
+  LUK 6   |  1 tagged verses | LUK 6:16
+  MAT 10  |  1 tagged verses | MAT 10:4
+  MAT 27  |  1 tagged verses | MAT 27:3
