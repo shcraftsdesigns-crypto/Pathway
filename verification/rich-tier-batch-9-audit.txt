@@ -1,0 +1,31 @@
+=== PATHWAY RICH-TIER BATCH 9 SCRIPTURE AUDIT ===
+
+================================================================================
+Naphtali | Naphtali_1
+PASS   | Birth and naming | Genesis 30:7-8 | exact-ID tagged at verse(s): 8
+PASS   | Named among Jacob’s sons | Genesis 35:22-25 | exact-ID tagged at verse(s): 25
+PASS   | Goes to Egypt | Genesis 46:8-24 | exact-ID tagged at verse(s): 24
+PASS   | Jacob speaks concerning Naphtali | Genesis 49:21 | exact-ID tagged at verse(s): 21
+PASS   | Remembered among Israel’s sons | 1 Chronicles 2:1-2 | exact-ID tagged at verse(s): 2
+
+================================================================================
+Zeruiah | Zeruiah_1
+PASS   | Named as David’s sister | 1 Chronicles 2:16 | exact-ID tagged at verse(s): 16
+PASS   | Her three sons are named | 1 Chronicles 2:16 | exact-ID tagged at verse(s): 16
+PASS   | Abishai identified through Zeruiah | 1 Samuel 26:6 | exact-ID tagged at verse(s): 6
+PASS   | Joab and Abishai identified as her sons | 2 Samuel 2:13 | exact-ID tagged at verse(s): 13
+PASS   | Asahel identified as her son | 2 Samuel 2:18 | exact-ID tagged at verse(s): 18
+PASS   | Abishai again identified through Zeruiah | 2 Samuel 16:9 | exact-ID tagged at verse(s): 9
+PASS   | David addresses the sons of Zeruiah | 2 Samuel 16:10 | exact-ID tagged at verse(s): 10
+PASS   | Family designation continues after the rebellion | 2 Samuel 19:21-22 | exact-ID tagged at verse(s): 21, 22
+PASS   | Abishai remembered among David’s warriors | 2 Samuel 23:18 | exact-ID tagged at verse(s): 18
+PASS   | Joab remembered as Zeruiah’s son | 1 Chronicles 18:15 | exact-ID tagged at verse(s): 15
+
+================================================================================
+SUMMARY
+Profiles requested: 2
+Profiles found: 2
+Timeline events checked: 15
+PASS: 15
+REVIEW: 0
+Result: ALL EVENTS HAVE EXACT-ID SUPPORT
