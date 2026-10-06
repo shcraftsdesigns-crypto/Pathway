@@ -1,0 +1,123 @@
+=== PATHWAY RICH-TIER BATCH 4 SCRIPTURE AUDIT ===
+
+================================================================================
+Haman | Haman_1
+PASS   | Promoted by the king | Esther 3:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Angered by Mordecai | Esther 3:3-6 | exact-ID tagged at verse(s): 4, 5, 6
+PASS   | Plots against the Jews | Esther 3:7-15 | exact-ID tagged at verse(s): 7, 8, 10, 11, 12, 15
+PASS   | Invited to Esther’s banquet | Esther 5:1-8 | exact-ID tagged at verse(s): 4, 5, 8
+PASS   | Plans Mordecai’s execution | Esther 5:9-14 | exact-ID tagged at verse(s): 9, 10, 11, 12, 14
+PASS   | Forced to honor Mordecai | Esther 6:4-12 | exact-ID tagged at verse(s): 4, 5, 6, 7, 10, 11, 12
+PASS   | Plot exposed | Esther 7:1-8 | exact-ID tagged at verse(s): 1, 6, 7, 8
+PASS   | Executed | Esther 7:9-10 | exact-ID tagged at verse(s): 9, 10
+
+================================================================================
+Rachel | Rachel_1
+PASS   | Jacob meets Rachel | Genesis 29:6-14 | exact-ID tagged at verse(s): 6, 9, 10, 11, 12
+PASS   | Jacob serves for Rachel | Genesis 29:15-20 | exact-ID tagged at verse(s): 16, 17, 18, 20
+PASS   | Becomes Jacob’s wife | Genesis 29:21-30 | exact-ID tagged at verse(s): 25, 28, 29, 30
+PASS   | Struggles with childlessness | Genesis 30:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Joseph is born | Genesis 30:22-25 | exact-ID tagged at verse(s): 22, 25
+PASS   | Leaves Laban’s household | Genesis 31:17-19 | exact-ID tagged at verse(s): 19
+PASS   | Laban searches for the household gods | Genesis 31:32-35 | exact-ID tagged at verse(s): 32, 33, 34
+PASS   | Meets Esau’s household | Genesis 33:1-7 | exact-ID tagged at verse(s): 1, 2, 7
+PASS   | Benjamin born and Rachel dies | Genesis 35:16-20 | exact-ID tagged at verse(s): 16, 19, 20
+
+================================================================================
+Sennacherib | Sennacherib_1
+PASS   | Invades Judah | 2 Kings 18:13-16 | exact-ID tagged at verse(s): 13, 14, 16
+PASS   | Sends forces to Jerusalem | 2 Kings 18:17-25 | exact-ID tagged at verse(s): 17, 19, 23
+PASS   | Assyrian challenge proclaimed | 2 Kings 18:26-37 | exact-ID tagged at verse(s): 28, 30, 31, 33
+PASS   | Threat renewed | 2 Kings 19:8-13 | exact-ID tagged at verse(s): 8, 10
+PASS   | Hezekiah prays | 2 Kings 19:14-19 | exact-ID tagged at verse(s): 16
+PASS   | Isaiah gives God’s answer | 2 Kings 19:20-34 | exact-ID tagged at verse(s): 20, 32
+PASS-EXCEPTION | Assyrian army struck | 2 Kings 19:35 | documented narrative-context support
+PASS   | Returns to Nineveh | 2 Kings 19:36 | exact-ID tagged at verse(s): 36
+PASS-EXCEPTION | Sennacherib dies | 2 Kings 19:37 | documented narrative-context support
+
+================================================================================
+Ephraim | Ephraim_1
+PASS   | Birth of Ephraim | Genesis 41:50-52 | exact-ID tagged at verse(s): 52
+PASS   | Presented to Jacob | Genesis 48:1-12 | exact-ID tagged at verse(s): 1, 5
+PASS   | Jacob places his right hand on Ephraim | Genesis 48:13-14 | exact-ID tagged at verse(s): 13, 14
+PASS   | Joseph objects to the crossed hands | Genesis 48:17-19 | exact-ID tagged at verse(s): 17
+PASS   | Ephraim receives precedence in the blessing | Genesis 48:20 | exact-ID tagged at verse(s): 20
+
+================================================================================
+Rehoboam | Rehoboam_1
+PASS   | Succeeds Solomon | 1 Kings 11:41-43 | exact-ID tagged at verse(s): 43
+PASS   | Goes to Shechem | 1 Kings 12:1-5 | exact-ID tagged at verse(s): 1, 3
+PASS   | Rejects the elders’ counsel | 1 Kings 12:6-15 | exact-ID tagged at verse(s): 6, 12
+PASS   | Kingdom divides | 1 Kings 12:16-20 | exact-ID tagged at verse(s): 17, 18
+PASS   | War prevented by God’s word | 1 Kings 12:21-24 | exact-ID tagged at verse(s): 21, 23
+PASS   | Strengthens Judah | 2 Chronicles 11:5-17 | exact-ID tagged at verse(s): 5, 17
+PASS   | Forsakes the law | 2 Chronicles 12:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Shishak invades | 2 Chronicles 12:2-12 | exact-ID tagged at verse(s): 2, 5, 10
+PASS   | Death of Rehoboam | 2 Chronicles 12:13-16 | exact-ID tagged at verse(s): 13, 15, 16
+
+================================================================================
+Balak | Balak_1
+PASS   | Fears Israel | Numbers 22:2-4 | exact-ID tagged at verse(s): 2, 4
+PASS   | Sends for Balaam | Numbers 22:5-14 | exact-ID tagged at verse(s): 7, 10, 13, 14
+PASS   | Sends more distinguished officials | Numbers 22:15-18 | exact-ID tagged at verse(s): 15, 16, 18
+PASS   | Meets Balaam | Numbers 22:36-41 | exact-ID tagged at verse(s): 36, 37, 38, 39, 40, 41
+PASS   | First attempt to obtain a curse | Numbers 23:1-12 | exact-ID tagged at verse(s): 1, 2, 3, 5, 7, 11
+PASS   | Second attempt | Numbers 23:13-26 | exact-ID tagged at verse(s): 13, 15, 16, 17, 18, 25, 26
+PASS   | Third location | Numbers 23:27-30 | exact-ID tagged at verse(s): 27, 28, 29, 30
+PASS   | Angered by Balaam’s blessing | Numbers 24:10-14 | exact-ID tagged at verse(s): 10, 12, 13
+PASS   | Balak and Balaam depart | Numbers 24:25 | exact-ID tagged at verse(s): 25
+
+================================================================================
+Merari | Merari_1
+PASS   | Named among Levi’s sons | Genesis 46:11 | exact-ID tagged at verse(s): 11
+PASS   | Family relationship recorded | Exodus 6:16-19 | exact-ID tagged at verse(s): 16, 19
+PASS   | Line remembered in Chronicles | 1 Chronicles 6:1-19 | exact-ID tagged at verse(s): 1, 16, 19
+
+================================================================================
+Ahaz | Ahaz_1
+PASS   | Becomes king of Judah | 2 Kings 16:1-4 | exact-ID tagged at verse(s): 1, 2
+PASS   | Jerusalem attacked | 2 Kings 16:5-6 | exact-ID tagged at verse(s): 5
+PASS   | Appeals to Assyria | 2 Kings 16:7-9 | exact-ID tagged at verse(s): 7, 8
+PASS   | Altar from Damascus | 2 Kings 16:10-16 | exact-ID tagged at verse(s): 10, 11, 15, 16
+PASS   | Changes temple arrangements | 2 Kings 16:17-18 | exact-ID tagged at verse(s): 17
+PASS   | Isaiah meets Ahaz | Isaiah 7:1-9 | exact-ID tagged at verse(s): 1, 3
+PASS   | Ahaz refuses to ask for a sign | Isaiah 7:10-17 | exact-ID tagged at verse(s): 10, 12
+PASS   | Further unfaithfulness during distress | 2 Chronicles 28:19-25 | exact-ID tagged at verse(s): 19, 21, 22, 24
+PASS   | Death of Ahaz | 2 Kings 16:19-20 | exact-ID tagged at verse(s): 19, 20
+
+================================================================================
+Jehoram | Jehoram_2
+PASS   | Becomes king of Israel | 2 Kings 3:1-3 | exact-ID tagged at verse(s): 1
+PASS   | Moab rebels | 2 Kings 3:4-9 | exact-ID tagged at verse(s): 4, 5, 6, 9
+PASS   | Seeks a prophet | 2 Kings 3:10-13 | exact-ID tagged at verse(s): 10, 11, 12, 13
+PASS   | Receives Naaman’s letter | 2 Kings 5:5-8 | exact-ID tagged at verse(s): 5, 6, 7, 8
+PASS   | Warned about Aramean movements | 2 Kings 6:8-12 | exact-ID tagged at verse(s): 9, 10, 11, 12
+PASS   | Consults Elisha about captured Arameans | 2 Kings 6:18-23 | exact-ID tagged at verse(s): 21
+PASS   | Speaks during the siege of Samaria | 2 Kings 6:24-33 | exact-ID tagged at verse(s): 26
+PASS   | Wounded in battle | 2 Kings 8:28-29 | exact-ID tagged at verse(s): 28, 29
+PASS   | Confronted by Jehu | 2 Kings 9:14-22 | exact-ID tagged at verse(s): 14, 15, 16, 17, 21, 22
+PASS   | Killed by Jehu | 2 Kings 9:23-26 | exact-ID tagged at verse(s): 23, 24
+
+================================================================================
+Samson | Samson_1
+PASS   | Birth of Samson | Judges 13:24-25 | exact-ID tagged at verse(s): 24
+PASS   | Seeks a Philistine wife | Judges 14:1-4 | exact-ID tagged at verse(s): 1, 3
+PASS   | Kills a lion | Judges 14:5-6 | exact-ID tagged at verse(s): 5
+PASS   | Wedding feast and riddle | Judges 14:10-18 | exact-ID tagged at verse(s): 10, 12, 15, 16
+PASS   | Conflict after losing his wife | Judges 15:1-8 | exact-ID tagged at verse(s): 1, 3, 4, 6, 7
+PASS   | Delivered to the Philistines | Judges 15:9-13 | exact-ID tagged at verse(s): 10, 11, 12
+PASS   | Kills a thousand men | Judges 15:14-17 | exact-ID tagged at verse(s): 16
+PASS   | At Gaza | Judges 16:1-3 | exact-ID tagged at verse(s): 1, 2, 3
+PASS   | Relationship with Delilah | Judges 16:4-17 | exact-ID tagged at verse(s): 6, 7, 9, 10, 12, 13, 14
+PASS   | Captured and blinded | Judges 16:18-22 | exact-ID tagged at verse(s): 20
+PASS   | Final prayer and death | Judges 16:23-31 | exact-ID tagged at verse(s): 23, 25, 26, 27, 28, 30
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 82
+PASS: 80
+DOCUMENTED EXCEPTIONS: 2
+REVIEW: 0
+Result: PASS — 80 exact-ID events + 2 documented narrative-context exceptions

@@ -1,0 +1,184 @@
+=== PATHWAY RICH-TIER BATCH 4 EVIDENCE ===
+
+================================================================================
+Haman | Haman_1
+Reference count: 45
+Unique attribute: son of Hammedatha the Agagite (EST 3:1)
+Tribe: 
+Notes: יִמַּח שְׁמוֹ [may his name be erased]
+
+Strongest chapters:
+  EST 3   | 11 tagged verses | EST 3:1, EST 3:2, EST 3:4, EST 3:5, EST 3:6, EST 3:7, EST 3:8, EST 3:10, EST 3:11, EST 3:12, EST 3:15
+  EST 6   |  9 tagged verses | EST 6:4, EST 6:5, EST 6:6, EST 6:7, EST 6:10, EST 6:11, EST 6:12, EST 6:13, EST 6:14
+  EST 5   |  8 tagged verses | EST 5:4, EST 5:5, EST 5:8, EST 5:9, EST 5:10, EST 5:11, EST 5:12, EST 5:14
+  EST 7   |  6 tagged verses | EST 7:1, EST 7:6, EST 7:7, EST 7:8, EST 7:9, EST 7:10
+  EST 8   |  5 tagged verses | EST 8:1, EST 8:2, EST 8:3, EST 8:5, EST 8:7
+  EST 9   |  5 tagged verses | EST 9:10, EST 9:12, EST 9:13, EST 9:14, EST 9:24
+  EST 4   |  1 tagged verses | EST 4:7
+
+================================================================================
+Rachel | Rachel_1
+Reference count: 45
+Unique attribute: daughter of Laban (GEN 29:10) and wife of Jacob (GEN 29:28)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 29  | 14 tagged verses | GEN 29:6, GEN 29:9, GEN 29:10, GEN 29:11, GEN 29:12, GEN 29:16, GEN 29:17, GEN 29:18, GEN 29:20, GEN 29:25, GEN 29:28, GEN 29:29, GEN 29:30, GEN 29:31
+  GEN 30  |  9 tagged verses | GEN 30:1, GEN 30:2, GEN 30:6, GEN 30:7, GEN 30:8, GEN 30:14, GEN 30:15, GEN 30:22, GEN 30:25
+  GEN 31  |  6 tagged verses | GEN 31:4, GEN 31:14, GEN 31:19, GEN 31:32, GEN 31:33, GEN 31:34
+  GEN 35  |  5 tagged verses | GEN 35:16, GEN 35:19, GEN 35:20, GEN 35:24, GEN 35:25
+  GEN 33  |  3 tagged verses | GEN 33:1, GEN 33:2, GEN 33:7
+  GEN 46  |  3 tagged verses | GEN 46:19, GEN 46:22, GEN 46:25
+  1SA 10  |  1 tagged verses | 1SA 10:2
+  GEN 48  |  1 tagged verses | GEN 48:7
+  JER 31  |  1 tagged verses | JER 31:15
+  MAT 2   |  1 tagged verses | MAT 2:18
+  RUT 4   |  1 tagged verses | RUT 4:11
+
+================================================================================
+Sennacherib | Sennacherib_1
+Reference count: 45
+Unique attribute: King of Assyria (2KI 18:13)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  2KI 18  | 10 tagged verses | 2KI 18:13, 2KI 18:14, 2KI 18:16, 2KI 18:17, 2KI 18:19, 2KI 18:23, 2KI 18:28, 2KI 18:30, 2KI 18:31, 2KI 18:33
+  2CH 32  |  8 tagged verses | 2CH 32:1, 2CH 32:2, 2CH 32:7, 2CH 32:9, 2CH 32:10, 2CH 32:11, 2CH 32:21, 2CH 32:22
+  2KI 19  |  8 tagged verses | 2KI 19:4, 2KI 19:6, 2KI 19:8, 2KI 19:10, 2KI 19:16, 2KI 19:20, 2KI 19:32, 2KI 19:36
+  ISA 36  |  8 tagged verses | ISA 36:1, ISA 36:2, ISA 36:4, ISA 36:8, ISA 36:13, ISA 36:15, ISA 36:16, ISA 36:18
+  ISA 37  |  8 tagged verses | ISA 37:4, ISA 37:6, ISA 37:8, ISA 37:10, ISA 37:17, ISA 37:21, ISA 37:33, ISA 37:37
+  2KI 20  |  1 tagged verses | 2KI 20:6
+  ISA 38  |  1 tagged verses | ISA 38:6
+  NAM 3   |  1 tagged verses | NAM 3:18
+
+================================================================================
+Ephraim | Ephraim_1
+Reference count: 43
+Unique attribute: second son of Joseph (GEN 41:52)
+Tribe: Ephraim
+Notes: 
+
+Strongest chapters:
+  GEN 48  |  6 tagged verses | GEN 48:1, GEN 48:5, GEN 48:13, GEN 48:14, GEN 48:17, GEN 48:20
+  1CH 27  |  3 tagged verses | 1CH 27:10, 1CH 27:14, 1CH 27:20
+  JOS 16  |  3 tagged verses | JOS 16:5, JOS 16:8, JOS 16:9
+  NUM 1   |  3 tagged verses | NUM 1:10, NUM 1:32, NUM 1:33
+  NUM 26  |  3 tagged verses | NUM 26:28, NUM 26:35, NUM 26:37
+  1CH 7   |  2 tagged verses | 1CH 7:20, 1CH 7:22
+  EZK 37  |  2 tagged verses | EZK 37:16, EZK 37:19
+  JER 31  |  2 tagged verses | JER 31:18, JER 31:20
+  JOS 21  |  2 tagged verses | JOS 21:5, JOS 21:20
+  NUM 2   |  2 tagged verses | NUM 2:18, NUM 2:24
+  1CH 6   |  1 tagged verses | 1CH 6:66
+  1CH 9   |  1 tagged verses | 1CH 9:3
+
+================================================================================
+Rehoboam | Rehoboam_1
+Reference count: 43
+Unique attribute: son of Solomon who became king after him (1KI 11:43)
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  1KI 12  |  9 tagged verses | 1KI 12:1, 1KI 12:3, 1KI 12:6, 1KI 12:12, 1KI 12:17, 1KI 12:18, 1KI 12:21, 1KI 12:23, 1KI 12:27
+  2CH 10  |  7 tagged verses | 2CH 10:1, 2CH 10:3, 2CH 10:6, 2CH 10:12, 2CH 10:13, 2CH 10:17, 2CH 10:18
+  2CH 11  |  7 tagged verses | 2CH 11:1, 2CH 11:3, 2CH 11:5, 2CH 11:17, 2CH 11:18, 2CH 11:21, 2CH 11:22
+  2CH 12  |  7 tagged verses | 2CH 12:1, 2CH 12:2, 2CH 12:5, 2CH 12:10, 2CH 12:13, 2CH 12:15, 2CH 12:16
+  1KI 14  |  6 tagged verses | 1KI 14:21, 1KI 14:25, 1KI 14:27, 1KI 14:29, 1KI 14:30, 1KI 14:31
+  1KI 11  |  2 tagged verses | 1KI 11:40, 1KI 11:43
+  1CH 3   |  1 tagged verses | 1CH 3:10
+  1KI 15  |  1 tagged verses | 1KI 15:6
+  2CH 9   |  1 tagged verses | 2CH 9:31
+  2CH 13  |  1 tagged verses | 2CH 13:7
+  MAT 1   |  1 tagged verses | MAT 1:7
+
+================================================================================
+Balak | Balak_1
+Reference count: 41
+Unique attribute: Midianite prophet who worked against Israel, son of Zippor (NUM 22:2)
+Tribe: Midianite
+Notes: 
+
+Strongest chapters:
+  NUM 23  | 17 tagged verses | NUM 23:1, NUM 23:2, NUM 23:3, NUM 23:5, NUM 23:7, NUM 23:11, NUM 23:13, NUM 23:15, NUM 23:16, NUM 23:17, NUM 23:18, NUM 23:25, NUM 23:26, NUM 23:27, NUM 23:28, NUM 23:29, NUM 23:30
+  NUM 22  | 15 tagged verses | NUM 22:2, NUM 22:4, NUM 22:7, NUM 22:10, NUM 22:13, NUM 22:14, NUM 22:15, NUM 22:16, NUM 22:18, NUM 22:36, NUM 22:37, NUM 22:38, NUM 22:39, NUM 22:40, NUM 22:41
+  NUM 24  |  4 tagged verses | NUM 24:10, NUM 24:12, NUM 24:13, NUM 24:25
+  JDG 11  |  2 tagged verses | JDG 11:17, JDG 11:25
+  JOS 24  |  1 tagged verses | JOS 24:9
+  MIC 6   |  1 tagged verses | MIC 6:5
+  REV 2   |  1 tagged verses | REV 2:14
+
+================================================================================
+Merari | Merari_1
+Reference count: 38
+Unique attribute: son of Levi (GEN 46:11)
+Tribe: Levi
+Notes: from the list of "sons of Israel" who "went to Egypt" (GEN 46:8-27), the Merarites (NUM 26:57)
+
+Strongest chapters:
+  1CH 6   |  8 tagged verses | 1CH 6:1, 1CH 6:16, 1CH 6:19, 1CH 6:29, 1CH 6:44, 1CH 6:47, 1CH 6:63, 1CH 6:77
+  NUM 3   |  5 tagged verses | NUM 3:17, NUM 3:20, NUM 3:33, NUM 3:35, NUM 3:36
+  NUM 4   |  4 tagged verses | NUM 4:29, NUM 4:33, NUM 4:42, NUM 4:45
+  JOS 21  |  3 tagged verses | JOS 21:7, JOS 21:34, JOS 21:40
+  1CH 15  |  2 tagged verses | 1CH 15:6, 1CH 15:17
+  1CH 23  |  2 tagged verses | 1CH 23:6, 1CH 23:21
+  1CH 24  |  2 tagged verses | 1CH 24:26, 1CH 24:27
+  1CH 26  |  2 tagged verses | 1CH 26:10, 1CH 26:19
+  EXO 6   |  2 tagged verses | EXO 6:16, EXO 6:19
+  1CH 9   |  1 tagged verses | 1CH 9:14
+  2CH 29  |  1 tagged verses | 2CH 29:12
+  2CH 34  |  1 tagged verses | 2CH 34:12
+
+================================================================================
+Ahaz | Ahaz_1
+Reference count: 37
+Unique attribute: King of Judah, son of Jotham (2KI 15:38)
+Tribe: Judah
+Notes: He did not do right in the sight of the LORD as David his father had done (2CH 28:1)
+
+Strongest chapters:
+  2KI 16  | 12 tagged verses | 2KI 16:1, 2KI 16:2, 2KI 16:5, 2KI 16:7, 2KI 16:8, 2KI 16:10, 2KI 16:11, 2KI 16:15, 2KI 16:16, 2KI 16:17, 2KI 16:19, 2KI 16:20
+  2CH 28  |  7 tagged verses | 2CH 28:1, 2CH 28:16, 2CH 28:19, 2CH 28:21, 2CH 28:22, 2CH 28:24, 2CH 28:27
+  ISA 7   |  4 tagged verses | ISA 7:1, ISA 7:3, ISA 7:10, ISA 7:12
+  1CH 3   |  1 tagged verses | 1CH 3:13
+  2CH 27  |  1 tagged verses | 2CH 27:9
+  2CH 29  |  1 tagged verses | 2CH 29:19
+  2KI 15  |  1 tagged verses | 2KI 15:38
+  2KI 17  |  1 tagged verses | 2KI 17:1
+  2KI 18  |  1 tagged verses | 2KI 18:1
+  2KI 20  |  1 tagged verses | 2KI 20:11
+  2KI 23  |  1 tagged verses | 2KI 23:12
+  HOS 1   |  1 tagged verses | HOS 1:1
+
+================================================================================
+Jehoram | Jehoram_2
+Reference count: 37
+Unique attribute: King of Israel (2KI 1:17) and son of Ahab (2KI 3:1)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  2KI 3   |  9 tagged verses | 2KI 3:1, 2KI 3:4, 2KI 3:5, 2KI 3:6, 2KI 3:9, 2KI 3:10, 2KI 3:11, 2KI 3:12, 2KI 3:13
+  2KI 9   |  9 tagged verses | 2KI 9:14, 2KI 9:15, 2KI 9:16, 2KI 9:17, 2KI 9:21, 2KI 9:22, 2KI 9:23, 2KI 9:24, 2KI 9:29
+  2KI 6   |  6 tagged verses | 2KI 6:9, 2KI 6:10, 2KI 6:11, 2KI 6:12, 2KI 6:21, 2KI 6:26
+  2KI 5   |  4 tagged verses | 2KI 5:5, 2KI 5:6, 2KI 5:7, 2KI 5:8
+  2KI 8   |  4 tagged verses | 2KI 8:16, 2KI 8:25, 2KI 8:28, 2KI 8:29
+  2CH 22  |  3 tagged verses | 2CH 22:5, 2CH 22:6, 2CH 22:7
+  2KI 1   |  1 tagged verses | 2KI 1:17
+  2KI 7   |  1 tagged verses | 2KI 7:6
+
+================================================================================
+Samson | Samson_1
+Reference count: 37
+Unique attribute: son of Manoah (JDG 13:24), who killed a thousand men with the jawbone of a donkey (JDG 15:15)
+Tribe: Dan
+Notes: judge of Israel
+
+Strongest chapters:
+  JDG 16  | 17 tagged verses | JDG 16:1, JDG 16:2, JDG 16:3, JDG 16:6, JDG 16:7, JDG 16:9, JDG 16:10, JDG 16:12, JDG 16:13, JDG 16:14, JDG 16:20, JDG 16:23, JDG 16:25, JDG 16:26, JDG 16:27, JDG 16:28, JDG 16:30
+  JDG 14  |  9 tagged verses | JDG 14:1, JDG 14:3, JDG 14:5, JDG 14:7, JDG 14:10, JDG 14:12, JDG 14:15, JDG 14:16, JDG 14:20
+  JDG 15  |  9 tagged verses | JDG 15:1, JDG 15:3, JDG 15:4, JDG 15:6, JDG 15:7, JDG 15:10, JDG 15:11, JDG 15:12, JDG 15:16
+  HEB 11  |  1 tagged verses | HEB 11:32
+  JDG 13  |  1 tagged verses | JDG 13:24
