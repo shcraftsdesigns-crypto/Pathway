@@ -1,0 +1,194 @@
+=== PATHWAY RICH-TIER BATCH 5 EVIDENCE ===
+
+================================================================================
+Abimelech | Abimelech_2
+Reference count: 36
+Unique attribute: son of Gideon (Jerubbaal) by a concubine in Shechem (JDG 8:31) who killed his brothers
+Tribe: Manasseh
+Notes: Killed his 70 brothers (JDG 9:5).  Mortally wounded by a millstone dropped by a woman (JDG 9:53) but killed by his armor bearer for honor (JDG 9:54).
+
+Strongest chapters:
+  JDG 9   | 34 tagged verses | JDG 9:1, JDG 9:3, JDG 9:4, JDG 9:6, JDG 9:16, JDG 9:18, JDG 9:19, JDG 9:20, JDG 9:21, JDG 9:22, JDG 9:23, JDG 9:24, JDG 9:25, JDG 9:27, JDG 9:28, JDG 9:29, JDG 9:31, JDG 9:34, JDG 9:35, JDG 9:38, JDG 9:39, JDG 9:40, JDG 9:41, JDG 9:42, JDG 9:44, JDG 9:45, JDG 9:47, JDG 9:48, JDG 9:49, JDG 9:50, JDG 9:52, JDG 9:53, JDG 9:55, JDG 9:56
+  JDG 8   |  1 tagged verses | JDG 8:31
+  JDG 10  |  1 tagged verses | JDG 10:1
+
+================================================================================
+Eliakim | Eliakim_2
+Reference count: 36
+Unique attribute: King of Judah, son of Josiah (2KI 23:34)
+Tribe: 
+Notes: He did evil in the sight of the LORD (2KI 23:37)
+
+Strongest chapters:
+  JER 36  |  6 tagged verses | JER 36:1, JER 36:9, JER 36:28, JER 36:29, JER 36:30, JER 36:32
+  2KI 24  |  4 tagged verses | 2KI 24:1, 2KI 24:5, 2KI 24:6, 2KI 24:19
+  JER 26  |  4 tagged verses | JER 26:1, JER 26:21, JER 26:22, JER 26:23
+  2CH 36  |  3 tagged verses | 2CH 36:4, 2CH 36:5, 2CH 36:8
+  2KI 23  |  3 tagged verses | 2KI 23:34, 2KI 23:35, 2KI 23:36
+  1CH 3   |  2 tagged verses | 1CH 3:15, 1CH 3:16
+  DAN 1   |  2 tagged verses | DAN 1:1, DAN 1:2
+  JER 22  |  2 tagged verses | JER 22:18, JER 22:24
+  JER 1   |  1 tagged verses | JER 1:3
+  JER 24  |  1 tagged verses | JER 24:1
+  JER 25  |  1 tagged verses | JER 25:1
+  JER 27  |  1 tagged verses | JER 27:20
+
+================================================================================
+John | John_2
+Reference count: 36
+Unique attribute: son of Zebedee (MAT 4:21)
+Tribe: 
+Notes: fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2), author of the book of John
+
+Strongest chapters:
+  ACT 3   |  4 tagged verses | ACT 3:1, ACT 3:3, ACT 3:4, ACT 3:11
+  LUK 9   |  3 tagged verses | LUK 9:28, LUK 9:49, LUK 9:54
+  REV 1   |  3 tagged verses | REV 1:1, REV 1:4, REV 1:9
+  ACT 4   |  2 tagged verses | ACT 4:13, ACT 4:19
+  MRK 1   |  2 tagged verses | MRK 1:19, MRK 1:29
+  MRK 9   |  2 tagged verses | MRK 9:2, MRK 9:38
+  MRK 10  |  2 tagged verses | MRK 10:35, MRK 10:41
+  2JN 1   |  1 tagged verses | 2JN 1:1
+  3JN 1   |  1 tagged verses | 3JN 1:1
+  ACT 1   |  1 tagged verses | ACT 1:13
+  ACT 8   |  1 tagged verses | ACT 8:14
+  ACT 12  |  1 tagged verses | ACT 12:2
+
+================================================================================
+Dan | Dan_1
+Reference count: 35
+Unique attribute: fifth-born son of Jacob (GEN 30:5), son of Bilhah, Rachel's handmaid
+Tribe: Dan
+Notes: 
+
+Strongest chapters:
+  JDG 18  |  7 tagged verses | JDG 18:2, JDG 18:16, JDG 18:22, JDG 18:23, JDG 18:25, JDG 18:26, JDG 18:30
+  JOS 19  |  3 tagged verses | JOS 19:40, JOS 19:47, JOS 19:48
+  NUM 1   |  3 tagged verses | NUM 1:12, NUM 1:38, NUM 1:39
+  GEN 49  |  2 tagged verses | GEN 49:16, GEN 49:17
+  JOS 21  |  2 tagged verses | JOS 21:5, JOS 21:23
+  NUM 2   |  2 tagged verses | NUM 2:25, NUM 2:31
+  1CH 2   |  1 tagged verses | 1CH 2:2
+  EXO 1   |  1 tagged verses | EXO 1:4
+  EXO 31  |  1 tagged verses | EXO 31:6
+  EXO 35  |  1 tagged verses | EXO 35:34
+  EXO 38  |  1 tagged verses | EXO 38:23
+  EZK 48  |  1 tagged verses | EZK 48:1
+
+================================================================================
+Amaziah | Amaziah_1
+Reference count: 34
+Unique attribute: King of Judah, son of Joash (2KI 12:21)
+Tribe: Judah
+Notes: He did right in the sight of the LORD, yet not with a whole heart. (2CH 25:2)
+
+Strongest chapters:
+  2CH 25  | 16 tagged verses | 2CH 25:1, 2CH 25:5, 2CH 25:9, 2CH 25:10, 2CH 25:11, 2CH 25:13, 2CH 25:14, 2CH 25:15, 2CH 25:17, 2CH 25:18, 2CH 25:20, 2CH 25:21, 2CH 25:23, 2CH 25:25, 2CH 25:26, 2CH 25:27
+  2KI 14  | 10 tagged verses | 2KI 14:1, 2KI 14:8, 2KI 14:9, 2KI 14:11, 2KI 14:13, 2KI 14:15, 2KI 14:17, 2KI 14:18, 2KI 14:21, 2KI 14:23
+  2CH 26  |  2 tagged verses | 2CH 26:1, 2CH 26:4
+  2KI 15  |  2 tagged verses | 2KI 15:1, 2KI 15:3
+  1CH 3   |  1 tagged verses | 1CH 3:12
+  2CH 24  |  1 tagged verses | 2CH 24:27
+  2KI 12  |  1 tagged verses | 2KI 12:21
+  2KI 13  |  1 tagged verses | 2KI 13:12
+
+================================================================================
+Zadok | Zadok_1
+Reference count: 34
+Unique attribute: son of Ahitub and priest during King David's reign (2SA 8:17), a mighty of valor (1CH 12:28)
+Tribe: Levi
+Notes: Aaronic priest through Eleazar
+
+Strongest chapters:
+  1KI 1   |  8 tagged verses | 1KI 1:8, 1KI 1:26, 1KI 1:32, 1KI 1:34, 1KI 1:38, 1KI 1:39, 1KI 1:44, 1KI 1:45
+  2SA 15  |  6 tagged verses | 2SA 15:24, 2SA 15:25, 2SA 15:27, 2SA 15:29, 2SA 15:35, 2SA 15:36
+  1CH 24  |  3 tagged verses | 1CH 24:3, 1CH 24:6, 1CH 24:31
+  2SA 18  |  3 tagged verses | 2SA 18:19, 2SA 18:22, 2SA 18:27
+  1CH 6   |  2 tagged verses | 1CH 6:8, 1CH 6:53
+  1KI 4   |  2 tagged verses | 1KI 4:2, 1KI 4:4
+  1CH 12  |  1 tagged verses | 1CH 12:28
+  1CH 18  |  1 tagged verses | 1CH 18:16
+  1CH 27  |  1 tagged verses | 1CH 27:17
+  1CH 29  |  1 tagged verses | 1CH 29:22
+  1KI 2   |  1 tagged verses | 1KI 2:35
+  2CH 31  |  1 tagged verses | 2CH 31:10
+
+================================================================================
+Azariah | Azariah_3
+Reference count: 33
+Unique attribute: [Uzziah] King of Judah, son of Amaziah (2KI 14:21)
+Tribe: Judah
+Notes: He did right in the sight of the LORD according to all that his father Amaziah had done. (2CH 26:4)
+
+Strongest chapters:
+  2KI 15  | 12 tagged verses | 2KI 15:1, 2KI 15:6, 2KI 15:7, 2KI 15:8, 2KI 15:13, 2KI 15:17, 2KI 15:23, 2KI 15:27, 2KI 15:28, 2KI 15:30, 2KI 15:32, 2KI 15:34
+  2CH 26  | 11 tagged verses | 2CH 26:1, 2CH 26:3, 2CH 26:8, 2CH 26:9, 2CH 26:11, 2CH 26:14, 2CH 26:18, 2CH 26:19, 2CH 26:21, 2CH 26:22, 2CH 26:23
+  MAT 1   |  2 tagged verses | MAT 1:8, MAT 1:9
+  2CH 27  |  1 tagged verses | 2CH 27:2
+  2KI 14  |  1 tagged verses | 2KI 14:21
+  AMO 1   |  1 tagged verses | AMO 1:1
+  HOS 1   |  1 tagged verses | HOS 1:1
+  ISA 1   |  1 tagged verses | ISA 1:1
+  ISA 6   |  1 tagged verses | ISA 6:1
+  ISA 7   |  1 tagged verses | ISA 7:1
+  ZEC 14  |  1 tagged verses | ZEC 14:5
+
+================================================================================
+Jesse | Jesse_1
+Reference count: 33
+Unique attribute: father of David (RUT 4:17)
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  1SA 16  | 11 tagged verses | 1SA 16:1, 1SA 16:3, 1SA 16:5, 1SA 16:8, 1SA 16:9, 1SA 16:10, 1SA 16:11, 1SA 16:18, 1SA 16:19, 1SA 16:20, 1SA 16:22
+  1SA 17  |  5 tagged verses | 1SA 17:12, 1SA 17:13, 1SA 17:17, 1SA 17:20, 1SA 17:58
+  1CH 2   |  2 tagged verses | 1CH 2:12, 1CH 2:13
+  ISA 11  |  2 tagged verses | ISA 11:1, ISA 11:10
+  MAT 1   |  2 tagged verses | MAT 1:5, MAT 1:6
+  RUT 4   |  2 tagged verses | RUT 4:17, RUT 4:22
+  1CH 10  |  1 tagged verses | 1CH 10:14
+  1CH 12  |  1 tagged verses | 1CH 12:18
+  1CH 29  |  1 tagged verses | 1CH 29:26
+  2CH 11  |  1 tagged verses | 2CH 11:18
+  2SA 23  |  1 tagged verses | 2SA 23:1
+  ACT 13  |  1 tagged verses | ACT 13:22
+
+================================================================================
+Korah | Korah_3
+Reference count: 33
+Unique attribute: son of Izhar (EXO 6:21) who rebelled against G-d and Moses (Numbers chapter 16)
+Tribe: Levi
+Notes: the Korahites (NUM 26:58)
+
+Strongest chapters:
+  NUM 16  | 11 tagged verses | NUM 16:1, NUM 16:5, NUM 16:6, NUM 16:8, NUM 16:16, NUM 16:19, NUM 16:24, NUM 16:27, NUM 16:32, NUM 16:40, NUM 16:49
+  NUM 26  |  3 tagged verses | NUM 26:9, NUM 26:10, NUM 26:11
+  1CH 6   |  2 tagged verses | 1CH 6:22, 1CH 6:37
+  EXO 6   |  2 tagged verses | EXO 6:21, EXO 6:24
+  1CH 9   |  1 tagged verses | 1CH 9:19
+  1CH 26  |  1 tagged verses | 1CH 26:19
+  JUD 1   |  1 tagged verses | JUD 1:11
+  NUM 27  |  1 tagged verses | NUM 27:3
+  PSA 42  |  1 tagged verses | PSA 42:0
+  PSA 44  |  1 tagged verses | PSA 44:0
+  PSA 45  |  1 tagged verses | PSA 45:0
+  PSA 46  |  1 tagged verses | PSA 46:0
+
+================================================================================
+Lot | Lot_1
+Reference count: 33
+Unique attribute: son of Haran (GEN 11:27), nephew of Abram (GEN 12:5)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 19  | 12 tagged verses | GEN 19:1, GEN 19:5, GEN 19:6, GEN 19:9, GEN 19:12, GEN 19:14, GEN 19:15, GEN 19:18, GEN 19:23, GEN 19:29, GEN 19:30, GEN 19:36
+  GEN 13  |  8 tagged verses | GEN 13:1, GEN 13:5, GEN 13:7, GEN 13:8, GEN 13:10, GEN 13:11, GEN 13:12, GEN 13:14
+  LUK 17  |  3 tagged verses | LUK 17:28, LUK 17:29, LUK 17:32
+  DEU 2   |  2 tagged verses | DEU 2:9, DEU 2:19
+  GEN 11  |  2 tagged verses | GEN 11:27, GEN 11:31
+  GEN 12  |  2 tagged verses | GEN 12:4, GEN 12:5
+  GEN 14  |  2 tagged verses | GEN 14:12, GEN 14:16
+  2PE 2   |  1 tagged verses | 2PE 2:7
+  PSA 83  |  1 tagged verses | PSA 83:8

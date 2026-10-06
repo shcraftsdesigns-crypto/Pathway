@@ -1,0 +1,124 @@
+=== PATHWAY RICH-TIER BATCH 5 SCRIPTURE AUDIT ===
+
+================================================================================
+Abimelech | Abimelech_2
+PASS   | Son of Gideon | Judges 8:31 | exact-ID tagged at verse(s): 31
+PASS   | Seeks support in Shechem | Judges 9:1-3 | exact-ID tagged at verse(s): 1, 3
+PASS   | Kills his brothers | Judges 9:4-5 | exact-ID tagged at verse(s): 4
+PASS   | Made ruler | Judges 9:6 | exact-ID tagged at verse(s): 6
+PASS   | Rules for three years | Judges 9:22-24 | exact-ID tagged at verse(s): 22, 23, 24
+PASS   | Conflict with Gaal | Judges 9:34-41 | exact-ID tagged at verse(s): 34, 35, 38, 39, 40, 41
+PASS   | Destroys Shechem | Judges 9:42-45 | exact-ID tagged at verse(s): 42, 44, 45
+PASS   | Attacks the tower of Shechem | Judges 9:46-49 | exact-ID tagged at verse(s): 47, 48, 49
+PASS   | Mortally wounded at Thebez | Judges 9:50-53 | exact-ID tagged at verse(s): 50, 52, 53
+PASS   | Killed by his armor-bearer | Judges 9:54-56 | exact-ID tagged at verse(s): 55, 56
+
+================================================================================
+Jehoiakim | Eliakim_2
+PASS   | Made king and renamed | 2 Kings 23:34 | exact-ID tagged at verse(s): 34
+PASS   | Pays tribute to Pharaoh | 2 Kings 23:35 | exact-ID tagged at verse(s): 35
+PASS   | Reign summarized | 2 Kings 23:36-37 | exact-ID tagged at verse(s): 36
+PASS   | Jeremiah speaks during his reign | Jeremiah 26:1-2 | exact-ID tagged at verse(s): 1
+PASS   | Uriah pursued and killed | Jeremiah 26:20-23 | exact-ID tagged at verse(s): 21, 22, 23
+PASS   | Nebuchadnezzar comes against him | 2 Kings 24:1 | exact-ID tagged at verse(s): 1
+PASS   | Jeremiah’s scroll | Jeremiah 36:1-32 | exact-ID tagged at verse(s): 1, 9, 28, 29, 30, 32
+PASS   | Death and succession | 2 Kings 24:5-6 | exact-ID tagged at verse(s): 5, 6
+
+================================================================================
+John | John_2
+PASS   | Called from fishing | Matthew 4:21-22 | exact-ID tagged at verse(s): 21
+PASS   | Named among the Twelve | Matthew 10:2-4 | exact-ID tagged at verse(s): 2
+PASS   | Witnesses the transfiguration | Luke 9:28-36 | exact-ID tagged at verse(s): 28
+PASS   | Reports an outsider casting out demons | Luke 9:49-50 | exact-ID tagged at verse(s): 49
+PASS   | Wants judgment on a Samaritan village | Luke 9:51-55 | exact-ID tagged at verse(s): 54
+PASS   | Asks for a place of honor | Mark 10:35-41 | exact-ID tagged at verse(s): 35, 41
+PASS   | Present after the ascension | Acts 1:12-14 | exact-ID tagged at verse(s): 13
+PASS   | Goes to the temple with Peter | Acts 3:1-11 | exact-ID tagged at verse(s): 1, 3, 4, 11
+PASS   | Speaks before the rulers | Acts 4:13-20 | exact-ID tagged at verse(s): 13, 19
+PASS   | Sent to Samaria | Acts 8:14-17 | exact-ID tagged at verse(s): 14
+
+================================================================================
+Dan | Dan_1
+PASS   | Birth of Dan | Genesis 30:5-6 | exact-ID tagged at verse(s): 6
+PASS   | Named among Jacob’s sons | Genesis 35:23-26 | exact-ID tagged at verse(s): 25
+PASS   | Goes to Egypt | Genesis 46:8-23 | exact-ID tagged at verse(s): 23
+PASS   | Jacob speaks concerning Dan | Genesis 49:16-18 | exact-ID tagged at verse(s): 16, 17
+PASS   | Remembered among Israel’s sons | 1 Chronicles 2:1-2 | exact-ID tagged at verse(s): 2
+
+================================================================================
+Amaziah | Amaziah_1
+PASS   | Becomes king | 2 Chronicles 25:1-2 | exact-ID tagged at verse(s): 1
+PASS   | Organizes the army | 2 Chronicles 25:5-6 | exact-ID tagged at verse(s): 5
+PASS   | Dismisses Israelite troops | 2 Chronicles 25:7-10 | exact-ID tagged at verse(s): 9, 10
+PASS   | Defeats Edom | 2 Chronicles 25:11-12 | exact-ID tagged at verse(s): 11
+PASS   | Turns to Edomite gods | 2 Chronicles 25:14-16 | exact-ID tagged at verse(s): 14, 15
+PASS   | Challenges Joash of Israel | 2 Chronicles 25:17-20 | exact-ID tagged at verse(s): 17, 18, 20
+PASS   | Defeated by Israel | 2 Chronicles 25:21-24 | exact-ID tagged at verse(s): 21, 23
+PASS   | Lives after Joash’s death | 2 Chronicles 25:25-26 | exact-ID tagged at verse(s): 25, 26
+PASS   | Killed after conspiracy | 2 Chronicles 25:27-28 | exact-ID tagged at verse(s): 27
+
+================================================================================
+Zadok | Zadok_1
+PASS   | Serves as priest under David | 2 Samuel 8:15-18 | exact-ID tagged at verse(s): 17
+PASS   | Brings the ark during David’s flight | 2 Samuel 15:24-26 | exact-ID tagged at verse(s): 24, 25
+PASS   | Returns to Jerusalem | 2 Samuel 15:25-29 | exact-ID tagged at verse(s): 25, 27, 29
+PASS   | Helps David through his sons | 2 Samuel 15:35-36 | exact-ID tagged at verse(s): 35, 36
+PASS   | Does not support Adonijah | 1 Kings 1:5-10 | exact-ID tagged at verse(s): 8
+PASS   | Called by David | 1 Kings 1:32-35 | exact-ID tagged at verse(s): 32, 34
+PASS   | Anoints Solomon | 1 Kings 1:38-40 | exact-ID tagged at verse(s): 38, 39
+PASS   | Installed in Abiathar’s place | 1 Kings 2:35 | exact-ID tagged at verse(s): 35
+
+================================================================================
+Uzziah | Azariah_3
+PASS   | Made king | 2 Chronicles 26:1-3 | exact-ID tagged at verse(s): 1, 3
+PASS-EXCEPTION | Seeks God and prospers | 2 Chronicles 26:4-5 | documented narrative-context support
+PASS   | Military success and growing fame | 2 Chronicles 26:6-8 | exact-ID tagged at verse(s): 8
+PASS   | Strengthens Jerusalem | 2 Chronicles 26:9-10 | exact-ID tagged at verse(s): 9
+PASS   | Maintains an organized army | 2 Chronicles 26:11-15 | exact-ID tagged at verse(s): 11, 14
+PASS   | Pride and temple trespass | 2 Chronicles 26:16-18 | exact-ID tagged at verse(s): 18
+PASS   | Struck with leprosy | 2 Chronicles 26:19-21 | exact-ID tagged at verse(s): 19, 21
+PASS   | Death and burial | 2 Chronicles 26:22-23 | exact-ID tagged at verse(s): 22, 23
+
+================================================================================
+Jesse | Jesse_1
+PASS   | Samuel sent to Jesse | 1 Samuel 16:1-5 | exact-ID tagged at verse(s): 1, 3, 5
+PASS   | Sons presented to Samuel | 1 Samuel 16:6-10 | exact-ID tagged at verse(s): 8, 9, 10
+PASS   | David called from the sheep | 1 Samuel 16:11-13 | exact-ID tagged at verse(s): 11
+PASS   | Sends David to Saul | 1 Samuel 16:18-22 | exact-ID tagged at verse(s): 18, 19, 20, 22
+PASS   | Sends David to his brothers | 1 Samuel 17:12-20 | exact-ID tagged at verse(s): 12, 13, 17, 20
+PASS   | Family line recorded | Ruth 4:17-22 | exact-ID tagged at verse(s): 17, 22
+PASS   | Remembered as David’s father | 1 Chronicles 2:12-15 | exact-ID tagged at verse(s): 12, 13
+
+================================================================================
+Korah | Korah_3
+PASS   | Identified as son of Izhar | Exodus 6:18-21 | exact-ID tagged at verse(s): 21
+PASS   | Leads a rebellion | Numbers 16:1-3 | exact-ID tagged at verse(s): 1
+PASS   | Moses answers Korah | Numbers 16:4-11 | exact-ID tagged at verse(s): 5, 6, 8
+PASS   | Korah gathers the congregation | Numbers 16:16-19 | exact-ID tagged at verse(s): 16, 19
+PASS   | Judgment announced | Numbers 16:23-27 | exact-ID tagged at verse(s): 24, 27
+PASS   | Rebellion judged | Numbers 16:28-35 | exact-ID tagged at verse(s): 32
+PASS   | Korah’s rebellion remembered | Numbers 26:9-11 | exact-ID tagged at verse(s): 9, 10, 11
+PASS   | Remembered in Jude | Jude 1:11 | exact-ID tagged at verse(s): 11
+
+================================================================================
+Lot | Lot_1
+PASS   | Family background | Genesis 11:27-31 | exact-ID tagged at verse(s): 27, 31
+PASS   | Travels with Abram | Genesis 12:4-5 | exact-ID tagged at verse(s): 4, 5
+PASS   | Separates from Abram | Genesis 13:5-12 | exact-ID tagged at verse(s): 5, 7, 8, 10, 11, 12
+PASS   | Captured in war | Genesis 14:11-12 | exact-ID tagged at verse(s): 12
+PASS   | Rescued by Abram | Genesis 14:13-16 | exact-ID tagged at verse(s): 16
+PASS   | Receives angelic visitors | Genesis 19:1-3 | exact-ID tagged at verse(s): 1
+PASS   | Warned to leave Sodom | Genesis 19:12-15 | exact-ID tagged at verse(s): 12, 14, 15
+PASS   | Escapes the destruction | Genesis 19:15-23 | exact-ID tagged at verse(s): 15, 18, 23
+PASS   | Lives in the mountains | Genesis 19:30 | exact-ID tagged at verse(s): 30
+PASS   | Descendants through his daughters | Genesis 19:31-38 | exact-ID tagged at verse(s): 36
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 83
+PASS: 82
+DOCUMENTED EXCEPTIONS: 1
+REVIEW: 0
+Result: PASS — 82 exact-ID events + 1 documented narrative-context exception
