@@ -74,7 +74,7 @@ export async function searchCharacters({
 }: CharacterFilters): Promise<BiblicalCharacter[]> {
   const q = query.trim().toLowerCase()
 
-  return allCharacters.filter((character) => {
+  const matches = allCharacters.filter((character) => {
     if (testament && character.testament !== testament) return false
 
     if (category && !character.categories.includes(category)) return false
@@ -90,4 +90,47 @@ export async function searchCharacters({
       character.shortDescription,
     ].some((value) => value.toLowerCase().includes(q))
   })
+
+  // Preserve the normal database order when there is no search query.
+  if (!q) return matches
+
+  // Rank search results by relevance without merging or changing identities.
+  // Primary names outrank aliases, and aliases outrank descriptive matches.
+  const score = (character: BiblicalCharacter): number => {
+    const name = character.name.toLowerCase()
+    const alternateNames = (character.alternateNames ?? []).map(
+      (value) => value.toLowerCase()
+    )
+
+    if (name === q) return 0
+    if (name.startsWith(q)) return 1
+    if (alternateNames.some((value) => value === q)) return 2
+    if (alternateNames.some((value) => value.startsWith(q))) return 3
+    if (name.includes(q)) return 4
+    if (alternateNames.some((value) => value.includes(q))) return 5
+
+    if (
+      character.categories.some(
+        (value) => value.toLowerCase() === q
+      )
+    ) {
+      return 6
+    }
+
+    if (character.testament.toLowerCase() === q) return 7
+
+    if (character.subtitle.toLowerCase().includes(q)) return 8
+    if (character.shortDescription.toLowerCase().includes(q)) return 9
+
+    return 10
+  }
+
+  return matches
+    .map((character, index) => ({
+      character,
+      index,
+      score: score(character),
+    }))
+    .sort((a, b) => a.score - b.score || a.index - b.index)
+    .map(({ character }) => character)
 }
