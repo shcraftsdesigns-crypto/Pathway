@@ -1,0 +1,85 @@
+person_id,name,slug,reference_count,unique_attribute,tribe,notes,primary_books,already_rich
+John_1,John,john-1,94,the baptist (MAT 3:1),Levi,"as son of Zacharias the priest (Luke 1), he would have been a Levite",MAT:26; LUK:25; JHN:19; MRK:15; ACT:9,NO
+Elijah_1,Elijah,elijah-1,93,"the prophet, Tishbite, who was of the settlers of Gilead (1KI 17:1)",,,1KI:38; 2KI:24; MAT:9; MRK:9; LUK:7; JHN:2; 2CH:1; MAL:1; ROM:1; JAS:1,NO
+Absalom_1,Absalom,absalom,88,third-born son of King David (2SA 3:3),Judah,,2SA:83; 1KI:3; 1CH:1; PSA:1,NO
+Ezekiel_1,Ezekiel,ezekiel,85,"the priest, son of Buzi (EZK  1:3)",Levi,,EZK:85,NO
+Jonathan_2,Jonathan,jonathan-2,82,son of King Saul (1SA 13:16),Benjamin,,1SA:60; 2SA:17; 1CH:5,NO
+Esau_1,Esau,esau,81,firstborn son of Isaac (GEN 25:25-26),,,GEN:63; DEU:6; 1CH:2; JER:2; MAL:2; HEB:2; JOS:1; PSA:1; OBA:1; ROM:1,NO
+Jeroboam_1,Jeroboam,jeroboam-1,81,"Solomon's servant, son of Nebat, who rebelled against him (1KI 11:26), and was later made king of Israel (1KI 12:20)",Ephraim,,1KI:48; 2CH:18; 2KI:14; 1CH:1,NO
+Benjamin_1,Benjamin,benjamin-1,76,twelfth-born son of Jacob and Rachel (GEN 35:18),Benjamin,,JDG:17; GEN:16; 1CH:12; NUM:10; JOS:6; 1SA:3; NEH:3; 1KI:2; EXO:1; 2SA:1; JER:1; ACT:1; ROM:1; PHP:1; REV:1,NO
+Elisha_1,Elisha,elisha,76,anointed prophet in Elijah's place (1KI 19:16),,,2KI:72; 1KI:3; LUK:1,NO
+Ben-ammi_1,Ben-ammi,ben-ammi,74,son of Lot and forebear of the Ammonites (GEN 19:38),Ammonite,,JDG:21; 2SA:12; 1CH:9; JER:8; EZK:6; DEU:4; 2CH:4; JOS:2; ZEP:2; GEN:1; NUM:1; 1SA:1; ISA:1; DAN:1; AMO:1,NO
+Daniel_2,Daniel,daniel-2,72,the prophet of the book of Daniel (EZK  14:14),,,DAN:68; EZK:3; MAT:1,YES
+Manasseh_1,Manasseh,manasseh-1,70,firstborn son of Joseph (GEN 41:51),Manasseh,,JOS:26; NUM:19; 1CH:12; GEN:9; DEU:2; 1KI:1; REV:1,NO
+Jehoshaphat_3,Jehoshaphat,jehoshaphat-3,67,son of Asa and King of Judah (1KI 15:24),Judah,,2CH:38; 1KI:19; 2KI:8; 1CH:1; MAT:1,NO
+Mattaniah_1,Mattaniah,mattaniah-1,64,"King of Judah, uncle of Jehoiachin (2KI 24:17)",,He did evil in the sight of the LORD (2KI 24:19),JER:55; 2KI:5; 2CH:2; 1CH:1; EZK:1,NO
+Eleazar_1,Eleazar,eleazar-1,61,son of Aaron (EXO 6:23),Levi,High Priest,NUM:34; 1CH:10; JOS:8; EXO:3; LEV:3; DEU:1; JDG:1; EZR:1,NO
+Reuben_1,Reuben,reuben,61,"firstborn son of Jacob (GEN 29:32), son of Leah",Reuben,,NUM:19; JOS:18; GEN:13; 1CH:6; EXO:2; DEU:2; REV:1,NO
+Balaam_1,Balaam,balaam,59,"from Pethor of Mesopotamia (NUM 22:5, DEUT 23:4)",,,NUM:49; JOS:3; DEU:2; NEH:1; MIC:1; 2PE:1; JUD:1; REV:1,NO
+Levi_1,Levi,levi-1,56,"third-born son of Jacob (GEN 29:34), son of Leah",Levi,,NUM:15; 1CH:12; GEN:6; EXO:5; DEU:3; JOS:3; MAL:3; HEB:2; 1KI:1; EZR:1; NEH:1; PSA:1; EZK:1; ZEC:1; REV:1,NO
+Josiah_1,Josiah,josiah-1,54,"prophesied son of the house of David (1KI 13:2), King of Judah and son of Amon (2KI 21:24)",,He did right in the sight of the LORD (2KI 22:2),2CH:18; JER:16; 2KI:14; 1CH:2; MAT:2; 1KI:1; ZEP:1,NO
+Asa_1,Asa,asa-1,53,"King of Judah (1KI 15:9), son of incestuous relationship between Abijah and his mother, Maacah (1KI 15:10)",Judah,the heart of Asa was wholly devoted to the LORD all his days (1KI 15:14),2CH:25; 1KI:24; MAT:2; 1CH:1; JER:1,NO
+Pilate_1,Pilate,pilate,53,the governor of Judea (MAT 27:2),,fifth governor of Judea under Tiberius,JHN:19; LUK:12; MRK:10; MAT:8; ACT:3; 1TI:1,NO
+Abner_1,Abner,abner,52,captain of Saul's army and Saul's uncle (1SA 14:50),Benjamin,,2SA:39; 1SA:9; 1KI:2; 1CH:2,NO
+Job_1,Job,job,52,"a blameless, upright, G-d fearing man in the land of Uz (JOB 1:1)",,,JOB:49; EZK:2; JAS:1,NO
+Gideon_1,Gideon,gideon,51,son of Joash (JDG 6:11) who torn down the altar to Baal (JDG 6:25),Manasseh,judge of Israel,JDG:49; 1SA:1; HEB:1,NO
+Isaiah_1,Isaiah,isaiah,51,the prophet and son of Amoz (2KI 19:2),,,ISA:16; 2KI:13; MAT:5; JHN:4; ROM:4; 2CH:3; MRK:2; LUK:2; ACT:2,NO
+Mordecai_2,Mordecai,mordecai-2,50,a Jew who lived in Susa (EST 2:5),,,EST:50,NO
+Sarai_1,Sarai,sarai,48,Abram's wife (11:29),,,GEN:43; ROM:2; ISA:1; HEB:1; 1PE:1,NO
+Laban_1,Laban,laban,47,brother of Rebekah (GEN 24:29),,,GEN:47,NO
+Noah_1,Noah,noah-1,47,son of Lamech (GEN 5:28-29),,,GEN:35; LUK:3; EZK:2; MAT:2; 1CH:1; ISA:1; HEB:1; 1PE:1; 2PE:1,NO
+Jehu_2,Jehu,jehu-2,46,anointed king over Israel (1KI 19:16) at the direction of Elisha (2KI 9:1-3),,,2KI:39; 2CH:4; 1KI:2; HOS:1,NO
+Gad_1,Gad,gad-1,45,"seventh-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah's handmaid",Gad,,NUM:17; JOS:17; 1CH:5; GEN:4; EXO:1; REV:1,NO
+Hadassah_1,Hadassah,hadassah,45,cousin of Mordecai (EST 2:7),,,EST:45,YES
+Haman_1,Haman,haman,45,son of Hammedatha the Agagite (EST 3:1),,יִמַּח שְׁמוֹ [may his name be erased],EST:45,NO
+Rachel_1,Rachel,rachel,45,daughter of Laban (GEN 29:10) and wife of Jacob (GEN 29:28),,,GEN:41; RUT:1; 1SA:1; JER:1; MAT:1,NO
+Sennacherib_1,Sennacherib,sennacherib,45,King of Assyria (2KI 18:13),,,2KI:19; ISA:17; 2CH:8; NAM:1,NO
+Ephraim_1,Ephraim,ephraim,43,second son of Joseph (GEN 41:52),Ephraim,,NUM:12; GEN:9; 1CH:8; JOS:6; JER:3; EZK:2; DEU:1; 2CH:1; PSA:1,NO
+Rehoboam_1,Rehoboam,rehoboam,43,son of Solomon who became king after him (1KI 11:43),Judah,,2CH:23; 1KI:18; 1CH:1; MAT:1,NO
+Balak_1,Balak,balak,41,"Midianite prophet who worked against Israel, son of Zippor (NUM 22:2)",Midianite,,NUM:36; JDG:2; JOS:1; MIC:1; REV:1,NO
+Merari_1,Merari,merari,38,son of Levi (GEN 46:11),Levi,"from the list of ""sons of Israel"" who ""went to Egypt"" (GEN 46:8-27), the Merarites (NUM 26:57)",1CH:17; NUM:12; JOS:3; EXO:2; 2CH:2; GEN:1; EZR:1,NO
+Ahaz_1,Ahaz,ahaz-1,37,"King of Judah, son of Jotham (2KI 15:38)",Judah,He did not do right in the sight of the LORD as David his father had done (2CH 28:1),2KI:17; 2CH:9; ISA:7; 1CH:1; HOS:1; MIC:1; MAT:1,NO
+Jehoram_2,Jehoram,jehoram-2,37,King of Israel (2KI 1:17) and son of Ahab (2KI 3:1),,,2KI:34; 2CH:3,NO
+Samson_1,Samson,samson,37,"son of Manoah (JDG 13:24), who killed a thousand men with the jawbone of a donkey (JDG 15:15)",Dan,judge of Israel,JDG:36; HEB:1,NO
+Abimelech_2,Abimelech,abimelech-2,36,son of Gideon (Jerubbaal) by a concubine in Shechem (JDG 8:31) who killed his brothers,Manasseh,Killed his 70 brothers (JDG 9:5).  Mortally wounded by a millstone dropped by a woman (JDG 9:53) but killed by his armor bearer for honor (JDG 9:54).,JDG:36,NO
+Eliakim_2,Eliakim,eliakim-2,36,"King of Judah, son of Josiah (2KI 23:34)",,He did evil in the sight of the LORD (2KI 23:37),JER:22; 2KI:7; 2CH:3; 1CH:2; DAN:2,NO
+John_2,John,john-2,36,son of Zebedee (MAT 4:21),,"fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2), author of the book of John",MRK:10; ACT:9; LUK:7; REV:4; MAT:3; GAL:1; 2JN:1; 3JN:1,NO
+Dan_1,Dan,dan,35,"fifth-born son of Jacob (GEN 30:5), son of Bilhah, Rachel's handmaid",Dan,,NUM:10; JDG:8; GEN:5; JOS:5; EXO:4; LEV:1; 1CH:1; EZK:1,NO
+Amaziah_1,Amaziah,amaziah-1,34,"King of Judah, son of Joash (2KI 12:21)",Judah,"He did right in the sight of the LORD, yet not with a whole heart. (2CH 25:2)",2CH:19; 2KI:14; 1CH:1,NO
+Zadok_1,Zadok,zadok-1,34,"son of Ahitub and priest during King David's reign (2SA 8:17), a mighty of valor (1CH 12:28)",Levi,Aaronic priest through Eleazar,2SA:13; 1KI:11; 1CH:9; 2CH:1,NO
+Azariah_3,Azariah,azariah-3,33,"[Uzziah] King of Judah, son of Amaziah (2KI 14:21)",Judah,He did right in the sight of the LORD according to all that his father Amaziah had done. (2CH 26:4),2KI:13; 2CH:12; ISA:3; MAT:2; HOS:1; AMO:1; ZEC:1,NO
+Jesse_1,Jesse,jesse,33,father of David (RUT 4:17),Judah,,1SA:16; 1CH:5; RUT:2; ISA:2; MAT:2; 2SA:1; 2CH:1; PSA:1; LUK:1; ACT:1; ROM:1,NO
+Korah_3,Korah,korah-3,33,son of Izhar (EXO 6:21) who rebelled against G-d and Moses (Numbers chapter 16),Levi,the Korahites (NUM 26:58),NUM:15; PSA:11; 1CH:4; EXO:2; JUD:1,NO
+Lot_1,Lot,lot,33,"son of Haran (GEN 11:27), nephew of Abram (GEN 12:5)",,,GEN:26; LUK:3; DEU:2; PSA:1; 2PE:1,NO
+Leah_1,Leah,leah,32,daughter of Laban (GEN 29:16) and wife of Jacob (GEN 29:23),,,GEN:31; RUT:1,NO
+Sihon_1,Sihon,sihon,32,King of the Amorites (NUM 21:21),Amorite,during the time of the Exodus,DEU:10; NUM:8; JOS:7; JDG:3; PSA:2; 1KI:1; NEH:1,NO
+Eli_1,Eli,eli-1,31,priest of Israel in Shiloh (1SA 1:3),Levi,,1SA:30; 1KI:1,NO
+Simeon_1,Simeon,simeon-1,31,"second-born son of Jacob (GEN 29:33), son of Leah",Simeon,,GEN:10; NUM:9; 1CH:5; JOS:4; EXO:2; REV:1,NO
+Ahasuerus_1,Ahasuerus,ahasuerus,30,King of Persia (EZR 4:6),,This is the same person in Esther 1:1 and Daniel 9:1,EST:28; EZR:1; DAN:1,NO
+Nathan_2,Nathan,nathan-2,30,the prophet (2SA 7:2),,,1KI:11; 2SA:10; 1CH:5; 2CH:2; PSA:1; ZEC:1,NO
+Nun_1,Nun,nun,30,father of Joshua (EXO 33:11),Ephraim,,NUM:11; JOS:10; DEU:4; EXO:1; JDG:1; 1KI:1; 1CH:1; NEH:1,NO
+Rebekah_1,Rebekah,rebekah,30,"daughter of Bethuel, grandaughter of Nahor (GEN 22:23)",,,GEN:29; ROM:1,NO
+Abiathar_1,Abiathar,abiathar,29,"son of Ahimelech, the priest (1SA 22:20), counselor to David (1CH 27:34)",Levi,,2SA:9; 1KI:9; 1SA:6; 1CH:4; MRK:1,NO
+Ben-hadad_1,Ben-hadad,ben-hadad-1,29,King of Aram (1KI 15:18),,"the king whom Naaman served (2KI 5:1), King Asa supported (1KI 15:18), and who warred against Ahab (1KI 20:12)",1KI:18; 2KI:7; 2CH:4,NO
+Kohath_1,Kohath,kohath,29,son of Levi (GEN 46:11),Levi,"from the list of ""sons of Israel"" who ""went to Egypt"" (GEN 46:8-27), the Kohathites (NUM 26:57)",1CH:12; NUM:11; JOS:3; EXO:2; GEN:1,NO
+Mary_1,Mary,mary-1,29,"wife of Joseph, and mother of the Messiah (MAT 1:16)",,,LUK:13; MAT:9; MRK:4; JHN:2; ACT:1,NO
+Philip_1,Philip,philip-1,29,disciple of the Messiah (MAT 10:3),,"one of the Twelve (MAT 10:2), from the city of Bethsaida (JHN 1:44) of Galilee (JHN 12:21)",ACT:15; JHN:11; MAT:1; MRK:1; LUK:1,NO
+Joseph_12,Joseph,joseph-12,28,a Levite of Cyprian birth (ACT 4:36),Levi,,ACT:23; GAL:3; 1CO:1; COL:1,NO
+Caleb_1,Caleb,caleb,27,1 of the 12 spies- from Judah (NUM 13:6),Judah,1 of 12 spies- from Judah,NUM:9; JOS:9; JDG:6; 1CH:2; DEU:1,NO
+Asher_1,Asher,asher,26,"eighth-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah's handmaid",Asher,,NUM:11; 1CH:5; GEN:4; JOS:4; EXO:1; REV:1,NO
+Baasha_1,Baasha,baasha,26,King of Israel (1KI 15:16),,,1KI:20; 2CH:4; 2KI:1; JER:1,NO
+Gedaliah_1,Gedaliah,gedaliah-1,26,"son of Ahikam, appointed King of Judah by Nebuchadnezzar (2KI 25:22)",,,JER:22; 2KI:4,NO
+Herod_2,Herod,herod-2,26,the tetrarch (MAT 14:1),Edom,"Herod Antipas, tetrarch of Gailiea and Perea",LUK:12; MRK:8; MAT:4; ACT:2,NO
+James_1,James,james-1,26,son of Zebedee (MAT 4:21),,"fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2)",MRK:9; LUK:5; ACT:5; MAT:3; GAL:3; 1CO:1,NO
+Jephthah_1,Jephthah,jephthah,26,a valiant warrior (JDG 11:1),,judge of Israel and a valiant warrior (JDG 11:1),JDG:24; 1SA:1; HEB:1,NO
+Joash_3,Joash,joash-3,26,"King of Judah (2KI 11:21), son of Ahaziah (2KI 11:2)",Judah,,2KI:17; 2CH:8; 1CH:1,NO
+Timothy_1,Timothy,timothy,26,a disciple and Paul's companion (ACT 16:1),,had a Jewish mother and Greek father (ACT 16:1),ACT:6; 1TI:4; 1TH:3; 1CO:2; 2CO:2; PHP:2; 2TI:2; ROM:1; COL:1; 2TH:1; PHM:1; HEB:1,NO
+Ahaziah_2,Ahaziah,ahaziah-2,25,"King of Judah, youngest (2CH 21:17) son of Jehoram (2KI 8:24) son of Jehoshapat",Judah,,2KI:14; 2CH:10; 1CH:1,NO
+Darius_1,Darius,darius-1,25,King of Persia (EZR 4:5),,"likely Darius III, the last King of Persia, conquered by Alexander the Great",EZR:11; DAN:7; HAG:3; ZEC:3; NEH:1,NO
+Ezra_1,Ezra,ezra,25,"son of Seraiah (EZR 7:1), scribe skilled in the Law (EZR 7:6)",Levi,"as ""priest"" would be a descendant of Aaron",EZR:13; NEH:12,NO
+Issachar_1,Issachar,issachar-1,25,"ninth-born son of Jacob (GEN 30:17), son of Leah",Issachar,,NUM:8; 1CH:6; GEN:4; JOS:4; EXO:1; 1KI:1; REV:1,NO
+Jehoiada_2,Jehoiada,jehoiada-2,25,the priest (2KI 11:9) who protected Joash in his youth (2KI 11:4),Levi,,2CH:18; 2KI:7,NO
+Joash_4,Joash,joash-4,25,"King of Israel, son of Jehoahaz (2KI 13:9)",,,2KI:18; 2CH:5; HOS:1; AMO:1,NO
+Judas_1,Judas,judas-1,25,disciple of the Messiah (MAT 10:4) who betrayed Him (MAT 10:4),,"one of the Twelve (MAT 10:2), from Kerioth (MAT 10:4)",JHN:9; MAT:6; MRK:4; LUK:4; ACT:2,NO
+Naphtali_1,Naphtali,naphtali,25,"sixth-born son of Jacob (GEN 30:7), son of Bilhah, Rachel's handmaid",Naphtali,,NUM:10; GEN:4; JOS:4; 1CH:4; EXO:1; JDG:1; REV:1,NO
+Zeruiah_1,Zeruiah,zeruiah,25,"mother of Abishai, Joab (1SA 26:6), and Asahel (2SA 2:18), sister of King David (1CH 2:16)",Judah,,2SA:14; 1CH:7; 1KI:3; 1SA:1,NO

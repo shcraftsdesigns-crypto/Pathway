@@ -1,0 +1,131 @@
+=== PATHWAY RICH-TIER BATCH 1 SCRIPTURE AUDIT ===
+
+================================================================================
+John | John_1
+PASS   | Birth announced | Luke 1:5-25 | exact-ID tagged at verse(s): 13
+PASS   | Birth and naming | Luke 1:57-80 | exact-ID tagged at verse(s): 60, 63, 76
+PASS   | Preaches in the wilderness | Matthew 3:1-12 | exact-ID tagged at verse(s): 1, 4
+PASS   | Baptizes Jesus | Matthew 3:13-17 | exact-ID tagged at verse(s): 13, 14
+PASS   | Testifies concerning Jesus | John 1:19-36 | exact-ID tagged at verse(s): 19, 26, 28, 32, 33, 35
+PASS   | Continues baptizing | John 3:22-30 | exact-ID tagged at verse(s): 23, 24, 25, 26, 27
+PASS   | Imprisoned by Herod | Luke 3:19-20 | exact-ID tagged at verse(s): 20
+PASS   | Sends disciples to Jesus | Matthew 11:2-6 | exact-ID tagged at verse(s): 2, 4
+PASS   | Executed by Herod | Matthew 14:1-12 | exact-ID tagged at verse(s): 2, 3, 4, 5, 8, 10
+
+================================================================================
+Elijah | Elijah_1
+PASS   | Announces drought | 1 Kings 17:1 | exact-ID tagged at verse(s): 1
+PASS   | Sustained during drought | 1 Kings 17:2-16 | exact-ID tagged at verse(s): 13, 15, 16
+PASS   | Widow’s son restored | 1 Kings 17:17-24 | exact-ID tagged at verse(s): 18, 22, 23, 24
+PASS   | Mount Carmel | 1 Kings 18 | exact ID tagged in chapter at verse(s): 1, 2, 7, 8, 11, 14, 15, 16, 17, 21, 22, 25, 27, 30, 31, 36, 40, 41, 42, 46
+PASS   | Flees from Jezebel | 1 Kings 19:1-8 | exact-ID tagged at verse(s): 1, 2
+PASS   | At Horeb | 1 Kings 19:9-18 | exact-ID tagged at verse(s): 9, 13
+PASS   | Calls Elisha | 1 Kings 19:19-21 | exact-ID tagged at verse(s): 19, 20, 21
+PASS   | Confronts Ahab over Naboth | 1 Kings 21:17-29 | exact-ID tagged at verse(s): 17, 20, 28
+PASS   | Confronts Ahaziah | 2 Kings 1 | exact ID tagged in chapter at verse(s): 3, 4, 8, 9, 10, 11, 12, 13, 15, 17
+PASS   | Taken up | 2 Kings 2:1-14 | exact-ID tagged at verse(s): 1, 2, 4, 6, 8, 9, 11, 13, 14
+PASS   | Appears at the Transfiguration | Matthew 17:1-8 | exact-ID tagged at verse(s): 3, 4
+
+================================================================================
+Absalom | Absalom_1
+PASS   | Listed among David’s sons | 2 Samuel 3:2-5 | exact-ID tagged at verse(s): 3
+PASS   | Tamar and Amnon | 2 Samuel 13:1-22 | exact-ID tagged at verse(s): 1, 4, 20, 22
+PASS   | Amnon killed | 2 Samuel 13:23-39 | exact-ID tagged at verse(s): 23, 24, 25, 26, 27, 28, 29, 30, 32, 34, 37, 38, 39
+PASS   | Returns to Jerusalem | 2 Samuel 14:21-33 | exact-ID tagged at verse(s): 21, 23, 24, 25, 27, 28, 29, 30, 31, 32, 33
+PASS   | Builds support | 2 Samuel 15:1-6 | exact-ID tagged at verse(s): 1, 2, 3, 4, 6
+PASS   | Rebels against David | 2 Samuel 15:7-37 | exact-ID tagged at verse(s): 7, 10, 11, 12, 13, 14, 31, 34, 37
+PASS   | Enters Jerusalem | 2 Samuel 16:15-23 | exact-ID tagged at verse(s): 15, 16, 17, 18, 20, 21, 22, 23
+PASS   | Plans pursuit of David | 2 Samuel 17:1-26 | exact-ID tagged at verse(s): 1, 4, 5, 6, 7, 9, 14, 15, 18, 20, 24, 25, 26
+PASS   | Killed in battle | 2 Samuel 18:5-18 | exact-ID tagged at verse(s): 5, 9, 10, 12, 14, 15, 17, 18
+PASS   | David mourns Absalom | 2 Samuel 18:29-33 | exact-ID tagged at verse(s): 29, 32, 33
+
+================================================================================
+Ezekiel | Ezekiel_1
+PASS   | Opening vision | Ezekiel 1 | exact ID tagged in chapter at verse(s): 3
+PASS   | Commissioned | Ezekiel 2 | exact ID tagged in chapter at verse(s): 1, 3, 6, 8
+PASS   | Appointed watchman | Ezekiel 3 | exact ID tagged in chapter at verse(s): 1, 3, 4, 10, 17, 25
+PASS   | Vision concerning Jerusalem | Ezekiel 8 | exact ID tagged in chapter at verse(s): 5, 6, 12, 15
+PASS   | Acts out exile | Ezekiel 12 | exact ID tagged in chapter at verse(s): 2, 3, 9, 18, 22
+PASS   | Death of his wife | Ezekiel 24:15-27 | exact-ID tagged at verse(s): 16, 24, 25
+PASS   | Watchman responsibility renewed | Ezekiel 33 | exact ID tagged in chapter at verse(s): 2, 7, 10, 12, 24, 30
+PASS   | Valley of dry bones | Ezekiel 37:1-14 | exact-ID tagged at verse(s): 3, 9, 11
+PASS   | Sign of the two sticks | Ezekiel 37:15-28 | exact-ID tagged at verse(s): 16
+
+================================================================================
+Jonathan | Jonathan_2
+PASS   | Fights the Philistines | 1 Samuel 13:2-4 | exact-ID tagged at verse(s): 2, 3
+PASS   | Attacks with his armor-bearer | 1 Samuel 14:1-23 | exact-ID tagged at verse(s): 1, 3, 4, 6, 8, 12, 13, 14, 17, 21
+PASS   | Saul’s oath | 1 Samuel 14:24-46 | exact-ID tagged at verse(s): 27, 29, 39, 40, 41, 42, 43, 44, 45
+PASS   | Covenant with David | 1 Samuel 18:1-4 | exact-ID tagged at verse(s): 1, 3, 4
+PASS   | Protects David | 1 Samuel 19:1-7 | exact-ID tagged at verse(s): 1, 2, 4, 6, 7
+PASS   | Warns David | 1 Samuel 20 | exact ID tagged in chapter at verse(s): 1, 3, 4, 5, 9, 10, 11, 12, 13, 16, 17, 18, 25, 27, 28, 30, 32, 33, 34, 35, 37, 38, 39, 40, 42
+PASS   | Strengthens David | 1 Samuel 23:16-18 | exact-ID tagged at verse(s): 16, 18
+PASS   | Dies in battle | 1 Samuel 31:1-6 | exact-ID tagged at verse(s): 2
+PASS   | David mourns Jonathan | 2 Samuel 1:17-27 | exact-ID tagged at verse(s): 17, 22, 23, 25, 26
+
+================================================================================
+Esau | Esau_1
+PASS   | Birth of Esau and Jacob | Genesis 25:19-26 | exact-ID tagged at verse(s): 25
+PASS   | Sells his birthright | Genesis 25:27-34 | exact-ID tagged at verse(s): 27, 28, 29, 30, 32, 34
+PASS   | Marries Hittite women | Genesis 26:34-35 | exact-ID tagged at verse(s): 34
+PASS   | Jacob receives Isaac’s blessing | Genesis 27 | exact ID tagged in chapter at verse(s): 1, 5, 6, 11, 15, 19, 21, 22, 23, 24, 30, 32, 34, 37, 38, 41, 42
+PASS   | Marries a daughter of Ishmael | Genesis 28:6-9 | exact-ID tagged at verse(s): 6, 8, 9
+PASS   | Jacob prepares to meet Esau | Genesis 32:3-21 | exact-ID tagged at verse(s): 3, 4, 6, 8, 11, 13, 17, 18, 19
+PASS   | Reconciles with Jacob | Genesis 33:1-16 | exact-ID tagged at verse(s): 1, 4, 9, 12, 15, 16
+PASS   | Burial of Isaac | Genesis 35:27-29 | exact-ID tagged at verse(s): 29
+PASS   | Descendants recorded | Genesis 36 | exact ID tagged in chapter at verse(s): 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 40, 43
+
+================================================================================
+Jeroboam | Jeroboam_1
+PASS   | Rebels during Solomon’s reign | 1 Kings 11:26-40 | exact-ID tagged at verse(s): 26, 28, 29, 31, 40
+PASS   | Made king over Israel | 1 Kings 12:1-20 | exact-ID tagged at verse(s): 2, 3, 12, 15, 20
+PASS   | Establishes alternative worship | 1 Kings 12:25-33 | exact-ID tagged at verse(s): 25, 26, 32
+PASS   | Confronted at Bethel | 1 Kings 13:1-10 | exact-ID tagged at verse(s): 1, 4
+PASS   | Continues his religious policy | 1 Kings 13:33-34 | exact-ID tagged at verse(s): 33, 34
+PASS   | His son becomes ill | 1 Kings 14:1-18 | exact-ID tagged at verse(s): 1, 2, 4, 5, 6, 7, 10, 11, 13, 14, 16, 17
+PASS   | Death of Jeroboam | 1 Kings 14:19-20 | exact-ID tagged at verse(s): 19, 20
+PASS   | War with Abijah | 2 Chronicles 13 | exact ID tagged in chapter at verse(s): 1, 2, 3, 4, 6, 8, 13, 15, 19, 20
+
+================================================================================
+Elisha | Elisha_1
+PASS   | Called by Elijah | 1 Kings 19:19-21 | exact-ID tagged at verse(s): 19
+PASS   | Succeeds Elijah | 2 Kings 2:1-15 | exact-ID tagged at verse(s): 1, 2, 3, 4, 5, 9, 12, 14, 15
+PASS   | Heals the water | 2 Kings 2:19-22 | exact-ID tagged at verse(s): 19, 22
+PASS   | Widow’s oil | 2 Kings 4:1-7 | exact-ID tagged at verse(s): 1, 2, 7
+PASS   | Shunammite woman | 2 Kings 4:8-37 | exact-ID tagged at verse(s): 8, 9, 16, 17, 21, 22, 25, 27, 32
+PASS   | Naaman healed | 2 Kings 5:1-19 | exact-ID tagged at verse(s): 8, 9, 10, 14, 15
+PASS   | Gehazi confronted | 2 Kings 5:20-27 | exact-ID tagged at verse(s): 20, 25
+PASS   | Conflict with Aram | 2 Kings 6 | exact ID tagged in chapter at verse(s): 1, 6, 9, 10, 12, 15, 17, 18, 19, 20, 21, 31, 32
+PASS   | Foretells end of famine | 2 Kings 7:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Meets Hazael | 2 Kings 8:7-15 | exact-ID tagged at verse(s): 7, 8, 10, 11, 13, 14
+PASS   | Final illness and death | 2 Kings 13:14-21 | exact-ID tagged at verse(s): 14, 15, 16, 17, 19, 20, 21
+
+================================================================================
+Jehoshaphat | Jehoshaphat_3
+PASS   | Established as king | 2 Chronicles 17:1-6 | exact-ID tagged at verse(s): 1, 3, 5
+PASS   | Teaching throughout Judah | 2 Chronicles 17:7-12 | exact-ID tagged at verse(s): 10, 11, 12
+PASS   | Alliance with Ahab | 1 Kings 22:1-38 | exact-ID tagged at verse(s): 2, 4, 5, 7, 8, 10, 18, 29, 30, 32
+PASS   | Reproved by Jehu | 2 Chronicles 19:1-3 | exact-ID tagged at verse(s): 1, 2
+PASS   | Judicial reforms | 2 Chronicles 19:4-11 | exact-ID tagged at verse(s): 4, 8
+PASS   | Seeks God during invasion | 2 Chronicles 20:1-30 | exact-ID tagged at verse(s): 1, 2, 3, 5, 15, 18, 20, 25, 27, 30
+PASS   | Alliance concerning ships | 2 Chronicles 20:35-37 | exact-ID tagged at verse(s): 35, 37
+PASS   | Reign and death | 1 Kings 22:41-50 | exact-ID tagged at verse(s): 41, 42, 44, 45, 48, 49, 50
+
+================================================================================
+Zedekiah | Mattaniah_1
+PASS   | Renamed and made king | 2 Kings 24:17 | exact-ID tagged at verse(s): 17
+PASS   | Reign begins | 2 Kings 24:18-20 | exact-ID tagged at verse(s): 18, 20
+PASS   | Jeremiah counsels submission | Jeremiah 27:12-22 | exact-ID tagged at verse(s): 12, 18, 21
+PASS   | Questions imprisoned Jeremiah | Jeremiah 37:17-21 | exact-ID tagged at verse(s): 17, 18, 21
+PASS   | Consults Jeremiah during siege | Jeremiah 38:14-28 | exact-ID tagged at verse(s): 14, 15, 16, 17, 19, 22, 24
+PASS   | Jerusalem falls | Jeremiah 39:1-5 | exact-ID tagged at verse(s): 1, 2, 4, 5
+PASS   | Judgment at Riblah | Jeremiah 39:6-7 | exact-ID tagged at verse(s): 6, 7
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 91
+PASS: 91
+REVIEW: 0
+Result: ALL EVENTS HAVE EXACT-ID SUPPORT
