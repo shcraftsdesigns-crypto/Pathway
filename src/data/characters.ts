@@ -9,10 +9,43 @@ interface Seed {
   id: string; name: string; slug: string; alt?: string[]; t: Testament; cats: CharacterCategory[]
   subtitle: string; desc: string; bio: string; key: ScriptureReference; tl: Ev[]
 }
-const build = (s: Seed): BiblicalCharacter => ({
-  id: s.id, name: s.name, slug: s.slug, alternateNames: s.alt, testament: s.t, categories: s.cats,
-  subtitle: s.subtitle, shortDescription: s.desc, biography: s.bio, keyScriptures: [s.key], timeline: events(s.slug, s.tl),
-})
+const build = (s: Seed): BiblicalCharacter => {
+  const timeline = events(s.slug, s.tl)
+
+  return {
+    id: s.id,
+    name: s.name,
+    slug: s.slug,
+    alternateNames: s.alt,
+    testament: s.t,
+    categories: s.cats,
+    subtitle: s.subtitle,
+    shortDescription: s.desc,
+    biography: s.bio,
+    keyScriptures: [s.key],
+    timeline,
+    studyAreas: [
+      {
+        id: `${s.slug}-background`,
+        title: 'Background',
+        description: `Study ${s.name}'s biblical background and setting from the referenced passages.`,
+        scriptureReferences: [s.key],
+      },
+      {
+        id: `${s.slug}-major-events`,
+        title: 'Major Events',
+        description: `Trace the major recorded events in ${s.name}'s biblical account.`,
+        scriptureReferences: timeline.flatMap((event) => event.scriptureReferences),
+      },
+      {
+        id: `${s.slug}-reflection`,
+        title: 'Reflection',
+        description: `Reflect on what ${s.name}'s biblical account reveals without going beyond what Scripture supports.`,
+        scriptureReferences: [s.key, ...timeline.flatMap((event) => event.scriptureReferences)],
+      },
+    ],
+  }
+}
 
 export const FEATURED_SLUGS = ['david', 'moses', 'esther', 'joseph', 'peter', 'paul']
 

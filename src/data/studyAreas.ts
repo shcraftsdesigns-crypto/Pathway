@@ -1,1 +1,7 @@
-export const STUDY_AREAS = ['Background', 'Calling', 'Faith', 'Strengths', 'Weaknesses', 'Major Events', 'Relationships', 'Failures', 'Repentance', 'Leadership', 'Lessons', 'Reflection'] as const
+export const UNIVERSAL_STUDY_AREAS = [
+  'Background',
+  'Biblical Appearances',
+  'Reflection',
+] as const
+
+export type UniversalStudyArea = (typeof UNIVERSAL_STUDY_AREAS)[number]

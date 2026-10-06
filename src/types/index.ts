@@ -27,6 +27,13 @@ export interface CharacterRelationship {
   scriptureReferences: ScriptureReference[]
 }
 
+export interface CharacterStudyArea {
+  id: string
+  title: string
+  description: string
+  scriptureReferences: ScriptureReference[]
+}
+
 export interface BiblicalCharacter {
   id: string
   name: string
@@ -40,6 +47,7 @@ export interface BiblicalCharacter {
   keyScriptures: ScriptureReference[]
   timeline?: TimelineEvent[]
   relationships?: CharacterRelationship[]
+  studyAreas?: CharacterStudyArea[]
   imageUrl?: string
 }
 

@@ -8,7 +8,7 @@ export default function CharacterCard({ character: c }: { character: BiblicalCha
       <div className="flex flex-wrap gap-2"><span className="tag">{c.testament}</span><span className="tag">{c.categories[0]}</span></div>
       <h3 className="text-xl">{c.name}</h3>
       <p>{c.shortDescription}</p>
-      <p className="text-sm text-mute">Key: {formatReference(c.keyScriptures[0])}</p>
+      <p className="text-sm text-mute">Key: {c.keyScriptures?.[0] ? formatReference(c.keyScriptures[0]) : "Scripture references coming soon"}</p>
       <span className="mt-1 font-semibold text-acc">View Character →</span>
     </Link>
   )

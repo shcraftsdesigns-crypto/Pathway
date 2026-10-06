@@ -11,7 +11,20 @@ import StudyAreaCard from '@/components/characters/StudyAreaCard'
 import { useCharacter } from '@/hooks/useCharacters'
 import { collectReferences, formatReference } from '@/lib/scripture'
 import { usePageTitle } from '@/hooks/usePageTitle'
-import { STUDY_AREAS } from '@/data/studyAreas'
+import { UNIVERSAL_STUDY_AREAS } from '@/data/studyAreas'
+
+const STUDY_AREA_DESCRIPTIONS: Record<(typeof UNIVERSAL_STUDY_AREAS)[number], string> = {
+  Background: 'Explore who this person was and the setting in which they appear in Scripture.',
+  'Biblical Appearances': 'Read the Scripture passages where this person is identified or mentioned.',
+  Reflection: 'Reflect on what these passages reveal without going beyond what Scripture supports.',
+}
+
+function getStudyAreaDescription(
+  area: (typeof UNIVERSAL_STUDY_AREAS)[number],
+  name: string,
+) {
+  return `${STUDY_AREA_DESCRIPTIONS[area]} Study ${name}'s referenced passages carefully.`
+}
 
 export default function CharacterProfile() {
   const { slug = '' } = useParams()
@@ -46,8 +59,26 @@ export default function CharacterProfile() {
         </section>
       )}
       <section className="py-6">
-        <SectionHeader title="Character Study Areas" subtitle="Placeholders for future guided content." />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{STUDY_AREAS.map((a) => <StudyAreaCard key={a} title={a} />)}</div>
+        <SectionHeader title="Character Study Areas" subtitle="Guided study prompts connected to this character's Scripture references." />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {c.studyAreas?.length
+            ? c.studyAreas.map((area) => (
+                <StudyAreaCard
+                  key={area.id}
+                  title={area.title}
+                  description={area.description}
+                  references={area.scriptureReferences}
+                />
+              ))
+            : UNIVERSAL_STUDY_AREAS.map((area) => (
+                <StudyAreaCard
+                  key={area}
+                  title={area}
+                  description={getStudyAreaDescription(area, c.name)}
+                  references={collectReferences(c)}
+                />
+              ))}
+        </div>
       </section>
     </article>
   )
