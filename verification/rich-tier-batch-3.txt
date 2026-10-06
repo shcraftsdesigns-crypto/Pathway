@@ -1,0 +1,195 @@
+=== PATHWAY RICH-TIER BATCH 3 EVIDENCE ===
+
+================================================================================
+Abner | Abner_1
+Reference count: 52
+Unique attribute: captain of Saul's army and Saul's uncle (1SA 14:50)
+Tribe: Benjamin
+Notes: 
+
+Strongest chapters:
+  2SA 3   | 22 tagged verses | 2SA 3:6, 2SA 3:7, 2SA 3:8, 2SA 3:9, 2SA 3:11, 2SA 3:12, 2SA 3:16, 2SA 3:17, 2SA 3:19, 2SA 3:20, 2SA 3:21, 2SA 3:22, 2SA 3:23, 2SA 3:25, 2SA 3:26, 2SA 3:27, 2SA 3:28, 2SA 3:30, 2SA 3:31, 2SA 3:32, 2SA 3:33, 2SA 3:37
+  2SA 2   | 15 tagged verses | 2SA 2:8, 2SA 2:12, 2SA 2:14, 2SA 2:17, 2SA 2:19, 2SA 2:20, 2SA 2:21, 2SA 2:22, 2SA 2:23, 2SA 2:24, 2SA 2:25, 2SA 2:26, 2SA 2:29, 2SA 2:30, 2SA 2:31
+  1SA 26  |  4 tagged verses | 1SA 26:5, 1SA 26:7, 1SA 26:14, 1SA 26:15
+  1KI 2   |  2 tagged verses | 1KI 2:5, 1KI 2:32
+  1SA 14  |  2 tagged verses | 1SA 14:50, 1SA 14:51
+  1SA 17  |  2 tagged verses | 1SA 17:55, 1SA 17:57
+  2SA 4   |  2 tagged verses | 2SA 4:1, 2SA 4:12
+  1CH 26  |  1 tagged verses | 1CH 26:28
+  1CH 27  |  1 tagged verses | 1CH 27:21
+  1SA 20  |  1 tagged verses | 1SA 20:25
+
+================================================================================
+Job | Job_1
+Reference count: 52
+Unique attribute: a blameless, upright, G-d fearing man in the land of Uz (JOB 1:1)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  JOB 42  |  9 tagged verses | JOB 42:1, JOB 42:7, JOB 42:8, JOB 42:9, JOB 42:10, JOB 42:12, JOB 42:15, JOB 42:16, JOB 42:17
+  JOB 1   |  7 tagged verses | JOB 1:1, JOB 1:5, JOB 1:8, JOB 1:9, JOB 1:14, JOB 1:20, JOB 1:22
+  JOB 32  |  5 tagged verses | JOB 32:1, JOB 32:2, JOB 32:3, JOB 32:4, JOB 32:12
+  JOB 2   |  4 tagged verses | JOB 2:3, JOB 2:7, JOB 2:10, JOB 2:11
+  JOB 34  |  3 tagged verses | JOB 34:5, JOB 34:35, JOB 34:36
+  JOB 40  |  3 tagged verses | JOB 40:1, JOB 40:3, JOB 40:6
+  EZK 14  |  2 tagged verses | EZK 14:14, EZK 14:20
+  JOB 3   |  2 tagged verses | JOB 3:1, JOB 3:2
+  JOB 33  |  2 tagged verses | JOB 33:1, JOB 33:31
+  JAS 5   |  1 tagged verses | JAS 5:11
+  JOB 6   |  1 tagged verses | JOB 6:1
+  JOB 9   |  1 tagged verses | JOB 9:1
+
+================================================================================
+Gideon | Gideon_1
+Reference count: 51
+Unique attribute: son of Joash (JDG 6:11) who torn down the altar to Baal (JDG 6:25)
+Tribe: Manasseh
+Notes: judge of Israel
+
+Strongest chapters:
+  JDG 8   | 15 tagged verses | JDG 8:4, JDG 8:7, JDG 8:11, JDG 8:13, JDG 8:21, JDG 8:22, JDG 8:23, JDG 8:24, JDG 8:27, JDG 8:28, JDG 8:29, JDG 8:30, JDG 8:32, JDG 8:33, JDG 8:35
+  JDG 7   | 14 tagged verses | JDG 7:1, JDG 7:2, JDG 7:4, JDG 7:5, JDG 7:7, JDG 7:8, JDG 7:13, JDG 7:14, JDG 7:15, JDG 7:18, JDG 7:19, JDG 7:20, JDG 7:24, JDG 7:25
+  JDG 6   | 12 tagged verses | JDG 6:11, JDG 6:13, JDG 6:17, JDG 6:19, JDG 6:22, JDG 6:24, JDG 6:27, JDG 6:29, JDG 6:32, JDG 6:34, JDG 6:36, JDG 6:39
+  JDG 9   |  8 tagged verses | JDG 9:1, JDG 9:2, JDG 9:5, JDG 9:16, JDG 9:19, JDG 9:24, JDG 9:28, JDG 9:57
+  1SA 12  |  1 tagged verses | 1SA 12:11
+  HEB 11  |  1 tagged verses | HEB 11:32
+
+================================================================================
+Isaiah | Isaiah_1
+Reference count: 51
+Unique attribute: the prophet and son of Amoz (2KI 19:2)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  2KI 20  |  9 tagged verses | 2KI 20:1, 2KI 20:4, 2KI 20:7, 2KI 20:8, 2KI 20:9, 2KI 20:11, 2KI 20:14, 2KI 20:16, 2KI 20:19
+  2KI 19  |  4 tagged verses | 2KI 19:2, 2KI 19:5, 2KI 19:6, 2KI 19:20
+  ISA 37  |  4 tagged verses | ISA 37:2, ISA 37:5, ISA 37:6, ISA 37:21
+  ISA 38  |  3 tagged verses | ISA 38:1, ISA 38:4, ISA 38:21
+  ISA 39  |  3 tagged verses | ISA 39:3, ISA 39:5, ISA 39:8
+  JHN 12  |  3 tagged verses | JHN 12:38, JHN 12:39, JHN 12:41
+  2CH 32  |  2 tagged verses | 2CH 32:20, 2CH 32:32
+  ACT 8   |  2 tagged verses | ACT 8:28, ACT 8:30
+  ISA 20  |  2 tagged verses | ISA 20:2, ISA 20:3
+  ROM 9   |  2 tagged verses | ROM 9:27, ROM 9:29
+  2CH 26  |  1 tagged verses | 2CH 26:22
+  ISA 1   |  1 tagged verses | ISA 1:1
+
+================================================================================
+Mordecai | Mordecai_2
+Reference count: 50
+Unique attribute: a Jew who lived in Susa (EST 2:5)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  EST 4   | 11 tagged verses | EST 4:1, EST 4:4, EST 4:5, EST 4:6, EST 4:7, EST 4:9, EST 4:10, EST 4:12, EST 4:13, EST 4:15, EST 4:17
+  EST 2   |  9 tagged verses | EST 2:5, EST 2:7, EST 2:10, EST 2:11, EST 2:15, EST 2:19, EST 2:20, EST 2:21, EST 2:22
+  EST 6   |  7 tagged verses | EST 6:2, EST 6:3, EST 6:4, EST 6:10, EST 6:11, EST 6:12, EST 6:13
+  EST 9   |  6 tagged verses | EST 9:3, EST 9:4, EST 9:20, EST 9:23, EST 9:29, EST 9:31
+  EST 3   |  5 tagged verses | EST 3:2, EST 3:3, EST 3:4, EST 3:5, EST 3:6
+  EST 8   |  5 tagged verses | EST 8:1, EST 8:2, EST 8:7, EST 8:9, EST 8:15
+  EST 5   |  3 tagged verses | EST 5:9, EST 5:13, EST 5:14
+  EST 7   |  2 tagged verses | EST 7:9, EST 7:10
+  EST 10  |  2 tagged verses | EST 10:2, EST 10:3
+
+================================================================================
+Sarai | Sarai_1
+Reference count: 48
+Unique attribute: Abram's wife (11:29)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 18  |  8 tagged verses | GEN 18:6, GEN 18:9, GEN 18:10, GEN 18:11, GEN 18:12, GEN 18:13, GEN 18:14, GEN 18:15
+  GEN 21  |  7 tagged verses | GEN 21:1, GEN 21:2, GEN 21:3, GEN 21:6, GEN 21:7, GEN 21:9, GEN 21:12
+  GEN 16  |  6 tagged verses | GEN 16:1, GEN 16:2, GEN 16:3, GEN 16:5, GEN 16:6, GEN 16:8
+  GEN 17  |  4 tagged verses | GEN 17:15, GEN 17:17, GEN 17:19, GEN 17:21
+  GEN 20  |  4 tagged verses | GEN 20:2, GEN 20:14, GEN 20:16, GEN 20:18
+  GEN 11  |  3 tagged verses | GEN 11:29, GEN 11:30, GEN 11:31
+  GEN 12  |  3 tagged verses | GEN 12:5, GEN 12:11, GEN 12:17
+  GEN 23  |  3 tagged verses | GEN 23:1, GEN 23:2, GEN 23:19
+  GEN 24  |  2 tagged verses | GEN 24:36, GEN 24:67
+  GEN 25  |  2 tagged verses | GEN 25:10, GEN 25:12
+  1PE 3   |  1 tagged verses | 1PE 3:6
+  GEN 49  |  1 tagged verses | GEN 49:31
+
+================================================================================
+Laban | Laban_1
+Reference count: 47
+Unique attribute: brother of Rebekah (GEN 24:29)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 31  | 18 tagged verses | GEN 31:1, GEN 31:2, GEN 31:12, GEN 31:19, GEN 31:20, GEN 31:22, GEN 31:24, GEN 31:25, GEN 31:26, GEN 31:31, GEN 31:33, GEN 31:34, GEN 31:36, GEN 31:43, GEN 31:47, GEN 31:48, GEN 31:51, GEN 31:55
+  GEN 29  | 13 tagged verses | GEN 29:5, GEN 29:10, GEN 29:13, GEN 29:14, GEN 29:15, GEN 29:16, GEN 29:19, GEN 29:21, GEN 29:22, GEN 29:24, GEN 29:25, GEN 29:26, GEN 29:29
+  GEN 30  |  6 tagged verses | GEN 30:25, GEN 30:27, GEN 30:34, GEN 30:36, GEN 30:40, GEN 30:42
+  GEN 24  |  3 tagged verses | GEN 24:29, GEN 24:32, GEN 24:50
+  GEN 28  |  2 tagged verses | GEN 28:2, GEN 28:5
+  GEN 46  |  2 tagged verses | GEN 46:18, GEN 46:25
+  GEN 25  |  1 tagged verses | GEN 25:20
+  GEN 27  |  1 tagged verses | GEN 27:43
+  GEN 32  |  1 tagged verses | GEN 32:4
+
+================================================================================
+Noah | Noah_1
+Reference count: 47
+Unique attribute: son of Lamech (GEN 5:28-29)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 7   |  9 tagged verses | GEN 7:1, GEN 7:5, GEN 7:6, GEN 7:7, GEN 7:9, GEN 7:11, GEN 7:13, GEN 7:15, GEN 7:23
+  GEN 9   |  9 tagged verses | GEN 9:1, GEN 9:8, GEN 9:17, GEN 9:18, GEN 9:19, GEN 9:20, GEN 9:24, GEN 9:28, GEN 9:29
+  GEN 8   |  7 tagged verses | GEN 8:1, GEN 8:6, GEN 8:11, GEN 8:13, GEN 8:15, GEN 8:18, GEN 8:20
+  GEN 6   |  5 tagged verses | GEN 6:8, GEN 6:9, GEN 6:10, GEN 6:13, GEN 6:22
+  GEN 5   |  3 tagged verses | GEN 5:29, GEN 5:30, GEN 5:32
+  EZK 14  |  2 tagged verses | EZK 14:14, EZK 14:20
+  GEN 10  |  2 tagged verses | GEN 10:1, GEN 10:32
+  LUK 17  |  2 tagged verses | LUK 17:26, LUK 17:27
+  MAT 24  |  2 tagged verses | MAT 24:37, MAT 24:38
+  1CH 1   |  1 tagged verses | 1CH 1:4
+  1PE 3   |  1 tagged verses | 1PE 3:20
+  2PE 2   |  1 tagged verses | 2PE 2:5
+
+================================================================================
+Jehu | Jehu_2
+Reference count: 46
+Unique attribute: anointed king over Israel (1KI 19:16) at the direction of Elisha (2KI 9:1-3)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  2KI 10  | 18 tagged verses | 2KI 10:1, 2KI 10:5, 2KI 10:11, 2KI 10:13, 2KI 10:18, 2KI 10:19, 2KI 10:20, 2KI 10:21, 2KI 10:23, 2KI 10:24, 2KI 10:25, 2KI 10:28, 2KI 10:29, 2KI 10:30, 2KI 10:31, 2KI 10:34, 2KI 10:35, 2KI 10:36
+  2KI 9   | 17 tagged verses | 2KI 9:2, 2KI 9:5, 2KI 9:11, 2KI 9:13, 2KI 9:14, 2KI 9:15, 2KI 9:16, 2KI 9:17, 2KI 9:18, 2KI 9:19, 2KI 9:20, 2KI 9:21, 2KI 9:22, 2KI 9:24, 2KI 9:27, 2KI 9:30, 2KI 9:31
+  2CH 22  |  3 tagged verses | 2CH 22:7, 2CH 22:8, 2CH 22:9
+  1KI 19  |  2 tagged verses | 1KI 19:16, 1KI 19:17
+  2CH 25  |  1 tagged verses | 2CH 25:17
+  2KI 12  |  1 tagged verses | 2KI 12:1
+  2KI 13  |  1 tagged verses | 2KI 13:1
+  2KI 14  |  1 tagged verses | 2KI 14:8
+  2KI 15  |  1 tagged verses | 2KI 15:12
+  HOS 1   |  1 tagged verses | HOS 1:4
+
+================================================================================
+Gad | Gad_1
+Reference count: 45
+Unique attribute: seventh-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah's handmaid
+Tribe: Gad
+Notes: 
+
+Strongest chapters:
+  JOS 22  | 12 tagged verses | JOS 22:9, JOS 22:10, JOS 22:11, JOS 22:13, JOS 22:15, JOS 22:21, JOS 22:25, JOS 22:30, JOS 22:31, JOS 22:32, JOS 22:33, JOS 22:34
+  NUM 32  |  8 tagged verses | NUM 32:1, NUM 32:2, NUM 32:6, NUM 32:25, NUM 32:29, NUM 32:31, NUM 32:33, NUM 32:34
+  NUM 1   |  3 tagged verses | NUM 1:14, NUM 1:24, NUM 1:25
+  1CH 6   |  2 tagged verses | 1CH 6:63, 1CH 6:80
+  JOS 13  |  2 tagged verses | JOS 13:24, JOS 13:28
+  JOS 21  |  2 tagged verses | JOS 21:7, JOS 21:38
+  1CH 2   |  1 tagged verses | 1CH 2:2
+  1CH 5   |  1 tagged verses | 1CH 5:11
+  1CH 12  |  1 tagged verses | 1CH 12:14
+  EXO 1   |  1 tagged verses | EXO 1:4
+  GEN 30  |  1 tagged verses | GEN 30:11
+  GEN 35  |  1 tagged verses | GEN 35:26
