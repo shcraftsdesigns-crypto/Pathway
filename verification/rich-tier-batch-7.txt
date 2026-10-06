@@ -1,0 +1,190 @@
+=== PATHWAY RICH-TIER BATCH 7 EVIDENCE ===
+
+================================================================================
+Kohath | Kohath_1
+Reference count: 29
+Unique attribute: son of Levi (GEN 46:11)
+Tribe: Levi
+Notes: from the list of "sons of Israel" who "went to Egypt" (GEN 46:8-27), the Kohathites (NUM 26:57)
+
+Strongest chapters:
+  1CH 6   |  9 tagged verses | 1CH 6:1, 1CH 6:2, 1CH 6:16, 1CH 6:18, 1CH 6:22, 1CH 6:38, 1CH 6:61, 1CH 6:66, 1CH 6:70
+  NUM 3   |  4 tagged verses | NUM 3:17, NUM 3:19, NUM 3:27, NUM 3:29
+  JOS 21  |  3 tagged verses | JOS 21:5, JOS 21:20, JOS 21:26
+  NUM 4   |  3 tagged verses | NUM 4:2, NUM 4:4, NUM 4:15
+  1CH 23  |  2 tagged verses | 1CH 23:6, 1CH 23:12
+  EXO 6   |  2 tagged verses | EXO 6:16, EXO 6:18
+  NUM 26  |  2 tagged verses | NUM 26:57, NUM 26:58
+  1CH 15  |  1 tagged verses | 1CH 15:5
+  GEN 46  |  1 tagged verses | GEN 46:11
+  NUM 7   |  1 tagged verses | NUM 7:9
+  NUM 16  |  1 tagged verses | NUM 16:1
+
+================================================================================
+Mary | Mary_1
+Reference count: 29
+Unique attribute: wife of Joseph, and mother of the Messiah (MAT 1:16)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  LUK 1   |  8 tagged verses | LUK 1:27, LUK 1:30, LUK 1:34, LUK 1:38, LUK 1:39, LUK 1:41, LUK 1:46, LUK 1:56
+  LUK 2   |  4 tagged verses | LUK 2:5, LUK 2:16, LUK 2:19, LUK 2:34
+  MAT 1   |  4 tagged verses | MAT 1:16, MAT 1:18, MAT 1:20, MAT 1:24
+  JHN 2   |  2 tagged verses | JHN 2:1, JHN 2:3
+  MAT 27  |  2 tagged verses | MAT 27:56, MAT 27:61
+  MRK 15  |  2 tagged verses | MRK 15:40, MRK 15:47
+  ACT 1   |  1 tagged verses | ACT 1:14
+  LUK 24  |  1 tagged verses | LUK 24:10
+  MAT 2   |  1 tagged verses | MAT 2:11
+  MAT 13  |  1 tagged verses | MAT 13:55
+  MAT 28  |  1 tagged verses | MAT 28:1
+  MRK 6   |  1 tagged verses | MRK 6:3
+
+================================================================================
+Philip | Philip_1
+Reference count: 29
+Unique attribute: disciple of the Messiah (MAT 10:3)
+Tribe: 
+Notes: one of the Twelve (MAT 10:2), from the city of Bethsaida (JHN 1:44) of Galilee (JHN 12:21)
+
+Strongest chapters:
+  ACT 8   | 14 tagged verses | ACT 8:5, ACT 8:6, ACT 8:12, ACT 8:13, ACT 8:26, ACT 8:29, ACT 8:30, ACT 8:31, ACT 8:34, ACT 8:35, ACT 8:37, ACT 8:38, ACT 8:39, ACT 8:40
+  JHN 1   |  5 tagged verses | JHN 1:43, JHN 1:44, JHN 1:45, JHN 1:46, JHN 1:48
+  JHN 6   |  2 tagged verses | JHN 6:5, JHN 6:7
+  JHN 12  |  2 tagged verses | JHN 12:21, JHN 12:22
+  JHN 14  |  2 tagged verses | JHN 14:8, JHN 14:9
+  ACT 1   |  1 tagged verses | ACT 1:13
+  LUK 6   |  1 tagged verses | LUK 6:14
+  MAT 10  |  1 tagged verses | MAT 10:3
+  MRK 3   |  1 tagged verses | MRK 3:18
+
+================================================================================
+Joseph | Joseph_12
+Reference count: 28
+Unique attribute: a Levite of Cyprian birth (ACT 4:36)
+Tribe: Levi
+Notes: 
+
+Strongest chapters:
+  ACT 15  |  8 tagged verses | ACT 15:2, ACT 15:12, ACT 15:22, ACT 15:25, ACT 15:35, ACT 15:36, ACT 15:37, ACT 15:39
+  ACT 13  |  7 tagged verses | ACT 13:1, ACT 13:2, ACT 13:7, ACT 13:42, ACT 13:43, ACT 13:46, ACT 13:50
+  ACT 14  |  3 tagged verses | ACT 14:12, ACT 14:14, ACT 14:20
+  GAL 2   |  3 tagged verses | GAL 2:1, GAL 2:9, GAL 2:13
+  ACT 11  |  2 tagged verses | ACT 11:22, ACT 11:30
+  1CO 9   |  1 tagged verses | 1CO 9:6
+  ACT 4   |  1 tagged verses | ACT 4:36
+  ACT 9   |  1 tagged verses | ACT 9:27
+  ACT 12  |  1 tagged verses | ACT 12:25
+  COL 4   |  1 tagged verses | COL 4:10
+
+================================================================================
+Caleb | Caleb_1
+Reference count: 27
+Unique attribute: 1 of the 12 spies- from Judah (NUM 13:6)
+Tribe: Judah
+Notes: 1 of 12 spies- from Judah
+
+Strongest chapters:
+  JDG 1   |  5 tagged verses | JDG 1:12, JDG 1:13, JDG 1:14, JDG 1:15, JDG 1:20
+  JOS 15  |  5 tagged verses | JOS 15:13, JOS 15:14, JOS 15:16, JOS 15:17, JOS 15:18
+  NUM 14  |  4 tagged verses | NUM 14:6, NUM 14:24, NUM 14:30, NUM 14:38
+  JOS 14  |  3 tagged verses | JOS 14:6, JOS 14:13, JOS 14:14
+  NUM 13  |  2 tagged verses | NUM 13:6, NUM 13:30
+  1CH 4   |  1 tagged verses | 1CH 4:15
+  1CH 6   |  1 tagged verses | 1CH 6:56
+  DEU 1   |  1 tagged verses | DEU 1:36
+  JDG 3   |  1 tagged verses | JDG 3:9
+  JOS 21  |  1 tagged verses | JOS 21:12
+  NUM 26  |  1 tagged verses | NUM 26:65
+  NUM 32  |  1 tagged verses | NUM 32:12
+
+================================================================================
+Asher | Asher_1
+Reference count: 26
+Unique attribute: eighth-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah's handmaid
+Tribe: Asher
+Notes: 
+
+Strongest chapters:
+  NUM 1   |  3 tagged verses | NUM 1:13, NUM 1:40, NUM 1:41
+  NUM 26  |  3 tagged verses | NUM 26:44, NUM 26:46, NUM 26:47
+  1CH 6   |  2 tagged verses | 1CH 6:62, 1CH 6:74
+  1CH 7   |  2 tagged verses | 1CH 7:30, 1CH 7:40
+  JOS 19  |  2 tagged verses | JOS 19:24, JOS 19:31
+  JOS 21  |  2 tagged verses | JOS 21:6, JOS 21:30
+  1CH 2   |  1 tagged verses | 1CH 2:2
+  EXO 1   |  1 tagged verses | EXO 1:4
+  GEN 30  |  1 tagged verses | GEN 30:13
+  GEN 35  |  1 tagged verses | GEN 35:26
+  GEN 46  |  1 tagged verses | GEN 46:17
+  GEN 49  |  1 tagged verses | GEN 49:20
+
+================================================================================
+Baasha | Baasha_1
+Reference count: 26
+Unique attribute: King of Israel (1KI 15:16)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  1KI 16  | 10 tagged verses | 1KI 16:1, 1KI 16:3, 1KI 16:4, 1KI 16:5, 1KI 16:6, 1KI 16:7, 1KI 16:8, 1KI 16:11, 1KI 16:12, 1KI 16:13
+  1KI 15  |  9 tagged verses | 1KI 15:16, 1KI 15:17, 1KI 15:19, 1KI 15:21, 1KI 15:22, 1KI 15:27, 1KI 15:28, 1KI 15:32, 1KI 15:33
+  2CH 16  |  4 tagged verses | 2CH 16:1, 2CH 16:3, 2CH 16:5, 2CH 16:6
+  1KI 21  |  1 tagged verses | 1KI 21:22
+  2KI 9   |  1 tagged verses | 2KI 9:9
+  JER 41  |  1 tagged verses | JER 41:9
+
+================================================================================
+Gedaliah | Gedaliah_1
+Reference count: 26
+Unique attribute: son of Ahikam, appointed King of Judah by Nebuchadnezzar (2KI 25:22)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  JER 40  | 11 tagged verses | JER 40:5, JER 40:6, JER 40:7, JER 40:8, JER 40:9, JER 40:11, JER 40:12, JER 40:13, JER 40:14, JER 40:15, JER 40:16
+  JER 41  |  9 tagged verses | JER 41:1, JER 41:2, JER 41:3, JER 41:4, JER 41:6, JER 41:9, JER 41:10, JER 41:16, JER 41:18
+  2KI 25  |  4 tagged verses | 2KI 25:22, 2KI 25:23, 2KI 25:24, 2KI 25:25
+  JER 39  |  1 tagged verses | JER 39:14
+  JER 43  |  1 tagged verses | JER 43:6
+
+================================================================================
+Herod | Herod_2
+Reference count: 26
+Unique attribute: the tetrarch (MAT 14:1)
+Tribe: Edom
+Notes: Herod Antipas, tetrarch of Gailiea and Perea
+
+Strongest chapters:
+  MRK 6   |  7 tagged verses | MRK 6:14, MRK 6:16, MRK 6:17, MRK 6:18, MRK 6:20, MRK 6:21, MRK 6:22
+  LUK 23  |  5 tagged verses | LUK 23:7, LUK 23:8, LUK 23:11, LUK 23:12, LUK 23:15
+  MAT 14  |  4 tagged verses | MAT 14:1, MAT 14:3, MAT 14:5, MAT 14:6
+  LUK 3   |  3 tagged verses | LUK 3:1, LUK 3:19, LUK 3:20
+  LUK 9   |  2 tagged verses | LUK 9:7, LUK 9:9
+  ACT 4   |  1 tagged verses | ACT 4:27
+  ACT 13  |  1 tagged verses | ACT 13:1
+  LUK 8   |  1 tagged verses | LUK 8:3
+  LUK 13  |  1 tagged verses | LUK 13:31
+  MRK 8   |  1 tagged verses | MRK 8:15
+
+================================================================================
+James | James_1
+Reference count: 26
+Unique attribute: son of Zebedee (MAT 4:21)
+Tribe: 
+Notes: fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2)
+
+Strongest chapters:
+  ACT 12  |  2 tagged verses | ACT 12:2, ACT 12:17
+  GAL 2   |  2 tagged verses | GAL 2:9, GAL 2:12
+  LUK 9   |  2 tagged verses | LUK 9:28, LUK 9:54
+  MRK 1   |  2 tagged verses | MRK 1:19, MRK 1:29
+  MRK 10  |  2 tagged verses | MRK 10:35, MRK 10:41
+  1CO 15  |  1 tagged verses | 1CO 15:7
+  ACT 1   |  1 tagged verses | ACT 1:13
+  ACT 15  |  1 tagged verses | ACT 15:13
+  ACT 21  |  1 tagged verses | ACT 21:18
+  GAL 1   |  1 tagged verses | GAL 1:19
+  LUK 5   |  1 tagged verses | LUK 5:10
+  LUK 6   |  1 tagged verses | LUK 6:14
