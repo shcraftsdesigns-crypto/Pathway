@@ -1,0 +1,19 @@
+=== PATHWAY LIMITED + SINGLE TIER AUDIT ===
+
+Validated LIMITED identities: 1098
+Generated LIMITED IDs: 1098
+Unique LIMITED IDs: 1098
+
+Validated SINGLE identities: 1514
+Generated SINGLE IDs: 1514
+Unique SINGLE IDs: 1514
+
+Combined identities: 2612
+Cross-tier overlap: 0
+
+Evidence-tier meaning:
+LIMITED = background + appearances + reflection
+SINGLE = concise identity + passage + reflection
+
+=== RESULT ===
+PASS

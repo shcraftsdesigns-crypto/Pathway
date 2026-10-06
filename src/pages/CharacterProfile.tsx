@@ -14,6 +14,10 @@ import { collectReferences, formatReference } from '@/lib/scripture'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import { UNIVERSAL_STUDY_AREAS } from '@/data/studyAreas'
 import { isModerateCharacter } from '@/data/moderateCharacters.generated'
+import {
+  isLimitedCharacter,
+  isSingleCharacter,
+} from '@/data/evidenceTiers.generated'
 import type { ScriptureReference } from '@/types'
 
 const INITIAL_REFERENCE_LIMIT = 24
@@ -37,6 +41,75 @@ function getStudyAreaDescription(
   return `${STUDY_AREA_DESCRIPTIONS[area]} Study ${name}'s referenced passages carefully.`
 }
 
+
+
+function getLimitedStudyAreas(
+  name: string,
+  references: ScriptureReference[],
+) {
+  return [
+    {
+      id: 'background',
+      title: 'Background',
+      description:
+        `Establish what Scripture explicitly tells us about ${name}. ` +
+        'Keep identity, family, role, place, and historical context ' +
+        'limited to what the verified passages support.',
+      scriptureReferences: references.slice(0, 4),
+    },
+    {
+      id: 'biblical-appearances',
+      title: 'Biblical Appearances',
+      description:
+        `Read the verified appearances connected to ${name}. ` +
+        'Distinguish direct activity from genealogical, relational, ' +
+        'tribal, territorial, or later mentions.',
+      scriptureReferences: references,
+    },
+    {
+      id: 'reflection',
+      title: 'Reflection',
+      description:
+        `What can be learned from the passages that mention ${name}? ` +
+        'Avoid conclusions about motives, character, or events that ' +
+        'the biblical text does not establish.',
+      scriptureReferences: references.slice(0, 4),
+    },
+  ]
+}
+
+function getSingleStudyAreas(
+  name: string,
+  references: ScriptureReference[],
+) {
+  return [
+    {
+      id: 'identity',
+      title: 'Identity',
+      description:
+        `Scripture gives limited information about ${name}. ` +
+        'Use the verified passage to identify this person without ' +
+        'adding details that the text does not provide.',
+      scriptureReferences: references,
+    },
+    {
+      id: 'biblical-passage',
+      title: 'Biblical Passage',
+      description:
+        `Read ${name}'s verified biblical reference in its surrounding ` +
+        'context to understand why this person is mentioned.',
+      scriptureReferences: references,
+    },
+    {
+      id: 'reflection',
+      title: 'Reflection',
+      description:
+        `Reflect only on what the passage actually establishes about ` +
+        `${name} and the larger biblical context.`,
+      scriptureReferences: references,
+    },
+  ]
+}
 
 function getModerateStudyAreas(
   name: string,
@@ -139,7 +212,11 @@ export default function CharacterProfile() {
       ? c.studyAreas
       : isModerateCharacter(c.id)
         ? getModerateStudyAreas(c.name, references)
-        : undefined
+        : isLimitedCharacter(c.id)
+          ? getLimitedStudyAreas(c.name, references)
+          : isSingleCharacter(c.id)
+            ? getSingleStudyAreas(c.name, references)
+            : undefined
 
   const visibleReferences = showAllReferences
     ? references

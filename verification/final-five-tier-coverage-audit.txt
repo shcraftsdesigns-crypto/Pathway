@@ -1,0 +1,40 @@
+=== PATHWAY COMPLETE 2,922-CHARACTER AUDIT ===
+
+=== DATABASE ===
+Inventory rows: 2922
+Unique inventory IDs: 2922
+Verified generated IDs: 2922
+
+=== CANONICAL EVIDENCE TIERS ===
+EXTENSIVE: 20
+RICH: 84
+MODERATE: 206
+LIMITED: 1098
+SINGLE: 1514
+TOTAL: 2922
+Cross-tier overlaps: 0
+
+=== STUDY TREATMENTS ===
+Jesus custom EXTENSIVE profile: PASS
+Handcrafted build() profiles: 104
+  EXTENSIVE/RICH build profiles: 103
+  MODERATE handcrafted profiles: 1
+Generated MODERATE: 205
+Generated LIMITED: 1098
+Generated SINGLE: 1514
+
+=== COVERAGE ===
+Total treated identities: 2922
+Untreated identities: 0
+Multiple-treatment identities: 0
+Extra treatment IDs: 0
+
+=== SPECIAL IDENTITIES ===
+Jesus_Christ = EXTENSIVE + custom Jesus study architecture
+Ruth_1 = MODERATE + existing handcrafted profile
+
+=== ERRORS ===
+NONE
+
+=== FINAL RESULT ===
+PASS
