@@ -1,0 +1,132 @@
+=== PATHWAY RICH-TIER BATCH 6 SCRIPTURE AUDIT ===
+
+================================================================================
+Leah | Leah_1
+PASS   | Introduced as Laban’s daughter | Genesis 29:16-17 | exact-ID tagged at verse(s): 16, 17
+PASS   | Given to Jacob as wife | Genesis 29:21-25 | exact-ID tagged at verse(s): 23, 24, 25
+PASS   | Leah and Rachel in Jacob’s household | Genesis 29:28-31 | exact-ID tagged at verse(s): 30, 31
+PASS   | Birth of Reuben | Genesis 29:31-32 | exact-ID tagged at verse(s): 31, 32
+PASS   | Further children | Genesis 29:31-35 | exact-ID tagged at verse(s): 31, 32
+PASS   | Leah bears Issachar and Zebulun | Genesis 30:17-20 | exact-ID tagged at verse(s): 17, 18, 19, 20
+PASS   | Consulted about leaving Laban | Genesis 31:4-16 | exact-ID tagged at verse(s): 4, 14
+PASS   | Meets Esau’s household | Genesis 33:1-7 | exact-ID tagged at verse(s): 1, 2, 7
+PASS   | Burial place remembered | Genesis 49:29-31 | exact-ID tagged at verse(s): 31
+
+================================================================================
+Sihon | Sihon_1
+PASS   | Israel requests passage | Numbers 21:21-22 | exact-ID tagged at verse(s): 21
+PASS   | Sihon refuses passage | Numbers 21:23 | exact-ID tagged at verse(s): 23
+PASS   | Defeated by Israel | Numbers 21:23-26 | exact-ID tagged at verse(s): 23, 26
+PASS   | Former conquest remembered | Numbers 21:26-30 | exact-ID tagged at verse(s): 26, 27, 28, 29
+PASS   | Moses recalls approaching Sihon | Deuteronomy 2:24-29 | exact-ID tagged at verse(s): 24, 26
+PASS   | Sihon refuses | Deuteronomy 2:30 | exact-ID tagged at verse(s): 30
+PASS   | Comes out to battle | Deuteronomy 2:32-33 | exact-ID tagged at verse(s): 32
+PASS   | Defeat remembered in Joshua | Joshua 12:1-3 | exact-ID tagged at verse(s): 2
+
+================================================================================
+Eli | Eli_1
+PASS   | Encounters Hannah | 1 Samuel 1:9-14 | exact-ID tagged at verse(s): 9, 12, 13, 14
+PASS   | Blesses Hannah | 1 Samuel 1:15-17 | exact-ID tagged at verse(s): 17
+PASS   | Samuel brought to Eli | 1 Samuel 1:24-28 | exact-ID tagged at verse(s): 25
+PASS   | Samuel ministers before Eli | 1 Samuel 2:11 | exact-ID tagged at verse(s): 11
+PASS   | Confronts his sons | 1 Samuel 2:22-25 | exact-ID tagged at verse(s): 22
+PASS   | Judgment announced to Eli | 1 Samuel 2:27-36 | exact-ID tagged at verse(s): 27
+PASS   | Samuel hears God’s call | 1 Samuel 3:1-9 | exact-ID tagged at verse(s): 1, 2, 5, 6, 8, 9
+PASS   | Receives Samuel’s message | 1 Samuel 3:15-18 | exact-ID tagged at verse(s): 15, 16
+PASS   | Learns the ark is captured | 1 Samuel 4:13-18 | exact-ID tagged at verse(s): 13, 14, 15, 16, 18
+PASS   | Death of Eli | 1 Samuel 4:18 | exact-ID tagged at verse(s): 18
+
+================================================================================
+Simeon | Simeon_1
+PASS   | Birth of Simeon | Genesis 29:33 | exact-ID tagged at verse(s): 33
+PASS   | Named among Jacob’s sons | Genesis 35:23-26 | exact-ID tagged at verse(s): 23
+PASS   | Attacks Shechem with Levi | Genesis 34:25 | exact-ID tagged at verse(s): 25
+PASS   | Jacob condemns their action | Genesis 34:30 | exact-ID tagged at verse(s): 30
+PASS   | Detained by Joseph | Genesis 42:24 | exact-ID tagged at verse(s): 24
+PASS   | Jacob recalls Simeon’s detention | Genesis 42:36 | exact-ID tagged at verse(s): 36
+PASS   | Family line recorded | Genesis 46:8-10 | exact-ID tagged at verse(s): 10
+PASS   | Jacob speaks of Simeon and Levi | Genesis 49:5-7 | exact-ID tagged at verse(s): 5
+
+================================================================================
+Ahasuerus | Ahasuerus_1
+PASS   | Royal banquet | Esther 1:1-9 | exact-ID tagged at verse(s): 1, 2, 9
+PASS   | Vashti refuses the king | Esther 1:10-12 | exact-ID tagged at verse(s): 10
+PASS   | Vashti loses her position | Esther 1:15-22 | exact-ID tagged at verse(s): 15, 16, 17, 19
+PASS   | Esther brought to the king | Esther 2:16-18 | exact-ID tagged at verse(s): 16
+PASS   | Mordecai’s service recorded | Esther 2:21-23 | exact-ID tagged at verse(s): 21
+PASS   | Haman promoted | Esther 3:1 | exact-ID tagged at verse(s): 1
+PASS   | Haman receives authority for his plot | Esther 3:8-12 | exact-ID tagged at verse(s): 8, 12
+PASS   | Esther exposes Haman | Esther 7:1-7 | exact-ID tagged at verse(s): 5
+PASS   | Haman executed | Esther 7:5-10 | exact-ID tagged at verse(s): 5
+PASS   | Esther and Mordecai receive authority | Esther 8:1-8 | exact-ID tagged at verse(s): 1, 7
+PASS   | Mordecai elevated | Esther 10:1-3 | exact-ID tagged at verse(s): 1, 3
+
+================================================================================
+Nathan | Nathan_2
+PASS   | David speaks to Nathan about the temple | 2 Samuel 7:1-3 | exact-ID tagged at verse(s): 2, 3
+PASS   | Receives God’s word | 2 Samuel 7:4-17 | exact-ID tagged at verse(s): 4, 17
+PASS   | Confronts David with a parable | 2 Samuel 12:1-6 | exact-ID tagged at verse(s): 1, 5
+PASS   | Declares David’s guilt | 2 Samuel 12:7-12 | exact-ID tagged at verse(s): 7
+PASS   | David confesses | 2 Samuel 12:13-15 | exact-ID tagged at verse(s): 13, 15
+PASS   | Names Solomon Jedidiah | 2 Samuel 12:24-25 | exact-ID tagged at verse(s): 25
+PASS   | Warns Bathsheba about Adonijah | 1 Kings 1:10-14 | exact-ID tagged at verse(s): 10, 11
+PASS   | Speaks to David about the succession | 1 Kings 1:22-27 | exact-ID tagged at verse(s): 22, 23, 24
+PASS   | Called for Solomon’s anointing | 1 Kings 1:32-35 | exact-ID tagged at verse(s): 32, 34
+PASS   | Participates in Solomon’s installation | 1 Kings 1:38-45 | exact-ID tagged at verse(s): 38, 44, 45
+
+================================================================================
+Nun | Nun_1
+PASS   | Father of Joshua | Exodus 33:11 | exact-ID tagged at verse(s): 11
+PASS   | Joshua identified during the spy mission | Numbers 13:8-16 | exact-ID tagged at verse(s): 8, 16
+PASS   | Joshua’s faithfulness remembered | Numbers 14:6-9 | exact-ID tagged at verse(s): 6
+PASS   | Joshua appointed to succeed Moses | Deuteronomy 31:23 | exact-ID tagged at verse(s): 23
+PASS   | Genealogical line recorded | 1 Chronicles 7:20-27 | exact-ID tagged at verse(s): 27
+
+================================================================================
+Rebekah | Rebekah_1
+PASS   | Family background | Genesis 22:20-23 | exact-ID tagged at verse(s): 23
+PASS   | Meets Abraham’s servant | Genesis 24:15-27 | exact-ID tagged at verse(s): 15
+PASS   | Family considers the marriage | Genesis 24:29-51 | exact-ID tagged at verse(s): 29, 30, 45, 51
+PASS   | Chooses to leave | Genesis 24:53-61 | exact-ID tagged at verse(s): 53, 58, 59, 60, 61
+PASS   | Becomes Isaac’s wife | Genesis 24:62-67 | exact-ID tagged at verse(s): 64, 67
+PASS   | Isaac prays for Rebekah | Genesis 25:20-21 | exact-ID tagged at verse(s): 20, 21
+PASS   | Mother of Esau and Jacob | Genesis 25:22-28 | exact-ID tagged at verse(s): 28
+PASS   | Overhears Isaac’s plan | Genesis 27:1-6 | exact-ID tagged at verse(s): 5, 6
+PASS   | Directs Jacob in the blessing plan | Genesis 27:6-17 | exact-ID tagged at verse(s): 6, 11, 15
+PASS   | Warns Jacob about Esau | Genesis 27:41-46 | exact-ID tagged at verse(s): 42, 46
+PASS   | Burial place remembered | Genesis 49:29-31 | exact-ID tagged at verse(s): 31
+
+================================================================================
+Abiathar | Abiathar_1
+PASS   | Escapes the massacre at Nob | 1 Samuel 22:20-23 | exact-ID tagged at verse(s): 20, 21, 22
+PASS   | Brings the ephod to David | 1 Samuel 23:6 | exact-ID tagged at verse(s): 6
+PASS   | David consults through Abiathar | 1 Samuel 23:9-12 | exact-ID tagged at verse(s): 9
+PASS   | Consulted after Ziklag | 1 Samuel 30:7-8 | exact-ID tagged at verse(s): 7
+PASS   | With the ark during David’s flight | 2 Samuel 15:24-29 | exact-ID tagged at verse(s): 24, 27, 29
+PASS   | Serves David through his son | 2 Samuel 15:35-36 | exact-ID tagged at verse(s): 35, 36
+PASS   | Supports Adonijah | 1 Kings 1:5-7 | exact-ID tagged at verse(s): 7
+PASS   | Excluded from Solomon’s installation | 1 Kings 1:19-26 | exact-ID tagged at verse(s): 19, 25
+PASS   | Removed from priestly office | 1 Kings 2:26-27 | exact-ID tagged at verse(s): 26, 27
+PASS   | Zadok appointed in his place | 1 Kings 2:35 | exact-ID tagged at verse(s): 35
+
+================================================================================
+Ben-hadad | Ben-hadad_1
+PASS   | Receives Asa’s treasures | 1 Kings 15:18-20 | exact-ID tagged at verse(s): 18, 20
+PASS   | Besieges Samaria | 1 Kings 20:1-2 | exact-ID tagged at verse(s): 1, 2
+PASS   | Sends demands to Ahab | 1 Kings 20:2-10 | exact-ID tagged at verse(s): 2, 5, 9, 10
+PASS   | First battle against Israel | 1 Kings 20:16-21 | exact-ID tagged at verse(s): 16, 17, 20
+PASS   | Plans another campaign | 1 Kings 20:22-26 | exact-ID tagged at verse(s): 22, 23, 26
+PASS   | Defeated at Aphek | 1 Kings 20:26-30 | exact-ID tagged at verse(s): 26, 30
+PASS   | Seeks mercy from Ahab | 1 Kings 20:31-33 | exact-ID tagged at verse(s): 32, 33
+PASS   | Aram later fights Israel | 2 Kings 6:8-12 | exact-ID tagged at verse(s): 8, 11
+PASS   | Besieges Samaria again | 2 Kings 6:24 | exact-ID tagged at verse(s): 24
+PASS   | Ill during Elisha’s visit to Damascus | 2 Kings 8:7-9 | exact-ID tagged at verse(s): 7, 9
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 92
+PASS: 92
+REVIEW: 0
+Result: ALL EVENTS HAVE EXACT-ID SUPPORT

@@ -1,0 +1,191 @@
+=== PATHWAY RICH-TIER BATCH 6 EVIDENCE ===
+
+================================================================================
+Leah | Leah_1
+Reference count: 32
+Unique attribute: daughter of Laban (GEN 29:16) and wife of Jacob (GEN 29:23)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 30  | 11 tagged verses | GEN 30:9, GEN 30:10, GEN 30:11, GEN 30:12, GEN 30:13, GEN 30:14, GEN 30:16, GEN 30:17, GEN 30:18, GEN 30:19, GEN 30:20
+  GEN 29  |  8 tagged verses | GEN 29:16, GEN 29:17, GEN 29:23, GEN 29:24, GEN 29:25, GEN 29:30, GEN 29:31, GEN 29:32
+  GEN 31  |  3 tagged verses | GEN 31:4, GEN 31:14, GEN 31:33
+  GEN 33  |  3 tagged verses | GEN 33:1, GEN 33:2, GEN 33:7
+  GEN 35  |  2 tagged verses | GEN 35:23, GEN 35:26
+  GEN 46  |  2 tagged verses | GEN 46:15, GEN 46:18
+  GEN 34  |  1 tagged verses | GEN 34:1
+  GEN 49  |  1 tagged verses | GEN 49:31
+  RUT 4   |  1 tagged verses | RUT 4:11
+
+================================================================================
+Sihon | Sihon_1
+Reference count: 32
+Unique attribute: King of the Amorites (NUM 21:21)
+Tribe: Amorite
+Notes: during the time of the Exodus
+
+Strongest chapters:
+  NUM 21  |  7 tagged verses | NUM 21:21, NUM 21:23, NUM 21:26, NUM 21:27, NUM 21:28, NUM 21:29, NUM 21:34
+  DEU 2   |  4 tagged verses | DEU 2:24, DEU 2:26, DEU 2:30, DEU 2:32
+  JDG 11  |  3 tagged verses | JDG 11:19, JDG 11:20, JDG 11:21
+  JOS 13  |  3 tagged verses | JOS 13:10, JOS 13:21, JOS 13:27
+  DEU 3   |  2 tagged verses | DEU 3:2, DEU 3:6
+  JOS 12  |  2 tagged verses | JOS 12:2, JOS 12:5
+  1KI 4   |  1 tagged verses | 1KI 4:19
+  DEU 1   |  1 tagged verses | DEU 1:4
+  DEU 4   |  1 tagged verses | DEU 4:46
+  DEU 29  |  1 tagged verses | DEU 29:7
+  DEU 31  |  1 tagged verses | DEU 31:4
+  JOS 2   |  1 tagged verses | JOS 2:10
+
+================================================================================
+Eli | Eli_1
+Reference count: 31
+Unique attribute: priest of Israel in Shiloh (1SA 1:3)
+Tribe: Levi
+Notes: 
+
+Strongest chapters:
+  1SA 3   | 10 tagged verses | 1SA 3:1, 1SA 3:2, 1SA 3:5, 1SA 3:6, 1SA 3:8, 1SA 3:9, 1SA 3:12, 1SA 3:14, 1SA 3:15, 1SA 3:16
+  1SA 1   |  7 tagged verses | 1SA 1:3, 1SA 1:9, 1SA 1:12, 1SA 1:13, 1SA 1:14, 1SA 1:17, 1SA 1:25
+  1SA 4   |  7 tagged verses | 1SA 4:4, 1SA 4:11, 1SA 4:13, 1SA 4:14, 1SA 4:15, 1SA 4:16, 1SA 4:18
+  1SA 2   |  5 tagged verses | 1SA 2:11, 1SA 2:12, 1SA 2:20, 1SA 2:22, 1SA 2:27
+  1KI 2   |  1 tagged verses | 1KI 2:27
+  1SA 14  |  1 tagged verses | 1SA 14:3
+
+================================================================================
+Simeon | Simeon_1
+Reference count: 31
+Unique attribute: second-born son of Jacob (GEN 29:33), son of Leah
+Tribe: Simeon
+Notes: 
+
+Strongest chapters:
+  JOS 19  |  3 tagged verses | JOS 19:1, JOS 19:8, JOS 19:9
+  NUM 1   |  3 tagged verses | NUM 1:6, NUM 1:22, NUM 1:23
+  1CH 4   |  2 tagged verses | 1CH 4:24, 1CH 4:42
+  GEN 34  |  2 tagged verses | GEN 34:25, GEN 34:30
+  GEN 42  |  2 tagged verses | GEN 42:24, GEN 42:36
+  1CH 2   |  1 tagged verses | 1CH 2:1
+  1CH 6   |  1 tagged verses | 1CH 6:65
+  1CH 12  |  1 tagged verses | 1CH 12:25
+  EXO 1   |  1 tagged verses | EXO 1:2
+  EXO 6   |  1 tagged verses | EXO 6:15
+  GEN 29  |  1 tagged verses | GEN 29:33
+  GEN 35  |  1 tagged verses | GEN 35:23
+
+================================================================================
+Ahasuerus | Ahasuerus_1
+Reference count: 30
+Unique attribute: King of Persia (EZR 4:6)
+Tribe: 
+Notes: This is the same person in Esther 1:1 and Daniel 9:1
+
+Strongest chapters:
+  EST 1   |  8 tagged verses | EST 1:1, EST 1:2, EST 1:9, EST 1:10, EST 1:15, EST 1:16, EST 1:17, EST 1:19
+  EST 3   |  5 tagged verses | EST 3:1, EST 3:6, EST 3:7, EST 3:8, EST 3:12
+  EST 2   |  4 tagged verses | EST 2:1, EST 2:12, EST 2:16, EST 2:21
+  EST 8   |  4 tagged verses | EST 8:1, EST 8:7, EST 8:10, EST 8:12
+  EST 9   |  3 tagged verses | EST 9:2, EST 9:20, EST 9:30
+  EST 10  |  2 tagged verses | EST 10:1, EST 10:3
+  DAN 9   |  1 tagged verses | DAN 9:1
+  EST 6   |  1 tagged verses | EST 6:2
+  EST 7   |  1 tagged verses | EST 7:5
+  EZR 4   |  1 tagged verses | EZR 4:6
+
+================================================================================
+Nathan | Nathan_2
+Reference count: 30
+Unique attribute: the prophet (2SA 7:2)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  1KI 1   | 11 tagged verses | 1KI 1:8, 1KI 1:10, 1KI 1:11, 1KI 1:22, 1KI 1:23, 1KI 1:24, 1KI 1:32, 1KI 1:34, 1KI 1:38, 1KI 1:44, 1KI 1:45
+  2SA 12  |  6 tagged verses | 2SA 12:1, 2SA 12:5, 2SA 12:7, 2SA 12:13, 2SA 12:15, 2SA 12:25
+  1CH 17  |  4 tagged verses | 1CH 17:1, 1CH 17:2, 1CH 17:3, 1CH 17:15
+  2SA 7   |  4 tagged verses | 2SA 7:2, 2SA 7:3, 2SA 7:4, 2SA 7:17
+  1CH 29  |  1 tagged verses | 1CH 29:29
+  2CH 9   |  1 tagged verses | 2CH 9:29
+  2CH 29  |  1 tagged verses | 2CH 29:25
+  PSA 51  |  1 tagged verses | PSA 51:0
+  ZEC 12  |  1 tagged verses | ZEC 12:12
+
+================================================================================
+Nun | Nun_1
+Reference count: 30
+Unique attribute: father of Joshua (EXO 33:11)
+Tribe: Ephraim
+Notes: 
+
+Strongest chapters:
+  NUM 14  |  3 tagged verses | NUM 14:6, NUM 14:30, NUM 14:38
+  JOS 2   |  2 tagged verses | JOS 2:1, JOS 2:23
+  JOS 19  |  2 tagged verses | JOS 19:49, JOS 19:51
+  NUM 13  |  2 tagged verses | NUM 13:8, NUM 13:16
+  NUM 32  |  2 tagged verses | NUM 32:12, NUM 32:28
+  1CH 7   |  1 tagged verses | 1CH 7:27
+  1KI 16  |  1 tagged verses | 1KI 16:34
+  DEU 1   |  1 tagged verses | DEU 1:38
+  DEU 31  |  1 tagged verses | DEU 31:23
+  DEU 32  |  1 tagged verses | DEU 32:44
+  DEU 34  |  1 tagged verses | DEU 34:9
+  EXO 33  |  1 tagged verses | EXO 33:11
+
+================================================================================
+Rebekah | Rebekah_1
+Reference count: 30
+Unique attribute: daughter of Bethuel, grandaughter of Nahor (GEN 22:23)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN 24  | 12 tagged verses | GEN 24:15, GEN 24:29, GEN 24:30, GEN 24:45, GEN 24:51, GEN 24:53, GEN 24:58, GEN 24:59, GEN 24:60, GEN 24:61, GEN 24:64, GEN 24:67
+  GEN 27  |  6 tagged verses | GEN 27:5, GEN 27:6, GEN 27:11, GEN 27:15, GEN 27:42, GEN 27:46
+  GEN 25  |  3 tagged verses | GEN 25:20, GEN 25:21, GEN 25:28
+  GEN 26  |  3 tagged verses | GEN 26:7, GEN 26:8, GEN 26:35
+  GEN 22  |  1 tagged verses | GEN 22:23
+  GEN 28  |  1 tagged verses | GEN 28:5
+  GEN 29  |  1 tagged verses | GEN 29:12
+  GEN 35  |  1 tagged verses | GEN 35:8
+  GEN 49  |  1 tagged verses | GEN 49:31
+  ROM 9   |  1 tagged verses | ROM 9:10
+
+================================================================================
+Abiathar | Abiathar_1
+Reference count: 29
+Unique attribute: son of Ahimelech, the priest (1SA 22:20), counselor to David (1CH 27:34)
+Tribe: Levi
+Notes: 
+
+Strongest chapters:
+  2SA 15  |  5 tagged verses | 2SA 15:24, 2SA 15:27, 2SA 15:29, 2SA 15:35, 2SA 15:36
+  1KI 1   |  4 tagged verses | 1KI 1:7, 1KI 1:19, 1KI 1:25, 1KI 1:42
+  1KI 2   |  4 tagged verses | 1KI 2:22, 1KI 2:26, 1KI 2:27, 1KI 2:35
+  1SA 22  |  3 tagged verses | 1SA 22:20, 1SA 22:21, 1SA 22:22
+  1SA 23  |  2 tagged verses | 1SA 23:6, 1SA 23:9
+  1CH 15  |  1 tagged verses | 1CH 15:11
+  1CH 18  |  1 tagged verses | 1CH 18:16
+  1CH 24  |  1 tagged verses | 1CH 24:6
+  1CH 27  |  1 tagged verses | 1CH 27:34
+  1KI 4   |  1 tagged verses | 1KI 4:4
+  1SA 30  |  1 tagged verses | 1SA 30:7
+  2SA 8   |  1 tagged verses | 2SA 8:17
+
+================================================================================
+Ben-hadad | Ben-hadad_1
+Reference count: 29
+Unique attribute: King of Aram (1KI 15:18)
+Tribe: 
+Notes: the king whom Naaman served (2KI 5:1), King Asa supported (1KI 15:18), and who warred against Ahab (1KI 20:12)
+
+Strongest chapters:
+  1KI 20  | 14 tagged verses | 1KI 20:1, 1KI 20:2, 1KI 20:5, 1KI 20:9, 1KI 20:10, 1KI 20:16, 1KI 20:17, 1KI 20:20, 1KI 20:22, 1KI 20:23, 1KI 20:26, 1KI 20:30, 1KI 20:32, 1KI 20:33
+  2CH 16  |  3 tagged verses | 2CH 16:2, 2CH 16:4, 2CH 16:7
+  2KI 6   |  3 tagged verses | 2KI 6:8, 2KI 6:11, 2KI 6:24
+  1KI 15  |  2 tagged verses | 1KI 15:18, 1KI 15:20
+  1KI 22  |  2 tagged verses | 1KI 22:3, 1KI 22:31
+  2KI 5   |  2 tagged verses | 2KI 5:1, 2KI 5:5
+  2KI 8   |  2 tagged verses | 2KI 8:7, 2KI 8:9
+  2CH 18  |  1 tagged verses | 2CH 18:30
