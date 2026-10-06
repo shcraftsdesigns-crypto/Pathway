@@ -86,7 +86,7 @@ export const characters: BiblicalCharacter[] = [
   build({ id: 'Daniel_2', name: 'Daniel', slug: 'daniel', alt: ['Belteshazzar'], t: 'Old Testament', cats: ['Prophets'], subtitle: 'Exile in Babylon',
     desc: 'A faithful exile who served in Babylon and received visions.', key: ref('Daniel', 6),
     bio: 'Daniel was taken to Babylon and served in the royal courts while remaining faithful to God.',
-    tl: [['Taken into exile', 'Daniel is taken to Babylon.', ref('Daniel', 1)], ['Interprets a dream', "Daniel explains Nebuchadnezzar's dream.", ref('Daniel', 2)], ['Fiery furnace', "Daniel's companions refuse to worship an image.", ref('Daniel', 3)], ["The lions' den", 'Daniel is delivered.', ref('Daniel', 6)]] }),
+    tl: [['Taken into exile', 'Daniel is taken to Babylon.', ref('Daniel', 1)], ['Interprets a dream', "Daniel explains Nebuchadnezzar's dream.", ref('Daniel', 2)], ["The lions' den", 'Daniel is delivered.', ref('Daniel', 6)], ['Receives visions', 'Daniel receives visions concerning kingdoms and events to come.', ref('Daniel', 7)]] }),
   build({ id: 'Simon_1', name: 'Peter', slug: 'peter', alt: ['Simon', 'Cephas'], t: 'New Testament', cats: ['Apostles', 'Disciples'], subtitle: 'Fisherman turned apostle',
     desc: 'One of Jesus’ closest disciples, a leader of the early church.', key: ref('Matthew', 16, 13, 20),
     bio: 'Peter appears throughout the Gospels and the early chapters of Acts.',
