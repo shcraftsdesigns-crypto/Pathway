@@ -1,0 +1,110 @@
+=== PATHWAY RICH-TIER BATCH 2 SCRIPTURE AUDIT ===
+
+================================================================================
+Benjamin | Benjamin_1
+PASS   | Birth of Benjamin | Genesis 35:16-20 | exact-ID tagged at verse(s): 18
+PASS   | Jacob is asked to send Benjamin | Genesis 43:1-14 | exact-ID tagged at verse(s): 14
+PASS   | Benjamin meets Joseph | Genesis 43:15-34 | exact-ID tagged at verse(s): 15, 16, 29, 34
+PASS   | Joseph tests his brothers concerning Benjamin | Genesis 44:1-17 | exact-ID tagged at verse(s): 12
+PASS   | Joseph embraces Benjamin | Genesis 45:12-15 | exact-ID tagged at verse(s): 12, 14
+PASS   | Benjamin receives gifts | Genesis 45:21-24 | exact-ID tagged at verse(s): 22
+PASS   | Jacob blesses Benjamin | Genesis 49:27 | exact-ID tagged at verse(s): 27
+
+================================================================================
+Ben-ammi | Ben-ammi_1
+PASS   | Birth of Ben-ammi | Genesis 19:30-38 | exact-ID tagged at verse(s): 38
+
+================================================================================
+Manasseh | Manasseh_1
+PASS   | Birth of Manasseh | Genesis 41:50-52 | exact-ID tagged at verse(s): 51
+PASS   | Brought before Jacob | Genesis 48:1-12 | exact-ID tagged at verse(s): 1, 5
+PASS   | Jacob crosses his hands | Genesis 48:13-20 | exact-ID tagged at verse(s): 13, 14, 17, 20
+
+================================================================================
+Eleazar | Eleazar_1
+PASS   | Named among Aaron’s sons | Exodus 6:23-25 | exact-ID tagged at verse(s): 23, 25
+PASS   | Continues priestly service | Leviticus 10:6-20 | exact-ID tagged at verse(s): 6, 12, 16
+PASS   | Handles material from Korah’s rebellion | Numbers 16:36-40 | exact-ID tagged at verse(s): 37, 39
+PASS   | Receives purification instructions | Numbers 19:1-10 | exact-ID tagged at verse(s): 3, 4
+PASS   | Succeeds Aaron | Numbers 20:22-29 | exact-ID tagged at verse(s): 25, 26, 28
+PASS   | Participates in the census | Numbers 26:1-4 | exact-ID tagged at verse(s): 1, 3
+PASS   | Joshua presented before Eleazar | Numbers 27:18-23 | exact-ID tagged at verse(s): 19, 21, 22
+PASS   | Addresses returning soldiers | Numbers 31:21-24 | exact-ID tagged at verse(s): 21
+PASS   | Participates in land distribution | Joshua 14:1-5 | exact-ID tagged at verse(s): 1
+PASS   | Death of Eleazar | Joshua 24:33 | exact-ID tagged at verse(s): 33
+
+================================================================================
+Reuben | Reuben_1
+PASS   | Birth of Reuben | Genesis 29:31-32 | exact-ID tagged at verse(s): 32
+PASS   | Finds mandrakes | Genesis 30:14-16 | exact-ID tagged at verse(s): 14
+PASS   | Incident involving Bilhah | Genesis 35:21-23 | exact-ID tagged at verse(s): 22, 23
+PASS   | Attempts to rescue Joseph | Genesis 37:18-30 | exact-ID tagged at verse(s): 21, 22, 29
+PASS   | Reminds his brothers concerning Joseph | Genesis 42:21-22 | exact-ID tagged at verse(s): 22
+PASS   | Offers his sons as security | Genesis 42:35-38 | exact-ID tagged at verse(s): 37
+PASS   | Travels to Egypt | Genesis 46:8-9 | exact-ID tagged at verse(s): 8, 9
+PASS   | Jacob speaks concerning Reuben | Genesis 49:3-4 | exact-ID tagged at verse(s): 3
+
+================================================================================
+Balaam | Balaam_1
+PASS   | Balak sends for Balaam | Numbers 22:1-14 | exact-ID tagged at verse(s): 5, 7, 8, 9, 10, 12, 13, 14
+PASS   | Further messengers arrive | Numbers 22:15-21 | exact-ID tagged at verse(s): 16, 18, 20, 21
+PASS   | Balaam and his donkey | Numbers 22:22-35 | exact-ID tagged at verse(s): 23, 25, 27, 28, 29, 30, 31, 34, 35
+PASS   | Meets Balak | Numbers 22:36-41 | exact-ID tagged at verse(s): 36, 37, 38, 39, 40, 41
+PASS   | First oracle | Numbers 23:1-12 | exact-ID tagged at verse(s): 1, 2, 3, 4, 5, 11
+PASS   | Further oracle | Numbers 23:13-26 | exact-ID tagged at verse(s): 16, 25, 26
+PASS   | Further attempts to curse Israel | Numbers 23:27-30 | exact-ID tagged at verse(s): 27, 28, 29, 30
+PASS   | Balaam blesses Israel | Numbers 24:1-9 | exact-ID tagged at verse(s): 1, 2, 3
+PASS   | Final oracles and departure | Numbers 24:10-25 | exact-ID tagged at verse(s): 10, 12, 15, 25
+PASS   | Death of Balaam | Numbers 31:7-8 | exact-ID tagged at verse(s): 8
+
+================================================================================
+Levi | Levi_1
+PASS   | Birth of Levi | Genesis 29:31-34 | exact-ID tagged at verse(s): 34
+PASS   | Violence at Shechem | Genesis 34:25-31 | exact-ID tagged at verse(s): 25, 30
+PASS   | Travels to Egypt | Genesis 46:8-11 | exact-ID tagged at verse(s): 11
+PASS   | Jacob speaks concerning Simeon and Levi | Genesis 49:5-7 | exact-ID tagged at verse(s): 5
+
+================================================================================
+Josiah | Josiah_1
+PASS   | Becomes king | 2 Kings 22:1-2 | exact-ID tagged at verse(s): 1
+PASS   | Temple repair | 2 Kings 22:3-7 | exact-ID tagged at verse(s): 3
+PASS-EXCEPTION | Book of the Law found | 2 Kings 22:8-13 | documented narrative-context support
+PASS   | Seeks the Lord concerning the book | 2 Kings 22:14-20 | exact-ID tagged at verse(s): 16, 18
+PASS-EXCEPTION | Covenant renewal | 2 Kings 23:1-3 | documented narrative-context support
+PASS   | Carries out reforms | 2 Kings 23:4-20 | exact-ID tagged at verse(s): 16, 19
+PASS   | Celebrates Passover | 2 Kings 23:21-23 | exact-ID tagged at verse(s): 23
+PASS   | Killed after confronting Neco | 2 Chronicles 35:20-24 | exact-ID tagged at verse(s): 20, 21, 22, 23, 24
+PASS   | Mourning for Josiah | 2 Chronicles 35:24-25 | exact-ID tagged at verse(s): 24, 25
+
+================================================================================
+Asa | Asa_1
+PASS   | Becomes king of Judah | 1 Kings 15:9-15 | exact-ID tagged at verse(s): 9, 11, 13, 14
+PASS   | Conflict with Zerah | 2 Chronicles 14:8-15 | exact-ID tagged at verse(s): 8, 10, 11, 12, 13
+PASS   | Responds to prophetic encouragement | 2 Chronicles 15:1-8 | exact-ID tagged at verse(s): 2, 8
+PASS   | Covenant renewal | 2 Chronicles 15:9-15 | exact-ID tagged at verse(s): 10
+PASS   | Removes Maacah from her position | 2 Chronicles 15:16-19 | exact-ID tagged at verse(s): 16, 17, 19
+PASS   | Conflict with Baasha | 2 Chronicles 16:1-6 | exact-ID tagged at verse(s): 1, 2, 4, 6
+PASS   | Rebuked by Hanani | 2 Chronicles 16:7-10 | exact-ID tagged at verse(s): 7, 10
+PASS   | Illness and death | 2 Chronicles 16:11-14 | exact-ID tagged at verse(s): 11, 12, 13
+
+================================================================================
+Pilate | Pilate_1
+PASS   | Named as governor | Luke 3:1 | exact-ID tagged at verse(s): 1
+PASS   | Jesus brought before Pilate | Luke 23:1-5 | exact-ID tagged at verse(s): 1, 3, 4
+PASS   | Sends Jesus to Herod | Luke 23:6-12 | exact-ID tagged at verse(s): 6, 11, 12
+PASS   | Questions Jesus | John 18:28-38 | exact-ID tagged at verse(s): 29, 31, 33, 35, 37, 38
+PASS   | Jesus returned to Pilate | Luke 23:13-25 | exact-ID tagged at verse(s): 13, 20, 24
+PASS   | Jesus handed over for crucifixion | Mark 15:6-15 | exact-ID tagged at verse(s): 9, 12, 14, 15
+PASS   | Inscription placed on the cross | John 19:19-22 | exact-ID tagged at verse(s): 19, 21, 22
+PASS   | Joseph requests Jesus’ body | Mark 15:42-45 | exact-ID tagged at verse(s): 43, 44
+PASS   | Tomb is secured | Matthew 27:62-66 | exact-ID tagged at verse(s): 62, 65
+
+================================================================================
+SUMMARY
+Profiles requested: 10
+Profiles found: 10
+Timeline events checked: 69
+PASS: 67
+DOCUMENTED EXCEPTIONS: 2
+REVIEW: 0
+Result: PASS — 67 exact-ID events + 2 documented narrative-context exceptions
