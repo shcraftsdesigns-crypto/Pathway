@@ -1,0 +1,966 @@
+
+================================================================================
+src/types/index.ts
+================================================================================
+export const CHARACTER_CATEGORIES = ['Kings', 'Prophets', 'Women', 'Apostles', 'Disciples', 'Leaders', 'Patriarchs', 'Judges', 'Other'] as const
+export type CharacterCategory = (typeof CHARACTER_CATEGORIES)[number]
+
+export const TESTAMENTS = ['Old Testament', 'New Testament'] as const
+export type Testament = (typeof TESTAMENTS)[number]
+
+export interface ScriptureReference {
+  book: string
+  chapter: number
+  verseStart?: number
+  verseEnd?: number
+}
+
+export interface TimelineEvent {
+  id: string
+  title: string
+  description: string
+  scriptureReferences: ScriptureReference[]
+}
+
+export interface CharacterRelationship {
+  id: string
+  relatedName: string
+  relatedSlug?: string
+  relationshipType: string
+  description: string
+  scriptureReferences: ScriptureReference[]
+}
+
+export interface CharacterStudyArea {
+  id: string
+  title: string
+  description: string
+  scriptureReferences: ScriptureReference[]
+}
+
+export interface BiblicalCharacter {
+  id: string
+  name: string
+  slug: string
+  alternateNames?: string[]
+  testament: Testament
+  categories: CharacterCategory[]
+  subtitle: string
+  shortDescription: string
+  biography?: string
+  keyScriptures: ScriptureReference[]
+  timeline?: TimelineEvent[]
+  relationships?: CharacterRelationship[]
+  studyAreas?: CharacterStudyArea[]
+  imageUrl?: string
+}
+
+export interface CharacterFilters {
+  query: string
+  testament: Testament | null
+  category: CharacterCategory | null
+}
+
+================================================================================
+src/data/studyAreas.ts
+================================================================================
+export const UNIVERSAL_STUDY_AREAS = [
+  'Background',
+  'Biblical Appearances',
+  'Reflection',
+] as const
+
+export type UniversalStudyArea = (typeof UNIVERSAL_STUDY_AREAS)[number]
+
+================================================================================
+src/data/characters.ts
+================================================================================
+
+--- FIRST 140 LINES ---
+import type { BiblicalCharacter, CharacterCategory, ScriptureReference, Testament, TimelineEvent } from '@/types'
+import { ref } from '@/lib/scripture'
+
+type Ev = [title: string, description: string, reference: ScriptureReference]
+const events = (slug: string, list: Ev[]): TimelineEvent[] =>
+  list.map(([title, description, r], i) => ({ id: `${slug}-${i + 1}`, title, description, scriptureReferences: [r] }))
+
+interface Seed {
+  id: string; name: string; slug: string; alt?: string[]; t: Testament; cats: CharacterCategory[]
+  subtitle: string; desc: string; bio: string; key: ScriptureReference; tl: Ev[]
+}
+const build = (s: Seed): BiblicalCharacter => {
+  const timeline = events(s.slug, s.tl)
+
+  return {
+    id: s.id,
+    name: s.name,
+    slug: s.slug,
+    alternateNames: s.alt,
+    testament: s.t,
+    categories: s.cats,
+    subtitle: s.subtitle,
+    shortDescription: s.desc,
+    biography: s.bio,
+    keyScriptures: [s.key],
+    timeline,
+    studyAreas: [
+      {
+        id: `${s.slug}-background`,
+        title: 'Background',
+        description: `Study ${s.name}'s biblical background and setting from the referenced passages.`,
+        scriptureReferences: [s.key],
+      },
+      {
+        id: `${s.slug}-major-events`,
+        title: 'Major Events',
+        description: `Trace the major recorded events in ${s.name}'s biblical account.`,
+        scriptureReferences: timeline.flatMap((event) => event.scriptureReferences),
+      },
+      {
+        id: `${s.slug}-reflection`,
+        title: 'Reflection',
+        description: `Reflect on what ${s.name}'s biblical account reveals without going beyond what Scripture supports.`,
+        scriptureReferences: [s.key, ...timeline.flatMap((event) => event.scriptureReferences)],
+      },
+    ],
+  }
+}
+
+export const FEATURED_SLUGS = ['david', 'moses', 'esther', 'joseph', 'peter', 'paul']
+
+export const characters: BiblicalCharacter[] = [
+  build({ id: 'Abram_1', name: 'Abraham', slug: 'abraham', alt: ['Abram'], t: 'Old Testament', cats: ['Patriarchs'], subtitle: 'Father of the covenant people',
+    desc: "Called by God to leave his home; recipient of God's covenant promises.", key: ref('Genesis', 12, 1, 3),
+    bio: "Abraham (first called Abram) is introduced in Genesis 11–12 and is central to the story of God's covenant with a chosen people. His journey of trust is traced through Genesis 12–25.",
+    tl: [['Called to leave his homeland', 'God calls Abram to go to a land he will be shown.', ref('Genesis', 12, 1, 3)], ['Covenant promise', 'God makes a covenant with Abram concerning descendants.', ref('Genesis', 15)], ['Birth of Isaac', 'Isaac is born to Abraham and Sarah.', ref('Genesis', 21, 1, 7)], ['Test of faith', 'Abraham is tested regarding Isaac.', ref('Genesis', 22)]] }),
+  build({ id: 'Joseph_1', name: 'Joseph', slug: 'joseph', t: 'Old Testament', cats: ['Patriarchs', 'Leaders'], subtitle: 'Son of Jacob; ruler in Egypt',
+    desc: 'Sold by his brothers, later rose to authority in Egypt and preserved his family.', key: ref('Genesis', 50, 15, 21),
+    bio: "Joseph's story fills much of Genesis 37–50, moving from family conflict to slavery, imprisonment and high office in Egypt.",
+    tl: [['Sold by his brothers', 'Joseph is sold and taken to Egypt.', ref('Genesis', 37)], ['Prison and false accusation', "Joseph serves in Potiphar's house and is imprisoned.", ref('Genesis', 39)], ['Rise to authority', "Joseph interprets Pharaoh's dreams and is placed in charge.", ref('Genesis', 41)], ['Reunion with his family', 'Joseph reveals himself to his brothers.', ref('Genesis', 45)]] }),
+  build({ id: 'Moses_1', name: 'Moses', slug: 'moses', t: 'Old Testament', cats: ['Prophets', 'Leaders'], subtitle: 'Deliverer and lawgiver',
+    desc: 'Led Israel out of Egypt and received the Law at Sinai.', key: ref('Exodus', 3),
+    bio: 'Moses is the central human figure of Exodus through Deuteronomy, associated with the exodus, the covenant at Sinai and the wilderness journey.',
+    tl: [['Born and preserved', "Moses is hidden, then raised in Pharaoh's household.", ref('Exodus', 2)], ['Called at the burning bush', 'God commissions Moses to lead Israel out of Egypt.', ref('Exodus', 3)], ['The exodus', 'Israel is delivered at the sea as it leaves Egypt.', ref('Exodus', 14)], ['The covenant at Sinai', 'Israel comes to Sinai and the covenant is set before them.', ref('Exodus', 19, 1, 6)], ['Looks over the land', 'Moses views the land from Mount Nebo.', ref('Deuteronomy', 34)]] }),
+  build({ id: 'Joshua_1', name: 'Joshua', slug: 'joshua', alt: ['Hoshea'], t: 'Old Testament', cats: ['Leaders'], subtitle: "Moses' successor",
+    desc: "Led Israel into the promised land after Moses' death.", key: ref('Joshua', 1),
+    bio: "Joshua served as Moses' assistant and then led Israel into Canaan, as recorded in the book of Joshua.",
+    tl: [['Sent as a spy', 'Joshua is one of the men sent to explore Canaan.', ref('Numbers', 13)], ['Commissioned to lead', 'Joshua is charged with leading Israel.', ref('Joshua', 1)], ['Crossing the Jordan', 'Israel crosses into the land.', ref('Joshua', 3)], ['Renewing the covenant', 'Joshua calls Israel to serve the Lord.', ref('Joshua', 24)]] }),
+  build({ id: 'Ruth_1', name: 'Ruth', slug: 'ruth', t: 'Old Testament', cats: ['Women'], subtitle: 'A Moabite woman of loyalty',
+    desc: "Remained with Naomi and became part of David's family line.", key: ref('Ruth', 1, 16, 17),
+    bio: "The book of Ruth tells of a Moabite widow who commits herself to Naomi and to Israel's God, and later marries Boaz, who acts as her kinsman-redeemer.",
+    tl: [['Stays with Naomi', 'Ruth chooses to go with Naomi to Bethlehem.', ref('Ruth', 1)], ["Gleans in Boaz's field", 'Ruth gathers grain and meets Boaz.', ref('Ruth', 2)], ['Redemption', 'Boaz acts as kinsman-redeemer.', ref('Ruth', 4, 1, 13)], ['A place in the line of David', "Ruth's descendants include David.", ref('Ruth', 4, 17, 22)]] }),
+  { ...build({ id: 'David_1', name: 'David', slug: 'david', t: 'Old Testament', cats: ['Kings'], subtitle: 'King of Israel · Psalmist',
+    desc: "Shepherd who became Israel's greatest king, known for faith and serious failure.", key: ref('Psalm', 23),
+    bio: "David's life is told mainly in 1 Samuel 16 through 1 Kings 2, and many psalms are attributed to him.",
+    tl: [['Anointed by Samuel', 'Samuel anoints David among his brothers.', ref('1 Samuel', 16)], ['Fought Goliath', 'David faces the Philistine champion.', ref('1 Samuel', 17)], ['Served under Saul', "David enters Saul's service and rises in success and in Saul's jealousy.", ref('1 Samuel', 18, 1, 30)], ['Became king', 'David is anointed king over Israel.', ref('2 Samuel', 5, 1, 5)], ['Captured Jerusalem', 'David takes Jerusalem.', ref('2 Samuel', 5, 6, 10)], ['Personal failure', "David's sin involving Bathsheba and Uriah; Nathan confronts him in chapter 12.", ref('2 Samuel', 11)], ['Family conflict', "Absalom's rebellion.", ref('2 Samuel', 15)], ['Final years', 'David charges Solomon before his death.', ref('1 Kings', 2, 1, 4)]] }),
+    relationships: [
+      { id: 'david-saul', relatedName: 'Saul', relationshipType: 'King he served', description: 'David served in Saul’s court and later fled from him.', scriptureReferences: [ref('1 Samuel', 18, 1, 30), ref('1 Samuel', 19)] },
+      { id: 'david-jonathan', relatedName: 'Jonathan', relationshipType: 'Close friend', description: 'Saul’s son Jonathan formed a covenant of friendship with David.', scriptureReferences: [ref('1 Samuel', 18, 1, 4)] },
+      { id: 'david-solomon', relatedName: 'Solomon', relationshipType: 'Son and successor', description: 'Solomon succeeded David as king.', scriptureReferences: [ref('1 Kings', 1)] },
+    ] },
+  build({ id: 'Hadassah_1', name: 'Esther', slug: 'esther', alt: ['Hadassah'], t: 'Old Testament', cats: ['Women'], subtitle: 'Queen of Persia',
+    desc: 'A Jewish queen who acted to save her people from destruction.', key: ref('Esther', 4, 14),
+    bio: "Esther's story is told in the book of Esther, set in the Persian empire.",
+    tl: [['Chosen as queen', 'Esther becomes queen.', ref('Esther', 2)], ["Haman's plot", 'A decree threatens the Jews.', ref('Esther', 3)], ['Approaches the king', 'Esther risks going to the king.', ref('Esther', 5, 1, 8)], ['Deliverance', 'The plot is reversed.', ref('Esther', 8)]] }),
+  build({ id: 'Daniel_2', name: 'Daniel', slug: 'daniel', alt: ['Belteshazzar'], t: 'Old Testament', cats: ['Prophets'], subtitle: 'Exile in Babylon',
+    desc: 'A faithful exile who served in Babylon and received visions.', key: ref('Daniel', 6),
+    bio: 'Daniel was taken to Babylon and served in the royal courts while remaining faithful to God.',
+    tl: [['Taken into exile', 'Daniel is taken to Babylon.', ref('Daniel', 1)], ['Interprets a dream', "Daniel explains Nebuchadnezzar's dream.", ref('Daniel', 2)], ["The lions' den", 'Daniel is delivered.', ref('Daniel', 6)], ['Receives visions', 'Daniel receives visions concerning kingdoms and events to come.', ref('Daniel', 7)]] }),
+  build({ id: 'Simon_1', name: 'Peter', slug: 'peter', alt: ['Simon', 'Cephas'], t: 'New Testament', cats: ['Apostles', 'Disciples'], subtitle: 'Fisherman turned apostle',
+    desc: 'One of Jesus’ closest disciples, a leader of the early church.', key: ref('Matthew', 16, 13, 20),
+    bio: 'Peter appears throughout the Gospels and the early chapters of Acts.',
+    tl: [['Called by Jesus', 'Simon is called to follow Jesus.', ref('Matthew', 4, 18, 20)], ['Confesses Jesus as Christ', "Peter's confession at Caesarea Philippi.", ref('Matthew', 16, 13, 20)], ['Denies Jesus', 'Peter denies knowing Jesus.', ref('Luke', 22, 54, 62)], ['Recommissioned', 'Jesus asks Peter three times about his love and calls him to follow.', ref('John', 21, 15, 19)], ['Preaches at Pentecost', 'Peter addresses the crowd.', ref('Acts', 2)]] }),
+  build({ id: 'Saul_2', name: 'Paul', slug: 'paul', alt: ['Saul of Tarsus'], t: 'New Testament', cats: ['Apostles'], subtitle: 'Apostle to the Gentiles',
+    desc: 'Former persecutor of the church who became a missionary and writer of letters.', key: ref('Acts', 9),
+    bio: "Paul's story is told in Acts, and his letters make up much of the New Testament.",
+    tl: [['Persecutes the church', "Saul approves of Stephen's death.", ref('Acts', 8, 1, 3)], ['Encounter on the Damascus road', 'Saul meets the risen Jesus.', ref('Acts', 9, 1, 19)], ['First missionary journey', 'Paul and Barnabas are sent out.', ref('Acts', 13)], ['Arrives in Rome', "Paul's journey ends in Rome.", ref('Acts', 28, 16, 31)]] }),
+
+  build({ id: 'Jacob_1', name: 'Jacob', slug: 'jacob', alt: ['Israel'], t: 'Old Testament', cats: ['Patriarchs'], subtitle: 'Son of Isaac · Father of the twelve sons of Israel',
+    desc: 'Son of Isaac who was renamed Israel and became father of the family from which the tribes of Israel descended.', key: ref('Genesis', 32, 28),
+    bio: 'Jacob was the second-born son of Isaac and Rebekah and the twin brother of Esau. Genesis traces his life from conflict within his family through his years with Laban, his return to Canaan, and his later move to Egypt.',
+    tl: [['Birth of Jacob and Esau', 'Jacob is born after his twin brother Esau.', ref('Genesis', 25, 19, 26)], ['Receives Isaac’s blessing', 'Jacob receives the blessing Isaac intended to give Esau.', ref('Genesis', 27)], ['Dream at Bethel', 'Jacob dreams of a stairway reaching toward heaven and receives covenant promises.', ref('Genesis', 28, 10, 22)], ['Family grows in Paddan-aram', 'Jacob marries and his household grows during his years with Laban.', ref('Genesis', 29)], ['Returns toward Canaan', 'Jacob leaves Laban and begins the journey back toward his homeland.', ref('Genesis', 31)], ['Renamed Israel', 'After wrestling through the night, Jacob is given the name Israel.', ref('Genesis', 32, 22, 32)], ['Reconciled with Esau', 'Jacob and Esau meet again after years of separation.', ref('Genesis', 33)], ['Moves to Egypt', 'Jacob travels to Egypt after learning that Joseph is alive.', ref('Genesis', 46)], ['Blesses his sons', 'Jacob speaks concerning his sons before his death.', ref('Genesis', 49)]] }),
+
+  build({ id: 'Saul_1', name: 'Saul', slug: 'saul-1', t: 'Old Testament', cats: ['Kings'], subtitle: 'First king of Israel · Son of Kish',
+    desc: 'Son of Kish from Benjamin who became Israel’s first king.', key: ref('1 Samuel', 10, 1),
+    bio: 'Saul, son of Kish of Benjamin, was chosen and anointed as Israel’s first king. His reign is narrated primarily in 1 Samuel 9–31.',
+    tl: [['Meets Samuel', 'Saul encounters Samuel while searching for his father’s donkeys.', ref('1 Samuel', 9)], ['Anointed by Samuel', 'Samuel anoints Saul and tells him that he will rule Israel.', ref('1 Samuel', 10, 1)], ['Confirmed as king', 'Saul is publicly presented and later confirmed as king.', ref('1 Samuel', 10, 17, 24)], ['Rescues Jabesh-gilead', 'Saul leads Israel against the Ammonites.', ref('1 Samuel', 11)], ['Rebuked after sacrifice', 'Samuel confronts Saul after Saul offers the burnt offering.', ref('1 Samuel', 13, 8, 14)], ['Rejected after Amalek', 'Samuel tells Saul that the Lord has rejected him as king after his disobedience concerning Amalek.', ref('1 Samuel', 15)], ['Conflict with David', 'Saul becomes hostile toward David as David rises in prominence.', ref('1 Samuel', 18)], ['Dies at Mount Gilboa', 'Saul dies during Israel’s battle with the Philistines.', ref('1 Samuel', 31)]] }),
+
+  build({ id: 'Aaron_1', name: 'Aaron', slug: 'aaron', t: 'Old Testament', cats: ['Leaders'], subtitle: 'Brother of Moses · High priest of Israel',
+    desc: 'Brother of Moses who served as spokesman and was appointed to Israel’s priesthood.', key: ref('Exodus', 28, 1),
+    bio: 'Aaron was the brother of Moses from the tribe of Levi. He accompanied Moses before Pharaoh and was appointed with his sons to the priesthood.',
+    tl: [['Called to meet Moses', 'The Lord directs Aaron to meet Moses in the wilderness.', ref('Exodus', 4, 27, 31)], ['Speaks before Pharaoh', 'Aaron accompanies Moses in confronting Pharaoh.', ref('Exodus', 5, 1)], ['Appointed to the priesthood', 'Aaron and his sons are set apart for priestly service.', ref('Exodus', 28, 1)], ['Golden calf', 'Aaron makes the golden calf while Moses is on the mountain.', ref('Exodus', 32, 1, 6)], ['Priestly ministry begins', 'Aaron begins his priestly ministry after consecration.', ref('Leviticus', 9)], ['Miriam and Aaron speak against Moses', 'Aaron and Miriam speak against Moses.', ref('Numbers', 12)], ['Korah’s rebellion and Aaron’s intercession', 'Aaron ministers during the judgment that follows the rebellion.', ref('Numbers', 16, 41, 50)], ['Aaron’s staff buds', 'Aaron’s staff is used as a sign concerning the priesthood.', ref('Numbers', 17)], ['Death on Mount Hor', 'Aaron dies on Mount Hor and Eleazar succeeds him as priest.', ref('Numbers', 20, 22, 29)]] }),
+
+  build({ id: 'Solomon_1', name: 'Solomon', slug: 'solomon', alt: ['Jedidiah'], t: 'Old Testament', cats: ['Kings'], subtitle: 'Son of David · King of Israel',
+    desc: 'Son of David who became king of Israel, built the temple in Jerusalem, and was renowned for wisdom.', key: ref('1 Kings', 3, 5, 14),
+    bio: 'Solomon was a son of David and Bathsheba who succeeded David as king. His reign included the building of the temple, international prominence, and later religious unfaithfulness.',
+    tl: [['Born to David and Bathsheba', 'Solomon is born and is also called Jedidiah.', ref('2 Samuel', 12, 24, 25)], ['Established as king', 'Solomon is established on David’s throne.', ref('1 Kings', 2, 12)], ['Asks for wisdom', 'Solomon asks God for an understanding heart to govern.', ref('1 Kings', 3, 5, 14)], ['Builds the temple', 'Solomon begins and completes the temple in Jerusalem.', ref('1 Kings', 6)], ['Temple dedicated', 'Solomon dedicates the temple and prays before Israel.', ref('1 Kings', 8)], ['Queen of Sheba visits', 'The queen of Sheba comes to test Solomon with difficult questions.', ref('1 Kings', 10, 1, 13)], ['Turns after other gods', 'Solomon’s wives turn his heart toward other gods in his later years.', ref('1 Kings', 11, 1, 13)], ['Death of Solomon', 'Solomon dies after a forty-year reign.', ref('1 Kings', 11, 41, 43)]] }),
+
+  build({ id: 'Nebuchadnezzar_1', name: 'Nebuchadnezzar', slug: 'nebuchadnezzar', t: 'Old Testament', cats: ['Kings'], subtitle: 'King of Babylon',
+    desc: 'King of Babylon associated with the conquest of Judah and prominently featured in the book of Daniel.', key: ref('Daniel', 2, 1),
+    bio: 'Nebuchadnezzar was king of Babylon during the period in which Judah and Jerusalem came under Babylonian domination. He appears prominently in Kings, Chronicles, Jeremiah, Ezekiel and Daniel.',
+    tl: [['Campaigns against Jerusalem', 'Nebuchadnezzar comes against Jerusalem during the Babylonian domination of Judah.', ref('2 Kings', 24)], ['Jerusalem falls', 'Babylon captures Jerusalem and carries people into exile.', ref('2 Kings', 25, 1, 21)], ['Dream of the great image', 'Nebuchadnezzar dreams a troubling dream that Daniel interprets.', ref('Daniel', 2)], ['Golden image', 'Nebuchadnezzar commands worship of a golden image and orders three Jewish exiles into the furnace when they refuse.', ref('Daniel', 3)], ['Dream of the great tree', 'Daniel interprets Nebuchadnezzar’s dream concerning his humiliation.', ref('Daniel', 4, 1, 27)], ['Humbled and restored', 'Nebuchadnezzar is humbled and later acknowledges the King of heaven.', ref('Daniel', 4, 28, 37)]] }),
+
+  build({ id: 'Judah_1', name: 'Judah', slug: 'judah-1', t: 'Old Testament', cats: ['Patriarchs'], subtitle: 'Fourth son of Jacob and Leah',
+    desc: 'Fourth-born son of Jacob and Leah and ancestor of the tribe of Judah.', key: ref('Genesis', 29, 35),
+    bio: 'Judah was the fourth son of Jacob and Leah. Genesis records his role in the Joseph narrative, his family through Tamar, and the blessing Jacob pronounced over him.',
+    tl: [['Birth of Judah', 'Leah gives birth to Judah.', ref('Genesis', 29, 35)], ['Intervenes concerning Joseph', 'Judah proposes selling Joseph rather than killing him.', ref('Genesis', 37, 26, 27)], ['Judah and Tamar', 'Genesis records Judah’s family story involving Tamar.', ref('Genesis', 38)], ['Offers himself for Benjamin', 'Judah appeals to Joseph and offers himself in Benjamin’s place.', ref('Genesis', 44, 18, 34)], ['Sent ahead to Joseph', 'Jacob sends Judah ahead as the family moves toward Egypt.', ref('Genesis', 46, 28)], ['Receives Jacob’s blessing', 'Jacob speaks a prominent blessing concerning Judah.', ref('Genesis', 49, 8, 12)]] }),
+
+  build({ id: 'Jeremiah_6', name: 'Jeremiah', slug: 'jeremiah-6', t: 'Old Testament', cats: ['Prophets'], subtitle: 'Prophet from Anathoth · Son of Hilkiah',
+    desc: 'Prophet from Anathoth who proclaimed the word of the Lord during the final decades of the kingdom of Judah.', key: ref('Jeremiah', 1, 1, 10),
+    bio: 'Jeremiah, son of Hilkiah from Anathoth, served as a prophet during the reigns surrounding Judah’s fall to Babylon. His ministry is recorded primarily in the book bearing his name.',
+    tl: [['Called as a prophet', 'The word of the Lord comes to Jeremiah and commissions him for prophetic ministry.', ref('Jeremiah', 1, 1, 10)], ['Temple message', 'Jeremiah is commanded to proclaim a message at the gate of the Lord’s house.', ref('Jeremiah', 7, 1, 15)], ['Persecuted by Pashhur', 'Jeremiah is struck and put in stocks after prophesying.', ref('Jeremiah', 20, 1, 6)], ['Letter to the exiles', 'Jeremiah sends a letter to the exiles in Babylon.', ref('Jeremiah', 29, 1, 14)], ['Buys a field', 'During the siege, Jeremiah purchases a field as a sign connected with future restoration.', ref('Jeremiah', 32)], ['Imprisoned in a cistern', 'Officials cast Jeremiah into a cistern before he is rescued.', ref('Jeremiah', 38)], ['Jerusalem falls', 'Jeremiah remains amid the events surrounding Jerusalem’s capture.', ref('Jeremiah', 39)], ['Taken toward Egypt', 'Jeremiah is taken with the remnant as they go to Egypt.', ref('Jeremiah', 43, 1, 7)]] }),
+
+  build({ id: 'Ahab_1', name: 'Ahab', slug: 'ahab', t: 'Old Testament', cats: ['Kings'], subtitle: 'Son of Omri · King of Israel',
+    desc: 'King of Israel, husband of Jezebel, whose reign is closely connected with the ministry of Elijah.', key: ref('1 Kings', 16, 29, 33),
+    bio: 'Ahab, son of Omri, ruled the northern kingdom of Israel. First Kings describes his idolatry, his encounters with Elijah, wars with Aram, the case of Naboth’s vineyard, and his death in battle.',
+    tl: [['Becomes king', 'Ahab son of Omri begins his reign over Israel.', ref('1 Kings', 16, 29, 33)], ['Elijah announces drought', 'Elijah tells Ahab that there will be no dew or rain except by his word.', ref('1 Kings', 17, 1)], ['Confrontation at Mount Carmel', 'Ahab witnesses the confrontation involving Elijah and the prophets of Baal.', ref('1 Kings', 18)], ['Wars with Ben-hadad', 'Ahab fights the king of Aram and receives prophetic messages concerning the battles.', ref('1 Kings', 20)], ['Naboth’s vineyard', 'Ahab desires Naboth’s vineyard, and Elijah confronts him after Naboth is killed.', ref('1 Kings', 21)], ['Dies in battle', 'Ahab is wounded and dies during the battle at Ramoth-gilead.', ref('1 Kings', 22, 29, 40)]] }),
+
+  build({ id: 'Joab_1', name: 'Joab', slug: 'joab', t: 'Old Testament', cats: ['Leaders'], subtitle: 'Son of Zeruiah · Commander of David’s army',
+    desc: 'Son of Zeruiah who became commander of David’s army and played a major role throughout David’s reign.', key: ref('2 Samuel', 8, 16),
+
+--- IMPORTANT MATCHES ---
+6:   list.map(([title, description, r], i) => ({ id: `${slug}-${i + 1}`, title, description, scriptureReferences: [r] }))
+12: const build = (s: Seed): BiblicalCharacter => {
+27:     studyAreas: [
+52: export const characters: BiblicalCharacter[] = [
+
+--- LAST 80 LINES ---
+  build({ id: 'Gedaliah_1', name: 'Gedaliah', slug: 'gedaliah-son-of-ahikam', t: 'Old Testament', cats: ['Leaders'], subtitle: 'Son of Ahikam · Governor appointed over Judah',
+    desc: 'Son of Ahikam whom Nebuchadnezzar appointed over the people remaining in Judah after Jerusalem’s fall.', key: ref('2 Kings', 25, 22),
+    bio: 'Gedaliah son of Ahikam was appointed by Nebuchadnezzar over the people left in Judah after Jerusalem fell. He encouraged the survivors to remain in the land and serve the Babylonians. Although warned that Ishmael son of Nethaniah intended to kill him, Gedaliah did not believe the report. Ishmael later came to Mizpah and assassinated him.',
+    tl: [['Appointed over Judah', 'Nebuchadnezzar appoints Gedaliah son of Ahikam over the people remaining in Judah.', ref('2 Kings', 25, 22)], ['Leaders come to Gedaliah', 'Military commanders and their men come to Gedaliah at Mizpah.', ref('2 Kings', 25, 23)], ['Encourages the survivors', 'Gedaliah tells the people not to fear Babylonian officials and urges them to remain in the land.', ref('2 Kings', 25, 24)], ['Jeremiah comes to Gedaliah', 'Jeremiah goes to Gedaliah at Mizpah and lives among the people left in the land.', ref('Jeremiah', 40, 5, 6)], ['Commanders gather at Mizpah', 'Leaders of the forces in the countryside come to Gedaliah.', ref('Jeremiah', 40, 7, 8)], ['Promises security under Babylon', 'Gedaliah urges them to serve the Chaldeans and dwell in the land.', ref('Jeremiah', 40, 9, 12)], ['Warned about Ishmael', 'Johanan and the commanders warn Gedaliah that Ishmael has been sent to kill him.', ref('Jeremiah', 40, 13, 14)], ['Rejects Johanan’s proposal', 'Gedaliah refuses to believe the accusation and forbids Johanan from killing Ishmael.', ref('Jeremiah', 40, 15, 16)], ['Assassinated by Ishmael', 'Ishmael and his companions strike Gedaliah down at Mizpah.', ref('Jeremiah', 41, 1, 3)], ['Death remembered', 'The later narrative refers to Gedaliah’s death and its consequences for the remnant.', ref('Jeremiah', 41, 16, 18)]] }),
+
+  build({ id: 'Herod_2', name: 'Herod Antipas', slug: 'herod-antipas', alt: ['Herod'], t: 'New Testament', cats: ['Kings', 'Leaders'], subtitle: 'Tetrarch of Galilee · Son of Herod the Great',
+    desc: 'Herod Antipas, tetrarch during the ministries of John the Baptist and Jesus, who imprisoned and executed John and later questioned Jesus.', key: ref('Matthew', 14, 1),
+    bio: 'Herod Antipas ruled as tetrarch during the ministries of John the Baptist and Jesus. John rebuked Herod concerning his relationship with Herodias, and Herod imprisoned him. John was eventually executed after Herod made a rash oath at a banquet. Herod later heard reports about Jesus and wondered about his identity. During Jesus’ trial, Pilate sent Jesus to Herod, who questioned and mocked him before returning him to Pilate.',
+    tl: [['Named as tetrarch', 'Herod is identified as tetrarch during the period when John the Baptist began preaching.', ref('Luke', 3, 1)], ['Rebuked by John', 'John rebukes Herod concerning Herodias and other wrongs.', ref('Luke', 3, 19, 20)], ['Imprisons John', 'Herod has John arrested and imprisoned because of Herodias.', ref('Mark', 6, 17, 20)], ['Hears about Jesus', 'Herod hears reports about Jesus and is troubled about who he might be.', ref('Mark', 6, 14, 16)], ['Banquet and oath', 'At Herod’s birthday banquet, Herodias’s daughter dances and Herod makes an oath to her.', ref('Matthew', 14, 6, 9)], ['John executed', 'Herod orders John the Baptist to be beheaded in prison.', ref('Matthew', 14, 6, 12)], ['Perplexed about Jesus', 'Herod hears what Jesus is doing and seeks to see him.', ref('Luke', 9, 7, 9)], ['Jesus sent to Herod', 'Pilate sends Jesus to Herod after learning that Jesus is under Herod’s jurisdiction.', ref('Luke', 23, 6, 8)], ['Questions and mocks Jesus', 'Herod questions Jesus and, with his soldiers, treats him with contempt before sending him back to Pilate.', ref('Luke', 23, 8, 12)], ['Herod and Pilate become friends', 'Herod and Pilate become friends with each other that day.', ref('Luke', 23, 12)]] }),
+
+  build({ id: 'James_1', name: 'James', slug: 'james-son-of-zebedee', t: 'New Testament', cats: ['Apostles', 'Disciples'], subtitle: 'Son of Zebedee · Brother of John · One of the Twelve',
+    desc: 'Fisherman, son of Zebedee and brother of John, whom Jesus called to become one of the Twelve apostles.', key: ref('Matthew', 4, 21, 22),
+    bio: 'James son of Zebedee was a fisherman and the brother of John. Jesus called the brothers while they were with their father and included James among the Twelve. James witnessed events including the transfiguration and was present in the inner circle with Peter and John. He and John also asked for positions of honor. Herod later killed James with the sword.',
+    tl: [['Called from fishing', 'Jesus calls James and John while they are in the boat with Zebedee mending their nets.', ref('Matthew', 4, 21, 22)], ['Named among the Twelve', 'James son of Zebedee is listed among Jesus’ twelve apostles.', ref('Matthew', 10, 2, 4)], ['Present at Peter’s house', 'James and John accompany Jesus and the others to the house of Simon and Andrew.', ref('Mark', 1, 29)], ['Witnesses the transfiguration', 'Jesus takes Peter, John, and James with him to the mountain.', ref('Luke', 9, 28, 36)], ['Wants judgment on a Samaritan village', 'James and John ask whether they should call down fire after a Samaritan village refuses Jesus.', ref('Luke', 9, 51, 55)], ['Asks for a place of honor', 'James and John ask Jesus to grant them seats at his right and left in glory.', ref('Mark', 10, 35, 41)], ['Present after the ascension', 'James is listed among the apostles gathered after Jesus’ ascension.', ref('Acts', 1, 12, 14)], ['Killed by Herod', 'Herod kills James, the brother of John, with the sword.', ref('Acts', 12, 1, 2)]] }),
+
+
+
+  build({ id: 'Jephthah_1', name: 'Jephthah', slug: 'jephthah', t: 'Old Testament', cats: ['Judges', 'Leaders'], subtitle: 'Judge of Israel · Valiant warrior',
+    desc: 'A valiant warrior who became Israel’s leader against the Ammonites and is later remembered among people of faith.', key: ref('Judges', 11, 1),
+    bio: 'Jephthah was a valiant warrior who was driven away by his brothers but later called back by the elders of Gilead when the Ammonites threatened them. After negotiating with the elders, he became their leader. Jephthah sent messages to the Ammonite king, received the Spirit of the Lord, fought the Ammonites, and made a tragic vow. He later faced conflict with the Ephraimites and judged Israel for six years.',
+    tl: [['Introduced as a valiant warrior', 'Jephthah is introduced as a mighty warrior whose family circumstances lead to rejection by his brothers.', ref('Judges', 11, 1, 3)], ['Elders seek his leadership', 'The elders of Gilead ask Jephthah to return and lead them against the Ammonites.', ref('Judges', 11, 5, 8)], ['Becomes head over Gilead', 'Jephthah agrees with the elders and is made head and commander over them.', ref('Judges', 11, 9, 11)], ['Sends message to Ammon', 'Jephthah begins diplomatic exchanges with the king of the Ammonites.', ref('Judges', 11, 12, 15)], ['Spirit of the Lord comes upon him', 'The Spirit of the Lord comes upon Jephthah as he advances toward the Ammonites.', ref('Judges', 11, 28, 29)], ['Makes his vow', 'Jephthah makes a vow before going into battle.', ref('Judges', 11, 30)], ['Defeats the Ammonites', 'Jephthah advances against the Ammonites and the Lord gives them into his hand.', ref('Judges', 11, 32, 33)], ['Returns home', 'Jephthah returns to Mizpah and his daughter comes out to meet him.', ref('Judges', 11, 34, 40)], ['Conflict with Ephraim', 'The Ephraimites confront Jephthah, leading to conflict between them and the Gileadites.', ref('Judges', 12, 1, 4)], ['Death of Jephthah', 'After judging Israel for six years, Jephthah dies and is buried.', ref('Judges', 12, 7)], ['Remembered among people of faith', 'Hebrews includes Jephthah among figures remembered in its survey of faith.', ref('Hebrews', 11, 32)]] }),
+
+  build({ id: 'Joash_3', name: 'Joash', slug: 'joash-king-of-judah', alt: ['Jehoash'], t: 'Old Testament', cats: ['Kings'], subtitle: 'King of Judah · Son of Ahaziah',
+    desc: 'Son of Ahaziah who survived Athaliah’s purge, became king of Judah as a child, and oversaw repairs to the temple.', key: ref('2 Kings', 11, 21),
+    bio: 'Joash, also called Jehoash, was a son of Ahaziah of Judah. He was hidden as a child when Athaliah sought to destroy the royal family. He became king at seven years old and did what was right while Jehoiada the priest instructed him. Joash directed repairs to the temple. Chronicles later records his departure from Jehoiada’s guidance and the killing of Zechariah son of Jehoiada. Joash was eventually assassinated by his servants.',
+    tl: [['Hidden from Athaliah', 'Joash is secretly rescued when Athaliah seeks to destroy the royal family.', ref('2 Kings', 11, 1, 2)], ['Becomes king', 'Joash begins his reign over Judah at seven years old.', ref('2 Kings', 11, 21)], ['Does right under Jehoiada’s instruction', 'Joash does what is right in the Lord’s sight while Jehoiada instructs him.', ref('2 Kings', 12, 1, 2)], ['Orders temple repairs', 'Joash directs the priests concerning money for repairing the temple.', ref('2 Kings', 12, 4, 7)], ['Temple repair system reorganized', 'Joash and Jehoiada establish a different arrangement for collecting and using the repair funds.', ref('2 Kings', 12, 7, 12)], ['Gives treasures to Hazael', 'Joash sends sacred and royal treasures to Hazael king of Aram.', ref('2 Kings', 12, 17, 18)], ['Turns after Jehoiada’s death', 'Chronicles describes Judah’s leaders influencing Joash after Jehoiada dies.', ref('2 Chronicles', 24, 15, 22)], ['Zechariah killed', 'Joash fails to remember Jehoiada’s kindness and orders the death of Jehoiada’s son Zechariah.', ref('2 Chronicles', 24, 20, 22)], ['Wounded during Aramean invasion', 'An Aramean force comes against Joash and leaves him severely wounded.', ref('2 Chronicles', 24, 23, 25)], ['Assassinated by his servants', 'Joash’s servants conspire against him and kill him.', ref('2 Kings', 12, 19, 20)]] }),
+
+  build({ id: 'Timothy_1', name: 'Timothy', slug: 'timothy', t: 'New Testament', cats: ['Disciples', 'Leaders'], subtitle: 'Disciple · Coworker of Paul',
+    desc: 'A disciple with a Jewish mother and Greek father who became a trusted coworker of Paul in the early church.', key: ref('Acts', 16, 1),
+    bio: 'Timothy was a disciple whose mother was Jewish and whose father was Greek. Paul took Timothy with him in ministry, and Timothy became a trusted coworker and messenger. He served alongside Paul, was sent to strengthen believers, and is addressed personally in the letters known as 1 and 2 Timothy.',
+    tl: [['Introduced at Lystra', 'Timothy is introduced as a disciple with a Jewish mother and a Greek father.', ref('Acts', 16, 1)], ['Travels with Paul', 'Paul chooses Timothy to accompany him in ministry.', ref('Acts', 16, 1, 3)], ['Remains behind in Berea', 'Silas and Timothy remain in Berea when Paul is sent away.', ref('Acts', 17, 14, 15)], ['Sent to strengthen Thessalonica', 'Paul sends Timothy to strengthen and encourage the Thessalonian believers.', ref('1 Thessalonians', 3, 1, 2)], ['Returns with news', 'Timothy returns with encouraging news about the Thessalonians’ faith and love.', ref('1 Thessalonians', 3, 6)], ['Called Paul’s beloved and faithful child', 'Paul describes Timothy as his beloved and faithful child in the Lord and sends him to Corinth.', ref('1 Corinthians', 4, 17)], ['Expected at Corinth', 'Paul instructs the Corinthians to receive Timothy without fear if he comes.', ref('1 Corinthians', 16, 10, 11)], ['Named as Paul’s coworker', 'Timothy appears with Paul in the opening of the letter to the Thessalonians.', ref('1 Thessalonians', 1, 1)], ['Addressed as Paul’s true child in faith', 'Paul addresses Timothy personally as his true child in the faith.', ref('1 Timothy', 1, 2)], ['Charged to guard his trust', 'Paul urges Timothy to guard what has been entrusted to him.', ref('1 Timothy', 6, 20)]] }),
+
+  build({ id: 'Ahaziah_2', name: 'Ahaziah', slug: 'ahaziah-king-of-judah', t: 'Old Testament', cats: ['Kings'], subtitle: 'King of Judah · Son of Jehoram',
+    desc: 'Son of Jehoram who became king of Judah and was caught in the judgment that fell on the house of Ahab.', key: ref('2 Kings', 8, 25),
+    bio: 'Ahaziah son of Jehoram became king of Judah after his father. His mother was Athaliah. His reign was closely connected with the house of Ahab, and he joined Joram king of Israel in conflict against Hazael of Aram. Ahaziah later visited the wounded Joram and was killed during Jehu’s revolt.',
+    tl: [['Succeeds Jehoram', 'Ahaziah succeeds his father Jehoram as king of Judah.', ref('2 Kings', 8, 24, 25)], ['Begins his reign', 'Ahaziah is identified as king of Judah and his family connection is recorded.', ref('2 Kings', 8, 25, 26)], ['Joins Joram against Aram', 'Ahaziah goes with Joram of Israel to war against Hazael king of Aram.', ref('2 Chronicles', 22, 5, 6)], ['Visits wounded Joram', 'Ahaziah goes to Jezreel to visit Joram after he is wounded.', ref('2 Chronicles', 22, 6)], ['Caught in Jehu’s judgment', 'Ahaziah’s visit to Joram brings him into the events surrounding Jehu’s revolt.', ref('2 Chronicles', 22, 7, 8)], ['Flees from Jehu', 'Ahaziah flees when Jehu confronts the kings.', ref('2 Kings', 9, 21, 23)], ['Killed during Jehu’s revolt', 'Jehu orders Ahaziah struck as he flees.', ref('2 Kings', 9, 27)], ['Death recorded in Chronicles', 'Chronicles records Ahaziah’s capture, death, and burial.', ref('2 Chronicles', 22, 8, 9)], ['Athaliah acts after his death', 'After seeing that Ahaziah is dead, Athaliah moves against the royal family.', ref('2 Chronicles', 22, 10, 11)]] }),
+
+  build({ id: 'Darius_1', name: 'Darius', slug: 'darius', t: 'Old Testament', cats: ['Kings'], subtitle: 'Ruler named Darius in the biblical record',
+    desc: 'A ruler named Darius whose name appears in biblical accounts connected with Persian rule and in Daniel.', key: ref('Ezra', 6, 1),
+    bio: 'The Pathway source associates this person ID with references to a ruler named Darius in Ezra, Haggai, Zechariah, Nehemiah, and Daniel. Because the biblical books use the name Darius in different historical settings and the source evidence does not by itself resolve every historical identification, this profile does not make a stronger identification than the source supports.',
+    tl: [['Darius named in the Persian-period record', 'Opposition to the rebuilding is described as continuing until the reign of Darius.', ref('Ezra', 4, 5)], ['Work resumes during his reign', 'The rebuilding of the house of God resumes during the reign of Darius.', ref('Ezra', 4, 24)], ['Officials write to Darius', 'Regional officials send a report to Darius concerning the rebuilding work.', ref('Ezra', 5, 5, 7)], ['Orders a search of the archives', 'Darius orders a search for the earlier royal decree concerning the temple.', ref('Ezra', 6, 1)], ['Issues instructions concerning the temple', 'Darius confirms protection and support for the rebuilding work.', ref('Ezra', 6, 6, 12)], ['Temple completed', 'The temple is completed during the reign of Darius.', ref('Ezra', 6, 13, 15)], ['Reign used to date Haggai’s prophecy', 'Haggai dates a prophetic message by the year of King Darius.', ref('Haggai', 1, 1)], ['Reign used to date Zechariah’s prophecy', 'Zechariah dates his prophetic message during the reign of Darius.', ref('Zechariah', 1, 1, 7)], ['Darius named in Daniel', 'Daniel records the accession of Darius the Mede.', ref('Daniel', 5, 31)], ['Daniel serves during his reign', 'Daniel’s account describes Darius organizing his kingdom and later issuing a decree.', ref('Daniel', 6, 1, 9)]] }),
+
+  build({ id: 'Ezra_1', name: 'Ezra', slug: 'ezra-scribe', t: 'Old Testament', cats: ['Leaders'], subtitle: 'Priest and scribe · Skilled in the Law',
+    desc: 'Priest and scribe skilled in the Law of Moses who devoted himself to studying, practicing, and teaching God’s law.', key: ref('Ezra', 7, 6),
+    bio: 'Ezra son of Seraiah was a priest and skilled scribe in the Law of Moses. He came from Babylon to Jerusalem with royal authorization and had devoted himself to studying, doing, and teaching the Law of the Lord. Ezra later led the community in responding to the issue of intermarriage. In Nehemiah, Ezra publicly read the Law before the assembled people.',
+    tl: [['Genealogy introduced', 'Ezra is introduced as the son of Seraiah within a priestly genealogy.', ref('Ezra', 7, 1, 5)], ['Skilled scribe in the Law', 'Ezra is described as a scribe skilled in the Law of Moses.', ref('Ezra', 7, 6)], ['Devoted to study, practice, and teaching', 'Ezra sets his heart to study, practice, and teach the Law of the Lord.', ref('Ezra', 7, 10)], ['Receives royal commission', 'The royal letter addresses Ezra as priest and scribe and gives him authority for his mission.', ref('Ezra', 7, 11, 12)], ['Given authority to appoint officials', 'Ezra is instructed to appoint magistrates and judges according to the wisdom given by God.', ref('Ezra', 7, 25)], ['Prays over the people’s unfaithfulness', 'Ezra responds in prayer and confession as the people gather around him.', ref('Ezra', 10, 1, 2)], ['Calls the people to action', 'Ezra requires the community to address its unfaithfulness.', ref('Ezra', 10, 10, 11)], ['Participates in the investigation', 'Ezra and designated leaders examine the cases concerning foreign marriages.', ref('Ezra', 10, 16)], ['Reads the Law publicly', 'Ezra brings the Law before the assembly and reads it to the people.', ref('Nehemiah', 8, 1, 5)], ['Leads worship around the reading', 'Ezra blesses the Lord and the people respond in worship.', ref('Nehemiah', 8, 5, 6)], ['Meets with family leaders', 'Heads of families, priests, and Levites gather around Ezra to study the words of the Law.', ref('Nehemiah', 8, 13)]] }),
+
+  build({ id: 'Issachar_1', name: 'Issachar', slug: 'issachar-son-of-jacob', t: 'Old Testament', cats: ['Patriarchs'], subtitle: 'Son of Jacob and Leah · Ancestor of the tribe of Issachar',
+    desc: 'Son of Jacob and Leah and ancestor of the Israelite tribe that bore his name.', key: ref('Genesis', 30, 18),
+    bio: 'Issachar was a son of Jacob and Leah. Scripture records his birth and later includes him among Jacob’s sons and among the family that went to Egypt. Jacob spoke concerning Issachar before his death. Many later occurrences of the name refer to the tribe descended from him rather than to Issachar personally.',
+    tl: [['Birth and naming', 'Leah bears Jacob another son and names him Issachar.', ref('Genesis', 30, 17, 18)], ['Named among Jacob’s sons', 'Issachar is included among the sons of Jacob and Leah.', ref('Genesis', 35, 23)], ['Goes to Egypt', 'Issachar and his sons are listed among Jacob’s family in Egypt.', ref('Genesis', 46, 8, 13)], ['Jacob speaks concerning Issachar', 'Jacob speaks concerning Issachar in his final words about his sons.', ref('Genesis', 49, 14, 15)], ['Remembered among Israel’s sons', 'Chronicles includes Issachar among the sons of Israel.', ref('1 Chronicles', 2, 1)]] }),
+
+  build({ id: 'Jehoiada_2', name: 'Jehoiada', slug: 'jehoiada-priest', t: 'Old Testament', cats: ['Leaders'], subtitle: 'Priest · Protector and mentor of Joash',
+    desc: 'Priest who helped preserve Joash, led the overthrow of Athaliah, established a covenant, and guided the young king.', key: ref('2 Kings', 11, 4),
+    bio: 'Jehoiada was the priest who played a central role in preserving the Davidic royal line during Athaliah’s rule. He organized the commanders, brought Joash out, and helped establish him as king. Jehoiada made a covenant between the Lord, the king, and the people and organized temple worship. Joash did what was right while Jehoiada instructed him. Chronicles records Jehoiada’s long life, death, and honored burial.',
+    tl: [['Organizes support for Joash', 'Jehoiada summons commanders and reveals the king’s son to them.', ref('2 Kings', 11, 4)], ['Commands the guards', 'The commanders carry out Jehoiada’s instructions for protecting the young king.', ref('2 Kings', 11, 9)], ['Joash crowned', 'Jehoiada and those with him bring out the king’s son and crown him.', ref('2 Chronicles', 23, 8, 11)], ['Athaliah removed', 'Jehoiada gives orders concerning Athaliah after she enters the temple area.', ref('2 Kings', 11, 15)], ['Makes a covenant', 'Jehoiada makes a covenant between the Lord, the king, and the people.', ref('2 Kings', 11, 17)], ['Restores temple oversight', 'Jehoiada appoints oversight of the house of the Lord according to the prescribed order.', ref('2 Chronicles', 23, 16, 18)], ['Guides Joash', 'Joash does what is right while Jehoiada the priest instructs him.', ref('2 Kings', 12, 2)], ['Works with Joash on temple repairs', 'Jehoiada participates in the arrangements for collecting funds for temple repairs.', ref('2 Kings', 12, 7, 9)], ['Temple restored during his lifetime', 'The work of restoring the house of God proceeds under Joash and Jehoiada.', ref('2 Chronicles', 24, 4, 14)], ['Death and honored burial', 'Jehoiada dies at an advanced age and is buried among the kings because of the good he had done.', ref('2 Chronicles', 24, 15, 16)]] }),
+
+  build({ id: 'Joash_4', name: 'Joash', slug: 'joash-king-of-israel', alt: ['Jehoash'], t: 'Old Testament', cats: ['Kings'], subtitle: 'King of Israel · Son of Jehoahaz',
+    desc: 'Son of Jehoahaz who became king of Israel, visited the dying Elisha, fought Aram, and defeated Amaziah of Judah.', key: ref('2 Kings', 13, 10),
+    bio: 'Joash, also called Jehoash, son of Jehoahaz became king of Israel. He continued the sinful pattern attributed to the kings of Israel. Near Elisha’s death, Joash visited the prophet and received a symbolic promise of victory over Aram. Joash later recovered Israelite cities from Ben-hadad and defeated Amaziah king of Judah.',
+    tl: [['Succeeds Jehoahaz', 'After Jehoahaz dies, his son Joash becomes king.', ref('2 Kings', 13, 9, 10)], ['Reign summarized', 'The account summarizes Joash’s reign and his continuation in the sins of Jeroboam.', ref('2 Kings', 13, 10, 13)], ['Visits the dying Elisha', 'Joash comes to Elisha when the prophet is suffering from his final illness.', ref('2 Kings', 13, 14)], ['Receives symbolic instruction', 'Elisha tells Joash to take a bow and arrows as part of a prophetic sign.', ref('2 Kings', 13, 15, 18)], ['Recovers cities from Aram', 'Joash defeats Ben-hadad three times and recovers Israelite cities.', ref('2 Kings', 13, 25)], ['Challenged by Amaziah', 'Amaziah king of Judah sends a challenge to Joash king of Israel.', ref('2 Kings', 14, 8, 9)], ['Defeats Judah', 'Joash and Amaziah meet in battle, and Judah is defeated.', ref('2 Kings', 14, 11, 13)], ['Breaks Jerusalem’s wall and takes treasures', 'After capturing Amaziah, Joash breaks part of Jerusalem’s wall and takes treasures.', ref('2 Kings', 14, 13, 14)], ['Death of Joash', 'Joash dies and is buried in Samaria with the kings of Israel.', ref('2 Kings', 14, 15, 16)]] }),
+
+  build({ id: 'Judas_1', name: 'Judas Iscariot', slug: 'judas-iscariot', alt: ['Judas'], t: 'New Testament', cats: ['Apostles', 'Disciples'], subtitle: 'One of the Twelve · Betrayer of Jesus',
+    desc: 'One of the Twelve apostles who later betrayed Jesus to those seeking to arrest him.', key: ref('Matthew', 10, 4),
+    bio: 'Judas Iscariot was one of the Twelve chosen by Jesus. The Gospel accounts identify him as the disciple who betrayed Jesus. He arranged with the chief priests to hand Jesus over, participated in the final meal, and later arrived with the arresting group in Gethsemane. Matthew records his remorse and return of the silver. Acts later recalls his betrayal and the vacancy left among the Twelve.',
+    tl: [['Named among the Twelve', 'Judas Iscariot is included among the twelve apostles and identified as the one who betrayed Jesus.', ref('Matthew', 10, 2, 4)], ['Agrees to betray Jesus', 'Judas goes to the chief priests and arranges to hand Jesus over for money.', ref('Matthew', 26, 14, 16)], ['Identified at the meal', 'During the meal Judas asks whether he is the betrayer Jesus has spoken about.', ref('Matthew', 26, 20, 25)], ['Satan enters Judas', 'Luke records Satan entering Judas before he goes to arrange the betrayal.', ref('Luke', 22, 3, 6)], ['Receives the morsel', 'Jesus gives the morsel to Judas during the meal.', ref('John', 13, 21, 29)], ['Leads the arresting group', 'Judas comes to the garden with those sent to arrest Jesus.', ref('John', 18, 2, 5)], ['Betrays Jesus with a greeting', 'Judas approaches Jesus and gives the agreed signal to those arresting him.', ref('Matthew', 26, 47, 49)], ['Remorse and returned silver', 'After Jesus is condemned, Judas regrets what he has done and returns the silver.', ref('Matthew', 27, 3, 5)], ['Betrayal remembered after the ascension', 'Peter speaks to the believers about Judas and his role in Jesus’ arrest.', ref('Acts', 1, 15, 16)], ['Vacancy among the Twelve', 'The apostles address the place of ministry from which Judas turned aside.', ref('Acts', 1, 24, 25)]] }),
+
+
+
+  build({ id: 'Naphtali_1', name: 'Naphtali', slug: 'naphtali-son-of-jacob', t: 'Old Testament', cats: ['Patriarchs'], subtitle: 'Son of Jacob and Bilhah · Ancestor of the tribe of Naphtali',
+    desc: 'Son of Jacob and Bilhah and ancestor of the Israelite tribe that bore his name.', key: ref('Genesis', 30, 8),
+    bio: 'Naphtali was a son of Jacob and Bilhah, Rachel’s servant. Scripture records his birth and later names him among Jacob’s sons and among the family that went to Egypt. Jacob spoke concerning Naphtali before his death. Many later occurrences of the name refer to the tribe or territory descended from him rather than to Naphtali personally.',
+    tl: [['Birth and naming', 'Bilhah bears Jacob a second son, and Rachel names him Naphtali.', ref('Genesis', 30, 7, 8)], ['Named among Jacob’s sons', 'Naphtali is listed among Jacob’s sons through Bilhah.', ref('Genesis', 35, 22, 25)], ['Goes to Egypt', 'Naphtali and his sons are included among Jacob’s family who went to Egypt.', ref('Genesis', 46, 8, 24)], ['Jacob speaks concerning Naphtali', 'Jacob speaks concerning Naphtali in his final words about his sons.', ref('Genesis', 49, 21)], ['Remembered among Israel’s sons', 'Chronicles includes Naphtali among the sons of Israel.', ref('1 Chronicles', 2, 1, 2)]] }),
+
+  build({ id: 'Zeruiah_1', name: 'Zeruiah', slug: 'zeruiah-sister-of-david', t: 'Old Testament', cats: ['Women'], subtitle: 'Sister of David · Mother of Joab, Abishai, and Asahel',
+    desc: 'David’s sister and the mother of three prominent warriors: Joab, Abishai, and Asahel.', key: ref('1 Chronicles', 2, 16),
+    bio: 'Zeruiah was a sister of David and the mother of Abishai, Joab, and Asahel. Scripture gives little direct narrative about Zeruiah herself, but repeatedly identifies these three men through their relationship to her. Because most later references are to the “sons of Zeruiah,” this profile distinguishes what Scripture says about Zeruiah personally from events involving her sons.',
+    tl: [['Named as David’s sister', 'Zeruiah is named with Abigail as a sister of David.', ref('1 Chronicles', 2, 16)], ['Her three sons are named', 'Joab, Abishai, and Asahel are identified as the three sons of Zeruiah.', ref('1 Chronicles', 2, 16)], ['Abishai identified through Zeruiah', 'Abishai is introduced to David as the son of Zeruiah.', ref('1 Samuel', 26, 6)], ['Joab and Abishai identified as her sons', 'Joab and Abishai meet Abner’s forces and are identified through Zeruiah.', ref('2 Samuel', 2, 13)], ['Asahel identified as her son', 'Asahel is named with Joab and Abishai as one of Zeruiah’s three sons.', ref('2 Samuel', 2, 18)], ['Abishai again identified through Zeruiah', 'During Shimei’s cursing of David, Abishai is again identified as the son of Zeruiah.', ref('2 Samuel', 16, 9)], ['David addresses the sons of Zeruiah', 'David responds directly concerning the sons of Zeruiah.', ref('2 Samuel', 16, 10)], ['Family designation continues after the rebellion', 'Abishai is again identified as the son of Zeruiah when David returns after Absalom’s rebellion.', ref('2 Samuel', 19, 21, 22)], ['Abishai remembered among David’s warriors', 'Abishai son of Zeruiah is remembered among David’s mighty warriors.', ref('2 Samuel', 23, 18)], ['Joab remembered as Zeruiah’s son', 'Joab is identified as the son of Zeruiah in the record of David’s officials.', ref('1 Chronicles', 18, 15)]] }),
+
+]
+
+================================================================================
+src/pages/CharacterProfile.tsx
+================================================================================
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { ArrowLeft, ChevronDown, ChevronUp } from 'lucide-react'
+import SectionHeader from '@/components/ui/SectionHeader'
+import LoadingState from '@/components/ui/LoadingState'
+import EmptyState from '@/components/ui/EmptyState'
+import Button from '@/components/ui/Button'
+import CharacterHeader from '@/components/characters/CharacterHeader'
+import Timeline from '@/components/characters/Timeline'
+import ScriptureReferenceCard from '@/components/characters/ScriptureReferenceCard'
+import StudyAreaCard from '@/components/characters/StudyAreaCard'
+import { useCharacter } from '@/hooks/useCharacters'
+import { collectReferences, formatReference } from '@/lib/scripture'
+import { usePageTitle } from '@/hooks/usePageTitle'
+import { UNIVERSAL_STUDY_AREAS } from '@/data/studyAreas'
+import type { ScriptureReference } from '@/types'
+
+const INITIAL_REFERENCE_LIMIT = 24
+
+const STUDY_AREA_DESCRIPTIONS: Record<
+  (typeof UNIVERSAL_STUDY_AREAS)[number],
+  string
+> = {
+  Background:
+    'Explore who this person was and the setting in which they appear in Scripture.',
+  'Biblical Appearances':
+    'Read the Scripture passages where this person is identified or mentioned.',
+  Reflection:
+    'Reflect on what these passages reveal without going beyond what Scripture supports.',
+}
+
+function getStudyAreaDescription(
+  area: (typeof UNIVERSAL_STUDY_AREAS)[number],
+  name: string,
+) {
+  return `${STUDY_AREA_DESCRIPTIONS[area]} Study ${name}'s referenced passages carefully.`
+}
+
+function uniqueReferences(
+  references: ScriptureReference[],
+): ScriptureReference[] {
+  const seen = new Set<string>()
+
+  return references.filter((reference) => {
+    const key = formatReference(reference)
+
+    if (seen.has(key)) return false
+
+    seen.add(key)
+    return true
+  })
+}
+
+export default function CharacterProfile() {
+  const { slug = '' } = useParams()
+  const { data: c, loading, error } = useCharacter(slug)
+  const [showAllReferences, setShowAllReferences] = useState(false)
+
+  usePageTitle(c?.name)
+
+  if (loading) return <LoadingState />
+
+  if (error) {
+    return (
+      <EmptyState
+        title="Something went wrong"
+        description="This character could not be loaded."
+        action={<Button to="/characters">Browse characters</Button>}
+      />
+    )
+  }
+
+  if (!c) {
+    return (
+      <EmptyState
+        title="Character not found"
+        action={<Button to="/characters">Browse characters</Button>}
+      />
+    )
+  }
+
+  const references = uniqueReferences(collectReferences(c))
+  const visibleReferences = showAllReferences
+    ? references
+    : references.slice(0, INITIAL_REFERENCE_LIMIT)
+
+  const hasMoreReferences = references.length > INITIAL_REFERENCE_LIMIT
+
+  return (
+    <article>
+      <Link
+        to="/characters"
+        className="inline-flex items-center gap-1 text-sm text-mute"
+      >
+        <ArrowLeft size={16} aria-hidden="true" />
+        All characters
+      </Link>
+
+      <CharacterHeader character={c} />
+
+      {c.biography && (
+        <section className="py-6">
+          <SectionHeader title="About" />
+          <p className="max-w-2xl">{c.biography}</p>
+        </section>
+      )}
+
+      {c.timeline && c.timeline.length > 0 && (
+        <section className="py-6">
+          <SectionHeader title="Life Timeline" />
+          <p className="mb-5 rounded-lg bg-accbg px-4 py-2.5 text-sm">
+            Structured study content with Scripture references for each event.
+          </p>
+          <Timeline events={c.timeline} />
+        </section>
+      )}
+
+      <section className="py-6">
+        <SectionHeader
+          title="Scripture References"
+          subtitle={`${references.length} ${
+            references.length === 1 ? 'reference' : 'references'
+          } connected to this character.`}
+        />
+
+        {references.length > 0 ? (
+          <>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {visibleReferences.map((reference) => (
+                <ScriptureReferenceCard
+                  key={formatReference(reference)}
+                  reference={reference}
+                />
+              ))}
+            </div>
+
+            {hasMoreReferences && (
+              <div className="mt-6 flex justify-center">
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-2 rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:border-acc"
+                  onClick={() =>
+                    setShowAllReferences((current) => !current)
+                  }
+                >
+                  {showAllReferences ? (
+                    <>
+                      Show fewer references
+                      <ChevronUp size={16} aria-hidden="true" />
+                    </>
+                  ) : (
+                    <>
+                      Show all {references.length} references
+                      <ChevronDown size={16} aria-hidden="true" />
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          <p className="text-sm text-mute">
+            No verified Scripture references are currently available for this
+            character.
+          </p>
+        )}
+      </section>
+
+      {c.relationships && c.relationships.length > 0 && (
+        <section className="py-6">
+          <SectionHeader title="Relationships" />
+
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {c.relationships.map((relationship) => (
+              <li key={relationship.id} className="card">
+                <span className="tag">
+                  {relationship.relationshipType}
+                </span>
+                <h3 className="mt-1 text-lg">
+                  {relationship.relatedName}
+                </h3>
+                <p className="text-sm text-mute">
+                  {relationship.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="py-6">
+        <SectionHeader
+          title="Character Study Areas"
+          subtitle="Guided study prompts grounded in this character's Scripture references."
+        />
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {c.studyAreas?.length
+            ? c.studyAreas.map((area) => (
+                <StudyAreaCard
+                  key={area.id}
+                  title={area.title}
+                  description={area.description}
+                  references={area.scriptureReferences}
+                />
+              ))
+            : UNIVERSAL_STUDY_AREAS.map((area) => (
+                <StudyAreaCard
+                  key={area}
+                  title={area}
+                  description={getStudyAreaDescription(area, c.name)}
+                  references={references}
+                />
+              ))}
+        </div>
+      </section>
+    </article>
+  )
+}
+
+================================================================================
+src/components/characters/StudyAreaCard.tsx
+================================================================================
+import type { ScriptureReference } from '@/types'
+import { formatReference } from '@/lib/scripture'
+
+interface StudyAreaCardProps {
+  title: string
+  description: string
+  references: ScriptureReference[]
+}
+
+export default function StudyAreaCard({
+  title,
+  description,
+  references,
+}: StudyAreaCardProps) {
+  return (
+    <div className="card">
+      <h3 className="text-lg">{title}</h3>
+      <p className="mt-2 text-sm text-mute">{description}</p>
+
+      {references.length > 0 && (
+        <div className="mt-4">
+          <p className="text-xs font-medium uppercase tracking-wide text-mute">
+            Read in Scripture
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {references.slice(0, 6).map((reference) => (
+              <span key={formatReference(reference)} className="tag">
+                {formatReference(reference)}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+================================================================================
+MODERATE PLAN
+================================================================================
+person_id,name,slug,source_reference_count,generated_reference_count,validation,already_has_build_profile
+Abishai_1,Abishai,abishai,24,24,MATCH,NO
+Adonijah_1,Adonijah,adonijah-1,24,24,MATCH,NO
+Goliath_1,Goliath,goliath,24,24,MATCH,NO
+Jonah_1,Jonah,jonah,24,24,MATCH,NO
+Manasseh_3,Manasseh,manasseh-3,24,24,MATCH,NO
+Nebat_1,Nebat,nebat,24,24,MATCH,NO
+Abimelech_1,Abimelech,abimelech-1,23,23,MATCH,NO
+Benaiah_1,Benaiah,benaiah-1,23,23,MATCH,NO
+Gershon_1,Gershon,gershon,23,23,MATCH,NO
+Hiram_1,Hiram,hiram-1,23,23,MATCH,NO
+Jehoram_1,Jehoram,jehoram-1,23,23,MATCH,NO
+Zebulun_1,Zebulun,zebulun,23,23,MATCH,NO
+Boaz_1,Boaz,boaz,22,22,MATCH,NO
+Hazael_1,Hazael,hazael,22,22,MATCH,NO
+Jehoiachin_1,Jehoiachin,jehoiachin,22,22,MATCH,NO
+Jehoiada_1,Jehoiada,jehoiada-1,22,22,MATCH,NO
+Uriah_1,Uriah,uriah-1,22,22,MATCH,NO
+Zerubbabel_2,Zerubbabel,zerubbabel-2,22,22,MATCH,NO
+Achish_1,Achish,achish,21,21,MATCH,NO
+Amnon_1,Amnon,amnon-1,21,21,MATCH,NO
+Baruch_4,Baruch,baruch-4,21,21,MATCH,NO
+Ishmael_2,Ishmael,ishmael-2,21,21,MATCH,NO
+Naomi_1,Naomi,naomi,21,21,MATCH,NO
+Og_1,Og,og,21,21,MATCH,NO
+Abijam_1,Abijam,abijam,20,20,MATCH,NO
+Ahikam_1,Ahikam,ahikam,20,20,MATCH,NO
+Cyrus_1,Cyrus,cyrus,19,19,MATCH,NO
+Jezebel_1,Jezebel,jezebel-1,19,19,MATCH,NO
+Jotham_2,Jotham,jotham-2,19,19,MATCH,NO
+Micah_1,Micah,micah-1,19,19,MATCH,NO
+Shaphan_1,Shaphan,shaphan-1,19,19,MATCH,NO
+Adam_1,Adam,adam,18,18,MATCH,NO
+Asaph_3,Asaph,asaph-3,18,18,MATCH,NO
+Ishmael_1,Ishmael,ishmael-1,18,18,MATCH,NO
+Ithamar_1,Ithamar,ithamar,18,18,MATCH,NO
+Micaiah_1,Micaiah,micaiah-1,18,18,MATCH,NO
+Nabal_1,Nabal,nabal,18,18,MATCH,NO
+Naboth_1,Naboth,naboth,18,18,MATCH,NO
+Ahithophel_1,Ahithophel,ahithophel,17,17,MATCH,NO
+Araunah_1,Araunah,araunah,17,17,MATCH,NO
+Phinehas_1,Phinehas,phinehas-1,17,17,MATCH,NO
+Silas_1,Silas,silas,17,17,MATCH,NO
+Sisera_1,Sisera,sisera-1,17,17,MATCH,NO
+Asaph_2,Asaph,asaph-2,16,16,MATCH,NO
+Azariah_18,Azariah,azariah-18,16,16,MATCH,NO
+Cain_1,Cain,cain,16,16,MATCH,NO
+Hadadezer_1,Hadadezer,hadadezer,16,16,MATCH,NO
+Hananiah_12,Hananiah,hananiah-12,16,16,MATCH,NO
+Joseph_6,Joseph,joseph-6,16,16,MATCH,NO
+Machir_1,Machir,machir-1,16,16,MATCH,NO
+Michal_1,Michal,michal,16,16,MATCH,NO
+Mishael_3,Mishael,mishael-3,16,16,MATCH,NO
+Ner_1,Ner,ner,16,16,MATCH,NO
+Nethaniah_1,Nethaniah,nethaniah-1,16,16,MATCH,NO
+Rabshakeh_1,Rabshakeh,rabshakeh,16,16,MATCH,NO
+Shem_1,Shem,shem,16,16,MATCH,NO
+Ahijah_1,Ahijah,ahijah-1,15,15,MATCH,NO
+Amon_2,Amon,amon-2,15,15,MATCH,NO
+Athaliah_1,Athaliah,athaliah-1,15,15,MATCH,NO
+Hilkiah_2,Hilkiah,hilkiah-2,15,15,MATCH,NO
+Jephunneh_1,Jephunneh,jephunneh-1,15,15,MATCH,NO
+Johanan_1,Johanan,johanan-1,15,15,MATCH,NO
+Nebuzaradan_1,Nebuzaradan,nebuzaradan,15,15,MATCH,NO
+Pekah_1,Pekah,pekah,15,15,MATCH,NO
+Perez_1,Perez,perez,15,15,MATCH,NO
+Shalmaneser_1,Shalmaneser,shalmaneser,15,15,MATCH,NO
+Shimei_2,Shimei,shimei-2,15,15,MATCH,NO
+Abigail_1,Abigail,abigail-1,14,14,MATCH,NO
+Artaxerxes_1,Artaxerxes,artaxerxes,14,14,MATCH,NO
+Asahel_1,Asahel,asahel-1,14,14,MATCH,NO
+Barak_1,Barak,barak,14,14,MATCH,NO
+Canaan_1,Canaan,canaan,14,14,MATCH,NO
+Ish-bosheth_1,Ish-bosheth,ish-bosheth,14,14,MATCH,NO
+Jeduthun_1,Jeduthun,jeduthun,14,14,MATCH,NO
+Jehoahaz_1,Jehoahaz,jehoahaz-1,14,14,MATCH,NO
+Kareah_1,Kareah,kareah,14,14,MATCH,NO
+Manoah_1,Manoah,manoah,14,14,MATCH,NO
+Mary_2,Mary,mary-2,14,14,MATCH,NO
+Mephibosheth_1,Mephibosheth,mephibosheth-1,14,14,MATCH,NO
+Reuel_2,Reuel,reuel-2,14,14,MATCH,NO
+Ahimaaz_2,Ahimaaz,ahimaaz-2,13,13,MATCH,NO
+Amoz_1,Amoz,amoz,13,13,MATCH,NO
+Gad_2,Gad,gad-2,13,13,MATCH,NO
+Hamor_1,Hamor,hamor,13,13,MATCH,NO
+Heman_2,Heman,heman-2,13,13,MATCH,NO
+Jeroboam_2,Jeroboam,jeroboam-2,13,13,MATCH,NO
+Omri_1,Omri,omri-1,13,13,MATCH,NO
+Porcius_1,Porcius,porcius,13,13,MATCH,NO
+Ruth_1,Ruth,ruth,13,13,MATCH,YES
+Shechem_1,Shechem,shechem-1,13,13,MATCH,NO
+Tamar_2,Tamar,tamar-2,13,13,MATCH,NO
+Zerah_3,Zerah,zerah-3,13,13,MATCH,NO
+Ziba_1,Ziba,ziba,13,13,MATCH,NO
+Abihu_1,Abihu,abihu,12,12,MATCH,NO
+Amalek_1,Amalek,amalek,12,12,MATCH,NO
+Amasa_1,Amasa,amasa-1,12,12,MATCH,NO
+Andrew_1,Andrew,andrew,12,12,MATCH,NO
+Bathsheba_1,Bathsheba,bathsheba,12,12,MATCH,NO
+Caesar_1,Caesar,caesar-1,12,12,MATCH,NO
+Gehazi_1,Gehazi,gehazi,12,12,MATCH,NO
+Hagar_1,Hagar,hagar,12,12,MATCH,NO
+Heth_1,Heth,heth,12,12,MATCH,NO
+Hezron_2,Hezron,hezron-2,12,12,MATCH,NO
+Hur_1,Hur,hur-1,12,12,MATCH,NO
+Hushai_1,Hushai,hushai-1,12,12,MATCH,NO
+Jeshua_3,Jeshua,jeshua-3,12,12,MATCH,NO
+Joshua_4,Joshua,joshua-4,12,12,MATCH,NO
+Martha_1,Martha,martha,12,12,MATCH,NO
+Miriam_1,Miriam,miriam-1,12,12,MATCH,NO
+Naaman_2,Naaman,naaman-2,12,12,MATCH,NO
+Nadab_1,Nadab,nadab-1,12,12,MATCH,NO
+Titus_1,Titus,titus,12,12,MATCH,NO
+Tobiah_2,Tobiah,tobiah-2,12,12,MATCH,NO
+Agrippa_1,Agrippa,agrippa,11,11,MATCH,NO
+Ahimelech_1,Ahimelech,ahimelech-1,11,11,MATCH,NO
+Amminadab_1,Amminadab,amminadab-1,11,11,MATCH,NO
+Amram_1,Amram,amram-1,11,11,MATCH,NO
+Bezalel_1,Bezalel,bezalel-1,11,11,MATCH,NO
+Eber_1,Eber,eber-1,11,11,MATCH,NO
+Ham_1,Ham,ham,11,11,MATCH,NO
+Hannah_1,Hannah,hannah,11,11,MATCH,NO
+Japheth_1,Japheth,japheth,11,11,MATCH,NO
+Kish_1,Kish,kish-1,11,11,MATCH,NO
+Lazarus_2,Lazarus,lazarus-2,11,11,MATCH,NO
+Mary_3,Mary,mary-3,11,11,MATCH,NO
+Melchizedek_1,Melchizedek,melchizedek,11,11,MATCH,NO
+Nahshon_1,Nahshon,nahshon,11,11,MATCH,NO
+Rezin_1,Rezin,rezin-1,11,11,MATCH,NO
+Shallum_7,Shallum,shallum-7,11,11,MATCH,NO
+Thomas_1,Thomas,thomas,11,11,MATCH,NO
+Tiglath-pileser_1,Tiglath-pileser,tiglath-pileser,11,11,MATCH,NO
+Uzziel_1,Uzziel,uzziel-1,11,11,MATCH,NO
+Zebedee_1,Zebedee,zebedee,11,11,MATCH,NO
+Zechariah_13,Zechariah,zechariah-13,11,11,MATCH,NO
+Apollos_1,Apollos,apollos,10,10,MATCH,NO
+Arpachshad_1,Arpachshad,arpachshad,10,10,MATCH,NO
+Barabbas_1,Barabbas,barabbas,10,10,MATCH,NO
+Bartholomew_1,Bartholomew,bartholomew,10,10,MATCH,NO
+Bilhah_1,Bilhah,bilhah,10,10,MATCH,NO
+Caesar_2,Caesar,caesar-2,10,10,MATCH,NO
+Elkanah_2,Elkanah,elkanah-2,10,10,MATCH,NO
+Ephron_1,Ephron,ephron,10,10,MATCH,NO
+Gilead_1,Gilead,gilead-1,10,10,MATCH,NO
+Haggai_1,Haggai,haggai,10,10,MATCH,NO
+Herod_1,Herod,herod-1,10,10,MATCH,NO
+Izhar_1,Izhar,izhar-1,10,10,MATCH,NO
+John_5,John,john-5,10,10,MATCH,NO
+Nahor_2,Nahor,nahor-2,10,10,MATCH,NO
+Pharaoh Neco_1,Neco,neco,10,10,MATCH,NO
+Neriah_1,Neriah,neriah,10,10,MATCH,NO
+Sanballat_1,Sanballat,sanballat,10,10,MATCH,NO
+Terah_1,Terah,terah,10,10,MATCH,NO
+Vashti_1,Vashti,vashti,10,10,MATCH,NO
+Abel_1,Abel,abel,9,9,MATCH,NO
+Ahaziah_1,Ahaziah,ahaziah-1,9,9,MATCH,NO
+Beor_2,Beor,beor-2,9,9,MATCH,NO
+Bethuel_1,Bethuel,bethuel,9,9,MATCH,NO
+Caiaphas_1,Caiaphas,caiaphas,9,9,MATCH,NO
+Deborah_2,Deborah,deborah-2,9,9,MATCH,NO
+Eliakim_1,Eliakim,eliakim-1,9,9,MATCH,NO
+Enoch_2,Enoch,enoch-2,9,9,MATCH,NO
+Gaal_1,Gaal,gaal,9,9,MATCH,NO
+Hananiah_10,Hananiah,hananiah-10,9,9,MATCH,NO
+Hoshea_1,Hoshea,hoshea-1,9,9,MATCH,NO
+Jabin_1,Jabin,jabin,9,9,MATCH,NO
+Jehonadab_1,Jehonadab,jehonadab,9,9,MATCH,NO
+Obed-edom_2,Obed-edom,obed-edom-2,9,9,MATCH,NO
+Seth_1,Seth,seth,9,9,MATCH,NO
+Shealtiel_2,Shealtiel,shealtiel-2,9,9,MATCH,NO
+Shebnah_1,Shebnah,shebnah,9,9,MATCH,NO
+Zacharias_1,Zacharias,zacharias,9,9,MATCH,NO
+Zadok_3,Zadok,zadok-3,9,9,MATCH,NO
+Zalmunna_1,Zalmunna,zalmunna,9,9,MATCH,NO
+Zebah_1,Zebah,zebah,9,9,MATCH,NO
+Abiram_1,Abiram,abiram-1,8,8,MATCH,NO
+Adah_1,Adah,adah,8,8,MATCH,NO
+Anak_1,Anak,anak,8,8,MATCH,NO
+Bichri_1,Bichri,bichri,8,8,MATCH,NO
+Chelubai_1,Chelubai,chelubai,8,8,MATCH,NO
+Cornelius_1,Cornelius,cornelius,8,8,MATCH,NO
+Dathan_1,Dathan,dathan,8,8,MATCH,NO
+Dinah_1,Dinah,dinah,8,8,MATCH,NO
+Eliphaz_1,Eliphaz,eliphaz-1,8,8,MATCH,NO
+Elizabeth_1,Elizabeth,elizabeth,8,8,MATCH,NO
+Enosh_1,Enosh,enosh,8,8,MATCH,NO
+Felix_1,Felix,felix,8,8,MATCH,NO
+Hanun_1,Hanun,hanun-1,8,8,MATCH,NO
+Ittai_1,Ittai,ittai,8,8,MATCH,NO
+James_3,James,james-3,8,8,MATCH,NO
+Jehoahaz_2,Jehoahaz,jehoahaz-2,8,8,MATCH,NO
+Joash_1,Joash,joash-1,8,8,MATCH,NO
+Libni_1,Libni,libni-1,8,8,MATCH,NO
+Maacah_3,Maacah,maacah-3,8,8,MATCH,NO
+Mahli_1,Mahli,mahli-1,8,8,MATCH,NO
+Menachem_1,Menachem,menachem,8,8,MATCH,NO
+Mushi_1,Mushi,mushi,8,8,MATCH,NO
+Nahor_1,Nahor,nahor-1,8,8,MATCH,NO
+Peleg_1,Peleg,peleg,8,8,MATCH,NO
+Rahab_1,Rahab,rahab,8,8,MATCH,NO
+Remaliah_1,Remaliah,remaliah,8,8,MATCH,NO
+Shammah_2,Shammah,shammah-2,8,8,MATCH,NO
+Sheba_4,Sheba,sheba-4,8,8,MATCH,NO
+Shelah_1,Shelah,shelah-1,8,8,MATCH,NO
+Shelah_2,Shelah,shelah-2,8,8,MATCH,NO
+Uzzah_1,Uzzah,uzzah-1,8,8,MATCH,NO
+Zelophehad_1,Zelophehad,zelophehad-1,8,8,MATCH,NO
+
+================================================================================
+MODERATE PILOT
+================================================================================
+=== PATHWAY MODERATE-TIER PILOT 1 EVIDENCE ===
+
+================================================================================
+Abishai | Abishai_1
+Reference count: 24
+Unique attribute: son of Zeruiah and Joab's brother (1SA 26:6), chief of "the thirty" of David's men (2SA 23:18)
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  1SA   26  |  4 tagged verses | 1SA 26:6, 1SA 26:7, 1SA 26:8, 1SA 26:9
+  2SA   18  |  3 tagged verses | 2SA 18:2, 2SA 18:5, 2SA 18:12
+  1CH   19  |  2 tagged verses | 1CH 19:11, 1CH 19:15
+  2SA   2   |  2 tagged verses | 2SA 2:18, 2SA 2:24
+  2SA   16  |  2 tagged verses | 2SA 16:9, 2SA 16:11
+  2SA   20  |  2 tagged verses | 2SA 20:6, 2SA 20:10
+  1CH   2   |  1 tagged verses | 1CH 2:16
+  1CH   11  |  1 tagged verses | 1CH 11:20
+  1CH   12  |  1 tagged verses | 1CH 12:4
+  1CH   18  |  1 tagged verses | 1CH 18:12
+  2SA   3   |  1 tagged verses | 2SA 3:30
+  2SA   10  |  1 tagged verses | 2SA 10:10
+  2SA   19  |  1 tagged verses | 2SA 19:21
+  2SA   21  |  1 tagged verses | 2SA 21:17
+  2SA   23  |  1 tagged verses | 2SA 23:18
+
+================================================================================
+Adonijah | Adonijah_1
+Reference count: 24
+Unique attribute: fourth-born son of King David (2SA 3:4)
+Tribe: Judah
+Notes: 
+
+Strongest chapters:
+  1KI   1   | 15 tagged verses | 1KI 1:5, 1KI 1:7, 1KI 1:8, 1KI 1:9, 1KI 1:11, 1KI 1:13, 1KI 1:18, 1KI 1:24, 1KI 1:25, 1KI 1:41, 1KI 1:42, 1KI 1:43, 1KI 1:49, 1KI 1:50, 1KI 1:51
+  1KI   2   |  7 tagged verses | 1KI 2:13, 1KI 2:19, 1KI 2:21, 1KI 2:22, 1KI 2:23, 1KI 2:24, 1KI 2:28
+  1CH   3   |  1 tagged verses | 1CH 3:2
+  2SA   3   |  1 tagged verses | 2SA 3:4
+
+================================================================================
+Goliath | Goliath_1
+Reference count: 24
+Unique attribute: Philistine champion, from Gath (1SA 17:4)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  1SA   17  | 19 tagged verses | 1SA 17:4, 1SA 17:8, 1SA 17:10, 1SA 17:11, 1SA 17:16, 1SA 17:23, 1SA 17:40, 1SA 17:41, 1SA 17:42, 1SA 17:43, 1SA 17:44, 1SA 17:45, 1SA 17:48, 1SA 17:49, 1SA 17:50, 1SA 17:51, 1SA 17:54, 1SA 17:55, 1SA 17:57
+  1CH   20  |  1 tagged verses | 1CH 20:5
+  1SA   18  |  1 tagged verses | 1SA 18:6
+  1SA   21  |  1 tagged verses | 1SA 21:9
+  1SA   22  |  1 tagged verses | 1SA 22:10
+  2SA   21  |  1 tagged verses | 2SA 21:19
+
+================================================================================
+Jonah | Jonah_1
+Reference count: 24
+Unique attribute: the prophet, son of Amittai, from Gath-hepher (2KI 14:25)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  JON   1   |  6 tagged verses | JON 1:1, JON 1:3, JON 1:5, JON 1:7, JON 1:15, JON 1:17
+  JON   4   |  5 tagged verses | JON 4:1, JON 4:5, JON 4:6, JON 4:8, JON 4:9
+  JON   3   |  3 tagged verses | JON 3:1, JON 3:3, JON 3:4
+  LUK   11  |  3 tagged verses | LUK 11:29, LUK 11:30, LUK 11:32
+  MAT   12  |  3 tagged verses | MAT 12:39, MAT 12:40, MAT 12:41
+  JON   2   |  2 tagged verses | JON 2:1, JON 2:10
+  2KI   14  |  1 tagged verses | 2KI 14:25
+  MAT   16  |  1 tagged verses | MAT 16:4
+
+================================================================================
+Manasseh | Manasseh_3
+Reference count: 24
+Unique attribute: King of Judah and son of Hezekiah (2KI 20:21)
+Tribe: 
+Notes: He did evil in the sight of the LORD. (2KI 21:2)
+
+Strongest chapters:
+  2CH   33  |  9 tagged verses | 2CH 33:1, 2CH 33:9, 2CH 33:10, 2CH 33:11, 2CH 33:13, 2CH 33:18, 2CH 33:20, 2CH 33:22, 2CH 33:23
+  2KI   21  |  7 tagged verses | 2KI 21:1, 2KI 21:9, 2KI 21:11, 2KI 21:16, 2KI 21:17, 2KI 21:18, 2KI 21:20
+  2KI   23  |  2 tagged verses | 2KI 23:12, 2KI 23:26
+  1CH   3   |  1 tagged verses | 1CH 3:13
+  2CH   32  |  1 tagged verses | 2CH 32:33
+  2KI   20  |  1 tagged verses | 2KI 20:21
+  2KI   24  |  1 tagged verses | 2KI 24:3
+  JER   15  |  1 tagged verses | JER 15:4
+  MAT   1   |  1 tagged verses | MAT 1:10
+
+================================================================================
+Nebat | Nebat_1
+Reference count: 24
+Unique attribute: father of Jeroboam, an Ephraimite of Zeredah (1KI 11:26)
+Tribe: Ephraim
+Notes: 
+
+Strongest chapters:
+  1KI   16  |  3 tagged verses | 1KI 16:3, 1KI 16:26, 1KI 16:31
+  2KI   15  |  3 tagged verses | 2KI 15:9, 2KI 15:18, 2KI 15:24
+  1KI   12  |  2 tagged verses | 1KI 12:2, 1KI 12:15
+  2CH   10  |  2 tagged verses | 2CH 10:2, 2CH 10:15
+  2KI   13  |  2 tagged verses | 2KI 13:2, 2KI 13:11
+  1KI   11  |  1 tagged verses | 1KI 11:26
+  1KI   15  |  1 tagged verses | 1KI 15:1
+  1KI   21  |  1 tagged verses | 1KI 21:22
+  1KI   22  |  1 tagged verses | 1KI 22:52
+  2CH   9   |  1 tagged verses | 2CH 9:29
+  2CH   13  |  1 tagged verses | 2CH 13:6
+  2KI   3   |  1 tagged verses | 2KI 3:3
+  2KI   9   |  1 tagged verses | 2KI 9:9
+  2KI   10  |  1 tagged verses | 2KI 10:29
+  2KI   14  |  1 tagged verses | 2KI 14:24
+  2KI   17  |  1 tagged verses | 2KI 17:21
+  2KI   23  |  1 tagged verses | 2KI 23:15
+
+================================================================================
+Abimelech | Abimelech_1
+Reference count: 23
+Unique attribute: King of Gerar who took Sarah (GEN 20:2)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  GEN   20  | 10 tagged verses | GEN 20:2, GEN 20:3, GEN 20:4, GEN 20:8, GEN 20:9, GEN 20:10, GEN 20:14, GEN 20:15, GEN 20:17, GEN 20:18
+  GEN   26  |  7 tagged verses | GEN 26:1, GEN 26:8, GEN 26:9, GEN 26:10, GEN 26:11, GEN 26:16, GEN 26:26
+  GEN   21  |  6 tagged verses | GEN 21:22, GEN 21:25, GEN 21:26, GEN 21:27, GEN 21:29, GEN 21:32
+
+================================================================================
+Benaiah | Benaiah_1
+Reference count: 23
+Unique attribute: over the Cherethites and the Pelethites (2SA 8:18), the fifth of "the thirty" of David's men (2SA 23:20)
+Tribe: Levi
+Notes: commander of the third division (1CH 27:5)
+
+Strongest chapters:
+  1KI   1   |  7 tagged verses | 1KI 1:8, 1KI 1:10, 1KI 1:26, 1KI 1:32, 1KI 1:36, 1KI 1:38, 1KI 1:44
+  1KI   2   |  6 tagged verses | 1KI 2:25, 1KI 2:29, 1KI 2:30, 1KI 2:34, 1KI 2:35, 1KI 2:46
+  1CH   11  |  2 tagged verses | 1CH 11:22, 1CH 11:24
+  1CH   27  |  2 tagged verses | 1CH 27:5, 1CH 27:34
+  2SA   23  |  2 tagged verses | 2SA 23:20, 2SA 23:22
+  1CH   18  |  1 tagged verses | 1CH 18:17
+  1KI   4   |  1 tagged verses | 1KI 4:4
+  2SA   8   |  1 tagged verses | 2SA 8:18
+  2SA   20  |  1 tagged verses | 2SA 20:23
+
+================================================================================
+Gershon | Gershon_1
+Reference count: 23
+Unique attribute: son of Levi (GEN 46:11)
+Tribe: Levi
+Notes: from the list of "sons of Israel" who "went to Egypt" (GEN 46:8-27), the Gershonites (NUM 26:57)
+
+Strongest chapters:
+  1CH   6   |  7 tagged verses | 1CH 6:1, 1CH 6:16, 1CH 6:17, 1CH 6:20, 1CH 6:43, 1CH 6:62, 1CH 6:71
+  NUM   3   |  3 tagged verses | NUM 3:17, NUM 3:18, NUM 3:25
+  NUM   4   |  3 tagged verses | NUM 4:22, NUM 4:38, NUM 4:41
+  EXO   6   |  2 tagged verses | EXO 6:16, EXO 6:17
+  JOS   21  |  2 tagged verses | JOS 21:6, JOS 21:27
+  1CH   15  |  1 tagged verses | 1CH 15:7
+  1CH   23  |  1 tagged verses | 1CH 23:6
+  GEN   46  |  1 tagged verses | GEN 46:11
+  NUM   7   |  1 tagged verses | NUM 7:7
+  NUM   10  |  1 tagged verses | NUM 10:17
+  NUM   26  |  1 tagged verses | NUM 26:57
+
+================================================================================
+Hiram | Hiram_1
+Reference count: 23
+Unique attribute: King of Tyre (2SA 5:11)
+Tribe: 
+Notes: 
+
+Strongest chapters:
+  1KI   5   |  8 tagged verses | 1KI 5:1, 1KI 5:2, 1KI 5:7, 1KI 5:8, 1KI 5:10, 1KI 5:11, 1KI 5:12, 1KI 5:18
+  1KI   9   |  4 tagged verses | 1KI 9:11, 1KI 9:12, 1KI 9:14, 1KI 9:27
+  2CH   2   |  3 tagged verses | 2CH 2:3, 2CH 2:11, 2CH 2:12
+  1KI   10  |  2 tagged verses | 1KI 10:11, 1KI 10:22
+  2CH   8   |  2 tagged verses | 2CH 8:2, 2CH 8:18
+  2CH   9   |  2 tagged verses | 2CH 9:10, 2CH 9:21
+  1CH   14  |  1 tagged verses | 1CH 14:1
+  2SA   5   |  1 tagged verses | 2SA 5:11

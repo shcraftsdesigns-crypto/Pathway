@@ -13,6 +13,7 @@ import { useCharacter } from '@/hooks/useCharacters'
 import { collectReferences, formatReference } from '@/lib/scripture'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import { UNIVERSAL_STUDY_AREAS } from '@/data/studyAreas'
+import { isModerateCharacter } from '@/data/moderateCharacters.generated'
 import type { ScriptureReference } from '@/types'
 
 const INITIAL_REFERENCE_LIMIT = 24
@@ -34,6 +35,59 @@ function getStudyAreaDescription(
   name: string,
 ) {
   return `${STUDY_AREA_DESCRIPTIONS[area]} Study ${name}'s referenced passages carefully.`
+}
+
+
+function getModerateStudyAreas(
+  name: string,
+  references: ScriptureReference[],
+) {
+  return [
+    {
+      id: 'background',
+      title: 'Background',
+      description:
+        `Begin with the verified passages connected to ${name}. ` +
+        'Use them to establish identity, setting, family, role, and ' +
+        'historical context only where Scripture explicitly supports it.',
+      scriptureReferences: references.slice(0, 6),
+    },
+    {
+      id: 'biblical-appearances',
+      title: 'Biblical Appearances',
+      description:
+        `Trace ${name} across the verified Scripture references. ` +
+        'Distinguish direct actions and statements from genealogical, ' +
+        'relational, tribal, territorial, or later mentions.',
+      scriptureReferences: references,
+    },
+    {
+      id: 'key-passages',
+      title: 'Key Passages',
+      description:
+        `Compare the passages where ${name} appears most directly. ` +
+        'Observe what each passage actually says before drawing conclusions.',
+      scriptureReferences: references.slice(0, 6),
+    },
+    {
+      id: 'context-and-connections',
+      title: 'Context & Connections',
+      description:
+        `Study the people, places, events, and generations surrounding ` +
+        `${name}. Keep similarly named biblical people distinct unless ` +
+        'Scripture clearly connects them.',
+      scriptureReferences: references,
+    },
+    {
+      id: 'reflection',
+      title: 'Reflection',
+      description:
+        `What do the verified passages concerning ${name} reveal? ` +
+        'Base every conclusion on the text and avoid assigning motives, ' +
+        'traits, or events that Scripture does not establish.',
+      scriptureReferences: references.slice(0, 6),
+    },
+  ]
 }
 
 function uniqueReferences(
@@ -80,6 +134,13 @@ export default function CharacterProfile() {
   }
 
   const references = uniqueReferences(collectReferences(c))
+  const studyAreas =
+    c.studyAreas?.length
+      ? c.studyAreas
+      : isModerateCharacter(c.id)
+        ? getModerateStudyAreas(c.name, references)
+        : undefined
+
   const visibleReferences = showAllReferences
     ? references
     : references.slice(0, INITIAL_REFERENCE_LIMIT)
@@ -195,8 +256,8 @@ export default function CharacterProfile() {
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {c.studyAreas?.length
-            ? c.studyAreas.map((area) => (
+          {studyAreas?.length
+            ? studyAreas.map((area) => (
                 <StudyAreaCard
                   key={area.id}
                   title={area.title}

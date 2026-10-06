@@ -1,0 +1,24 @@
+=== PATHWAY MODERATE-TIER IMPLEMENTATION AUDIT ===
+
+Validated MODERATE identities: 206
+Existing handcrafted MODERATE profiles: 1
+Generated MODERATE treatment IDs: 205
+Unique generated MODERATE IDs: 205
+
+Existing handcrafted MODERATE:
+Ruth_1
+
+Missing generated MODERATE IDs:
+NONE
+
+Unexpected generated MODERATE IDs:
+NONE
+
+Architecture:
+Exact person_id registry: YES
+Existing custom studyAreas take priority: YES
+MODERATE generated treatment second priority: YES
+Universal fallback retained for lower tiers: YES
+
+=== RESULT ===
+PASS
