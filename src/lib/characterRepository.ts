@@ -14,7 +14,16 @@ function enrichCharacter(character: BiblicalCharacter): BiblicalCharacter {
   return character
 }
 
-const richCharacters = new Map(
+// Rich profiles are linked to verified biblical people by person ID.
+// This prevents people who share the same name from being merged accidentally.
+const richCharactersById = new Map(
+  characters.map((character) => [
+    character.id,
+    enrichCharacter(character),
+  ])
+)
+
+const richCharactersBySlug = new Map(
   characters.map((character) => [
     character.slug,
     enrichCharacter(character),
@@ -23,21 +32,21 @@ const richCharacters = new Map(
 
 const allCharacters = [
   ...verifiedCharacters.map((character) => {
-    const rich = richCharacters.get(character.slug)
+    const rich = richCharactersById.get(character.id)
 
     return rich ?? enrichCharacter(character)
   }),
   ...characters.filter(
     (character) =>
       !verifiedCharacters.some(
-        (verified) => verified.slug === character.slug
+        (verified) => verified.id === character.id
       )
   ),
 ]
 
 export async function listFeaturedCharacters(): Promise<BiblicalCharacter[]> {
   return FEATURED_SLUGS
-    .map((slug) => richCharacters.get(slug))
+    .map((slug) => richCharactersBySlug.get(slug))
     .filter((character): character is BiblicalCharacter => Boolean(character))
 }
 
@@ -47,9 +56,9 @@ export async function getCharacterBySlug(
   const normalizedSlug = slug.toLowerCase()
 
   return (
-    richCharacters.get(normalizedSlug) ??
+    richCharactersBySlug.get(normalizedSlug) ??
     (() => {
-      const character = verifiedCharacters.find(
+      const character = allCharacters.find(
         (character) => character.slug === normalizedSlug
       )
 
