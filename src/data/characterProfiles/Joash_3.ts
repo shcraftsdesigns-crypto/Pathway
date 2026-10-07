@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Joash_3',
+    name: 'Joash',
+    slug: 'joash-3',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Judah (2KI 11:21), son of Ahaziah (2KI 11:2) Tribe: Judah.',
+    biography: 'King of Judah (2KI 11:21), son of Ahaziah (2KI 11:2) Tribe: Judah.',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 11, verseStart: 2 },
+      { book: '2 Kings', chapter: 11, verseStart: 21 },
+      { book: '2 Kings', chapter: 12, verseStart: 1 },
+      { book: '2 Kings', chapter: 12, verseStart: 2 },
+      { book: '2 Kings', chapter: 12, verseStart: 4 },
+      { book: '2 Kings', chapter: 12, verseStart: 6 },
+      { book: '2 Kings', chapter: 12, verseStart: 7 },
+      { book: '2 Kings', chapter: 12, verseStart: 18 },
+      { book: '2 Kings', chapter: 12, verseStart: 19 },
+      { book: '2 Kings', chapter: 12, verseStart: 20 },
+      { book: '2 Kings', chapter: 13, verseStart: 1 },
+      { book: '2 Kings', chapter: 13, verseStart: 10 },
+      { book: '2 Kings', chapter: 14, verseStart: 1 },
+      { book: '2 Kings', chapter: 14, verseStart: 3 },
+      { book: '2 Kings', chapter: 14, verseStart: 13 },
+      { book: '2 Kings', chapter: 14, verseStart: 17 },
+      { book: '2 Kings', chapter: 14, verseStart: 23 },
+      { book: '1 Chronicles', chapter: 3, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 2 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 4 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 22 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 24 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 23 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 25 },
+    ],
+  }
+
+export default character

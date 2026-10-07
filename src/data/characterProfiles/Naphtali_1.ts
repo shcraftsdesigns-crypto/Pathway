@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Naphtali_1',
+    name: 'Naphtali',
+    slug: 'naphtali',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'sixth-born son of Jacob (GEN 30:7), son of Bilhah, Rachel\'s handmaid Tribe: Naphtali.',
+    biography: 'sixth-born son of Jacob (GEN 30:7), son of Bilhah, Rachel\'s handmaid Tribe: Naphtali.',
+    keyScriptures: [
+      { book: 'Genesis', chapter: 30, verseStart: 8 },
+      { book: 'Genesis', chapter: 35, verseStart: 25 },
+      { book: 'Genesis', chapter: 46, verseStart: 24 },
+      { book: 'Genesis', chapter: 49, verseStart: 21 },
+      { book: 'Exodus', chapter: 1, verseStart: 4 },
+      { book: 'Numbers', chapter: 1, verseStart: 15 },
+      { book: 'Numbers', chapter: 1, verseStart: 42 },
+      { book: 'Numbers', chapter: 1, verseStart: 43 },
+      { book: 'Numbers', chapter: 2, verseStart: 29 },
+      { book: 'Numbers', chapter: 7, verseStart: 78 },
+      { book: 'Numbers', chapter: 10, verseStart: 27 },
+      { book: 'Numbers', chapter: 13, verseStart: 14 },
+      { book: 'Numbers', chapter: 26, verseStart: 48 },
+      { book: 'Numbers', chapter: 26, verseStart: 50 },
+      { book: 'Numbers', chapter: 34, verseStart: 28 },
+      { book: 'Joshua', chapter: 19, verseStart: 32 },
+      { book: 'Joshua', chapter: 19, verseStart: 39 },
+      { book: 'Joshua', chapter: 21, verseStart: 6 },
+      { book: 'Joshua', chapter: 21, verseStart: 32 },
+      { book: 'Judges', chapter: 4, verseStart: 6 },
+      { book: '1 Chronicles', chapter: 2, verseStart: 2 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 62 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 76 },
+      { book: '1 Chronicles', chapter: 7, verseStart: 13 },
+      { book: 'Revelation', chapter: 7, verseStart: 6 },
+    ],
+  }
+
+export default character

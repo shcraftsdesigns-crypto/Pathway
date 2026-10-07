@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Darius_1',
+    name: 'Darius',
+    slug: 'darius-1',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Persia (EZR 4:5) likely Darius III, the last King of Persia, conquered by Alexander the Great',
+    biography: 'King of Persia (EZR 4:5) likely Darius III, the last King of Persia, conquered by Alexander the Great',
+    keyScriptures: [
+      { book: 'Ezra', chapter: 4, verseStart: 5 },
+      { book: 'Ezra', chapter: 4, verseStart: 24 },
+      { book: 'Ezra', chapter: 5, verseStart: 5 },
+      { book: 'Ezra', chapter: 5, verseStart: 6 },
+      { book: 'Ezra', chapter: 5, verseStart: 7 },
+      { book: 'Ezra', chapter: 6, verseStart: 1 },
+      { book: 'Ezra', chapter: 6, verseStart: 12 },
+      { book: 'Ezra', chapter: 6, verseStart: 13 },
+      { book: 'Ezra', chapter: 6, verseStart: 14 },
+      { book: 'Ezra', chapter: 6, verseStart: 15 },
+      { book: 'Ezra', chapter: 6, verseStart: 22 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 22 },
+      { book: 'Daniel', chapter: 5, verseStart: 31 },
+      { book: 'Daniel', chapter: 6, verseStart: 1 },
+      { book: 'Daniel', chapter: 6, verseStart: 6 },
+      { book: 'Daniel', chapter: 6, verseStart: 9 },
+      { book: 'Daniel', chapter: 6, verseStart: 25 },
+      { book: 'Daniel', chapter: 6, verseStart: 28 },
+      { book: 'Daniel', chapter: 11, verseStart: 1 },
+      { book: 'Haggai', chapter: 1, verseStart: 1 },
+      { book: 'Haggai', chapter: 1, verseStart: 15 },
+      { book: 'Haggai', chapter: 2, verseStart: 10 },
+      { book: 'Zechariah', chapter: 1, verseStart: 1 },
+      { book: 'Zechariah', chapter: 1, verseStart: 7 },
+      { book: 'Zechariah', chapter: 7, verseStart: 1 },
+    ],
+  }
+
+export default character

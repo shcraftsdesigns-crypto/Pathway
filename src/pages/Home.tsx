@@ -5,9 +5,8 @@ import EmptyState from '@/components/ui/EmptyState'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import CharacterGrid from '@/components/characters/CharacterGrid'
 import CategoryCard from '@/components/characters/CategoryCard'
-import { useFeaturedCharacters } from '@/hooks/useCharacters'
+import { useFeaturedCharacters } from '@/hooks/useFeaturedCharacters'
 import { CHARACTER_CATEGORIES } from '@/types'
-
 const STEPS = [
   ['Choose a Character', 'Find the person you want to study.'],
   ['Explore Their Story', 'Follow their life, relationships, decisions, struggles, victories, and failures.'],
@@ -17,6 +16,7 @@ const STEPS = [
 export default function Home() {
   const { data, loading, error } = useFeaturedCharacters()
   usePageTitle()
+
   return (
     <>
       <section className="py-10">

@@ -6,7 +6,7 @@ import EmptyState from '@/components/ui/EmptyState'
 import SearchBar from '@/components/characters/SearchBar'
 import FilterChips from '@/components/characters/FilterChips'
 import CharacterGrid from '@/components/characters/CharacterGrid'
-import { useCharacters } from '@/hooks/useCharacters'
+import { useCharacters } from '@/hooks/useCharacterSearch'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import { CHARACTER_CATEGORIES, TESTAMENTS, type CharacterCategory, type Testament } from '@/types'
 

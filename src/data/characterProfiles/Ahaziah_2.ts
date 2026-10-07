@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Ahaziah_2',
+    name: 'Ahaziah',
+    slug: 'ahaziah-2',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Judah, youngest (2CH 21:17) son of Jehoram (2KI 8:24) son of Jehoshapat Tribe: Judah.',
+    biography: 'King of Judah, youngest (2CH 21:17) son of Jehoram (2KI 8:24) son of Jehoshapat Tribe: Judah.',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 8, verseStart: 24 },
+      { book: '2 Kings', chapter: 8, verseStart: 25 },
+      { book: '2 Kings', chapter: 8, verseStart: 26 },
+      { book: '2 Kings', chapter: 9, verseStart: 16 },
+      { book: '2 Kings', chapter: 9, verseStart: 21 },
+      { book: '2 Kings', chapter: 9, verseStart: 23 },
+      { book: '2 Kings', chapter: 9, verseStart: 27 },
+      { book: '2 Kings', chapter: 9, verseStart: 29 },
+      { book: '2 Kings', chapter: 10, verseStart: 13 },
+      { book: '2 Kings', chapter: 11, verseStart: 1 },
+      { book: '2 Kings', chapter: 11, verseStart: 2 },
+      { book: '2 Kings', chapter: 12, verseStart: 18 },
+      { book: '2 Kings', chapter: 13, verseStart: 1 },
+      { book: '2 Kings', chapter: 14, verseStart: 13 },
+      { book: '1 Chronicles', chapter: 3, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 17 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 2 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 6 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 7 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 8 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 10 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 23 },
+    ],
+  }
+
+export default character

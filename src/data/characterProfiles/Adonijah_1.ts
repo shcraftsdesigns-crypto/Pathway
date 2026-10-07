@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Adonijah_1',
+    name: 'Adonijah',
+    slug: 'adonijah-1',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'fourth-born son of King David (2SA 3:4) Tribe: Judah.',
+    biography: 'fourth-born son of King David (2SA 3:4) Tribe: Judah.',
+    keyScriptures: [
+      { book: '2 Samuel', chapter: 3, verseStart: 4 },
+      { book: '1 Kings', chapter: 1, verseStart: 5 },
+      { book: '1 Kings', chapter: 1, verseStart: 7 },
+      { book: '1 Kings', chapter: 1, verseStart: 8 },
+      { book: '1 Kings', chapter: 1, verseStart: 9 },
+      { book: '1 Kings', chapter: 1, verseStart: 11 },
+      { book: '1 Kings', chapter: 1, verseStart: 13 },
+      { book: '1 Kings', chapter: 1, verseStart: 18 },
+      { book: '1 Kings', chapter: 1, verseStart: 24 },
+      { book: '1 Kings', chapter: 1, verseStart: 25 },
+      { book: '1 Kings', chapter: 1, verseStart: 41 },
+      { book: '1 Kings', chapter: 1, verseStart: 42 },
+      { book: '1 Kings', chapter: 1, verseStart: 43 },
+      { book: '1 Kings', chapter: 1, verseStart: 49 },
+      { book: '1 Kings', chapter: 1, verseStart: 50 },
+      { book: '1 Kings', chapter: 1, verseStart: 51 },
+      { book: '1 Kings', chapter: 2, verseStart: 13 },
+      { book: '1 Kings', chapter: 2, verseStart: 19 },
+      { book: '1 Kings', chapter: 2, verseStart: 21 },
+      { book: '1 Kings', chapter: 2, verseStart: 22 },
+      { book: '1 Kings', chapter: 2, verseStart: 23 },
+      { book: '1 Kings', chapter: 2, verseStart: 24 },
+      { book: '1 Kings', chapter: 2, verseStart: 28 },
+      { book: '1 Chronicles', chapter: 3, verseStart: 2 },
+    ],
+  }
+
+export default character

@@ -243,10 +243,23 @@ for row in people:
     pid = row["person_id"]
     name = row["character_name"]
 
-    # Jesus_1 in the source is Jesus Justus.
-    display_name = "Jesus Justus" if pid == "Jesus_1" else name
+    # Canonical public identities.
+    #
+    # Abram_1 is one biblical person whose name changes from Abram to
+    # Abraham in Genesis 17:5. Keep the source person ID unchanged while
+    # using the later biblical name as the public display name/slug.
+    #
+    # Jesus_1 in the source is Jesus Justus, not Jesus Christ.
+    if pid == "Abram_1":
+        display_name = "Abraham"
+        slug = "abraham"
+    elif pid == "Jesus_1":
+        display_name = "Jesus Justus"
+        slug = make_slug(row)
+    else:
+        display_name = name
+        slug = make_slug(row)
 
-    slug = make_slug(row)
     desc = descriptions(row)
 
     out.append("  {")
@@ -254,7 +267,9 @@ for row in people:
     out.append(f"    name: {ts(display_name)},")
     out.append(f"    slug: {ts(slug)},")
 
-    if pid == "Jesus_1":
+    if pid == "Abram_1":
+        out.append("    alternateNames: ['Abram'],")
+    elif pid == "Jesus_1":
         out.append("    alternateNames: ['Jesus', 'Justus'],")
     else:
         out.append("    alternateNames: [],")

@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Timothy_1',
+    name: 'Timothy',
+    slug: 'timothy',
+    alternateNames: [],
+    testament: 'New Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'a disciple and Paul\'s companion (ACT 16:1) had a Jewish mother and Greek father (ACT 16:1)',
+    biography: 'a disciple and Paul\'s companion (ACT 16:1) had a Jewish mother and Greek father (ACT 16:1)',
+    keyScriptures: [
+      { book: 'Acts', chapter: 16, verseStart: 1 },
+      { book: 'Acts', chapter: 17, verseStart: 14 },
+      { book: 'Acts', chapter: 17, verseStart: 15 },
+      { book: 'Acts', chapter: 18, verseStart: 5 },
+      { book: 'Acts', chapter: 19, verseStart: 22 },
+      { book: 'Acts', chapter: 20, verseStart: 4 },
+      { book: 'Romans', chapter: 16, verseStart: 21 },
+      { book: '1 Corinthians', chapter: 4, verseStart: 17 },
+      { book: '1 Corinthians', chapter: 16, verseStart: 10 },
+      { book: '2 Corinthians', chapter: 1, verseStart: 1 },
+      { book: '2 Corinthians', chapter: 1, verseStart: 19 },
+      { book: 'Philippians', chapter: 1, verseStart: 1 },
+      { book: 'Philippians', chapter: 2, verseStart: 19 },
+      { book: 'Colossians', chapter: 1, verseStart: 1 },
+      { book: '1 Thessalonians', chapter: 1, verseStart: 1 },
+      { book: '1 Thessalonians', chapter: 3, verseStart: 2 },
+      { book: '1 Thessalonians', chapter: 3, verseStart: 6 },
+      { book: '2 Thessalonians', chapter: 1, verseStart: 1 },
+      { book: '1 Timothy', chapter: 1, verseStart: 2 },
+      { book: '1 Timothy', chapter: 1, verseStart: 18 },
+      { book: '1 Timothy', chapter: 6, verseStart: 11 },
+      { book: '1 Timothy', chapter: 6, verseStart: 20 },
+      { book: '2 Timothy', chapter: 1, verseStart: 2 },
+      { book: '2 Timothy', chapter: 3, verseStart: 17 },
+      { book: 'Philemon', chapter: 1, verseStart: 1 },
+      { book: 'Hebrews', chapter: 13, verseStart: 23 },
+    ],
+  }
+
+export default character

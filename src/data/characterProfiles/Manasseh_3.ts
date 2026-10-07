@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Manasseh_3',
+    name: 'Manasseh',
+    slug: 'manasseh-3',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Judah and son of Hezekiah (2KI 20:21) He did evil in the sight of the LORD. (2KI 21:2)',
+    biography: 'King of Judah and son of Hezekiah (2KI 20:21) He did evil in the sight of the LORD. (2KI 21:2)',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 20, verseStart: 21 },
+      { book: '2 Kings', chapter: 21, verseStart: 1 },
+      { book: '2 Kings', chapter: 21, verseStart: 9 },
+      { book: '2 Kings', chapter: 21, verseStart: 11 },
+      { book: '2 Kings', chapter: 21, verseStart: 16 },
+      { book: '2 Kings', chapter: 21, verseStart: 17 },
+      { book: '2 Kings', chapter: 21, verseStart: 18 },
+      { book: '2 Kings', chapter: 21, verseStart: 20 },
+      { book: '2 Kings', chapter: 23, verseStart: 12 },
+      { book: '2 Kings', chapter: 23, verseStart: 26 },
+      { book: '2 Kings', chapter: 24, verseStart: 3 },
+      { book: '1 Chronicles', chapter: 3, verseStart: 13 },
+      { book: '2 Chronicles', chapter: 32, verseStart: 33 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 10 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 13 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 18 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 20 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 22 },
+      { book: '2 Chronicles', chapter: 33, verseStart: 23 },
+      { book: 'Jeremiah', chapter: 15, verseStart: 4 },
+      { book: 'Matthew', chapter: 1, verseStart: 10 },
+    ],
+  }
+
+export default character

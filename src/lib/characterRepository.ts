@@ -1,7 +1,10 @@
-import { characters, FEATURED_SLUGS } from '@/data/characters'
-import { verifiedCharacters } from '@/data/verifiedCharacters.generated'
+import { characters } from '@/data/characters'
 import { JESUS_STUDY_AREAS } from '@/data/jesusStudyAreas'
-import type { BiblicalCharacter, CharacterFilters } from '@/types'
+import type { BiblicalCharacter } from '@/types'
+
+type CharacterBucketModule = {
+  default: Record<string, BiblicalCharacter>
+}
 
 function enrichCharacter(character: BiblicalCharacter): BiblicalCharacter {
   if (character.slug === 'jesus') {
@@ -14,123 +17,155 @@ function enrichCharacter(character: BiblicalCharacter): BiblicalCharacter {
   return character
 }
 
-// Rich profiles are linked to verified biblical people by person ID.
-// This prevents people who share the same name from being merged accidentally.
+// Rich profiles remain linked by exact biblical person ID.
+// Never merge people merely because they share a display name.
 const richCharactersById = new Map(
   characters.map((character) => [
     character.id,
     enrichCharacter(character),
-  ])
+  ]),
 )
 
-const richCharactersBySlug = new Map(
-  characters.map((character) => [
-    character.slug,
-    enrichCharacter(character),
-  ])
-)
+const PROFILE_BUCKET_COUNT = 32
 
-const allCharacters = [
-  ...verifiedCharacters.map((character) => {
-    const rich = richCharactersById.get(character.id)
+// Must match scripts/generateProfileBuckets.py.
+// The slug determines its bucket, so no 2,922-entry runtime manifest
+// is required.
+function bucketForSlug(slug: string): number {
+  let hash = 5381
 
-    return rich ?? enrichCharacter(character)
-  }),
-  ...characters.filter(
-    (character) =>
-      !verifiedCharacters.some(
-        (verified) => verified.id === character.id
-      )
-  ),
-]
+  for (let index = 0; index < slug.length; index += 1) {
+    hash = ((hash * 33) ^ slug.charCodeAt(index)) >>> 0
+  }
 
-export async function listFeaturedCharacters(): Promise<BiblicalCharacter[]> {
-  return FEATURED_SLUGS
-    .map((slug) => richCharactersBySlug.get(slug))
-    .filter((character): character is BiblicalCharacter => Boolean(character))
+  return hash % PROFILE_BUCKET_COUNT
 }
 
-export async function getCharacterBySlug(
-  slug: string
+// Explicit lazy loaders let Vite create only 32 profile chunks.
+const bucketLoaders: Record<
+  number,
+  () => Promise<CharacterBucketModule>
+> = {
+  0: () => import('@/data/characterProfileBuckets/bucket-00'),
+  1: () => import('@/data/characterProfileBuckets/bucket-01'),
+  2: () => import('@/data/characterProfileBuckets/bucket-02'),
+  3: () => import('@/data/characterProfileBuckets/bucket-03'),
+  4: () => import('@/data/characterProfileBuckets/bucket-04'),
+  5: () => import('@/data/characterProfileBuckets/bucket-05'),
+  6: () => import('@/data/characterProfileBuckets/bucket-06'),
+  7: () => import('@/data/characterProfileBuckets/bucket-07'),
+  8: () => import('@/data/characterProfileBuckets/bucket-08'),
+  9: () => import('@/data/characterProfileBuckets/bucket-09'),
+  10: () => import('@/data/characterProfileBuckets/bucket-10'),
+  11: () => import('@/data/characterProfileBuckets/bucket-11'),
+  12: () => import('@/data/characterProfileBuckets/bucket-12'),
+  13: () => import('@/data/characterProfileBuckets/bucket-13'),
+  14: () => import('@/data/characterProfileBuckets/bucket-14'),
+  15: () => import('@/data/characterProfileBuckets/bucket-15'),
+  16: () => import('@/data/characterProfileBuckets/bucket-16'),
+  17: () => import('@/data/characterProfileBuckets/bucket-17'),
+  18: () => import('@/data/characterProfileBuckets/bucket-18'),
+  19: () => import('@/data/characterProfileBuckets/bucket-19'),
+  20: () => import('@/data/characterProfileBuckets/bucket-20'),
+  21: () => import('@/data/characterProfileBuckets/bucket-21'),
+  22: () => import('@/data/characterProfileBuckets/bucket-22'),
+  23: () => import('@/data/characterProfileBuckets/bucket-23'),
+  24: () => import('@/data/characterProfileBuckets/bucket-24'),
+  25: () => import('@/data/characterProfileBuckets/bucket-25'),
+  26: () => import('@/data/characterProfileBuckets/bucket-26'),
+  27: () => import('@/data/characterProfileBuckets/bucket-27'),
+  28: () => import('@/data/characterProfileBuckets/bucket-28'),
+  29: () => import('@/data/characterProfileBuckets/bucket-29'),
+  30: () => import('@/data/characterProfileBuckets/bucket-30'),
+  31: () => import('@/data/characterProfileBuckets/bucket-31'),
+}
+
+async function loadCharacterBySlug(
+  slug: string,
+): Promise<BiblicalCharacter | null> {
+  const normalizedSlug = slug.toLowerCase()
+  const bucket = bucketForSlug(normalizedSlug)
+  const loadBucket = bucketLoaders[bucket]
+
+  if (!loadBucket) {
+    throw new Error(
+      `No profile bucket loader for bucket ${bucket}`,
+    )
+  }
+
+  // Jesus has an unusually large verified reference set.
+  // Keep its direct lazy loader so opening Jesus does not load
+  // unrelated profiles from the same bucket.
+  if (normalizedSlug === 'jesus') {
+    const module = await import(
+      '@/data/characterProfiles/Jesus_Christ'
+    )
+    const character = module.default
+
+    if (
+      character.id !== 'Jesus_Christ' ||
+      character.slug !== 'jesus'
+    ) {
+      throw new Error('Jesus Christ profile identity mismatch')
+    }
+
+    return enrichCharacter(character)
+  }
+
+  const module = await loadBucket()
+  const generatedCharacter = module.default[normalizedSlug]
+
+  if (!generatedCharacter) {
+    return null
+  }
+
+  // Rich profiles are selected only after the generated profile has
+  // established the exact biblical person ID. This prevents people
+  // who share a name from being merged.
+  const rich = richCharactersById.get(generatedCharacter.id)
+
+  if (rich) {
+    if (rich.slug !== generatedCharacter.slug) {
+      throw new Error(
+        `Rich profile identity mismatch for ${generatedCharacter.id}`,
+      )
+    }
+
+    return enrichCharacter(rich)
+  }
+
+  if (generatedCharacter.slug !== normalizedSlug) {
+    throw new Error(
+      `Character slug mismatch: expected ${normalizedSlug}, received ${generatedCharacter.slug}`,
+    )
+  }
+
+  return enrichCharacter(generatedCharacter)
+}
+
+const characterPromiseCache = new Map<
+  string,
+  Promise<BiblicalCharacter | null>
+>()
+
+export function getCharacterBySlug(
+  slug: string,
 ): Promise<BiblicalCharacter | null> {
   const normalizedSlug = slug.toLowerCase()
 
-  return (
-    richCharactersBySlug.get(normalizedSlug) ??
-    (() => {
-      const character = allCharacters.find(
-        (character) => character.slug === normalizedSlug
-      )
+  const cached = characterPromiseCache.get(normalizedSlug)
+  if (cached) return cached
 
-      return character ? enrichCharacter(character) : null
-    })()
-  )
-}
-
-export async function searchCharacters({
-  query,
-  testament,
-  category,
-}: CharacterFilters): Promise<BiblicalCharacter[]> {
-  const q = query.trim().toLowerCase()
-
-  const matches = allCharacters.filter((character) => {
-    if (testament && character.testament !== testament) return false
-
-    if (category && !character.categories.includes(category)) return false
-
-    if (!q) return true
-
-    return [
-      character.name,
-      ...(character.alternateNames ?? []),
-      ...character.categories,
-      character.testament,
-      character.subtitle,
-      character.shortDescription,
-    ].some((value) => value.toLowerCase().includes(q))
+  const request = loadCharacterBySlug(normalizedSlug).catch((error) => {
+    characterPromiseCache.delete(normalizedSlug)
+    throw error
   })
 
-  // Preserve the normal database order when there is no search query.
-  if (!q) return matches
-
-  // Rank search results by relevance without merging or changing identities.
-  // Primary names outrank aliases, and aliases outrank descriptive matches.
-  const score = (character: BiblicalCharacter): number => {
-    const name = character.name.toLowerCase()
-    const alternateNames = (character.alternateNames ?? []).map(
-      (value) => value.toLowerCase()
-    )
-
-    if (name === q) return 0
-    if (name.startsWith(q)) return 1
-    if (alternateNames.some((value) => value === q)) return 2
-    if (alternateNames.some((value) => value.startsWith(q))) return 3
-    if (name.includes(q)) return 4
-    if (alternateNames.some((value) => value.includes(q))) return 5
-
-    if (
-      character.categories.some(
-        (value) => value.toLowerCase() === q
-      )
-    ) {
-      return 6
-    }
-
-    if (character.testament.toLowerCase() === q) return 7
-
-    if (character.subtitle.toLowerCase().includes(q)) return 8
-    if (character.shortDescription.toLowerCase().includes(q)) return 9
-
-    return 10
-  }
-
-  return matches
-    .map((character, index) => ({
-      character,
-      index,
-      score: score(character),
-    }))
-    .sort((a, b) => a.score - b.score || a.index - b.index)
-    .map(({ character }) => character)
+  characterPromiseCache.set(normalizedSlug, request)
+  return request
 }
+
+export function preloadCharacterBySlug(slug: string): void {
+  void getCharacterBySlug(slug)
+}
+

@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Goliath_1',
+    name: 'Goliath',
+    slug: 'goliath',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'Philistine champion, from Gath (1SA 17:4)',
+    biography: 'Philistine champion, from Gath (1SA 17:4)',
+    keyScriptures: [
+      { book: '1 Samuel', chapter: 17, verseStart: 4 },
+      { book: '1 Samuel', chapter: 17, verseStart: 8 },
+      { book: '1 Samuel', chapter: 17, verseStart: 10 },
+      { book: '1 Samuel', chapter: 17, verseStart: 11 },
+      { book: '1 Samuel', chapter: 17, verseStart: 16 },
+      { book: '1 Samuel', chapter: 17, verseStart: 23 },
+      { book: '1 Samuel', chapter: 17, verseStart: 40 },
+      { book: '1 Samuel', chapter: 17, verseStart: 41 },
+      { book: '1 Samuel', chapter: 17, verseStart: 42 },
+      { book: '1 Samuel', chapter: 17, verseStart: 43 },
+      { book: '1 Samuel', chapter: 17, verseStart: 44 },
+      { book: '1 Samuel', chapter: 17, verseStart: 45 },
+      { book: '1 Samuel', chapter: 17, verseStart: 48 },
+      { book: '1 Samuel', chapter: 17, verseStart: 49 },
+      { book: '1 Samuel', chapter: 17, verseStart: 50 },
+      { book: '1 Samuel', chapter: 17, verseStart: 51 },
+      { book: '1 Samuel', chapter: 17, verseStart: 54 },
+      { book: '1 Samuel', chapter: 17, verseStart: 55 },
+      { book: '1 Samuel', chapter: 17, verseStart: 57 },
+      { book: '1 Samuel', chapter: 18, verseStart: 6 },
+      { book: '1 Samuel', chapter: 21, verseStart: 9 },
+      { book: '1 Samuel', chapter: 22, verseStart: 10 },
+      { book: '2 Samuel', chapter: 21, verseStart: 19 },
+      { book: '1 Chronicles', chapter: 20, verseStart: 5 },
+    ],
+  }
+
+export default character

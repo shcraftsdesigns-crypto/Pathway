@@ -1,0 +1,40 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Jehoram_1',
+    name: 'Jehoram',
+    slug: 'jehoram-1',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Judah and son of Jehoshaphat (1KI 22:50) Tribe: Judah. Married to Ahab\'s daughter and did evil in the sight of the LORD (2KI 8:18)',
+    biography: 'King of Judah and son of Jehoshaphat (1KI 22:50) Tribe: Judah. Married to Ahab\'s daughter and did evil in the sight of the LORD (2KI 8:18)',
+    keyScriptures: [
+      { book: '1 Kings', chapter: 22, verseStart: 50 },
+      { book: '2 Kings', chapter: 1, verseStart: 17 },
+      { book: '2 Kings', chapter: 3, verseStart: 7 },
+      { book: '2 Kings', chapter: 3, verseStart: 9 },
+      { book: '2 Kings', chapter: 3, verseStart: 14 },
+      { book: '2 Kings', chapter: 8, verseStart: 16 },
+      { book: '2 Kings', chapter: 8, verseStart: 21 },
+      { book: '2 Kings', chapter: 8, verseStart: 23 },
+      { book: '2 Kings', chapter: 8, verseStart: 24 },
+      { book: '2 Kings', chapter: 8, verseStart: 25 },
+      { book: '2 Kings', chapter: 11, verseStart: 2 },
+      { book: '2 Kings', chapter: 12, verseStart: 18 },
+      { book: '1 Chronicles', chapter: 3, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 3 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 4 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 5 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 21, verseStart: 16 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 6 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 11 },
+      { book: 'Matthew', chapter: 1, verseStart: 8 },
+    ],
+  }
+
+export default character

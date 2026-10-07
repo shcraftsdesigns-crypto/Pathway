@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Herod_2',
+    name: 'Herod',
+    slug: 'herod-2',
+    alternateNames: [],
+    testament: 'New Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'the tetrarch (MAT 14:1) Tribe: Edom. Herod Antipas, tetrarch of Gailiea and Perea',
+    biography: 'the tetrarch (MAT 14:1) Tribe: Edom. Herod Antipas, tetrarch of Gailiea and Perea',
+    keyScriptures: [
+      { book: 'Matthew', chapter: 14, verseStart: 1 },
+      { book: 'Matthew', chapter: 14, verseStart: 3 },
+      { book: 'Matthew', chapter: 14, verseStart: 5 },
+      { book: 'Matthew', chapter: 14, verseStart: 6 },
+      { book: 'Mark', chapter: 6, verseStart: 14 },
+      { book: 'Mark', chapter: 6, verseStart: 16 },
+      { book: 'Mark', chapter: 6, verseStart: 17 },
+      { book: 'Mark', chapter: 6, verseStart: 18 },
+      { book: 'Mark', chapter: 6, verseStart: 20 },
+      { book: 'Mark', chapter: 6, verseStart: 21 },
+      { book: 'Mark', chapter: 6, verseStart: 22 },
+      { book: 'Mark', chapter: 8, verseStart: 15 },
+      { book: 'Luke', chapter: 3, verseStart: 1 },
+      { book: 'Luke', chapter: 3, verseStart: 19 },
+      { book: 'Luke', chapter: 3, verseStart: 20 },
+      { book: 'Luke', chapter: 8, verseStart: 3 },
+      { book: 'Luke', chapter: 9, verseStart: 7 },
+      { book: 'Luke', chapter: 9, verseStart: 9 },
+      { book: 'Luke', chapter: 13, verseStart: 31 },
+      { book: 'Luke', chapter: 23, verseStart: 7 },
+      { book: 'Luke', chapter: 23, verseStart: 8 },
+      { book: 'Luke', chapter: 23, verseStart: 11 },
+      { book: 'Luke', chapter: 23, verseStart: 12 },
+      { book: 'Luke', chapter: 23, verseStart: 15 },
+      { book: 'Acts', chapter: 4, verseStart: 27 },
+      { book: 'Acts', chapter: 13, verseStart: 1 },
+    ],
+  }
+
+export default character

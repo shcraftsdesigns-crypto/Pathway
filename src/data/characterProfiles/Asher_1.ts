@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Asher_1',
+    name: 'Asher',
+    slug: 'asher',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'eighth-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah\'s handmaid Tribe: Asher.',
+    biography: 'eighth-born son of Jacob (GEN 30:11, GEN 35:26), son of Zilpah, Leah\'s handmaid Tribe: Asher.',
+    keyScriptures: [
+      { book: 'Genesis', chapter: 30, verseStart: 13 },
+      { book: 'Genesis', chapter: 35, verseStart: 26 },
+      { book: 'Genesis', chapter: 46, verseStart: 17 },
+      { book: 'Genesis', chapter: 49, verseStart: 20 },
+      { book: 'Exodus', chapter: 1, verseStart: 4 },
+      { book: 'Numbers', chapter: 1, verseStart: 13 },
+      { book: 'Numbers', chapter: 1, verseStart: 40 },
+      { book: 'Numbers', chapter: 1, verseStart: 41 },
+      { book: 'Numbers', chapter: 2, verseStart: 27 },
+      { book: 'Numbers', chapter: 7, verseStart: 72 },
+      { book: 'Numbers', chapter: 10, verseStart: 26 },
+      { book: 'Numbers', chapter: 13, verseStart: 13 },
+      { book: 'Numbers', chapter: 26, verseStart: 44 },
+      { book: 'Numbers', chapter: 26, verseStart: 46 },
+      { book: 'Numbers', chapter: 26, verseStart: 47 },
+      { book: 'Numbers', chapter: 34, verseStart: 27 },
+      { book: 'Joshua', chapter: 19, verseStart: 24 },
+      { book: 'Joshua', chapter: 19, verseStart: 31 },
+      { book: 'Joshua', chapter: 21, verseStart: 6 },
+      { book: 'Joshua', chapter: 21, verseStart: 30 },
+      { book: '1 Chronicles', chapter: 2, verseStart: 2 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 62 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 74 },
+      { book: '1 Chronicles', chapter: 7, verseStart: 30 },
+      { book: '1 Chronicles', chapter: 7, verseStart: 40 },
+      { book: 'Revelation', chapter: 7, verseStart: 6 },
+    ],
+  }
+
+export default character

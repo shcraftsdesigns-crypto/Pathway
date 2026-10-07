@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Jehoiada_2',
+    name: 'Jehoiada',
+    slug: 'jehoiada-2',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'the priest (2KI 11:9) who protected Joash in his youth (2KI 11:4) Tribe: Levi.',
+    biography: 'the priest (2KI 11:9) who protected Joash in his youth (2KI 11:4) Tribe: Levi.',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 11, verseStart: 4 },
+      { book: '2 Kings', chapter: 11, verseStart: 9 },
+      { book: '2 Kings', chapter: 11, verseStart: 15 },
+      { book: '2 Kings', chapter: 11, verseStart: 17 },
+      { book: '2 Kings', chapter: 12, verseStart: 2 },
+      { book: '2 Kings', chapter: 12, verseStart: 7 },
+      { book: '2 Kings', chapter: 12, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 22, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 8 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 14 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 16 },
+      { book: '2 Chronicles', chapter: 23, verseStart: 18 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 2 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 3 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 6 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 12 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 14 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 15 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 17 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 20 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 22 },
+      { book: '2 Chronicles', chapter: 24, verseStart: 25 },
+    ],
+  }
+
+export default character

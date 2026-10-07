@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Zeruiah_1',
+    name: 'Zeruiah',
+    slug: 'zeruiah',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'mother of Abishai, Joab (1SA 26:6), and Asahel (2SA 2:18), sister of King David (1CH 2:16) Tribe: Judah.',
+    biography: 'mother of Abishai, Joab (1SA 26:6), and Asahel (2SA 2:18), sister of King David (1CH 2:16) Tribe: Judah.',
+    keyScriptures: [
+      { book: '1 Samuel', chapter: 26, verseStart: 6 },
+      { book: '2 Samuel', chapter: 2, verseStart: 13 },
+      { book: '2 Samuel', chapter: 2, verseStart: 18 },
+      { book: '2 Samuel', chapter: 3, verseStart: 39 },
+      { book: '2 Samuel', chapter: 8, verseStart: 16 },
+      { book: '2 Samuel', chapter: 14, verseStart: 1 },
+      { book: '2 Samuel', chapter: 16, verseStart: 9 },
+      { book: '2 Samuel', chapter: 16, verseStart: 10 },
+      { book: '2 Samuel', chapter: 17, verseStart: 25 },
+      { book: '2 Samuel', chapter: 18, verseStart: 2 },
+      { book: '2 Samuel', chapter: 19, verseStart: 21 },
+      { book: '2 Samuel', chapter: 19, verseStart: 22 },
+      { book: '2 Samuel', chapter: 21, verseStart: 17 },
+      { book: '2 Samuel', chapter: 23, verseStart: 18 },
+      { book: '2 Samuel', chapter: 23, verseStart: 37 },
+      { book: '1 Kings', chapter: 1, verseStart: 7 },
+      { book: '1 Kings', chapter: 2, verseStart: 5 },
+      { book: '1 Kings', chapter: 2, verseStart: 22 },
+      { book: '1 Chronicles', chapter: 2, verseStart: 16 },
+      { book: '1 Chronicles', chapter: 11, verseStart: 6 },
+      { book: '1 Chronicles', chapter: 11, verseStart: 39 },
+      { book: '1 Chronicles', chapter: 18, verseStart: 12 },
+      { book: '1 Chronicles', chapter: 18, verseStart: 15 },
+      { book: '1 Chronicles', chapter: 26, verseStart: 28 },
+      { book: '1 Chronicles', chapter: 27, verseStart: 24 },
+    ],
+  }
+
+export default character

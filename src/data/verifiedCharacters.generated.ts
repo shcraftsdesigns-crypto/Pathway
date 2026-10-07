@@ -1360,9 +1360,9 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   },
   {
     id: 'Abram_1',
-    name: 'Abram',
-    slug: 'abram',
-    alternateNames: [],
+    name: 'Abraham',
+    slug: 'abraham',
+    alternateNames: ['Abram'],
     testament: 'Old Testament',
     categories: ['Other'],
     subtitle: 'Biblical character',

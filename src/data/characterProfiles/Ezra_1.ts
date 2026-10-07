@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Ezra_1',
+    name: 'Ezra',
+    slug: 'ezra',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'son of Seraiah (EZR 7:1), scribe skilled in the Law (EZR 7:6) Tribe: Levi. as "priest" would be a descendant of Aaron',
+    biography: 'son of Seraiah (EZR 7:1), scribe skilled in the Law (EZR 7:6) Tribe: Levi. as "priest" would be a descendant of Aaron',
+    keyScriptures: [
+      { book: 'Ezra', chapter: 7, verseStart: 1 },
+      { book: 'Ezra', chapter: 7, verseStart: 6 },
+      { book: 'Ezra', chapter: 7, verseStart: 10 },
+      { book: 'Ezra', chapter: 7, verseStart: 11 },
+      { book: 'Ezra', chapter: 7, verseStart: 12 },
+      { book: 'Ezra', chapter: 7, verseStart: 21 },
+      { book: 'Ezra', chapter: 7, verseStart: 25 },
+      { book: 'Ezra', chapter: 10, verseStart: 1 },
+      { book: 'Ezra', chapter: 10, verseStart: 2 },
+      { book: 'Ezra', chapter: 10, verseStart: 5 },
+      { book: 'Ezra', chapter: 10, verseStart: 6 },
+      { book: 'Ezra', chapter: 10, verseStart: 10 },
+      { book: 'Ezra', chapter: 10, verseStart: 16 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 1 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 2 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 4 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 5 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 6 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 9 },
+      { book: 'Nehemiah', chapter: 8, verseStart: 13 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 1 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 13 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 26 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 33 },
+      { book: 'Nehemiah', chapter: 12, verseStart: 36 },
+    ],
+  }
+
+export default character

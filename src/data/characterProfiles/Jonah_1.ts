@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Jonah_1',
+    name: 'Jonah',
+    slug: 'jonah',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'the prophet, son of Amittai, from Gath-hepher (2KI 14:25)',
+    biography: 'the prophet, son of Amittai, from Gath-hepher (2KI 14:25)',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 14, verseStart: 25 },
+      { book: 'Jonah', chapter: 1, verseStart: 1 },
+      { book: 'Jonah', chapter: 1, verseStart: 3 },
+      { book: 'Jonah', chapter: 1, verseStart: 5 },
+      { book: 'Jonah', chapter: 1, verseStart: 7 },
+      { book: 'Jonah', chapter: 1, verseStart: 15 },
+      { book: 'Jonah', chapter: 1, verseStart: 17 },
+      { book: 'Jonah', chapter: 2, verseStart: 1 },
+      { book: 'Jonah', chapter: 2, verseStart: 10 },
+      { book: 'Jonah', chapter: 3, verseStart: 1 },
+      { book: 'Jonah', chapter: 3, verseStart: 3 },
+      { book: 'Jonah', chapter: 3, verseStart: 4 },
+      { book: 'Jonah', chapter: 4, verseStart: 1 },
+      { book: 'Jonah', chapter: 4, verseStart: 5 },
+      { book: 'Jonah', chapter: 4, verseStart: 6 },
+      { book: 'Jonah', chapter: 4, verseStart: 8 },
+      { book: 'Jonah', chapter: 4, verseStart: 9 },
+      { book: 'Matthew', chapter: 12, verseStart: 39 },
+      { book: 'Matthew', chapter: 12, verseStart: 40 },
+      { book: 'Matthew', chapter: 12, verseStart: 41 },
+      { book: 'Matthew', chapter: 16, verseStart: 4 },
+      { book: 'Luke', chapter: 11, verseStart: 29 },
+      { book: 'Luke', chapter: 11, verseStart: 30 },
+      { book: 'Luke', chapter: 11, verseStart: 32 },
+    ],
+  }
+
+export default character

@@ -1,0 +1,40 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Zebulun_1',
+    name: 'Zebulun',
+    slug: 'zebulun',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'tenth-born son of Jacob (GEN 30:19), son of Leah Tribe: Zebulun.',
+    biography: 'tenth-born son of Jacob (GEN 30:19), son of Leah Tribe: Zebulun.',
+    keyScriptures: [
+      { book: 'Genesis', chapter: 30, verseStart: 20 },
+      { book: 'Genesis', chapter: 35, verseStart: 23 },
+      { book: 'Genesis', chapter: 46, verseStart: 14 },
+      { book: 'Genesis', chapter: 49, verseStart: 13 },
+      { book: 'Exodus', chapter: 1, verseStart: 3 },
+      { book: 'Numbers', chapter: 1, verseStart: 9 },
+      { book: 'Numbers', chapter: 1, verseStart: 30 },
+      { book: 'Numbers', chapter: 1, verseStart: 31 },
+      { book: 'Numbers', chapter: 2, verseStart: 7 },
+      { book: 'Numbers', chapter: 7, verseStart: 24 },
+      { book: 'Numbers', chapter: 10, verseStart: 16 },
+      { book: 'Numbers', chapter: 13, verseStart: 10 },
+      { book: 'Numbers', chapter: 26, verseStart: 26 },
+      { book: 'Numbers', chapter: 34, verseStart: 25 },
+      { book: 'Joshua', chapter: 19, verseStart: 10 },
+      { book: 'Joshua', chapter: 19, verseStart: 16 },
+      { book: 'Joshua', chapter: 21, verseStart: 7 },
+      { book: 'Joshua', chapter: 21, verseStart: 34 },
+      { book: 'Judges', chapter: 4, verseStart: 6 },
+      { book: '1 Chronicles', chapter: 2, verseStart: 1 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 63 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 77 },
+      { book: 'Revelation', chapter: 7, verseStart: 8 },
+    ],
+  }
+
+export default character

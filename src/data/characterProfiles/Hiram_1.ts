@@ -1,0 +1,40 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Hiram_1',
+    name: 'Hiram',
+    slug: 'hiram-1',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Tyre (2SA 5:11)',
+    biography: 'King of Tyre (2SA 5:11)',
+    keyScriptures: [
+      { book: '2 Samuel', chapter: 5, verseStart: 11 },
+      { book: '1 Kings', chapter: 5, verseStart: 1 },
+      { book: '1 Kings', chapter: 5, verseStart: 2 },
+      { book: '1 Kings', chapter: 5, verseStart: 7 },
+      { book: '1 Kings', chapter: 5, verseStart: 8 },
+      { book: '1 Kings', chapter: 5, verseStart: 10 },
+      { book: '1 Kings', chapter: 5, verseStart: 11 },
+      { book: '1 Kings', chapter: 5, verseStart: 12 },
+      { book: '1 Kings', chapter: 5, verseStart: 18 },
+      { book: '1 Kings', chapter: 9, verseStart: 11 },
+      { book: '1 Kings', chapter: 9, verseStart: 12 },
+      { book: '1 Kings', chapter: 9, verseStart: 14 },
+      { book: '1 Kings', chapter: 9, verseStart: 27 },
+      { book: '1 Kings', chapter: 10, verseStart: 11 },
+      { book: '1 Kings', chapter: 10, verseStart: 22 },
+      { book: '1 Chronicles', chapter: 14, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 2, verseStart: 3 },
+      { book: '2 Chronicles', chapter: 2, verseStart: 11 },
+      { book: '2 Chronicles', chapter: 2, verseStart: 12 },
+      { book: '2 Chronicles', chapter: 8, verseStart: 2 },
+      { book: '2 Chronicles', chapter: 8, verseStart: 18 },
+      { book: '2 Chronicles', chapter: 9, verseStart: 10 },
+      { book: '2 Chronicles', chapter: 9, verseStart: 21 },
+    ],
+  }
+
+export default character

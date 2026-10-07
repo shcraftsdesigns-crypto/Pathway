@@ -51,6 +51,16 @@ export interface BiblicalCharacter {
   imageUrl?: string
 }
 
+export type CharacterSummary = Pick<
+  BiblicalCharacter,
+  | 'id'
+  | 'name'
+  | 'slug'
+  | 'alternateNames'
+  | 'testament'
+  | 'categories'
+>
+
 export interface CharacterFilters {
   query: string
   testament: Testament | null

@@ -1,0 +1,40 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Gershon_1',
+    name: 'Gershon',
+    slug: 'gershon',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'son of Levi (GEN 46:11) Tribe: Levi. from the list of "sons of Israel" who "went to Egypt" (GEN 46:8-27), the Gershonites (NUM 26:57)',
+    biography: 'son of Levi (GEN 46:11) Tribe: Levi. from the list of "sons of Israel" who "went to Egypt" (GEN 46:8-27), the Gershonites (NUM 26:57)',
+    keyScriptures: [
+      { book: 'Genesis', chapter: 46, verseStart: 11 },
+      { book: 'Exodus', chapter: 6, verseStart: 16 },
+      { book: 'Exodus', chapter: 6, verseStart: 17 },
+      { book: 'Numbers', chapter: 3, verseStart: 17 },
+      { book: 'Numbers', chapter: 3, verseStart: 18 },
+      { book: 'Numbers', chapter: 3, verseStart: 25 },
+      { book: 'Numbers', chapter: 4, verseStart: 22 },
+      { book: 'Numbers', chapter: 4, verseStart: 38 },
+      { book: 'Numbers', chapter: 4, verseStart: 41 },
+      { book: 'Numbers', chapter: 7, verseStart: 7 },
+      { book: 'Numbers', chapter: 10, verseStart: 17 },
+      { book: 'Numbers', chapter: 26, verseStart: 57 },
+      { book: 'Joshua', chapter: 21, verseStart: 6 },
+      { book: 'Joshua', chapter: 21, verseStart: 27 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 1 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 16 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 17 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 20 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 43 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 62 },
+      { book: '1 Chronicles', chapter: 6, verseStart: 71 },
+      { book: '1 Chronicles', chapter: 15, verseStart: 7 },
+      { book: '1 Chronicles', chapter: 23, verseStart: 6 },
+    ],
+  }
+
+export default character

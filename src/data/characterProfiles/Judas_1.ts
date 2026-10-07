@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Judas_1',
+    name: 'Judas',
+    slug: 'judas-1',
+    alternateNames: [],
+    testament: 'New Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'disciple of the Messiah (MAT 10:4) who betrayed Him (MAT 10:4) one of the Twelve (MAT 10:2), from Kerioth (MAT 10:4)',
+    biography: 'disciple of the Messiah (MAT 10:4) who betrayed Him (MAT 10:4) one of the Twelve (MAT 10:2), from Kerioth (MAT 10:4)',
+    keyScriptures: [
+      { book: 'Matthew', chapter: 10, verseStart: 4 },
+      { book: 'Matthew', chapter: 26, verseStart: 14 },
+      { book: 'Matthew', chapter: 26, verseStart: 25 },
+      { book: 'Matthew', chapter: 26, verseStart: 47 },
+      { book: 'Matthew', chapter: 26, verseStart: 49 },
+      { book: 'Matthew', chapter: 27, verseStart: 3 },
+      { book: 'Mark', chapter: 3, verseStart: 19 },
+      { book: 'Mark', chapter: 14, verseStart: 10 },
+      { book: 'Mark', chapter: 14, verseStart: 43 },
+      { book: 'Mark', chapter: 14, verseStart: 45 },
+      { book: 'Luke', chapter: 6, verseStart: 16 },
+      { book: 'Luke', chapter: 22, verseStart: 3 },
+      { book: 'Luke', chapter: 22, verseStart: 47 },
+      { book: 'Luke', chapter: 22, verseStart: 48 },
+      { book: 'John', chapter: 6, verseStart: 71 },
+      { book: 'John', chapter: 12, verseStart: 4 },
+      { book: 'John', chapter: 13, verseStart: 2 },
+      { book: 'John', chapter: 13, verseStart: 26 },
+      { book: 'John', chapter: 13, verseStart: 29 },
+      { book: 'John', chapter: 14, verseStart: 22 },
+      { book: 'John', chapter: 18, verseStart: 2 },
+      { book: 'John', chapter: 18, verseStart: 3 },
+      { book: 'John', chapter: 18, verseStart: 5 },
+      { book: 'Acts', chapter: 1, verseStart: 16 },
+      { book: 'Acts', chapter: 1, verseStart: 25 },
+    ],
+  }
+
+export default character

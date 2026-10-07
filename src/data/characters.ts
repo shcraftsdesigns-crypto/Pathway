@@ -585,3 +585,19 @@ export const characters: BiblicalCharacter[] = [
     tl: [['Named as David’s sister', 'Zeruiah is named with Abigail as a sister of David.', ref('1 Chronicles', 2, 16)], ['Her three sons are named', 'Joab, Abishai, and Asahel are identified as the three sons of Zeruiah.', ref('1 Chronicles', 2, 16)], ['Abishai identified through Zeruiah', 'Abishai is introduced to David as the son of Zeruiah.', ref('1 Samuel', 26, 6)], ['Joab and Abishai identified as her sons', 'Joab and Abishai meet Abner’s forces and are identified through Zeruiah.', ref('2 Samuel', 2, 13)], ['Asahel identified as her son', 'Asahel is named with Joab and Abishai as one of Zeruiah’s three sons.', ref('2 Samuel', 2, 18)], ['Abishai again identified through Zeruiah', 'During Shimei’s cursing of David, Abishai is again identified as the son of Zeruiah.', ref('2 Samuel', 16, 9)], ['David addresses the sons of Zeruiah', 'David responds directly concerning the sons of Zeruiah.', ref('2 Samuel', 16, 10)], ['Family designation continues after the rebellion', 'Abishai is again identified as the son of Zeruiah when David returns after Absalom’s rebellion.', ref('2 Samuel', 19, 21, 22)], ['Abishai remembered among David’s warriors', 'Abishai son of Zeruiah is remembered among David’s mighty warriors.', ref('2 Samuel', 23, 18)], ['Joab remembered as Zeruiah’s son', 'Joab is identified as the son of Zeruiah in the record of David’s officials.', ref('1 Chronicles', 18, 15)]] }),
 
 ]
+
+// Lightweight homepage accessor.
+// This intentionally uses only the handcrafted character data in this file,
+// so the homepage does not need to load the full 2,922-character database.
+export async function listFeaturedCharacters(): Promise<BiblicalCharacter[]> {
+  const bySlug = new Map(
+    characters.map((character) => [character.slug, character])
+  )
+
+  return FEATURED_SLUGS
+    .map((slug) => bySlug.get(slug))
+    .filter(
+      (character): character is BiblicalCharacter => Boolean(character)
+    )
+}
+

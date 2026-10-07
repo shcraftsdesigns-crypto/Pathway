@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'James_1',
+    name: 'James',
+    slug: 'james-1',
+    alternateNames: [],
+    testament: 'New Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'son of Zebedee (MAT 4:21) fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2)',
+    biography: 'son of Zebedee (MAT 4:21) fisherman (mending their nets- MAT 4:21), one of the Twelve (MAT 10:2)',
+    keyScriptures: [
+      { book: 'Matthew', chapter: 4, verseStart: 21 },
+      { book: 'Matthew', chapter: 10, verseStart: 2 },
+      { book: 'Matthew', chapter: 17, verseStart: 1 },
+      { book: 'Mark', chapter: 1, verseStart: 19 },
+      { book: 'Mark', chapter: 1, verseStart: 29 },
+      { book: 'Mark', chapter: 3, verseStart: 17 },
+      { book: 'Mark', chapter: 5, verseStart: 37 },
+      { book: 'Mark', chapter: 9, verseStart: 2 },
+      { book: 'Mark', chapter: 10, verseStart: 35 },
+      { book: 'Mark', chapter: 10, verseStart: 41 },
+      { book: 'Mark', chapter: 13, verseStart: 3 },
+      { book: 'Mark', chapter: 14, verseStart: 33 },
+      { book: 'Luke', chapter: 5, verseStart: 10 },
+      { book: 'Luke', chapter: 6, verseStart: 14 },
+      { book: 'Luke', chapter: 8, verseStart: 51 },
+      { book: 'Luke', chapter: 9, verseStart: 28 },
+      { book: 'Luke', chapter: 9, verseStart: 54 },
+      { book: 'Acts', chapter: 1, verseStart: 13 },
+      { book: 'Acts', chapter: 12, verseStart: 2 },
+      { book: 'Acts', chapter: 12, verseStart: 17 },
+      { book: 'Acts', chapter: 15, verseStart: 13 },
+      { book: 'Acts', chapter: 21, verseStart: 18 },
+      { book: '1 Corinthians', chapter: 15, verseStart: 7 },
+      { book: 'Galatians', chapter: 1, verseStart: 19 },
+      { book: 'Galatians', chapter: 2, verseStart: 9 },
+      { book: 'Galatians', chapter: 2, verseStart: 12 },
+    ],
+  }
+
+export default character

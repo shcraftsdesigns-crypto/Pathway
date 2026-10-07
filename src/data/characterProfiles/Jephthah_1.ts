@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Jephthah_1',
+    name: 'Jephthah',
+    slug: 'jephthah',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'a valiant warrior (JDG 11:1) judge of Israel and a valiant warrior (JDG 11:1)',
+    biography: 'a valiant warrior (JDG 11:1) judge of Israel and a valiant warrior (JDG 11:1)',
+    keyScriptures: [
+      { book: 'Judges', chapter: 11, verseStart: 1 },
+      { book: 'Judges', chapter: 11, verseStart: 2 },
+      { book: 'Judges', chapter: 11, verseStart: 3 },
+      { book: 'Judges', chapter: 11, verseStart: 5 },
+      { book: 'Judges', chapter: 11, verseStart: 6 },
+      { book: 'Judges', chapter: 11, verseStart: 7 },
+      { book: 'Judges', chapter: 11, verseStart: 8 },
+      { book: 'Judges', chapter: 11, verseStart: 9 },
+      { book: 'Judges', chapter: 11, verseStart: 10 },
+      { book: 'Judges', chapter: 11, verseStart: 11 },
+      { book: 'Judges', chapter: 11, verseStart: 12 },
+      { book: 'Judges', chapter: 11, verseStart: 13 },
+      { book: 'Judges', chapter: 11, verseStart: 14 },
+      { book: 'Judges', chapter: 11, verseStart: 15 },
+      { book: 'Judges', chapter: 11, verseStart: 28 },
+      { book: 'Judges', chapter: 11, verseStart: 29 },
+      { book: 'Judges', chapter: 11, verseStart: 30 },
+      { book: 'Judges', chapter: 11, verseStart: 32 },
+      { book: 'Judges', chapter: 11, verseStart: 34 },
+      { book: 'Judges', chapter: 11, verseStart: 40 },
+      { book: 'Judges', chapter: 12, verseStart: 1 },
+      { book: 'Judges', chapter: 12, verseStart: 2 },
+      { book: 'Judges', chapter: 12, verseStart: 4 },
+      { book: 'Judges', chapter: 12, verseStart: 7 },
+      { book: '1 Samuel', chapter: 12, verseStart: 11 },
+      { book: 'Hebrews', chapter: 11, verseStart: 32 },
+    ],
+  }
+
+export default character

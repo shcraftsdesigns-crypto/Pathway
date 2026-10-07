@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Nebat_1',
+    name: 'Nebat',
+    slug: 'nebat',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'father of Jeroboam, an Ephraimite of Zeredah (1KI 11:26) Tribe: Ephraim.',
+    biography: 'father of Jeroboam, an Ephraimite of Zeredah (1KI 11:26) Tribe: Ephraim.',
+    keyScriptures: [
+      { book: '1 Kings', chapter: 11, verseStart: 26 },
+      { book: '1 Kings', chapter: 12, verseStart: 2 },
+      { book: '1 Kings', chapter: 12, verseStart: 15 },
+      { book: '1 Kings', chapter: 15, verseStart: 1 },
+      { book: '1 Kings', chapter: 16, verseStart: 3 },
+      { book: '1 Kings', chapter: 16, verseStart: 26 },
+      { book: '1 Kings', chapter: 16, verseStart: 31 },
+      { book: '1 Kings', chapter: 21, verseStart: 22 },
+      { book: '1 Kings', chapter: 22, verseStart: 52 },
+      { book: '2 Kings', chapter: 3, verseStart: 3 },
+      { book: '2 Kings', chapter: 9, verseStart: 9 },
+      { book: '2 Kings', chapter: 10, verseStart: 29 },
+      { book: '2 Kings', chapter: 13, verseStart: 2 },
+      { book: '2 Kings', chapter: 13, verseStart: 11 },
+      { book: '2 Kings', chapter: 14, verseStart: 24 },
+      { book: '2 Kings', chapter: 15, verseStart: 9 },
+      { book: '2 Kings', chapter: 15, verseStart: 18 },
+      { book: '2 Kings', chapter: 15, verseStart: 24 },
+      { book: '2 Kings', chapter: 17, verseStart: 21 },
+      { book: '2 Kings', chapter: 23, verseStart: 15 },
+      { book: '2 Chronicles', chapter: 9, verseStart: 29 },
+      { book: '2 Chronicles', chapter: 10, verseStart: 2 },
+      { book: '2 Chronicles', chapter: 10, verseStart: 15 },
+      { book: '2 Chronicles', chapter: 13, verseStart: 6 },
+    ],
+  }
+
+export default character

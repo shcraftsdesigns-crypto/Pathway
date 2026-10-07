@@ -1,0 +1,42 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Joash_4',
+    name: 'Joash',
+    slug: 'joash-4',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Israel, son of Jehoahaz (2KI 13:9)',
+    biography: 'King of Israel, son of Jehoahaz (2KI 13:9)',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 13, verseStart: 9 },
+      { book: '2 Kings', chapter: 13, verseStart: 10 },
+      { book: '2 Kings', chapter: 13, verseStart: 12 },
+      { book: '2 Kings', chapter: 13, verseStart: 13 },
+      { book: '2 Kings', chapter: 13, verseStart: 14 },
+      { book: '2 Kings', chapter: 13, verseStart: 16 },
+      { book: '2 Kings', chapter: 13, verseStart: 18 },
+      { book: '2 Kings', chapter: 13, verseStart: 25 },
+      { book: '2 Kings', chapter: 14, verseStart: 1 },
+      { book: '2 Kings', chapter: 14, verseStart: 8 },
+      { book: '2 Kings', chapter: 14, verseStart: 9 },
+      { book: '2 Kings', chapter: 14, verseStart: 11 },
+      { book: '2 Kings', chapter: 14, verseStart: 13 },
+      { book: '2 Kings', chapter: 14, verseStart: 15 },
+      { book: '2 Kings', chapter: 14, verseStart: 16 },
+      { book: '2 Kings', chapter: 14, verseStart: 17 },
+      { book: '2 Kings', chapter: 14, verseStart: 23 },
+      { book: '2 Kings', chapter: 14, verseStart: 27 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 17 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 18 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 21 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 23 },
+      { book: '2 Chronicles', chapter: 25, verseStart: 25 },
+      { book: 'Hosea', chapter: 1, verseStart: 1 },
+      { book: 'Amos', chapter: 1, verseStart: 1 },
+    ],
+  }
+
+export default character

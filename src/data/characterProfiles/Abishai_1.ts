@@ -1,0 +1,41 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Abishai_1',
+    name: 'Abishai',
+    slug: 'abishai',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'son of Zeruiah and Joab\'s brother (1SA 26:6), chief of "the thirty" of David\'s men (2SA 23:18) Tribe: Judah.',
+    biography: 'son of Zeruiah and Joab\'s brother (1SA 26:6), chief of "the thirty" of David\'s men (2SA 23:18) Tribe: Judah.',
+    keyScriptures: [
+      { book: '1 Samuel', chapter: 26, verseStart: 6 },
+      { book: '1 Samuel', chapter: 26, verseStart: 7 },
+      { book: '1 Samuel', chapter: 26, verseStart: 8 },
+      { book: '1 Samuel', chapter: 26, verseStart: 9 },
+      { book: '2 Samuel', chapter: 2, verseStart: 18 },
+      { book: '2 Samuel', chapter: 2, verseStart: 24 },
+      { book: '2 Samuel', chapter: 3, verseStart: 30 },
+      { book: '2 Samuel', chapter: 10, verseStart: 10 },
+      { book: '2 Samuel', chapter: 16, verseStart: 9 },
+      { book: '2 Samuel', chapter: 16, verseStart: 11 },
+      { book: '2 Samuel', chapter: 18, verseStart: 2 },
+      { book: '2 Samuel', chapter: 18, verseStart: 5 },
+      { book: '2 Samuel', chapter: 18, verseStart: 12 },
+      { book: '2 Samuel', chapter: 19, verseStart: 21 },
+      { book: '2 Samuel', chapter: 20, verseStart: 6 },
+      { book: '2 Samuel', chapter: 20, verseStart: 10 },
+      { book: '2 Samuel', chapter: 21, verseStart: 17 },
+      { book: '2 Samuel', chapter: 23, verseStart: 18 },
+      { book: '1 Chronicles', chapter: 2, verseStart: 16 },
+      { book: '1 Chronicles', chapter: 11, verseStart: 20 },
+      { book: '1 Chronicles', chapter: 12, verseStart: 4 },
+      { book: '1 Chronicles', chapter: 18, verseStart: 12 },
+      { book: '1 Chronicles', chapter: 19, verseStart: 11 },
+      { book: '1 Chronicles', chapter: 19, verseStart: 15 },
+    ],
+  }
+
+export default character

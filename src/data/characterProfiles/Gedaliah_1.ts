@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Gedaliah_1',
+    name: 'Gedaliah',
+    slug: 'gedaliah-1',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'son of Ahikam, appointed King of Judah by Nebuchadnezzar (2KI 25:22)',
+    biography: 'son of Ahikam, appointed King of Judah by Nebuchadnezzar (2KI 25:22)',
+    keyScriptures: [
+      { book: '2 Kings', chapter: 25, verseStart: 22 },
+      { book: '2 Kings', chapter: 25, verseStart: 23 },
+      { book: '2 Kings', chapter: 25, verseStart: 24 },
+      { book: '2 Kings', chapter: 25, verseStart: 25 },
+      { book: 'Jeremiah', chapter: 39, verseStart: 14 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 5 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 6 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 7 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 8 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 9 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 11 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 12 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 13 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 14 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 15 },
+      { book: 'Jeremiah', chapter: 40, verseStart: 16 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 1 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 2 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 3 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 4 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 6 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 9 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 10 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 16 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 18 },
+      { book: 'Jeremiah', chapter: 43, verseStart: 6 },
+    ],
+  }
+
+export default character

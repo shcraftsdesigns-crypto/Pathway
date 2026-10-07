@@ -1,0 +1,43 @@
+import type { BiblicalCharacter } from '@/types'
+
+const character: BiblicalCharacter = {
+    id: 'Baasha_1',
+    name: 'Baasha',
+    slug: 'baasha',
+    alternateNames: [],
+    testament: 'Old Testament',
+    categories: ['Other'],
+    subtitle: 'Biblical character',
+    shortDescription: 'King of Israel (1KI 15:16)',
+    biography: 'King of Israel (1KI 15:16)',
+    keyScriptures: [
+      { book: '1 Kings', chapter: 15, verseStart: 16 },
+      { book: '1 Kings', chapter: 15, verseStart: 17 },
+      { book: '1 Kings', chapter: 15, verseStart: 19 },
+      { book: '1 Kings', chapter: 15, verseStart: 21 },
+      { book: '1 Kings', chapter: 15, verseStart: 22 },
+      { book: '1 Kings', chapter: 15, verseStart: 27 },
+      { book: '1 Kings', chapter: 15, verseStart: 28 },
+      { book: '1 Kings', chapter: 15, verseStart: 32 },
+      { book: '1 Kings', chapter: 15, verseStart: 33 },
+      { book: '1 Kings', chapter: 16, verseStart: 1 },
+      { book: '1 Kings', chapter: 16, verseStart: 3 },
+      { book: '1 Kings', chapter: 16, verseStart: 4 },
+      { book: '1 Kings', chapter: 16, verseStart: 5 },
+      { book: '1 Kings', chapter: 16, verseStart: 6 },
+      { book: '1 Kings', chapter: 16, verseStart: 7 },
+      { book: '1 Kings', chapter: 16, verseStart: 8 },
+      { book: '1 Kings', chapter: 16, verseStart: 11 },
+      { book: '1 Kings', chapter: 16, verseStart: 12 },
+      { book: '1 Kings', chapter: 16, verseStart: 13 },
+      { book: '1 Kings', chapter: 21, verseStart: 22 },
+      { book: '2 Kings', chapter: 9, verseStart: 9 },
+      { book: '2 Chronicles', chapter: 16, verseStart: 1 },
+      { book: '2 Chronicles', chapter: 16, verseStart: 3 },
+      { book: '2 Chronicles', chapter: 16, verseStart: 5 },
+      { book: '2 Chronicles', chapter: 16, verseStart: 6 },
+      { book: 'Jeremiah', chapter: 41, verseStart: 9 },
+    ],
+  }
+
+export default character
