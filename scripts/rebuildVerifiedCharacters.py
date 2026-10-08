@@ -248,6 +248,60 @@ for row in people:
     # These mappings preserve the exact source person_id while using a
     # familiar later biblical name or an identity-specific public name.
     # Earlier/source names remain searchable through alternateNames.
+    canonical_slugs = {
+        "Joseph_1": "joseph",
+        "Joshua_1": "joshua",
+        "Daniel_2": "daniel",
+        "Jacob_1": "jacob",
+        "Ahab_1": "ahab",
+        "Joab_1": "joab",
+        "Hezekiah_1": "hezekiah",
+        "John_1": "john-the-baptist",
+        "Elijah_1": "elijah",
+        "Jonathan_2": "jonathan-son-of-saul",
+        "Jeroboam_1": "jeroboam-son-of-nebat",
+        "Jehoshaphat_3": "jehoshaphat-king-of-judah",
+        "Benjamin_1": "benjamin",
+        "Manasseh_1": "manasseh-son-of-joseph",
+        "Eleazar_1": "eleazar-son-of-aaron",
+        "Levi_1": "levi-son-of-jacob",
+        "Josiah_1": "josiah",
+        "Asa_1": "asa-king-of-judah",
+        "Pilate_1": "pontius-pilate",
+        "Mordecai_2": "mordecai",
+        "Noah_1": "noah",
+        "Jehu_2": "jehu-king-of-israel",
+        "Gad_1": "gad-son-of-jacob",
+        "Ephraim_1": "ephraim-son-of-joseph",
+        "Merari_1": "merari-son-of-levi",
+        "Ahaz_1": "ahaz-king-of-judah",
+        "Jehoram_2": "jehoram-king-of-israel",
+        "Abimelech_2": "abimelech-son-of-gideon",
+        "John_2": "john-son-of-zebedee",
+        "Dan_1": "dan-son-of-jacob",
+        "Amaziah_1": "amaziah-king-of-judah",
+        "Zadok_1": "zadok-priest",
+        "Korah_3": "korah-son-of-izhar",
+        "Eli_1": "eli-priest",
+        "Simeon_1": "simeon-son-of-jacob",
+        "Nathan_2": "nathan-prophet",
+        "Nun_1": "nun-father-of-joshua",
+        "Abiathar_1": "abiathar-priest",
+        "Ben-hadad_1": "ben-hadad-king-of-aram",
+        "Kohath_1": "kohath-son-of-levi",
+        "Caleb_1": "caleb-son-of-jephunneh",
+        "Asher_1": "asher-son-of-jacob",
+        "Gedaliah_1": "gedaliah-son-of-ahikam",
+        "Joash_3": "joash-king-of-judah",
+        "Ahaziah_2": "ahaziah-king-of-judah",
+        "Ezra_1": "ezra-scribe",
+        "Issachar_1": "issachar-son-of-jacob",
+        "Jehoiada_2": "jehoiada-priest",
+        "Joash_4": "joash-king-of-israel",
+        "Naphtali_1": "naphtali-son-of-jacob",
+        "Zeruiah_1": "zeruiah-sister-of-david",
+    }
+
     canonical_public = {
         "Abram_1": ("Abraham", "abraham", ["Abram"]),
         "Hadassah_1": ("Esther", "esther", ["Hadassah"]),
@@ -270,7 +324,7 @@ for row in people:
         canonical_alternate_names = []
     else:
         display_name = name
-        slug = make_slug(row)
+        slug = canonical_slugs.get(pid, make_slug(row))
         canonical_alternate_names = []
 
     desc = descriptions(row)

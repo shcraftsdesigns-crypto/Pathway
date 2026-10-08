@@ -3,7 +3,7 @@ import type { BiblicalCharacter } from '@/types'
 const character: BiblicalCharacter = {
     id: 'Zeruiah_1',
     name: 'Zeruiah',
-    slug: 'zeruiah',
+    slug: 'zeruiah-sister-of-david',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],

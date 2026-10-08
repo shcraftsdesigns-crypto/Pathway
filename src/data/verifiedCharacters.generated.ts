@@ -541,7 +541,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Abiathar_1',
     name: 'Abiathar',
-    slug: 'abiathar',
+    slug: 'abiathar-priest',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -1000,7 +1000,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Abimelech_2',
     name: 'Abimelech',
-    slug: 'abimelech-2',
+    slug: 'abimelech-son-of-gideon',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -2552,7 +2552,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ahab_1',
     name: 'Ahab',
-    slug: 'ahab-1',
+    slug: 'ahab',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -2771,7 +2771,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ahaz_1',
     name: 'Ahaz',
-    slug: 'ahaz-1',
+    slug: 'ahaz-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -2859,7 +2859,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ahaziah_2',
     name: 'Ahaziah',
-    slug: 'ahaziah-2',
+    slug: 'ahaziah-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -4206,7 +4206,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Amaziah_1',
     name: 'Amaziah',
-    slug: 'amaziah-1',
+    slug: 'amaziah-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -5811,7 +5811,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Asa_1',
     name: 'Asa',
-    slug: 'asa-1',
+    slug: 'asa-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -6175,7 +6175,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Asher_1',
     name: 'Asher',
-    slug: 'asher',
+    slug: 'asher-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -8709,7 +8709,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ben-hadad_1',
     name: 'Ben-hadad',
-    slug: 'ben-hadad-1',
+    slug: 'ben-hadad-king-of-aram',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -9035,7 +9035,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Benjamin_1',
     name: 'Benjamin',
-    slug: 'benjamin-1',
+    slug: 'benjamin',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -10331,7 +10331,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Caleb_1',
     name: 'Caleb',
-    slug: 'caleb',
+    slug: 'caleb-son-of-jephunneh',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -11101,7 +11101,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Dan_1',
     name: 'Dan',
-    slug: 'dan',
+    slug: 'dan-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -11164,7 +11164,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Daniel_2',
     name: 'Daniel',
-    slug: 'daniel-2',
+    slug: 'daniel',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -13406,7 +13406,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Eleazar_1',
     name: 'Eleazar',
-    slug: 'eleazar-1',
+    slug: 'eleazar-son-of-aaron',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -13611,7 +13611,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Eli_1',
     name: 'Eli',
-    slug: 'eli-1',
+    slug: 'eli-priest',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -14513,7 +14513,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Elijah_1',
     name: 'Elijah',
-    slug: 'elijah-1',
+    slug: 'elijah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -15801,7 +15801,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ephraim_1',
     name: 'Ephraim',
-    slug: 'ephraim',
+    slug: 'ephraim-son-of-joseph',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -16619,7 +16619,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Ezra_1',
     name: 'Ezra',
-    slug: 'ezra',
+    slug: 'ezra-scribe',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -16756,7 +16756,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Gad_1',
     name: 'Gad',
-    slug: 'gad-1',
+    slug: 'gad-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -17110,7 +17110,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Gedaliah_1',
     name: 'Gedaliah',
-    slug: 'gedaliah-1',
+    slug: 'gedaliah-son-of-ahikam',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -20649,7 +20649,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Hezekiah_1',
     name: 'Hezekiah',
-    slug: 'hezekiah-1',
+    slug: 'hezekiah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -23062,7 +23062,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Issachar_1',
     name: 'Issachar',
-    slug: 'issachar-1',
+    slug: 'issachar-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -23752,7 +23752,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jacob_1',
     name: 'Jacob',
-    slug: 'jacob-1',
+    slug: 'jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -26407,7 +26407,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jehoiada_2',
     name: 'Jehoiada',
-    slug: 'jehoiada-2',
+    slug: 'jehoiada-priest',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -26573,7 +26573,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jehoram_2',
     name: 'Jehoram',
-    slug: 'jehoram-2',
+    slug: 'jehoram-king-of-israel',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -26668,7 +26668,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jehoshaphat_3',
     name: 'Jehoshaphat',
-    slug: 'jehoshaphat-3',
+    slug: 'jehoshaphat-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -26873,7 +26873,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jehu_2',
     name: 'Jehu',
-    slug: 'jehu-2',
+    slug: 'jehu-king-of-israel',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -27862,7 +27862,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jeroboam_1',
     name: 'Jeroboam',
-    slug: 'jeroboam-1',
+    slug: 'jeroboam-son-of-nebat',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -28764,7 +28764,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Joab_1',
     name: 'Joab',
-    slug: 'joab-1',
+    slug: 'joab',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -29067,7 +29067,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Joash_3',
     name: 'Joash',
-    slug: 'joash-3',
+    slug: 'joash-king-of-judah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -29106,7 +29106,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Joash_4',
     name: 'Joash',
-    slug: 'joash-4',
+    slug: 'joash-king-of-israel',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -29770,7 +29770,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'John_1',
     name: 'John',
-    slug: 'john-1',
+    slug: 'john-the-baptist',
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
@@ -29877,7 +29877,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'John_2',
     name: 'John',
-    slug: 'john-2',
+    slug: 'john-son-of-zebedee',
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
@@ -30228,7 +30228,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Jonathan_2',
     name: 'Jonathan',
-    slug: 'jonathan-2',
+    slug: 'jonathan-son-of-saul',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -30602,7 +30602,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Joseph_1',
     name: 'Joseph',
-    slug: 'joseph-1',
+    slug: 'joseph',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -31112,7 +31112,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Joshua_1',
     name: 'Joshua',
-    slug: 'joshua-1',
+    slug: 'joshua',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -31383,7 +31383,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Josiah_1',
     name: 'Josiah',
-    slug: 'josiah-1',
+    slug: 'josiah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -32529,7 +32529,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Kohath_1',
     name: 'Kohath',
-    slug: 'kohath',
+    slug: 'kohath-son-of-levi',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -32630,7 +32630,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Korah_3',
     name: 'Korah',
-    slug: 'korah-3',
+    slug: 'korah-son-of-izhar',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -33102,7 +33102,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Levi_1',
     name: 'Levi',
-    slug: 'levi-1',
+    slug: 'levi-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -34680,7 +34680,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Manasseh_1',
     name: 'Manasseh',
-    slug: 'manasseh-1',
+    slug: 'manasseh-son-of-joseph',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -36025,7 +36025,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Merari_1',
     name: 'Merari',
-    slug: 'merari',
+    slug: 'merari-son-of-levi',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -37545,7 +37545,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Mordecai_2',
     name: 'Mordecai',
-    slug: 'mordecai-2',
+    slug: 'mordecai',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -39005,7 +39005,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Naphtali_1',
     name: 'Naphtali',
-    slug: 'naphtali',
+    slug: 'naphtali-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -39089,7 +39089,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Nathan_2',
     name: 'Nathan',
-    slug: 'nathan-2',
+    slug: 'nathan-prophet',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -40139,7 +40139,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Noah_1',
     name: 'Noah',
-    slug: 'noah-1',
+    slug: 'noah',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -40259,7 +40259,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Nun_1',
     name: 'Nun',
-    slug: 'nun',
+    slug: 'nun-father-of-joshua',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -42277,7 +42277,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Pilate_1',
     name: 'Pilate',
-    slug: 'pilate',
+    slug: 'pontius-pilate',
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
@@ -49189,7 +49189,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Simeon_1',
     name: 'Simeon',
-    slug: 'simeon-1',
+    slug: 'simeon-son-of-jacob',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -52564,7 +52564,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Zadok_1',
     name: 'Zadok',
-    slug: 'zadok-1',
+    slug: 'zadok-priest',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
@@ -53954,7 +53954,7 @@ export const verifiedCharacters: BiblicalCharacter[] = [
   {
     id: 'Zeruiah_1',
     name: 'Zeruiah',
-    slug: 'zeruiah',
+    slug: 'zeruiah-sister-of-david',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],

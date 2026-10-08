@@ -3,7 +3,7 @@ import type { BiblicalCharacter } from '@/types'
 const character: BiblicalCharacter = {
     id: 'Abimelech_2',
     name: 'Abimelech',
-    slug: 'abimelech-2',
+    slug: 'abimelech-son-of-gideon',
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
