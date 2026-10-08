@@ -2,9 +2,9 @@ import type { BiblicalCharacter } from '@/types'
 
 const character: BiblicalCharacter = {
     id: 'Herod_2',
-    name: 'Herod',
-    slug: 'herod-2',
-    alternateNames: [],
+    name: 'Herod Antipas',
+    slug: 'herod-antipas',
+    alternateNames: ['Herod'],
     testament: 'New Testament',
     categories: ['Other'],
     subtitle: 'Biblical character',

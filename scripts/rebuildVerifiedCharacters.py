@@ -245,20 +245,33 @@ for row in people:
 
     # Canonical public identities.
     #
-    # Abram_1 is one biblical person whose name changes from Abram to
-    # Abraham in Genesis 17:5. Keep the source person ID unchanged while
-    # using the later biblical name as the public display name/slug.
-    #
-    # Jesus_1 in the source is Jesus Justus, not Jesus Christ.
-    if pid == "Abram_1":
-        display_name = "Abraham"
-        slug = "abraham"
+    # These mappings preserve the exact source person_id while using a
+    # familiar later biblical name or an identity-specific public name.
+    # Earlier/source names remain searchable through alternateNames.
+    canonical_public = {
+        "Abram_1": ("Abraham", "abraham", ["Abram"]),
+        "Hadassah_1": ("Esther", "esther", ["Hadassah"]),
+        "Simon_1": ("Peter", "peter", ["Simon", "Cephas"]),
+        "Saul_2": ("Paul", "paul", ["Saul"]),
+        "Mattaniah_1": ("Zedekiah", "zedekiah-king-of-judah", ["Mattaniah"]),
+        "Sarai_1": ("Sarah", "sarah", ["Sarai"]),
+        "Eliakim_2": ("Jehoiakim", "jehoiakim", ["Eliakim"]),
+        "Azariah_3": ("Uzziah", "uzziah", ["Azariah"]),
+        "Joseph_12": ("Barnabas", "barnabas", ["Joseph", "Joses"]),
+        "Herod_2": ("Herod Antipas", "herod-antipas", ["Herod"]),
+        "Judas_1": ("Judas Iscariot", "judas-iscariot", ["Judas"]),
+    }
+
+    if pid in canonical_public:
+        display_name, slug, canonical_alternate_names = canonical_public[pid]
     elif pid == "Jesus_1":
         display_name = "Jesus Justus"
         slug = make_slug(row)
+        canonical_alternate_names = []
     else:
         display_name = name
         slug = make_slug(row)
+        canonical_alternate_names = []
 
     desc = descriptions(row)
 
@@ -267,12 +280,17 @@ for row in people:
     out.append(f"    name: {ts(display_name)},")
     out.append(f"    slug: {ts(slug)},")
 
-    if pid == "Abram_1":
-        out.append("    alternateNames: ['Abram'],")
-    elif pid == "Jesus_1":
-        out.append("    alternateNames: ['Jesus', 'Justus'],")
+    if pid == "Jesus_1":
+        alternate_names = ["Jesus", "Justus"]
     else:
-        out.append("    alternateNames: [],")
+        alternate_names = canonical_alternate_names
+
+    alternate_names_ts = ", ".join(
+        ts(value) for value in alternate_names
+    )
+    out.append(
+        f"    alternateNames: [{alternate_names_ts}],"
+    )
 
     out.append(f"    testament: {ts(testament_for(pid))},")
     out.append("    categories: ['Other'],")

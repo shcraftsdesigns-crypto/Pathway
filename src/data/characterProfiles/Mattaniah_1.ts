@@ -2,9 +2,9 @@ import type { BiblicalCharacter } from '@/types'
 
 const character: BiblicalCharacter = {
     id: 'Mattaniah_1',
-    name: 'Mattaniah',
-    slug: 'mattaniah-1',
-    alternateNames: [],
+    name: 'Zedekiah',
+    slug: 'zedekiah-king-of-judah',
+    alternateNames: ['Mattaniah'],
     testament: 'Old Testament',
     categories: ['Other'],
     subtitle: 'Biblical character',

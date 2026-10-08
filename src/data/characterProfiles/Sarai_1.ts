@@ -2,9 +2,9 @@ import type { BiblicalCharacter } from '@/types'
 
 const character: BiblicalCharacter = {
     id: 'Sarai_1',
-    name: 'Sarai',
-    slug: 'sarai',
-    alternateNames: [],
+    name: 'Sarah',
+    slug: 'sarah',
+    alternateNames: ['Sarai'],
     testament: 'Old Testament',
     categories: ['Other'],
     subtitle: 'Biblical character',

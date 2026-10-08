@@ -17,6 +17,39 @@ function enrichCharacter(character: BiblicalCharacter): BiblicalCharacter {
   return character
 }
 
+// Generated profiles are authoritative for biblical identity and verified
+// Scripture references. Handcrafted rich profiles may enhance study content,
+// but they must never replace the generated identity.
+function mergeRichProfile(
+  generated: BiblicalCharacter,
+  rich: BiblicalCharacter,
+): BiblicalCharacter {
+  if (generated.id !== rich.id) {
+    throw new Error(
+      `Rich profile ID mismatch: ${generated.id} / ${rich.id}`,
+    )
+  }
+
+  return {
+    ...generated,
+    subtitle: rich.subtitle,
+    shortDescription: rich.shortDescription,
+    biography: rich.biography ?? generated.biography,
+    timeline: rich.timeline ?? generated.timeline,
+    relationships: rich.relationships ?? generated.relationships,
+    studyAreas: rich.studyAreas ?? generated.studyAreas,
+
+    // Explicitly preserve canonical generated identity/evidence fields.
+    id: generated.id,
+    name: generated.name,
+    slug: generated.slug,
+    alternateNames: generated.alternateNames,
+    testament: generated.testament,
+    categories: generated.categories,
+    keyScriptures: generated.keyScriptures,
+  }
+}
+
 // Rich profiles remain linked by exact biblical person ID.
 // Never merge people merely because they share a display name.
 const richCharactersById = new Map(
@@ -125,13 +158,9 @@ async function loadCharacterBySlug(
   const rich = richCharactersById.get(generatedCharacter.id)
 
   if (rich) {
-    if (rich.slug !== generatedCharacter.slug) {
-      throw new Error(
-        `Rich profile identity mismatch for ${generatedCharacter.id}`,
-      )
-    }
-
-    return enrichCharacter(rich)
+    return enrichCharacter(
+      mergeRichProfile(generatedCharacter, rich),
+    )
   }
 
   if (generatedCharacter.slug !== normalizedSlug) {
