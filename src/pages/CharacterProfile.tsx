@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, ChevronDown, ChevronUp } from 'lucide-react'
+import { ArrowLeft, ChevronDown, ChevronUp, Bookmark, BookmarkCheck
+} from 'lucide-react'
 import SectionHeader from '@/components/ui/SectionHeader'
 import LoadingState from '@/components/ui/LoadingState'
 import EmptyState from '@/components/ui/EmptyState'
@@ -12,6 +13,14 @@ import StudyAreaCard from '@/components/characters/StudyAreaCard'
 import { useCharacter } from '@/hooks/useCharacterProfile'
 import { collectReferences, formatReference } from '@/lib/scripture'
 import { usePageTitle } from '@/hooks/usePageTitle'
+import {
+  getCharacterNote,
+  getCompletedStudyAreas,
+  isCharacterSaved,
+  saveCharacterNote,
+  toggleSavedCharacter,
+  toggleStudyArea,
+} from '@/lib/studyStorage'
 import { UNIVERSAL_STUDY_AREAS } from '@/data/studyAreas'
 import { isModerateCharacter } from '@/data/moderateCharacters.generated'
 import {
@@ -182,6 +191,7 @@ export default function CharacterProfile() {
   const { slug = '' } = useParams()
   const { data: c, loading, error } = useCharacter(slug)
   const [showAllReferences, setShowAllReferences] = useState(false)
+  const [studyVersion, setStudyVersion] = useState(0)
 
   usePageTitle(c?.name)
 
@@ -218,6 +228,13 @@ export default function CharacterProfile() {
             ? getSingleStudyAreas(c.name, references)
             : undefined
 
+  const saved = isCharacterSaved(c.id)
+  const note = getCharacterNote(c.id)
+  const completedAreaIds = getCompletedStudyAreas(c.id)
+
+  // Re-read local study state after an action on this page.
+  void studyVersion
+
   const visibleReferences = showAllReferences
     ? references
     : references.slice(0, INITIAL_REFERENCE_LIMIT)
@@ -235,6 +252,70 @@ export default function CharacterProfile() {
       </Link>
 
       <CharacterHeader character={c} />
+
+      <section className="py-4">
+        <div className="card">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-lg font-semibold">
+                My Study
+              </h2>
+              <p className="mt-1 text-sm text-mute">
+                Save this character, record notes, and track your study progress.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => {
+                toggleSavedCharacter({
+                  id: c.id,
+                  name: c.name,
+                  slug: c.slug,
+                })
+                setStudyVersion((value) => value + 1)
+              }}
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-line px-4 py-2.5 font-semibold hover:border-acc"
+            >
+              {saved ? (
+                <BookmarkCheck size={18} aria-hidden="true" />
+              ) : (
+                <Bookmark size={18} aria-hidden="true" />
+              )}
+              {saved ? 'Saved to My Study' : 'Save to My Study'}
+            </button>
+          </div>
+
+          <div className="mt-5">
+            <label
+              htmlFor={`study-note-${c.id}`}
+              className="text-sm font-semibold"
+            >
+              Personal notes
+            </label>
+
+            <textarea
+              id={`study-note-${c.id}`}
+              key={`${c.id}-${note}`}
+              defaultValue={note}
+              rows={4}
+              placeholder={`Write your notes about ${c.name}...`}
+              className="mt-2 w-full rounded-xl border border-line bg-transparent px-4 py-3 text-ink outline-none focus:border-acc"
+              onBlur={(event) => {
+                saveCharacterNote(
+                  c.id,
+                  event.currentTarget.value,
+                )
+                setStudyVersion((value) => value + 1)
+              }}
+            />
+
+            <p className="mt-2 text-xs text-mute">
+              Notes are saved on this device when you leave the field.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {c.biography && (
         <section className="py-6">
@@ -340,6 +421,11 @@ export default function CharacterProfile() {
                   title={area.title}
                   description={area.description}
                   references={area.scriptureReferences}
+                  completed={completedAreaIds.includes(area.id)}
+                  onToggleComplete={() => {
+                    toggleStudyArea(c.id, area.id)
+                    setStudyVersion((value) => value + 1)
+                  }}
                 />
               ))
             : UNIVERSAL_STUDY_AREAS.map((area) => (
@@ -348,6 +434,16 @@ export default function CharacterProfile() {
                   title={area}
                   description={getStudyAreaDescription(area, c.name)}
                   references={references}
+                  completed={completedAreaIds.includes(
+                    `universal-${area}`,
+                  )}
+                  onToggleComplete={() => {
+                    toggleStudyArea(
+                      c.id,
+                      `universal-${area}`,
+                    )
+                    setStudyVersion((value) => value + 1)
+                  }}
                 />
               ))}
         </div>
