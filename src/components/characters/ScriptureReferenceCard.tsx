@@ -32,9 +32,11 @@ function getBibleLink(reference: ScriptureReference) {
 
   const base = `/bible/${bookId}/${reference.chapter}`
 
-  return reference.verseStart == null
-    ? base
-    : `${base}#verse-${reference.verseStart}`
+  if (reference.verseStart == null || reference.verseStart === 0) {
+    return base
+  }
+
+  return `${base}?verse=${reference.verseStart}#verse-${reference.verseStart}`
 }
 
 export default function ScriptureReferenceCard({

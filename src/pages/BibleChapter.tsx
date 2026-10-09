@@ -10,7 +10,7 @@ import {
   useMemo,
   useState,
 } from 'react'
-import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams, useSearchParams } from 'react-router-dom'
 
 import { bibleBooks, getBibleBook } from '@/data/bibleBooks'
 import { usePageTitle } from '@/hooks/usePageTitle'
@@ -29,6 +29,8 @@ import {
 
 export default function BibleChapter() {
   const location = useLocation()
+  const [searchParams] = useSearchParams()
+  const requestedVerse = searchParams.get('verse')
   const { bookId, chapter: chapterParam } = useParams()
   const book = bookId ? getBibleBook(bookId) : undefined
   const chapter = Number(chapterParam)
@@ -284,6 +286,26 @@ export default function BibleChapter() {
         {!loading && !error && content && (
           <div className="space-y-6">
             <div className="space-y-4 text-lg leading-8">
+              {requestedVerse &&
+              !content.verses.some(
+                (verse) => String(verse.number) === requestedVerse,
+              ) && (
+                <div
+                  role="note"
+                  className="mb-6 rounded-xl border border-border bg-muted/50 p-4 text-sm"
+                >
+                  <p className="font-semibold">
+                    Verse {requestedVerse} is not numbered in the{' '}
+                    {content.translation.abbreviation}.
+                  </p>
+                  <p className="mt-1 text-muted-foreground">
+                    This character reference uses a traditional verse number
+                    that is not present in this translation. The chapter is
+                    shown below so you can continue reading in context.
+                  </p>
+                </div>
+              )}
+
               {content.verses.map((verse) => (
                 <p
                   key={verse.id}
