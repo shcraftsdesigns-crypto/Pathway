@@ -10,6 +10,9 @@ import Home from '@/pages/Home'
 import Characters from '@/pages/Characters'
 import Study from '@/pages/Study'
 import MyStudy from '@/pages/MyStudy'
+import Bible from '@/pages/Bible'
+import BibleBook from '@/pages/BibleBook'
+import BibleChapter from '@/pages/BibleChapter'
 import NotFound from '@/pages/NotFound'
 
 const loadCharacterProfile = () =>
@@ -60,6 +63,21 @@ export default function App() {
         <Route
           path="my-study"
           element={<MyStudy />}
+        />
+
+        <Route
+          path="bible"
+          element={<Bible />}
+        />
+
+        <Route
+          path="bible/:bookId"
+          element={<BibleBook />}
+        />
+
+        <Route
+          path="bible/:bookId/:chapter"
+          element={<BibleChapter />}
         />
 
         <Route

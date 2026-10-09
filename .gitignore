@@ -1,1 +1,9 @@
 node_modules/
+
+# Local environment secrets
+.env
+.env.local
+.env.*.local
+\n# Local Bible import source\n/bsb.xlsx\n
+# Local Bible import source
+/bsb.xlsx
