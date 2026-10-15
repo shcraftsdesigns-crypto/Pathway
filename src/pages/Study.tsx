@@ -8,11 +8,15 @@ import {
   Sparkles,
   Users,
 } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { preloadCharacterProfile } from '@/App'
 import { preloadCharacterBySlug } from '@/lib/characterRepository'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
+import type { StudyPlanType } from '@/lib/ai/studyPlan'
+import { askPathwayAI } from '@/lib/ai/provider'
+import type { AIResponse } from '@/lib/ai/types'
 
 interface GuidedStudy {
   id: string
@@ -111,9 +115,59 @@ const GUIDED_STUDIES: GuidedStudy[] = [
 ]
 
 export default function Study() {
+  const [studyType, setStudyType] =
+    useState<StudyPlanType>('character')
+  const [studySubject, setStudySubject] = useState('')
+  const [generatedStudy, setGeneratedStudy] =
+    useState<AIResponse | null>(null)
+  const [generatingStudy, setGeneratingStudy] =
+    useState(false)
+  const [studyError, setStudyError] = useState('')
+
   const preloadCharacter = (slug: string) => {
     preloadCharacterProfile()
     preloadCharacterBySlug(slug)
+  }
+
+  const generatePersonalStudy = async () => {
+    const subject = studySubject.trim()
+
+    if (!subject || generatingStudy) {
+      return
+    }
+
+    setGeneratingStudy(true)
+    setStudyError('')
+    setGeneratedStudy(null)
+
+    const typeLabel =
+      studyType === 'character'
+        ? 'biblical character'
+        : studyType === 'passage'
+          ? 'Bible passage'
+          : 'biblical topic'
+
+    try {
+      const result = await askPathwayAI({
+        question:
+          `Create a concise personal Bible study about the ${typeLabel} "${subject}". ` +
+          'Include what Scripture establishes, careful interpretation, practical reflection, ' +
+          'and 3 to 5 reflection questions. Cite relevant Scripture references. ' +
+          'Do not invent biblical details or references.',
+        contextType: 'study',
+        study: {
+          topic: `${studyType}:${subject}`,
+        },
+      })
+
+      setGeneratedStudy(result)
+    } catch {
+      setStudyError(
+        'Pathway AI could not generate this study right now. Please try again.',
+      )
+    } finally {
+      setGeneratingStudy(false)
+    }
   }
 
   usePageTitle('Guided Studies')
@@ -167,6 +221,187 @@ export default function Study() {
             Ask Pathway AI
           </Link>
         </div>
+      </section>
+
+      <section className="mt-8 rounded-xl border border-line bg-card p-5">
+        <div className="flex items-start gap-3">
+          <div className="rounded-xl bg-accbg p-2.5 text-acc">
+            <Sparkles size={22} aria-hidden="true" />
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold">
+              Personal Study Generator
+            </h2>
+
+            <p className="mt-1 max-w-2xl text-sm text-mute">
+              Create a personalized Bible study around a biblical character,
+              Bible passage, or topic.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <p className="text-sm font-semibold">
+            What would you like to study?
+          </p>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            {(
+              [
+                ['character', 'Character'],
+                ['passage', 'Bible Passage'],
+                ['topic', 'Topic'],
+              ] as const
+            ).map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                onClick={() => {
+                  setStudyType(value)
+                  setStudySubject('')
+                  setGeneratedStudy(null)
+                  setStudyError('')
+                }}
+                className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
+                  studyType === value
+                    ? 'border-acc bg-accbg text-acc'
+                    : 'border-line'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <label
+            htmlFor="personal-study-subject"
+            className="text-sm font-semibold"
+          >
+            {studyType === 'character'
+              ? 'Biblical character'
+              : studyType === 'passage'
+                ? 'Bible passage'
+                : 'Study topic'}
+          </label>
+
+          <input
+            id="personal-study-subject"
+            type="text"
+            value={studySubject}
+            onChange={(event) =>
+              setStudySubject(event.target.value)
+            }
+            maxLength={120}
+            placeholder={
+              studyType === 'character'
+                ? 'Example: Abraham'
+                : studyType === 'passage'
+                  ? 'Example: Genesis 12'
+                  : 'Example: Faith'
+            }
+            className="mt-2 w-full rounded-xl border border-line bg-bg px-4 py-3 outline-none focus:border-acc"
+          />
+        </div>
+
+        <button
+          type="button"
+          onClick={generatePersonalStudy}
+          disabled={!studySubject.trim() || generatingStudy}
+          className="mt-5 inline-flex items-center gap-2 rounded-xl bg-acc px-4 py-2.5 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <Sparkles size={18} aria-hidden="true" />
+          {generatingStudy
+            ? 'Generating study...'
+            : 'Generate my study'}
+        </button>
+
+        {studyError ? (
+          <p
+            className="mt-4 text-sm text-red-600"
+            role="alert"
+          >
+            {studyError}
+          </p>
+        ) : null}
+
+        {generatedStudy ? (
+          <div className="mt-6 space-y-5 rounded-xl border border-line bg-bg p-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-mute">
+                Your personal study
+              </p>
+
+              <h3 className="mt-1 text-lg font-semibold">
+                {studySubject.trim()}
+              </h3>
+            </div>
+
+            {generatedStudy.sections?.length ? (
+              generatedStudy.sections.map((section, index) => (
+                <section
+                  key={`${section.heading}-${index}`}
+                >
+                  <h4 className="font-semibold">
+                    {section.heading}
+                  </h4>
+
+                  <p className="mt-2 whitespace-pre-wrap leading-7">
+                    {section.content}
+                  </p>
+                </section>
+              ))
+            ) : (
+              <p className="whitespace-pre-wrap leading-7">
+                {generatedStudy.answer}
+              </p>
+            )}
+
+            {generatedStudy.scriptureCitations.length ? (
+              <div>
+                <p className="text-sm font-semibold">
+                  Scripture references
+                </p>
+
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {generatedStudy.scriptureCitations.map(
+                    (citation, index) => {
+                      const verses = citation.verseStart
+                        ? citation.verseEnd &&
+                          citation.verseEnd !== citation.verseStart
+                          ? `:${citation.verseStart}–${citation.verseEnd}`
+                          : `:${citation.verseStart}`
+                        : ''
+
+                      return (
+                        <span
+                          key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
+                          className="rounded-full border border-line px-3 py-1.5 text-sm"
+                        >
+                          {citation.book} {citation.chapter}
+                          {verses}
+                        </span>
+                      )
+                    },
+                  )}
+                </div>
+              </div>
+            ) : null}
+
+            <p className="text-xs text-mute">
+              AI-generated study. Verify interpretations and conclusions
+              against Scripture.
+            </p>
+          </div>
+        ) : null}
+
+        <p className="mt-3 text-xs text-mute">
+          Pathway AI will distinguish Scripture from interpretation and
+          reflection and will avoid presenting unsupported details as
+          biblical facts.
+        </p>
       </section>
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
