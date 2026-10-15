@@ -14,6 +14,7 @@ import Bible from '@/pages/Bible'
 import BibleBook from '@/pages/BibleBook'
 import BibleChapter from '@/pages/BibleChapter'
 import NotFound from '@/pages/NotFound'
+import PathwayAI from '@/pages/PathwayAI'
 
 const loadCharacterProfile = () =>
   import('@/pages/CharacterProfile')
@@ -78,6 +79,11 @@ export default function App() {
         <Route
           path="bible/:bookId/:chapter"
           element={<BibleChapter />}
+        />
+
+        <Route
+          path="ai"
+          element={<PathwayAI />}
         />
 
         <Route

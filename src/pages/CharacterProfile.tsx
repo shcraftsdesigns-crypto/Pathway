@@ -7,6 +7,7 @@ import LoadingState from '@/components/ui/LoadingState'
 import EmptyState from '@/components/ui/EmptyState'
 import Button from '@/components/ui/Button'
 import CharacterHeader from '@/components/characters/CharacterHeader'
+import PathwayAIPanel from '@/components/ai/PathwayAIPanel'
 import Timeline from '@/components/characters/Timeline'
 import ScriptureReferenceCard from '@/components/characters/ScriptureReferenceCard'
 import StudyAreaCard from '@/components/characters/StudyAreaCard'
@@ -252,6 +253,23 @@ export default function CharacterProfile() {
       </Link>
 
       <CharacterHeader character={c} />
+
+      <section className="py-4">
+        <PathwayAIPanel
+          contextType="character"
+          character={{
+            character: c,
+            verifiedReferences: references,
+          }}
+          title={`Ask Pathway AI about ${c.name}`}
+          description={`Explore ${c.name} using this character's verified Pathway data and Scripture references.`}
+          suggestions={[
+            `What does Scripture explicitly tell us about ${c.name}?`,
+            `What are the key passages for studying ${c.name}?`,
+            `Give me reflection questions about ${c.name}.`,
+          ]}
+        />
+      </section>
 
       <section className="py-4">
         <div className="card">

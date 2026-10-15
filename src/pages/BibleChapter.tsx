@@ -12,6 +12,7 @@ import {
 } from 'react'
 import { Link, Navigate, useLocation, useParams, useSearchParams } from 'react-router-dom'
 
+import PathwayAIPanel from '@/components/ai/PathwayAIPanel'
 import { bibleBooks, getBibleBook } from '@/data/bibleBooks'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import type {
@@ -334,6 +335,29 @@ export default function BibleChapter() {
           </div>
         )}
       </section>
+
+      {!loading && !error && content && (
+        <PathwayAIPanel
+          contextType="bible"
+          bible={{
+            bookId: book.id,
+            bookName: book.name,
+            chapter,
+            translation: content.translation.abbreviation,
+            verses: content.verses.map((verse) => ({
+              number: verse.number,
+              text: verse.text,
+            })),
+          }}
+          title={`Ask Pathway AI about ${book.name} ${chapter}`}
+          description={`Study ${book.name} ${chapter} using the Bible text currently loaded in Pathway.`}
+          suggestions={[
+            `Summarize ${book.name} ${chapter}.`,
+            'Who are the people mentioned in this chapter?',
+            'Give me reflection questions from this chapter.',
+          ]}
+        />
+      )}
 
       <nav
         aria-label="Chapter navigation"

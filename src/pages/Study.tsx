@@ -1,5 +1,6 @@
 import {
   BookOpen,
+  Bot,
   Crown,
   Heart,
   Route,
@@ -138,6 +139,35 @@ export default function Study() {
           </p>
         </div>
       </div>
+
+      <section className="mt-8 rounded-xl border border-line bg-card p-5">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-start gap-3">
+            <div className="rounded-xl bg-accbg p-2.5 text-acc">
+              <Bot size={22} aria-hidden="true" />
+            </div>
+
+            <div>
+              <h2 className="text-xl font-semibold">
+                Study with Pathway AI
+              </h2>
+
+              <p className="mt-1 max-w-2xl text-sm text-mute">
+                Ask biblical questions, explore characters and passages,
+                and create reflection questions with a Scripture-first
+                AI study assistant.
+              </p>
+            </div>
+          </div>
+
+          <Link
+            to="/ai"
+            className="inline-flex shrink-0 items-center justify-center rounded-xl bg-acc px-4 py-2.5 font-semibold text-white"
+          >
+            Ask Pathway AI
+          </Link>
+        </div>
+      </section>
 
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         {GUIDED_STUDIES.map((study) => {
