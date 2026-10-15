@@ -1,6 +1,8 @@
 import { Check, Circle } from 'lucide-react'
-import type { ScriptureReference } from '@/types'
+
+import ScriptureReferenceCard from '@/components/characters/ScriptureReferenceCard'
 import { formatReference } from '@/lib/scripture'
+import type { ScriptureReference } from '@/types'
 
 interface StudyAreaCardProps {
   title: string
@@ -59,12 +61,11 @@ export default function StudyAreaCard({
 
           <div className="mt-2 flex flex-wrap gap-2">
             {references.slice(0, 6).map((reference) => (
-              <span
+              <ScriptureReferenceCard
                 key={formatReference(reference)}
-                className="tag"
-              >
-                {formatReference(reference)}
-              </span>
+                reference={reference}
+                compact
+              />
             ))}
           </div>
         </div>

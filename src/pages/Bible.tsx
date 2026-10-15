@@ -37,9 +37,9 @@ export default function Bible() {
             </h2>
 
             <p className="text-sm text-mute">
-              Translation support is being connected next.
-              Pathway will only display Bible translations
-              that it is permitted to provide.
+              Read Scripture using the Berean Standard Bible,
+              a modern English translation dedicated to the
+              public domain.
             </p>
           </div>
         </div>
@@ -51,10 +51,13 @@ export default function Bible() {
 
           <select
             className="w-full rounded-xl border border-line bg-surface px-3 py-2 text-sm"
+            value="bsb"
             disabled
             aria-label="Bible translation"
           >
-            <option>Translation coming next</option>
+            <option value="bsb">
+              Berean Standard Bible (BSB)
+            </option>
           </select>
         </label>
       </section>

@@ -135,6 +135,30 @@ export default function BibleChapter() {
     }
   }, [loadChapter, translationId])
 
+  useEffect(() => {
+    if (!content || !location.hash) return
+
+    const verseId = decodeURIComponent(
+      location.hash.replace(/^#/, ''),
+    )
+
+    const frame = window.requestAnimationFrame(() => {
+      const element = document.getElementById(verseId)
+
+      if (!element) {
+        console.warn(`Bible verse target not found: ${verseId}`)
+        return
+      }
+
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      })
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [content, location.hash])
+
   if (!book) {
     return <Navigate to="/bible" replace />
   }
@@ -175,31 +199,6 @@ export default function BibleChapter() {
     setPreferredBibleTranslation(nextTranslationId)
     setContent(null)
   }
-
-
-  useEffect(() => {
-    if (!content || !location.hash) return
-
-    const verseId = decodeURIComponent(
-      location.hash.replace(/^#/, ''),
-    )
-
-    const frame = window.requestAnimationFrame(() => {
-      const element = document.getElementById(verseId)
-
-      if (!element) {
-        console.warn(`Bible verse target not found: ${verseId}`)
-        return
-      }
-
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      })
-    })
-
-    return () => window.cancelAnimationFrame(frame)
-  }, [content, location.hash])
 
   return (
     <div className="mx-auto max-w-3xl space-y-8">

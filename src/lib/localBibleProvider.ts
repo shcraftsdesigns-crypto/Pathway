@@ -31,8 +31,10 @@ export const localBibleProvider: BibleProvider = {
       )
     }
 
+    const baseUrl = import.meta.env.BASE_URL
+
     const response = await fetch(
-      `/bibles/bsb/${encodeURIComponent(
+      `${baseUrl}bibles/bsb/${encodeURIComponent(
         bookId,
       )}/${chapter}.json`,
     )
