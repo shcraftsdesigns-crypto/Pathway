@@ -4,6 +4,5 @@ node_modules/
 .env
 .env.local
 .env.*.local
-\n# Local Bible import source\n/bsb.xlsx\n
 # Local Bible import source
 /bsb.xlsx
