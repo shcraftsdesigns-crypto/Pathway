@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 const GROQ_URL =
   'https://api.groq.com/openai/v1/chat/completions'
 
-const MODEL = 'llama-3.3-70b-versatile'
+const MODEL = 'openai/gpt-oss-120b'
 
 const PATHWAY_RULES = `
 You are Pathway AI, a Bible-study assistant.
