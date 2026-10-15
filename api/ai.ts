@@ -193,9 +193,12 @@ export default async function handler(
     })
 
     if (!groqResponse.ok) {
+      const groqError = await groqResponse.text()
+
       console.error(
         'Groq request failed:',
         groqResponse.status,
+        groqError.slice(0, 1000),
       )
 
       return response.status(502).json({
