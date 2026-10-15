@@ -221,14 +221,50 @@ export default async function handler(
 
     let parsed: unknown
 
-    try {
-      parsed = JSON.parse(rawContent)
-    } catch {
-      console.error('Pathway AI returned invalid JSON')
+    const normalizedContent = rawContent
+      .trim()
+      .replace(/^```(?:json)?\s*/i, '')
+      .replace(/\s*```$/i, '')
+      .trim()
 
-      return response.status(502).json({
-        error: 'Pathway AI returned an invalid response.',
-      })
+    try {
+      parsed = JSON.parse(normalizedContent)
+    } catch {
+      const firstBrace = normalizedContent.indexOf('{')
+      const lastBrace = normalizedContent.lastIndexOf('}')
+
+      if (
+        firstBrace === -1 ||
+        lastBrace === -1 ||
+        lastBrace <= firstBrace
+      ) {
+        console.error(
+          'Pathway AI returned invalid JSON:',
+          normalizedContent.slice(0, 500),
+        )
+
+        return response.status(502).json({
+          error: 'Pathway AI returned an invalid response.',
+        })
+      }
+
+      try {
+        parsed = JSON.parse(
+          normalizedContent.slice(
+            firstBrace,
+            lastBrace + 1,
+          ),
+        )
+      } catch {
+        console.error(
+          'Pathway AI returned invalid JSON:',
+          normalizedContent.slice(0, 500),
+        )
+
+        return response.status(502).json({
+          error: 'Pathway AI returned an invalid response.',
+        })
+      }
     }
 
     if (
