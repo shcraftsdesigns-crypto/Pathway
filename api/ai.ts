@@ -32,10 +32,46 @@ Response style:
 - Do not reproduce long Bible passages. Summarize and cite the relevant references.
 - Prefer approximately 300 to 600 words unless the user explicitly asks for more detail.
 
-When relevant, organize the response using these plain-text headings:
-Scripture says:
-Interpretation:
-Reflection:
+Return ONLY valid JSON using exactly this structure:
+{
+  "answer": "A concise overall answer.",
+  "sections": [
+    {
+      "heading": "Scripture says",
+      "content": "Plain text explanation."
+    },
+    {
+      "heading": "Interpretation",
+      "content": "Plain text interpretation when relevant."
+    },
+    {
+      "heading": "Reflection",
+      "content": "Plain text reflection when relevant."
+    }
+  ],
+  "scriptureCitations": [
+    {
+      "book": "Genesis",
+      "chapter": 12,
+      "verseStart": 1,
+      "verseEnd": 3
+    }
+  ],
+  "limitations": []
+}
+
+JSON rules:
+- Do not wrap the JSON in Markdown code fences.
+- answer must be a plain-text string.
+- sections must be an array.
+- section content must be plain text, not Markdown or HTML.
+- scriptureCitations must contain only references relevant to the answer.
+- Use canonical Bible book names such as Genesis, Exodus, Matthew, John, and Revelation.
+- chapter, verseStart, and verseEnd must be numbers.
+- Omit verseEnd when only one verse is cited.
+- Do not invent a Scripture citation.
+- For supplied Bible-chapter context, cite only verses present in that supplied chapter.
+- limitations must be an array of short plain-text evidence notes, or an empty array.
 `.trim()
 
 function buildContext(body: Record<string, unknown>) {
@@ -169,17 +205,127 @@ export default async function handler(
 
     const data = await groqResponse.json()
 
-    const answer = data?.choices?.[0]?.message?.content
+    const rawContent = data?.choices?.[0]?.message?.content
 
-    if (typeof answer !== 'string' || !answer.trim()) {
+    if (
+      typeof rawContent !== 'string' ||
+      !rawContent.trim()
+    ) {
       return response.status(502).json({
         error: 'Pathway AI returned an empty response.',
       })
     }
 
+    let parsed: unknown
+
+    try {
+      parsed = JSON.parse(rawContent)
+    } catch {
+      console.error('Pathway AI returned invalid JSON')
+
+      return response.status(502).json({
+        error: 'Pathway AI returned an invalid response.',
+      })
+    }
+
+    if (
+      !parsed ||
+      typeof parsed !== 'object'
+    ) {
+      return response.status(502).json({
+        error: 'Pathway AI returned an invalid response.',
+      })
+    }
+
+    const result = parsed as Record<string, unknown>
+
+    const answer =
+      typeof result.answer === 'string'
+        ? result.answer.trim()
+        : ''
+
+    if (!answer) {
+      return response.status(502).json({
+        error: 'Pathway AI returned an invalid response.',
+      })
+    }
+
+    const sections = Array.isArray(result.sections)
+      ? result.sections
+          .filter(
+            (section): section is Record<string, unknown> =>
+              Boolean(section) &&
+              typeof section === 'object',
+          )
+          .map((section) => ({
+            heading:
+              typeof section.heading === 'string'
+                ? section.heading.trim()
+                : '',
+            content:
+              typeof section.content === 'string'
+                ? section.content.trim()
+                : '',
+          }))
+          .filter(
+            (section) =>
+              section.heading.length > 0 &&
+              section.content.length > 0,
+          )
+          .slice(0, 6)
+      : []
+
+    const scriptureCitations =
+      Array.isArray(result.scriptureCitations)
+        ? result.scriptureCitations
+            .filter(
+              (citation): citation is Record<string, unknown> =>
+                Boolean(citation) &&
+                typeof citation === 'object',
+            )
+            .map((citation) => ({
+              book:
+                typeof citation.book === 'string'
+                  ? citation.book.trim()
+                  : '',
+              chapter:
+                typeof citation.chapter === 'number'
+                  ? citation.chapter
+                  : 0,
+              verseStart:
+                typeof citation.verseStart === 'number'
+                  ? citation.verseStart
+                  : undefined,
+              verseEnd:
+                typeof citation.verseEnd === 'number'
+                  ? citation.verseEnd
+                  : undefined,
+            }))
+            .filter(
+              (citation) =>
+                citation.book.length > 0 &&
+                Number.isInteger(citation.chapter) &&
+                citation.chapter > 0,
+            )
+            .slice(0, 20)
+        : []
+
+    const limitations = Array.isArray(result.limitations)
+      ? result.limitations
+          .filter(
+            (limitation): limitation is string =>
+              typeof limitation === 'string',
+          )
+          .map((limitation) => limitation.trim())
+          .filter(Boolean)
+          .slice(0, 6)
+      : []
+
     return response.status(200).json({
-      answer: answer.trim(),
-      scriptureCitations: [],
+      answer,
+      sections,
+      scriptureCitations,
+      limitations,
     })
   } catch (error) {
     console.error('Pathway AI server error:', error)

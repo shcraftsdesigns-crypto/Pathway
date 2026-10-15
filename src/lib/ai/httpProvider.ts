@@ -6,6 +6,7 @@ import type {
 
 interface APIResponse {
   answer?: string
+  sections?: AIResponse['sections']
   scriptureCitations?: AIResponse['scriptureCitations']
   limitations?: string[]
   error?: string
@@ -37,6 +38,7 @@ export const httpAIProvider: AIProvider = {
 
     return {
       answer: data.answer.trim(),
+      sections: data.sections,
       scriptureCitations: data.scriptureCitations ?? [],
       limitations: data.limitations,
     }

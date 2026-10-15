@@ -1,7 +1,9 @@
 import { FormEvent, useId, useState } from 'react'
 import { Bot, Send, Sparkles } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import { askPathwayAI } from '@/lib/ai/provider'
+import { bibleBooks } from '@/data/bibleBooks'
 import type {
   AIBibleContext,
   AICharacterContext,
@@ -28,6 +30,35 @@ function cleanAIText(value: string) {
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim()
+}
+
+function getCitationBookId(bookName: string) {
+  const normalized = bookName
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+
+  return bibleBooks.find(
+    (book) =>
+      book.name.toLowerCase() === normalized,
+  )?.id
+}
+
+function getCitationLabel(
+  book: string,
+  chapter: number,
+  verseStart?: number,
+  verseEnd?: number,
+) {
+  if (!verseStart) {
+    return `${book} ${chapter}`
+  }
+
+  if (verseEnd && verseEnd !== verseStart) {
+    return `${book} ${chapter}:${verseStart}–${verseEnd}`
+  }
+
+  return `${book} ${chapter}:${verseStart}`
 }
 
 const DEFAULT_SUGGESTIONS = [
@@ -196,16 +227,82 @@ export default function PathwayAIPanel({
       )}
 
       {response && (
-        <div className="mt-5 space-y-4 rounded-xl border border-line p-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-mute">
-              Pathway AI response
-            </p>
+        <div className="mt-5 space-y-5 rounded-xl border border-line p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-mute">
+            Pathway AI response
+          </p>
 
-            <p className="mt-2 whitespace-pre-wrap">
+          {response.sections?.length ? (
+            <div className="space-y-5">
+              {response.sections.map((section, index) => (
+                <section
+                  key={`${section.heading}-${index}`}
+                >
+                  <h3 className="font-semibold">
+                    {section.heading}
+                  </h3>
+
+                  <p className="mt-2 whitespace-pre-wrap leading-7">
+                    {cleanAIText(section.content)}
+                  </p>
+                </section>
+              ))}
+            </div>
+          ) : (
+            <p className="whitespace-pre-wrap leading-7">
               {cleanAIText(response.answer)}
             </p>
-          </div>
+          )}
+
+          {response.scriptureCitations.length ? (
+            <div>
+              <p className="text-sm font-semibold">
+                Scripture references
+              </p>
+
+              <div className="mt-2 flex flex-wrap gap-2">
+                {response.scriptureCitations.map(
+                  (citation, index) => {
+                    const bookId =
+                      getCitationBookId(citation.book)
+
+                    const label = getCitationLabel(
+                      citation.book,
+                      citation.chapter,
+                      citation.verseStart,
+                      citation.verseEnd,
+                    )
+
+                    if (!bookId) {
+                      return (
+                        <span
+                          key={`${label}-${index}`}
+                          className="rounded-full border border-line px-3 py-1.5 text-sm"
+                        >
+                          {label}
+                        </span>
+                      )
+                    }
+
+                    const verseQuery =
+                      citation.verseStart
+                        ? `?verse=${citation.verseStart}#verse-${citation.verseStart}`
+                        : ''
+
+                    return (
+                      <Link
+                        key={`${label}-${index}`}
+                        to={`/bible/${bookId}/${citation.chapter}${verseQuery}`}
+                        className="rounded-full border border-line px-3 py-1.5 text-sm hover:border-acc hover:text-acc"
+                      >
+                        {label}
+                      </Link>
+                    )
+                  },
+                )}
+              </div>
+            </div>
+          ) : null}
 
           {response.limitations?.length ? (
             <div>

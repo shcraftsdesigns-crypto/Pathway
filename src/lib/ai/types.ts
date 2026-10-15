@@ -45,8 +45,14 @@ export interface AIScriptureCitation {
   verseEnd?: number
 }
 
+export interface AIResponseSection {
+  heading: string
+  content: string
+}
+
 export interface AIResponse {
   answer: string
+  sections?: AIResponseSection[]
   scriptureCitations: AIScriptureCitation[]
   limitations?: string[]
 }
