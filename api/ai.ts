@@ -260,7 +260,10 @@ export default async function handler(
           .map((section) => ({
             heading:
               typeof section.heading === 'string'
-                ? section.heading.trim()
+                ? section.heading
+                    .replace(/^#{1,6}\s*/, '')
+                    .replace(/[*_`]/g, '')
+                    .trim()
                 : '',
             content:
               typeof section.content === 'string'
@@ -310,6 +313,81 @@ export default async function handler(
             .slice(0, 20)
         : []
 
+    const validatedScriptureCitations =
+      body.contextType === 'bible' &&
+      body.bible &&
+      typeof body.bible === 'object'
+        ? scriptureCitations.filter((citation) => {
+            const bible =
+              body.bible as Record<string, unknown>
+
+            const suppliedBook =
+              typeof bible.bookName === 'string'
+                ? bible.bookName.trim().toLowerCase()
+                : ''
+
+            const suppliedChapter =
+              typeof bible.chapter === 'number'
+                ? bible.chapter
+                : 0
+
+            const suppliedVerses = Array.isArray(bible.verses)
+              ? new Set(
+                  bible.verses
+                    .filter(
+                      (
+                        verse,
+                      ): verse is Record<string, unknown> =>
+                        Boolean(verse) &&
+                        typeof verse === 'object',
+                    )
+                    .map((verse) => {
+                      const value = verse.number
+
+                      if (typeof value !== 'string') {
+                        return NaN
+                      }
+
+                      const match = value.match(/^\d+/)
+
+                      return match
+                        ? Number(match[0])
+                        : NaN
+                    })
+                    .filter(Number.isInteger),
+                )
+              : new Set<number>()
+
+            const sameBook =
+              citation.book.trim().toLowerCase() ===
+              suppliedBook
+
+            const sameChapter =
+              citation.chapter === suppliedChapter
+
+            const validStart =
+              citation.verseStart === undefined ||
+              suppliedVerses.has(citation.verseStart)
+
+            const validEnd =
+              citation.verseEnd === undefined ||
+              suppliedVerses.has(citation.verseEnd)
+
+            const validRange =
+              citation.verseStart === undefined ||
+              citation.verseEnd === undefined ||
+              citation.verseEnd >= citation.verseStart
+
+            return (
+              sameBook &&
+              sameChapter &&
+              validStart &&
+              validEnd &&
+              validRange
+            )
+          })
+        : scriptureCitations
+
     const limitations = Array.isArray(result.limitations)
       ? result.limitations
           .filter(
@@ -324,7 +402,7 @@ export default async function handler(
     return response.status(200).json({
       answer,
       sections,
-      scriptureCitations,
+      scriptureCitations: validatedScriptureCitations,
       limitations,
     })
   } catch (error) {
