@@ -20,6 +20,16 @@ interface PathwayAIPanelProps {
   suggestions?: string[]
 }
 
+function cleanAIText(value: string) {
+  return value
+    .replace(/&#x20;/gi, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/^\\-\s?/gm, '- ')
+    .replace(/[ \t]+$/gm, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+}
+
 const DEFAULT_SUGGESTIONS = [
   'What does Scripture explicitly say?',
   'What should I study next?',
@@ -193,7 +203,7 @@ export default function PathwayAIPanel({
             </p>
 
             <p className="mt-2 whitespace-pre-wrap">
-              {response.answer}
+              {cleanAIText(response.answer)}
             </p>
           </div>
 
