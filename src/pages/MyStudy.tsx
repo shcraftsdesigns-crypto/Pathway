@@ -294,18 +294,32 @@ export default function MyStudy() {
                               : `:${citation.verseStart}`
                             : ''
 
-                          const normalizedBook =
-                            citation.book
+                          const normalizeBookName = (
+                            value: string,
+                          ) =>
+                            value
                               .trim()
                               .toLowerCase()
+                              .replace(/\./g, '')
+                              .replace(/\s+/g, ' ')
+
+                          const normalizedBook =
+                            normalizeBookName(
+                              citation.book,
+                            )
 
                           const bibleBook =
                             bibleBooks.find(
                               (book) =>
-                                book.name.toLowerCase() ===
-                                  normalizedBook ||
-                                book.id.toLowerCase() ===
-                                  normalizedBook,
+                                normalizeBookName(
+                                  book.name,
+                                ) === normalizedBook ||
+                                normalizeBookName(
+                                  book.abbreviation,
+                                ) === normalizedBook ||
+                                normalizeBookName(
+                                  book.id,
+                                ) === normalizedBook,
                             )
 
                           const referenceLabel =
