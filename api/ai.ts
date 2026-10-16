@@ -188,7 +188,7 @@ export default async function handler(
           },
         ],
         temperature: 0.2,
-        max_completion_tokens: 1200,
+        max_completion_tokens: 2400,
       }),
     })
 
