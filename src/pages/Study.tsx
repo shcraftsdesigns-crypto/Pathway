@@ -1,5 +1,6 @@
 import {
   BookOpen,
+  BookmarkCheck,
   Bot,
   Crown,
   Heart,
@@ -18,6 +19,7 @@ import type { StudyPlanType } from '@/lib/ai/studyPlan'
 import { askPathwayAI } from '@/lib/ai/provider'
 import type { AIResponse } from '@/lib/ai/types'
 import { bibleBooks } from '@/data/bibleBooks'
+import { saveGeneratedStudy } from '@/lib/studyStorage'
 
 interface GuidedStudy {
   id: string
@@ -124,6 +126,8 @@ export default function Study() {
   const [generatingStudy, setGeneratingStudy] =
     useState(false)
   const [studyError, setStudyError] = useState('')
+  const [generatedStudySaved, setGeneratedStudySaved] =
+    useState(false)
 
   const preloadCharacter = (slug: string) => {
     preloadCharacterProfile()
@@ -140,6 +144,7 @@ export default function Study() {
     setGeneratingStudy(true)
     setStudyError('')
     setGeneratedStudy(null)
+    setGeneratedStudySaved(false)
 
     const typeLabel =
       studyType === 'character'
@@ -169,6 +174,21 @@ export default function Study() {
     } finally {
       setGeneratingStudy(false)
     }
+  }
+
+  const savePersonalStudy = () => {
+    if (!generatedStudy || generatedStudySaved) return
+
+    saveGeneratedStudy({
+      type: studyType,
+      subject: studySubject.trim(),
+      answer: generatedStudy.answer,
+      sections: generatedStudy.sections ?? [],
+      scriptureCitations: generatedStudy.scriptureCitations,
+      limitations: generatedStudy.limitations ?? [],
+    })
+
+    setGeneratedStudySaved(true)
   }
 
   usePageTitle('Guided Studies')
@@ -418,6 +438,29 @@ export default function Study() {
                 </div>
               </div>
             ) : null}
+
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={savePersonalStudy}
+                disabled={generatedStudySaved}
+                className="inline-flex items-center gap-2 rounded-xl bg-acc px-4 py-2.5 font-semibold text-white disabled:cursor-default disabled:opacity-70"
+              >
+                <BookmarkCheck size={18} aria-hidden="true" />
+                {generatedStudySaved
+                  ? 'Saved to My Study'
+                  : 'Save to My Study'}
+              </button>
+
+              {generatedStudySaved ? (
+                <Link
+                  to="/my-study"
+                  className="text-sm font-semibold text-acc hover:underline"
+                >
+                  Open My Study
+                </Link>
+              ) : null}
+            </div>
 
             <p className="text-xs text-mute">
               AI-generated study. Verify interpretations and conclusions

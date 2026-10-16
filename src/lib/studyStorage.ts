@@ -16,10 +16,40 @@ export interface StudyProgress {
   completedAreaIds: string[]
 }
 
+export type SavedStudyType =
+  | 'character'
+  | 'passage'
+  | 'topic'
+
+export interface SavedStudyCitation {
+  book: string
+  chapter: number
+  verseStart?: number
+  verseEnd?: number
+}
+
+export interface SavedStudySection {
+  heading: string
+  content: string
+}
+
+export interface SavedStudy {
+  id: string
+  type: SavedStudyType
+  subject: string
+  answer: string
+  sections: SavedStudySection[]
+  scriptureCitations: SavedStudyCitation[]
+  limitations: string[]
+  completed: boolean
+  savedAt: string
+}
+
 export interface StudyData {
   savedCharacters: SavedCharacter[]
   notes: StudyNote[]
   progress: StudyProgress[]
+  savedStudies: SavedStudy[]
 }
 
 const STORAGE_KEY = 'pathway-study-v1'
@@ -28,6 +58,7 @@ const EMPTY_DATA: StudyData = {
   savedCharacters: [],
   notes: [],
   progress: [],
+  savedStudies: [],
 }
 
 function isBrowser() {
@@ -53,6 +84,9 @@ export function getStudyData(): StudyData {
         : [],
       progress: Array.isArray(parsed.progress)
         ? parsed.progress
+        : [],
+      savedStudies: Array.isArray(parsed.savedStudies)
+        ? parsed.savedStudies
         : [],
     }
   } catch {
@@ -210,3 +244,62 @@ export function toggleStudyArea(
 
   return completed.has(areaId)
 }
+
+export function saveGeneratedStudy(
+  study: Omit<SavedStudy, 'id' | 'savedAt' | 'completed'>,
+) {
+  const data = getStudyData()
+
+  const savedStudy: SavedStudy = {
+    ...study,
+    id: crypto.randomUUID(),
+    completed: false,
+    savedAt: new Date().toISOString(),
+  }
+
+  writeStudyData({
+    ...data,
+    savedStudies: [
+      savedStudy,
+      ...data.savedStudies,
+    ],
+  })
+
+  return savedStudy
+}
+
+export function removeSavedStudy(studyId: string) {
+  const data = getStudyData()
+
+  writeStudyData({
+    ...data,
+    savedStudies: data.savedStudies.filter(
+      (study) => study.id !== studyId,
+    ),
+  })
+}
+
+export function toggleSavedStudyComplete(studyId: string) {
+  const data = getStudyData()
+
+  let completed = false
+
+  const savedStudies = data.savedStudies.map((study) => {
+    if (study.id !== studyId) return study
+
+    completed = !study.completed
+
+    return {
+      ...study,
+      completed,
+    }
+  })
+
+  writeStudyData({
+    ...data,
+    savedStudies,
+  })
+
+  return completed
+}
+

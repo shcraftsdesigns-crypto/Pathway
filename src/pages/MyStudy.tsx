@@ -4,6 +4,7 @@ import {
   BookOpen,
   CheckCircle2,
   FileText,
+  Sparkles,
   Trash2,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -14,7 +15,9 @@ import { usePageTitle } from '@/hooks/usePageTitle'
 import { useStudyData } from '@/hooks/useStudyData'
 import {
   removeSavedCharacter,
+  removeSavedStudy,
   saveCharacterNote,
+  toggleSavedStudyComplete,
 } from '@/lib/studyStorage'
 
 export default function MyStudy() {
@@ -43,7 +46,8 @@ export default function MyStudy() {
   const hasStudyActivity =
     data.savedCharacters.length > 0 ||
     notes.length > 0 ||
-    completedCount > 0
+    completedCount > 0 ||
+    data.savedStudies.length > 0
 
   if (!hasStudyActivity) {
     return (
@@ -63,10 +67,10 @@ export default function MyStudy() {
     <div>
       <SectionHeader
         title="My Study"
-        subtitle="Your saved characters, personal notes, and study progress on this device."
+        subtitle="Your saved characters, AI-generated studies, personal notes, and study progress on this device."
       />
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-3">
+      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="card">
           <Bookmark
             size={22}
@@ -106,6 +110,20 @@ export default function MyStudy() {
           </p>
           <p className="text-sm text-mute">
             Study areas completed
+          </p>
+        </div>
+
+        <div className="card">
+          <Sparkles
+            size={22}
+            className="text-acc"
+            aria-hidden="true"
+          />
+          <p className="mt-3 text-2xl font-bold">
+            {data.savedStudies.length}
+          </p>
+          <p className="text-sm text-mute">
+            Saved studies
           </p>
         </div>
       </div>
@@ -194,6 +212,137 @@ export default function MyStudy() {
           </p>
         )}
       </section>
+
+      {data.savedStudies.length > 0 && (
+        <section className="py-8">
+          <SectionHeader
+            title="Saved Studies"
+            subtitle="Continue the personal Bible studies you generated with Pathway AI."
+          />
+
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {data.savedStudies.map((study) => (
+              <article
+                key={study.id}
+                className="card flex flex-col"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-mute">
+                      {study.type === 'passage'
+                        ? 'Bible Passage'
+                        : study.type === 'character'
+                          ? 'Character'
+                          : 'Topic'}
+                    </p>
+
+                    <h3 className="mt-1 text-xl">
+                      {study.subject}
+                    </h3>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      removeSavedStudy(study.id)
+                      refresh()
+                    }}
+                    className="rounded-lg p-2 text-mute hover:bg-accbg hover:text-ink"
+                    aria-label={`Remove ${study.subject} from My Study`}
+                  >
+                    <Trash2 size={18} aria-hidden="true" />
+                  </button>
+                </div>
+
+                <div className="mt-4 space-y-4">
+                  {study.sections.length > 0 ? (
+                    study.sections.map((section, index) => (
+                      <section
+                        key={`${section.heading}-${index}`}
+                      >
+                        <h4 className="font-semibold">
+                          {section.heading}
+                        </h4>
+
+                        <p className="mt-1 whitespace-pre-wrap text-sm leading-6 text-mute">
+                          {section.content}
+                        </p>
+                      </section>
+                    ))
+                  ) : (
+                    <p className="whitespace-pre-wrap text-sm leading-6 text-mute">
+                      {study.answer}
+                    </p>
+                  )}
+                </div>
+
+                {study.scriptureCitations.length > 0 && (
+                  <div className="mt-5">
+                    <p className="text-sm font-semibold">
+                      Scripture references
+                    </p>
+
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {study.scriptureCitations.map(
+                        (citation, index) => {
+                          const verses = citation.verseStart
+                            ? citation.verseEnd &&
+                              citation.verseEnd !==
+                                citation.verseStart
+                              ? `:${citation.verseStart}–${citation.verseEnd}`
+                              : `:${citation.verseStart}`
+                            : ''
+
+                          return (
+                            <span
+                              key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
+                              className="rounded-full border border-line px-3 py-1.5 text-sm"
+                            >
+                              {citation.book}{' '}
+                              {citation.chapter}
+                              {verses}
+                            </span>
+                          )
+                        },
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      toggleSavedStudyComplete(study.id)
+                      refresh()
+                    }}
+                    className={
+                      study.completed
+                        ? 'inline-flex items-center gap-2 rounded-lg bg-accbg px-3 py-2 text-sm font-semibold text-acc'
+                        : 'inline-flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc'
+                    }
+                  >
+                    <CheckCircle2
+                      size={17}
+                      aria-hidden="true"
+                    />
+                    {study.completed
+                      ? 'Completed'
+                      : 'Mark complete'}
+                  </button>
+
+                  <p className="text-xs text-mute">
+                    Saved{' '}
+                    {new Date(
+                      study.savedAt,
+                    ).toLocaleDateString()}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       {notes.length > 0 && (
         <section className="py-8">
