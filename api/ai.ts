@@ -352,11 +352,80 @@ export default async function handler(
             .slice(0, 20)
         : []
 
+    const characterValidatedScriptureCitations =
+      body.contextType === 'character' &&
+      body.character &&
+      typeof body.character === 'object'
+        ? scriptureCitations.filter((citation) => {
+            const character =
+              body.character as Record<string, unknown>
+
+            const verifiedReferences = Array.isArray(
+              character.verifiedReferences,
+            )
+              ? character.verifiedReferences.filter(
+                  (
+                    reference,
+                  ): reference is Record<string, unknown> =>
+                    Boolean(reference) &&
+                    typeof reference === 'object',
+                )
+              : []
+
+            return verifiedReferences.some((reference) => {
+              const book =
+                typeof reference.book === 'string'
+                  ? reference.book.trim().toLowerCase()
+                  : ''
+
+              const chapter =
+                typeof reference.chapter === 'number'
+                  ? reference.chapter
+                  : 0
+
+              const verseStart =
+                typeof reference.verseStart === 'number'
+                  ? reference.verseStart
+                  : undefined
+
+              const verseEnd =
+                typeof reference.verseEnd === 'number'
+                  ? reference.verseEnd
+                  : undefined
+
+              if (
+                citation.book.trim().toLowerCase() !== book ||
+                citation.chapter !== chapter
+              ) {
+                return false
+              }
+
+              if (verseStart === undefined) {
+                return citation.verseStart === undefined
+              }
+
+              if (citation.verseStart === undefined) {
+                return false
+              }
+
+              const verifiedEnd = verseEnd ?? verseStart
+              const citationEnd =
+                citation.verseEnd ?? citation.verseStart
+
+              return (
+                citation.verseStart >= verseStart &&
+                citationEnd <= verifiedEnd &&
+                citationEnd >= citation.verseStart
+              )
+            })
+          })
+        : scriptureCitations
+
     const validatedScriptureCitations =
       body.contextType === 'bible' &&
       body.bible &&
       typeof body.bible === 'object'
-        ? scriptureCitations.filter((citation) => {
+        ? characterValidatedScriptureCitations.filter((citation) => {
             const bible =
               body.bible as Record<string, unknown>
 
