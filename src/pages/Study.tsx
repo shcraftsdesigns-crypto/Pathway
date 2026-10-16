@@ -135,11 +135,20 @@ export default function Study() {
   }
 
   const generatePersonalStudy = async () => {
-    const subject = studySubject.trim()
+    const rawSubject = studySubject.trim()
 
-    if (!subject || generatingStudy) {
+    if (!rawSubject || generatingStudy) {
       return
     }
+
+    const subject =
+      studyType === 'passage'
+        ? rawSubject
+        : rawSubject
+            .toLowerCase()
+            .replace(/\b\w/g, (letter) =>
+              letter.toUpperCase(),
+            )
 
     setGeneratingStudy(true)
     setStudyError('')
