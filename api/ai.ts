@@ -5,6 +5,43 @@ const GROQ_URL =
 
 const MODEL = 'openai/gpt-oss-120b'
 
+const MAX_REQUEST_BYTES = 75_000
+const MAX_CONTEXT_BYTES = 60_000
+
+const VALID_CONTEXT_TYPES = new Set([
+  'general',
+  'character',
+  'bible',
+  'study',
+])
+
+function getRequestSize(request: VercelRequest): number {
+  const contentLength = request.headers['content-length']
+
+  if (typeof contentLength === 'string') {
+    const parsed = Number.parseInt(contentLength, 10)
+
+    if (Number.isFinite(parsed) && parsed >= 0) {
+      return parsed
+    }
+  }
+
+  try {
+    return Buffer.byteLength(
+      JSON.stringify(request.body ?? {}),
+      'utf8',
+    )
+  } catch {
+    return MAX_REQUEST_BYTES + 1
+  }
+}
+
+function setSecurityHeaders(response: VercelResponse): void {
+  response.setHeader('Cache-Control', 'no-store')
+  response.setHeader('X-Content-Type-Options', 'nosniff')
+  response.setHeader('Referrer-Policy', 'no-referrer')
+}
+
 const PATHWAY_RULES = `
 You are Pathway AI, a Bible-study assistant.
 
@@ -117,6 +154,8 @@ export default async function handler(
   request: VercelRequest,
   response: VercelResponse,
 ) {
+  setSecurityHeaders(response)
+
   if (request.method !== 'POST') {
     response.setHeader('Allow', 'POST')
 
@@ -134,10 +173,36 @@ export default async function handler(
   }
 
   try {
-    const body =
-      request.body && typeof request.body === 'object'
-        ? request.body as Record<string, unknown>
-        : {}
+    if (getRequestSize(request) > MAX_REQUEST_BYTES) {
+      return response.status(413).json({
+        error: 'The AI request is too large.',
+      })
+    }
+
+    if (
+      !request.body ||
+      typeof request.body !== 'object' ||
+      Array.isArray(request.body)
+    ) {
+      return response.status(400).json({
+        error: 'Invalid AI request.',
+      })
+    }
+
+    const body = request.body as Record<string, unknown>
+
+    const contextType =
+      typeof body.contextType === 'string'
+        ? body.contextType
+        : 'general'
+
+    if (!VALID_CONTEXT_TYPES.has(contextType)) {
+      return response.status(400).json({
+        error: 'Invalid AI context type.',
+      })
+    }
+
+    body.contextType = contextType
 
     const question =
       typeof body.question === 'string'
@@ -158,7 +223,10 @@ export default async function handler(
 
     const context = buildContext(body)
 
-    if (context.length > 60000) {
+    if (
+      Buffer.byteLength(context, 'utf8') >
+      MAX_CONTEXT_BYTES
+    ) {
       return response.status(413).json({
         error: 'The supplied study context is too large.',
       })
