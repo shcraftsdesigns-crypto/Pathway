@@ -13,6 +13,7 @@ import EmptyState from '@/components/ui/EmptyState'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import { useStudyData } from '@/hooks/useStudyData'
+import { bibleBooks } from '@/data/bibleBooks'
 import {
   removeSavedCharacter,
   removeSavedStudy,
@@ -293,15 +294,47 @@ export default function MyStudy() {
                               : `:${citation.verseStart}`
                             : ''
 
+                          const normalizedBook =
+                            citation.book
+                              .trim()
+                              .toLowerCase()
+
+                          const bibleBook =
+                            bibleBooks.find(
+                              (book) =>
+                                book.name.toLowerCase() ===
+                                  normalizedBook ||
+                                book.id.toLowerCase() ===
+                                  normalizedBook,
+                            )
+
+                          const referenceLabel =
+                            `${citation.book} ${citation.chapter}${verses}`
+
+                          if (!bibleBook) {
+                            return (
+                              <span
+                                key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
+                                className="rounded-full border border-line px-3 py-1.5 text-sm"
+                              >
+                                {referenceLabel}
+                              </span>
+                            )
+                          }
+
+                          const verseTarget =
+                            citation.verseStart
+                              ? `?verse=${citation.verseStart}#verse-${citation.verseStart}`
+                              : ''
+
                           return (
-                            <span
+                            <Link
                               key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
-                              className="rounded-full border border-line px-3 py-1.5 text-sm"
+                              to={`/bible/${bibleBook.id}/${citation.chapter}${verseTarget}`}
+                              className="rounded-full border border-line px-3 py-1.5 text-sm font-semibold hover:border-acc hover:text-acc"
                             >
-                              {citation.book}{' '}
-                              {citation.chapter}
-                              {verses}
-                            </span>
+                              {referenceLabel}
+                            </Link>
                           )
                         },
                       )}
