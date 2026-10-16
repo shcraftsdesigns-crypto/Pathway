@@ -12,12 +12,18 @@ import {
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { preloadCharacterProfile } from '@/App'
-import { preloadCharacterBySlug } from '@/lib/characterRepository'
+import {
+  getCharacterBySlug,
+  preloadCharacterBySlug,
+} from '@/lib/characterRepository'
+import { searchCharacterSummaries } from '@/lib/characterSearchRepository'
+import { collectReferences } from '@/lib/scripture'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import type { StudyPlanType } from '@/lib/ai/studyPlan'
 import { askPathwayAI } from '@/lib/ai/provider'
 import type { AIResponse } from '@/lib/ai/types'
+import type { CharacterSummary } from '@/types'
 import { bibleBooks } from '@/data/bibleBooks'
 import { saveGeneratedStudy } from '@/lib/studyStorage'
 
@@ -128,6 +134,10 @@ export default function Study() {
   const [studyError, setStudyError] = useState('')
   const [generatedStudySaved, setGeneratedStudySaved] =
     useState(false)
+  const [characterChoices, setCharacterChoices] =
+    useState<CharacterSummary[]>([])
+  const [selectedCharacterSlug, setSelectedCharacterSlug] =
+    useState('')
 
   const preloadCharacter = (slug: string) => {
     preloadCharacterProfile()
@@ -141,19 +151,17 @@ export default function Study() {
       return
     }
 
-    const subject =
-      studyType === 'passage'
-        ? rawSubject
-        : rawSubject
-            .toLowerCase()
-            .replace(/\b\w/g, (letter) =>
-              letter.toUpperCase(),
-            )
+    let subject = rawSubject
 
     setGeneratingStudy(true)
     setStudyError('')
     setGeneratedStudy(null)
     setGeneratedStudySaved(false)
+
+    if (studyType !== 'character') {
+      setCharacterChoices([])
+      setSelectedCharacterSlug('')
+    }
 
     const typeLabel =
       studyType === 'character'
@@ -163,16 +171,105 @@ export default function Study() {
           : 'biblical topic'
 
     try {
+      let characterContext
+
+      if (studyType === 'character') {
+        const matches = await searchCharacterSummaries({
+          query: rawSubject,
+          testament: null,
+          category: null,
+        })
+
+        const normalizedInput = rawSubject.toLowerCase()
+
+        const exactMatches = matches.filter((character) => {
+          if (character.name.toLowerCase() === normalizedInput) {
+            return true
+          }
+
+          return (character.alternateNames ?? []).some(
+            (alternateName) =>
+              alternateName.toLowerCase() === normalizedInput,
+          )
+        })
+
+        if (exactMatches.length === 0) {
+          setCharacterChoices([])
+          setSelectedCharacterSlug('')
+          setStudyError(
+            `No exact Pathway character match was found for "${rawSubject}". Try the character's biblical name.`,
+          )
+          return
+        }
+
+        let matchedCharacter: CharacterSummary
+
+        if (exactMatches.length > 1) {
+          const selectedMatch = exactMatches.find(
+            (character) =>
+              character.slug === selectedCharacterSlug,
+          )
+
+          if (!selectedMatch) {
+            setCharacterChoices(exactMatches)
+            setSelectedCharacterSlug('')
+            setStudyError(
+              `Pathway found ${exactMatches.length} biblical people named "${rawSubject}". Choose the person you want to study.`,
+            )
+            return
+          }
+
+          matchedCharacter = selectedMatch
+        } else {
+          matchedCharacter = exactMatches[0]
+        }
+
+        setCharacterChoices([])
+        setSelectedCharacterSlug('')
+
+        const character = await getCharacterBySlug(
+          matchedCharacter.slug,
+        )
+
+        if (!character) {
+          setStudyError(
+            'Pathway could not load that biblical character.',
+          )
+          return
+        }
+
+        subject = character.name
+        setStudySubject(character.name)
+
+        characterContext = {
+          character,
+          verifiedReferences: collectReferences(character),
+        }
+      } else if (studyType === 'topic') {
+        subject = rawSubject
+          .toLowerCase()
+          .replace(/\b\w/g, (letter) =>
+            letter.toUpperCase(),
+          )
+
+        setStudySubject(subject)
+      }
+
       const result = await askPathwayAI({
         question:
           `Create a concise personal Bible study about the ${typeLabel} "${subject}". ` +
           'Include what Scripture establishes, careful interpretation, practical reflection, ' +
           'and 3 to 5 reflection questions. Cite relevant Scripture references. ' +
           'Do not invent biblical details or references.',
-        contextType: 'study',
-        study: {
-          topic: `${studyType}:${subject}`,
-        },
+        contextType:
+          studyType === 'character' ? 'character' : 'study',
+        character: characterContext,
+        study:
+          studyType === 'character'
+            ? undefined
+            : {
+                topic: `${studyType}:${subject}`,
+              },
       })
 
       setGeneratedStudy(result)
@@ -292,6 +389,8 @@ export default function Study() {
                   setStudySubject('')
                   setGeneratedStudy(null)
                   setStudyError('')
+                  setCharacterChoices([])
+                  setSelectedCharacterSlug('')
                 }}
                 className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
                   studyType === value
@@ -321,9 +420,12 @@ export default function Study() {
             id="personal-study-subject"
             type="text"
             value={studySubject}
-            onChange={(event) =>
+            onChange={(event) => {
               setStudySubject(event.target.value)
-            }
+              setCharacterChoices([])
+              setSelectedCharacterSlug('')
+              setStudyError('')
+            }}
             maxLength={120}
             placeholder={
               studyType === 'character'
@@ -335,6 +437,60 @@ export default function Study() {
             className="mt-2 w-full rounded-xl border border-line bg-bg px-4 py-3 outline-none focus:border-acc"
           />
         </div>
+
+        {studyType === 'character' &&
+          characterChoices.length > 0 && (
+            <div className="mt-4 rounded-xl border border-line p-4">
+              <p className="text-sm font-semibold">
+                Choose the biblical person
+              </p>
+              <p className="mt-1 text-sm text-mute">
+                Pathway keeps people with the same name separate so their
+                Scripture references are not combined.
+              </p>
+
+              <div className="mt-3 grid gap-2">
+                {characterChoices.map((character) => (
+                  <label
+                    key={character.id}
+                    className="flex cursor-pointer items-start gap-3 rounded-lg border border-line p-3 hover:border-acc"
+                  >
+                    <input
+                      type="radio"
+                      name="personal-study-character"
+                      value={character.slug}
+                      checked={
+                        selectedCharacterSlug === character.slug
+                      }
+                      onChange={() => {
+                        setSelectedCharacterSlug(character.slug)
+                        setStudyError('')
+                      }}
+                      className="mt-1"
+                    />
+
+                    <span className="min-w-0">
+                      <span className="block font-semibold">
+                        {character.name}
+                      </span>
+                      <span className="block text-sm text-mute">
+                        {[
+                          character.testament,
+                          ...character.categories,
+                        ].join(' • ')}
+                      </span>
+                      {character.alternateNames?.length ? (
+                        <span className="mt-1 block text-xs text-mute">
+                          Also known as:{' '}
+                          {character.alternateNames.join(', ')}
+                        </span>
+                      ) : null}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          )}
 
         <button
           type="button"
