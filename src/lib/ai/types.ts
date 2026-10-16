@@ -1,6 +1,6 @@
 import type {
-  BiblicalCharacter,
   ScriptureReference,
+  Testament,
 } from '@/types'
 
 export type AIContextType =
@@ -21,7 +21,16 @@ export interface AIBibleContext {
 }
 
 export interface AICharacterContext {
-  character: BiblicalCharacter
+  character: {
+    id: string
+    name: string
+    slug: string
+    alternateNames?: string[]
+    testament: Testament
+    subtitle: string
+    shortDescription: string
+    biography?: string
+  }
   verifiedReferences: ScriptureReference[]
 }
 

@@ -17,15 +17,24 @@ import {
   preloadCharacterBySlug,
 } from '@/lib/characterRepository'
 import { searchCharacterSummaries } from '@/lib/characterSearchRepository'
-import { collectReferences } from '@/lib/scripture'
+import { formatReference } from '@/lib/scripture'
+import { buildAICharacterContext } from '@/lib/ai/characterContext'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import type { StudyPlanType } from '@/lib/ai/studyPlan'
 import { askPathwayAI } from '@/lib/ai/provider'
 import type { AIResponse } from '@/lib/ai/types'
-import type { CharacterSummary } from '@/types'
+import type {
+  BiblicalCharacter,
+  CharacterSummary,
+} from '@/types'
 import { bibleBooks } from '@/data/bibleBooks'
 import { saveGeneratedStudy } from '@/lib/studyStorage'
+
+interface CharacterChoice {
+  summary: CharacterSummary
+  character: BiblicalCharacter
+}
 
 interface GuidedStudy {
   id: string
@@ -135,7 +144,7 @@ export default function Study() {
   const [generatedStudySaved, setGeneratedStudySaved] =
     useState(false)
   const [characterChoices, setCharacterChoices] =
-    useState<CharacterSummary[]>([])
+    useState<CharacterChoice[]>([])
   const [selectedCharacterSlug, setSelectedCharacterSlug] =
     useState('')
 
@@ -211,7 +220,24 @@ export default function Study() {
           )
 
           if (!selectedMatch) {
-            setCharacterChoices(exactMatches)
+            const loadedChoices = (
+              await Promise.all(
+                exactMatches.map(async (summary) => {
+                  const character = await getCharacterBySlug(
+                    summary.slug,
+                  )
+
+                  return character
+                    ? { summary, character }
+                    : null
+                }),
+              )
+            ).filter(
+              (choice): choice is CharacterChoice =>
+                choice !== null,
+            )
+
+            setCharacterChoices(loadedChoices)
             setSelectedCharacterSlug('')
             setStudyError(
               `Pathway found ${exactMatches.length} biblical people named "${rawSubject}". Choose the person you want to study.`,
@@ -241,10 +267,8 @@ export default function Study() {
         subject = character.name
         setStudySubject(character.name)
 
-        characterContext = {
-          character,
-          verifiedReferences: collectReferences(character),
-        }
+        characterContext =
+          buildAICharacterContext(character)
       } else if (studyType === 'topic') {
         subject = rawSubject
           .toLowerCase()
@@ -450,44 +474,64 @@ export default function Study() {
               </p>
 
               <div className="mt-3 grid gap-2">
-                {characterChoices.map((character) => (
-                  <label
-                    key={character.id}
-                    className="flex cursor-pointer items-start gap-3 rounded-lg border border-line p-3 hover:border-acc"
-                  >
-                    <input
-                      type="radio"
-                      name="personal-study-character"
-                      value={character.slug}
-                      checked={
-                        selectedCharacterSlug === character.slug
-                      }
-                      onChange={() => {
-                        setSelectedCharacterSlug(character.slug)
-                        setStudyError('')
-                      }}
-                      className="mt-1"
-                    />
+                {characterChoices.map(
+                  ({ summary, character }) => (
+                    <label
+                      key={character.id}
+                      className="flex cursor-pointer items-start gap-3 rounded-lg border border-line p-3 hover:border-acc"
+                    >
+                      <input
+                        type="radio"
+                        name="personal-study-character"
+                        value={character.slug}
+                        checked={
+                          selectedCharacterSlug === character.slug
+                        }
+                        onChange={() => {
+                          setSelectedCharacterSlug(character.slug)
+                          setStudyError('')
+                        }}
+                        className="mt-1"
+                      />
 
-                    <span className="min-w-0">
-                      <span className="block font-semibold">
-                        {character.name}
-                      </span>
-                      <span className="block text-sm text-mute">
-                        {[
-                          character.testament,
-                          ...character.categories,
-                        ].join(' • ')}
-                      </span>
-                      {character.alternateNames?.length ? (
-                        <span className="mt-1 block text-xs text-mute">
-                          Also known as:{' '}
-                          {character.alternateNames.join(', ')}
+                      <span className="min-w-0">
+                        <span className="block font-semibold">
+                          {character.name}
                         </span>
-                      ) : null}
-                    </span>
-                  </label>
-                ))}
+
+                        <span className="block text-sm text-mute">
+                          {[
+                            summary.testament,
+                            ...summary.categories,
+                          ].join(' • ')}
+                        </span>
+
+                        {character.shortDescription ? (
+                          <span className="mt-1 block text-sm">
+                            {character.shortDescription}
+                          </span>
+                        ) : null}
+
+                        {character.alternateNames?.length ? (
+                          <span className="mt-1 block text-xs text-mute">
+                            Also known as:{' '}
+                            {character.alternateNames.join(', ')}
+                          </span>
+                        ) : null}
+
+                        {character.keyScriptures.length > 0 ? (
+                          <span className="mt-1 block text-xs text-mute">
+                            Key references:{' '}
+                            {character.keyScriptures
+                              .slice(0, 3)
+                              .map(formatReference)
+                              .join(', ')}
+                          </span>
+                        ) : null}
+                      </span>
+                    </label>
+                  ),
+                )}
               </div>
             </div>
           )}
