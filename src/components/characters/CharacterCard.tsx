@@ -37,6 +37,26 @@ export default function CharacterCard({
         </p>
       )}
 
+      {c.identityHint ? (
+        <p className="text-sm text-mute">
+          {c.identityHint}
+        </p>
+      ) : null}
+
+      {c.primaryReference ? (
+        <p className="text-xs font-medium text-mute">
+          {c.primaryReference.book}{' '}
+          {c.primaryReference.chapter}
+          {c.primaryReference.verseStart != null
+            ? `:${c.primaryReference.verseStart}${
+                c.primaryReference.verseEnd != null
+                  ? `–${c.primaryReference.verseEnd}`
+                  : ''
+              }`
+            : ''}
+        </p>
+      ) : null}
+
       <span className="mt-1 font-semibold text-acc">
         View Character →
       </span>

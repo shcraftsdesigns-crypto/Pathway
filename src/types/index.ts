@@ -59,7 +59,10 @@ export type CharacterSummary = Pick<
   | 'alternateNames'
   | 'testament'
   | 'categories'
->
+> & {
+  identityHint?: string
+  primaryReference?: ScriptureReference
+}
 
 export interface CharacterFilters {
   query: string

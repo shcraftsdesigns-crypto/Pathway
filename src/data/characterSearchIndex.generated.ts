@@ -42,6 +42,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Malluch',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 44 },
   },
   {
     id: 'Abdi_2',
@@ -50,6 +52,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Abdiel_1',
@@ -66,6 +70,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hillel who judged Israel for eight years judge of Israel',
+    primaryReference: { book: 'Judges', chapter: 12, verseStart: 13 },
   },
   {
     id: 'Abdon_2',
@@ -74,6 +80,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 23 },
   },
   {
     id: 'Abdon_3',
@@ -82,6 +90,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah, firstborn',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 30 },
   },
   {
     id: 'Abel_1',
@@ -154,6 +164,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Anathothite, twelfth of "the thirty" of David\'s men over the nineth division',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 27 },
   },
   {
     id: 'Abiezer_2',
@@ -162,6 +174,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hammolecheth',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 18 },
   },
   {
     id: 'Abigail_1',
@@ -170,6 +184,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Carmelitess',
+    primaryReference: { book: '1 Samuel', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Abigail_2',
@@ -178,6 +194,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Nahash, sister of Zeruiah, sister of King David',
+    primaryReference: { book: '2 Samuel', chapter: 17, verseStart: 25 },
   },
   {
     id: 'Abihail_1',
@@ -186,6 +204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zuriel',
+    primaryReference: { book: 'Numbers', chapter: 3, verseStart: 35 },
   },
   {
     id: 'Abihail_2',
@@ -194,6 +214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Abishur',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 29 },
   },
   {
     id: 'Abihail_3',
@@ -202,6 +224,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Huri',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Abihail_4',
@@ -210,6 +234,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the daughter of Eliab',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 18 },
   },
   {
     id: 'Abihail_5',
@@ -218,6 +244,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Esther\'s father and Mordecai\'s uncle',
+    primaryReference: { book: 'Esther', chapter: 2, verseStart: 15 },
   },
   {
     id: 'Abihu_1',
@@ -234,6 +262,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 3 },
   },
   {
     id: 'Abihud_2',
@@ -242,6 +272,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Zerubbabel in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 13 },
   },
   {
     id: 'Abijah_1',
@@ -250,6 +282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second son of Samuel',
+    primaryReference: { book: '1 Samuel', chapter: 8, verseStart: 2 },
   },
   {
     id: 'Abijah_2',
@@ -258,6 +292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroboam',
+    primaryReference: { book: '1 Kings', chapter: 14, verseStart: 1 },
   },
   {
     id: 'Abijah_3',
@@ -266,6 +302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Hezron, daughter of Machir',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 24 },
   },
   {
     id: 'Abijah_4',
@@ -274,6 +312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Abijah_5',
@@ -282,6 +322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'eighth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 10 },
   },
   {
     id: 'Abijah_6',
@@ -290,6 +332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 7 },
   },
   {
     id: 'Abijam_1',
@@ -314,6 +358,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Gerar who took Sarah',
+    primaryReference: { book: 'Genesis', chapter: 20, verseStart: 2 },
   },
   {
     id: 'Abimelech_2',
@@ -322,6 +368,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gideon (Jerubbaal) by a concubine in Shechem who killed his brothers',
+    primaryReference: { book: 'Judges', chapter: 8, verseStart: 31 },
   },
   {
     id: 'Abimelech_3',
@@ -330,6 +378,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jerubbesheth',
+    primaryReference: { book: '2 Samuel', chapter: 11, verseStart: 21 },
   },
   {
     id: 'Abinadab_1',
@@ -338,6 +388,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the ark of the stored was kept in his house in Kiriath-jearim',
+    primaryReference: { book: '1 Samuel', chapter: 7, verseStart: 1 },
   },
   {
     id: 'Abinadab_2',
@@ -346,6 +398,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Jesse brother of David',
+    primaryReference: { book: '1 Samuel', chapter: 16, verseStart: 8 },
   },
   {
     id: 'Abinoam_1',
@@ -362,6 +416,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'rebelled against Moses with Korah',
+    primaryReference: { book: 'Numbers', chapter: 16, verseStart: 1 },
   },
   {
     id: 'Abiram_2',
@@ -370,6 +426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Hiel who died when his father rebuilt Jericho',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 34 },
   },
   {
     id: 'Abishag_1',
@@ -402,6 +460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Phinehas',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 4 },
   },
   {
     id: 'Abishua_2',
@@ -410,6 +470,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Abishur_1',
@@ -482,6 +544,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Baal-hanan',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 38 },
   },
   {
     id: 'Achbor_2',
@@ -490,6 +554,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Micaiah',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 12 },
   },
   {
     id: 'Achim_1',
@@ -514,6 +580,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Caleb',
+    primaryReference: { book: 'Joshua', chapter: 15, verseStart: 16 },
   },
   {
     id: 'Achsah_2',
@@ -522,6 +590,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Chelubai [Caleb]',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 49 },
   },
   {
     id: 'Adah_1',
@@ -538,6 +608,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Bozkath, father of Jedidah',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 1 },
   },
   {
     id: 'Adaiah_2',
@@ -546,6 +618,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ethan',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 41 },
   },
   {
     id: 'Adaiah_3',
@@ -554,6 +628,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 21 },
   },
   {
     id: 'Adaiah_4',
@@ -562,6 +638,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Adaiah_5',
@@ -570,6 +648,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Maaseiah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Adaiah_6',
@@ -578,6 +658,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Adaiah_7',
@@ -586,6 +668,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 39 },
   },
   {
     id: 'Adaiah_8',
@@ -594,6 +678,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joiarib',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 5 },
   },
   {
     id: 'Adaiah_9',
@@ -602,6 +688,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, son of Jeroham',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 12 },
   },
   {
     id: 'Adalia_1',
@@ -642,6 +730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 36 },
   },
   {
     id: 'Adiel_2',
@@ -650,6 +740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahzerah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Adin_1',
@@ -698,6 +790,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Adna_2',
@@ -706,6 +800,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Harim',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 15 },
   },
   {
     id: 'Adnah_1',
@@ -714,6 +810,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Adnah_2',
@@ -722,6 +820,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander,000 under Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 14 },
   },
   {
     id: 'Adoni-bezek_1',
@@ -746,6 +846,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fourth-born son of King David',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Adonijah_2',
@@ -754,6 +856,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Adonijah_3',
@@ -762,6 +866,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 16 },
   },
   {
     id: 'Adonikam_1',
@@ -826,6 +932,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the King of Israel will be higher than him As a comparison, Agag must have been…',
+    primaryReference: { book: 'Numbers', chapter: 24, verseStart: 7 },
   },
   {
     id: 'Agag_2',
@@ -834,6 +942,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'king of the Amalekites',
+    primaryReference: { book: '1 Samuel', chapter: 15, verseStart: 8 },
   },
   {
     id: 'Agee_1',
@@ -866,6 +976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Omri and King of Israel he "did evil in the sight of the LORD more than…',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 28 },
   },
   {
     id: 'Ahab_2',
@@ -874,6 +986,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophesied falsely',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 21 },
   },
   {
     id: 'Aharhel_1',
@@ -906,6 +1020,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of Jotham',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 38 },
   },
   {
     id: 'Ahaz_2',
@@ -914,6 +1030,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Micah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 35 },
   },
   {
     id: 'Ahaziah_1',
@@ -922,6 +1040,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel and son of Ahab',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 40 },
   },
   {
     id: 'Ahaziah_2',
@@ -930,6 +1050,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, youngest son of Jehoram son of Jehoshapat',
+    primaryReference: { book: '2 Kings', chapter: 8, verseStart: 24 },
   },
   {
     id: 'Ahban_1',
@@ -946,6 +1068,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abdiel, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 15 },
   },
   {
     id: 'Ahi_2',
@@ -954,6 +1078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shomer',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 34 },
   },
   {
     id: 'Ahiah_1',
@@ -986,6 +1112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Dan during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 12 },
   },
   {
     id: 'Ahiezer_2',
@@ -994,6 +1122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of the Benjamites who came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Ahihud_1',
@@ -1002,6 +1132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leader of the tribe of Asher to apportion the Land',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 27 },
   },
   {
     id: 'Ahihud_2',
@@ -1010,6 +1142,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gera',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Ahijah_1',
@@ -1018,6 +1152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest at Shiloh, nephew of Ichabod, and prophet',
+    primaryReference: { book: '1 Samuel', chapter: 14, verseStart: 3 },
   },
   {
     id: 'Ahijah_2',
@@ -1026,6 +1162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'secretary for King Solomon',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 3 },
   },
   {
     id: 'Ahijah_3',
@@ -1034,6 +1172,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of the house of Issachar, father of Baasha',
+    primaryReference: { book: '1 Kings', chapter: 15, verseStart: 27 },
   },
   {
     id: 'Ahijah_4',
@@ -1042,6 +1182,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jerahmeel',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 25 },
   },
   {
     id: 'Ahijah_5',
@@ -1050,6 +1192,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ehud',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Ahijah_6',
@@ -1058,6 +1202,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Pelonite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 36 },
   },
   {
     id: 'Ahikam_1',
@@ -1074,6 +1220,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jehoshaphat',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Ahilud_2',
@@ -1082,6 +1230,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Baana',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 12 },
   },
   {
     id: 'Ahimaaz_1',
@@ -1090,6 +1240,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ahinoam',
+    primaryReference: { book: '1 Samuel', chapter: 14, verseStart: 50 },
   },
   {
     id: 'Ahimaaz_2',
@@ -1098,6 +1250,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zadok the priest',
+    primaryReference: { book: '2 Samuel', chapter: 15, verseStart: 27 },
   },
   {
     id: 'Ahimaaz_3',
@@ -1106,6 +1260,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of Solomon\'s twelve deputies, in Naphtali',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 15 },
   },
   {
     id: 'Ahiman_1',
@@ -1114,6 +1270,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Anak one of three sons of Anak that Joshua drove out from…',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 22 },
   },
   {
     id: 'Ahiman_2',
@@ -1122,6 +1280,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the gatekeepers',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 17 },
   },
   {
     id: 'Ahimelech_1',
@@ -1130,6 +1290,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest of Nob',
+    primaryReference: { book: '1 Samuel', chapter: 21, verseStart: 1 },
   },
   {
     id: 'Ahimelech_2',
@@ -1138,6 +1300,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hittite',
+    primaryReference: { book: '1 Samuel', chapter: 26, verseStart: 6 },
   },
   {
     id: 'Ahimelech_3',
@@ -1146,6 +1310,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abiathar',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Ahimoth_1',
@@ -1170,6 +1336,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Saul',
+    primaryReference: { book: '1 Samuel', chapter: 14, verseStart: 50 },
   },
   {
     id: 'Ahinoam_2',
@@ -1178,6 +1346,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Jezreel',
+    primaryReference: { book: '1 Samuel', chapter: 25, verseStart: 43 },
   },
   {
     id: 'Ahio_1',
@@ -1186,6 +1356,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abinadab who led the ark on a cart',
+    primaryReference: { book: '2 Samuel', chapter: 6, verseStart: 3 },
   },
   {
     id: 'Ahio_2',
@@ -1194,6 +1366,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 14 },
   },
   {
     id: 'Ahio_3',
@@ -1202,6 +1376,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 31 },
   },
   {
     id: 'Ahira_1',
@@ -1250,6 +1426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Phinehas, grandson of Eli, and father of Ahijah',
+    primaryReference: { book: '1 Samuel', chapter: 14, verseStart: 3 },
   },
   {
     id: 'Ahitub_2',
@@ -1258,6 +1436,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '(grand) father of Zadok the priest, son of Amariah',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Ahitub_3',
@@ -1266,6 +1446,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amariah, Levite, father of Meraioth',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 11 },
   },
   {
     id: 'Ahitub_4',
@@ -1274,6 +1456,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'leader of the house of God',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Ahlai_1',
@@ -1282,6 +1466,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Sheshan',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 31 },
   },
   {
     id: 'Ahlai_2',
@@ -1290,6 +1476,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zabad',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 41 },
   },
   {
     id: 'Ahoah_1',
@@ -1338,6 +1526,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zibeon',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 24 },
   },
   {
     id: 'Aiah_2',
@@ -1346,6 +1536,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Rizpah',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 7 },
   },
   {
     id: 'Akan_1',
@@ -1362,6 +1554,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Akkub_2',
@@ -1370,6 +1564,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the gatekeepers',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 17 },
   },
   {
     id: 'Akkub_3',
@@ -1378,6 +1574,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant, explained the law to the people',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 45 },
   },
   {
     id: 'Alemeth_1',
@@ -1386,6 +1584,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Alemeth_2',
@@ -1394,6 +1594,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoadda',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 36 },
   },
   {
     id: 'Alexander_1',
@@ -1402,6 +1604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Simon the Cyrene',
+    primaryReference: { book: 'Mark', chapter: 15, verseStart: 21 },
   },
   {
     id: 'Alexander_2',
@@ -1410,6 +1614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a man of high-priestly descent',
+    primaryReference: { book: 'Acts', chapter: 4, verseStart: 6 },
   },
   {
     id: 'Alexander_3',
@@ -1418,6 +1624,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a believing Jew in Ephesus',
+    primaryReference: { book: 'Acts', chapter: 19, verseStart: 33 },
   },
   {
     id: 'Alexander_4',
@@ -1426,6 +1634,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'handed over to Satan by Paul the coppersmith',
+    primaryReference: { book: '1 Timothy', chapter: 1, verseStart: 20 },
   },
   {
     id: 'Allon_1',
@@ -1490,6 +1700,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meraioth and father of Ahitub',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 7 },
   },
   {
     id: 'Amariah_2',
@@ -1498,6 +1710,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azariah and father of Ahitub, Levite, chief priest',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 11 },
   },
   {
     id: 'Amariah_3',
@@ -1506,6 +1720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 19 },
   },
   {
     id: 'Amariah_4',
@@ -1514,6 +1730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their brothers',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 15 },
   },
   {
     id: 'Amariah_5',
@@ -1522,6 +1740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 42 },
   },
   {
     id: 'Amariah_6',
@@ -1530,6 +1750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 3 },
   },
   {
     id: 'Amariah_7',
@@ -1538,6 +1760,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shephatiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Amariah_8',
@@ -1546,6 +1770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'great-grandfather of Zephaniah the prophet',
+    primaryReference: { book: 'Zephaniah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Amasa_1',
@@ -1554,6 +1780,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'set over David\'s army in place of Joab',
+    primaryReference: { book: '2 Samuel', chapter: 17, verseStart: 25 },
   },
   {
     id: 'Amasa_2',
@@ -1562,6 +1790,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hadlai, aided defeated Judaites',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 12 },
   },
   {
     id: 'Amasai_1',
@@ -1594,6 +1824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of Joash',
+    primaryReference: { book: '2 Kings', chapter: 12, verseStart: 21 },
   },
   {
     id: 'Amaziah_2',
@@ -1602,6 +1834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joshah, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 34 },
   },
   {
     id: 'Amaziah_3',
@@ -1610,6 +1844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hilkiah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 45 },
   },
   {
     id: 'Ami_1',
@@ -1634,6 +1870,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the spies- from Dan',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 12 },
   },
   {
     id: 'Ammiel_2',
@@ -1642,6 +1880,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Machir',
+    primaryReference: { book: '2 Samuel', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Ammiel_3',
@@ -1650,6 +1890,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixth-born son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 5 },
   },
   {
     id: 'Ammihud_1',
@@ -1658,6 +1900,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elishama',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 10 },
   },
   {
     id: 'Ammihud_2',
@@ -1666,6 +1910,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Samuel, the leader of the tribe of Simeon',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 20 },
   },
   {
     id: 'Ammihud_3',
@@ -1674,6 +1920,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pedahel',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 28 },
   },
   {
     id: 'Ammihud_4',
@@ -1682,6 +1930,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of the King of Geshur, Talmai',
+    primaryReference: { book: '2 Samuel', chapter: 13, verseStart: 37 },
   },
   {
     id: 'Ammihud_5',
@@ -1690,6 +1940,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Omri',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Amminadab_1',
@@ -1698,6 +1950,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elisheba',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 23 },
   },
   {
     id: 'Amminadab_2',
@@ -1706,6 +1960,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of the sons of Uzziel',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 10 },
   },
   {
     id: 'Ammishaddai_1',
@@ -1730,6 +1986,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of King David',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 2 },
   },
   {
     id: 'Amnon_2',
@@ -1738,6 +1996,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimon',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 20 },
   },
   {
     id: 'Amok_1',
@@ -1754,6 +2014,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the governor of Samaria',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 26 },
   },
   {
     id: 'Amon_2',
@@ -1762,6 +2024,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah and son of Manasseh He did evil in the sight of the Lord',
+    primaryReference: { book: '2 Kings', chapter: 21, verseStart: 18 },
   },
   {
     id: 'Amon_3',
@@ -1770,6 +2034,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Thebes, punished by G-d',
+    primaryReference: { book: 'Jeremiah', chapter: 46, verseStart: 25 },
   },
   {
     id: 'Amor_1',
@@ -1786,6 +2052,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, from among the sheepherders of Tekoa',
+    primaryReference: { book: 'Amos', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Amos_2',
@@ -1794,6 +2062,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 25 },
   },
   {
     id: 'Amoz_1',
@@ -1818,6 +2088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kohath',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Amram_2',
@@ -1826,6 +2098,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 34 },
   },
   {
     id: 'Amraphel_1',
@@ -1842,6 +2116,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bani',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 46 },
   },
   {
     id: 'Amzi_2',
@@ -1850,6 +2126,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zechariah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 12 },
   },
   {
     id: 'Anah_1',
@@ -1866,6 +2144,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s right hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Anaiah_2',
@@ -1874,6 +2154,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Anak_1',
@@ -1922,6 +2204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'sold property and gave a portion to the apostles',
+    primaryReference: { book: 'Acts', chapter: 5, verseStart: 1 },
   },
   {
     id: 'Ananias_2',
@@ -1930,6 +2214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'disciple at Damascus who cared for Saul/Paul',
+    primaryReference: { book: 'Acts', chapter: 9, verseStart: 10 },
   },
   {
     id: 'Ananias_3',
@@ -1938,6 +2224,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the high priest who ordered Paul struck',
+    primaryReference: { book: 'Acts', chapter: 23, verseStart: 2 },
   },
   {
     id: 'Anath_1',
@@ -1954,6 +2242,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Anathoth_2',
@@ -1962,6 +2252,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 19 },
   },
   {
     id: 'Andrew_1',
@@ -2106,6 +2398,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ulla [Jephunneh]',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 39 },
   },
   {
     id: 'Arah_2',
@@ -2114,6 +2408,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 5 },
   },
   {
     id: 'Arah_3',
@@ -2122,6 +2418,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shecaniah',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Aram_1',
@@ -2130,6 +2428,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shem',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Aram_2',
@@ -2138,6 +2438,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kemuel',
+    primaryReference: { book: 'Genesis', chapter: 22, verseStart: 21 },
   },
   {
     id: 'Aram_3',
@@ -2146,6 +2448,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shomer',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 34 },
   },
   {
     id: 'Aran_1',
@@ -2258,6 +2562,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Moab',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 20 },
   },
   {
     id: 'Ariel_2',
@@ -2266,6 +2572,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Arioch_1',
@@ -2274,6 +2582,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Ellasar',
+    primaryReference: { book: 'Genesis', chapter: 14, verseStart: 1 },
   },
   {
     id: 'Arioch_2',
@@ -2282,6 +2592,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of Nebuchadnezzar\'s bodyguard',
+    primaryReference: { book: 'Daniel', chapter: 2, verseStart: 14 },
   },
   {
     id: 'Arisai_1',
@@ -2378,6 +2690,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of incestuous relationship between Abijah and his mother…',
+    primaryReference: { book: '1 Kings', chapter: 15, verseStart: 8 },
   },
   {
     id: 'Asa_2',
@@ -2386,6 +2700,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elkanah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 16 },
   },
   {
     id: 'Asahel_1',
@@ -2394,6 +2710,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'brother of Joab and Abishai, sixth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 2, verseStart: 18 },
   },
   {
     id: 'Asahel_2',
@@ -2402,6 +2720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Asahel_3',
@@ -2410,6 +2730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Asahel_4',
@@ -2418,6 +2740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'opposed Israel\'s decision to set apart foreign wives',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Asaiah_1',
@@ -2426,6 +2750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King Josiah\'s servant',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 12 },
   },
   {
     id: 'Asaiah_2',
@@ -2434,6 +2760,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 36 },
   },
   {
     id: 'Asaiah_3',
@@ -2442,6 +2770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Haggiah, chief of the sons of Merari',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 30 },
   },
   {
     id: 'Asaiah_4',
@@ -2450,6 +2780,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Shilonite living in Jerusalem',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 5 },
   },
   {
     id: 'Asaph_1',
@@ -2458,6 +2790,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joah',
+    primaryReference: { book: '2 Kings', chapter: 18, verseStart: 18 },
   },
   {
     id: 'Asaph_2',
@@ -2466,6 +2800,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Berechiah, chosen first by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 39 },
   },
   {
     id: 'Asaph_3',
@@ -2474,6 +2810,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zichri, singer',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 15 },
   },
   {
     id: 'Asaph_4',
@@ -2482,6 +2820,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'keeper of King Artaxerxes\' forest',
+    primaryReference: { book: 'Nehemiah', chapter: 2, verseStart: 8 },
   },
   {
     id: 'Asarel_1',
@@ -2586,6 +2926,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gilead',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 31 },
   },
   {
     id: 'Asriel_2',
@@ -2594,6 +2936,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 14 },
   },
   {
     id: 'Asshur_1',
@@ -2602,6 +2946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shem',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Asshur_2',
@@ -2610,6 +2956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Dedan',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Assir_1',
@@ -2618,6 +2966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Korah',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 24 },
   },
   {
     id: 'Assir_2',
@@ -2626,6 +2976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ebiasaph',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 23 },
   },
   {
     id: 'Asynchritus_1',
@@ -2650,6 +3002,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 16 },
   },
   {
     id: 'Ater_2',
@@ -2658,6 +3012,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 42 },
   },
   {
     id: 'Athaiah_1',
@@ -2674,6 +3030,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Ahab and grandaughter of Omri )',
+    primaryReference: { book: '2 Kings', chapter: 8, verseStart: 26 },
   },
   {
     id: 'Athaliah_2',
@@ -2682,6 +3040,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham [Jeremoth v 14]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 26 },
   },
   {
     id: 'Athaliah_3',
@@ -2690,6 +3050,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jeshaiah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Athlai_1',
@@ -2706,6 +3068,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jarha',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 35 },
   },
   {
     id: 'Attai_2',
@@ -2714,6 +3078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixth among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 11 },
   },
   {
     id: 'Attai_3',
@@ -2722,6 +3088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehoboam and Maacah',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 20 },
   },
   {
     id: 'Azaliah_1',
@@ -2746,6 +3114,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Korahite, chosen eleventh by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 6 },
   },
   {
     id: 'Azarel_2',
@@ -2754,6 +3124,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Danites, son of Jeroham',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 22 },
   },
   {
     id: 'Azarel_3',
@@ -2762,6 +3134,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 41 },
   },
   {
     id: 'Azarel_4',
@@ -2770,6 +3144,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahzai',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 13 },
   },
   {
     id: 'Azariah_1',
@@ -2778,6 +3154,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son [descendant] of Zadok, served as priest in the temple which Solomon built',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Azariah_2',
@@ -2786,6 +3164,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nathan, was over the deputies',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 5 },
   },
   {
     id: 'Azariah_3',
@@ -2794,6 +3174,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: ['Azariah'],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '[Uzziah] King of Judah, son of Amaziah',
+    primaryReference: { book: '2 Kings', chapter: 14, verseStart: 21 },
   },
   {
     id: 'Azariah_4',
@@ -2802,6 +3184,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ethan',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 8 },
   },
   {
     id: 'Azariah_5',
@@ -2810,6 +3194,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehu',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 38 },
   },
   {
     id: 'Azariah_6',
@@ -2818,6 +3204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahimaaz, and father of Johanan',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 9 },
   },
   {
     id: 'Azariah_7',
@@ -2826,6 +3214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hilkiah, father of Seriah, and priest, explained the law to the people',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 13 },
   },
   {
     id: 'Azariah_8',
@@ -2834,6 +3224,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, son of Oded',
+    primaryReference: { book: '2 Chronicles', chapter: 15, verseStart: 1 },
   },
   {
     id: 'Azariah_9',
@@ -2842,6 +3234,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 21, verseStart: 2 },
   },
   {
     id: 'Azariah_10',
@@ -2850,6 +3244,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham, supported Joash as king of Judah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Azariah_11',
@@ -2858,6 +3254,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Obed, supported Joash as king of Judah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Azariah_12',
@@ -2866,6 +3264,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Johanan, aided defeated Judaites',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 12 },
   },
   {
     id: 'Azariah_13',
@@ -2874,6 +3274,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joel, Kohathite during reign of Hezekiah',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 12 },
   },
   {
     id: 'Azariah_14',
@@ -2882,6 +3284,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehallelel, Merarite during reign of Hezekiah',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 12 },
   },
   {
     id: 'Azariah_15',
@@ -2890,6 +3294,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief priest of the house of Zadok',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 10 },
   },
   {
     id: 'Azariah_16',
@@ -2898,6 +3304,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'carried out repairs beside his house',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Azariah_17',
@@ -2906,6 +3314,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hoshaiah, opposed Jeremiah',
+    primaryReference: { book: 'Jeremiah', chapter: 43, verseStart: 2 },
   },
   {
     id: 'Azariah_18',
@@ -2914,6 +3324,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chosen for Nebuchadnezzar\'s service along with Daniel',
+    primaryReference: { book: 'Daniel', chapter: 1, verseStart: 6 },
   },
   {
     id: 'Azaryahu_1',
@@ -2938,6 +3350,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'lyre-playing Levite',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 21 },
   },
   {
     id: 'Azaziah_2',
@@ -2946,6 +3360,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hoshea',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 20 },
   },
   {
     id: 'Azaziah_3',
@@ -2954,6 +3370,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Azbuk_1',
@@ -3002,6 +3420,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Barhumite, twenty-first of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 31 },
   },
   {
     id: 'Azmaveth_2',
@@ -3010,6 +3430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoadda',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 36 },
   },
   {
     id: 'Azmaveth_3',
@@ -3018,6 +3440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'in charge of the king\'s storehouses, son of Adiel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 25 },
   },
   {
     id: 'Azmaveth_4',
@@ -3026,6 +3450,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity Beth-azmaveth in',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 24 },
   },
   {
     id: 'Azor_1',
@@ -3042,6 +3468,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Azriel_2',
@@ -3050,6 +3478,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jeremoth',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 19 },
   },
   {
     id: 'Azriel_3',
@@ -3058,6 +3488,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Seraiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 26 },
   },
   {
     id: 'Azrikam_1',
@@ -3066,6 +3498,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Neariah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Azrikam_2',
@@ -3074,6 +3508,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azel',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 38 },
   },
   {
     id: 'Azrikam_3',
@@ -3082,6 +3518,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hashabiah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 14 },
   },
   {
     id: 'Azrikam_4',
@@ -3090,6 +3528,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ruler of the house',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 7 },
   },
   {
     id: 'Azubah_1',
@@ -3098,6 +3538,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'mother of King Jehoshaphat',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 42 },
   },
   {
     id: 'Azubah_2',
@@ -3106,6 +3548,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Chelubai [Caleb]',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 18 },
   },
   {
     id: 'Azzan_1',
@@ -3122,6 +3566,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 17 },
   },
   {
     id: 'Azzur_2',
@@ -3130,6 +3576,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hananiah',
+    primaryReference: { book: 'Jeremiah', chapter: 28, verseStart: 1 },
   },
   {
     id: 'Azzur_3',
@@ -3138,6 +3586,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jaazaniah',
+    primaryReference: { book: 'Ezekiel', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Baal_1',
@@ -3146,6 +3596,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reaiah, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 5 },
   },
   {
     id: 'Baal_2',
@@ -3154,6 +3606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 30 },
   },
   {
     id: 'Baal-hanan_1',
@@ -3162,6 +3616,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Edom, successor to Shaul',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 38 },
   },
   {
     id: 'Baal-hanan_2',
@@ -3170,6 +3626,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Gederite in charge of David\'s olive & sycamore trees',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 28 },
   },
   {
     id: 'Baalis_1',
@@ -3186,6 +3644,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of Solomon\'s twelve deputies, in Taanach and Megiddo',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 12 },
   },
   {
     id: 'Baana_2',
@@ -3194,6 +3654,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of Solomon\'s twelve deputies, in Asher',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 16 },
   },
   {
     id: 'Baana_3',
@@ -3202,6 +3664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zadok',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Baanah_1',
@@ -3210,6 +3674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander of Ish-bosheth\'s military',
+    primaryReference: { book: '2 Samuel', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Baanah_2',
@@ -3218,6 +3684,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Heleb, one of David\'s mighty men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 29 },
   },
   {
     id: 'Baanah_3',
@@ -3226,6 +3694,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity named on the sealed document of',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Baara_1',
@@ -3306,6 +3776,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Gadite, thirty-second of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 36 },
   },
   {
     id: 'Bani_2',
@@ -3314,6 +3786,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemer',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 46 },
   },
   {
     id: 'Bani_3',
@@ -3322,6 +3796,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Perez and leader during the return',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Bani_4',
@@ -3330,6 +3806,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity Binnui in',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 10 },
   },
   {
     id: 'Bani_5',
@@ -3338,6 +3816,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 38 },
   },
   {
     id: 'Bani_6',
@@ -3346,6 +3826,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Rehum named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 17 },
   },
   {
     id: 'Bani_7',
@@ -3354,6 +3836,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people, stood on the Levites platform, and exhorted…',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Bani_8',
@@ -3362,6 +3846,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the other Bani who stood on the Levites platform',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Bani_9',
@@ -3370,6 +3856,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hashabiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 22 },
   },
   {
     id: 'Bar-Jesus_1',
@@ -3442,6 +3930,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'zealously repaired another section of wall',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 20 },
   },
   {
     id: 'Baruch_2',
@@ -3450,6 +3940,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 6 },
   },
   {
     id: 'Baruch_3',
@@ -3458,6 +3950,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Col-hozeh',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 5 },
   },
   {
     id: 'Baruch_4',
@@ -3466,6 +3960,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'scribe and friend of Jeremiah',
+    primaryReference: { book: 'Jeremiah', chapter: 32, verseStart: 12 },
   },
   {
     id: 'Barzillai_1',
@@ -3474,6 +3970,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Gileadite from Rogelim',
+    primaryReference: { book: '2 Samuel', chapter: 17, verseStart: 27 },
   },
   {
     id: 'Barzillai_2',
@@ -3482,6 +3980,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Meholathite, father of Adriel',
+    primaryReference: { book: '2 Samuel', chapter: 21, verseStart: 8 },
   },
   {
     id: 'Barzillai_3',
@@ -3490,6 +3990,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'man who took a wife from the the daughters of Barzillai and was called by their…',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 61 },
   },
   {
     id: 'Basemath_1',
@@ -3498,6 +4000,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Elon the Hittite, and wife of Esau',
+    primaryReference: { book: 'Genesis', chapter: 26, verseStart: 34 },
   },
   {
     id: 'Basemath_2',
@@ -3506,6 +4010,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Solomon, wife of Ahimaaz',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 15 },
   },
   {
     id: 'Bath-shua_1',
@@ -3562,6 +4068,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Benjamin',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 21 },
   },
   {
     id: 'Becher_2',
@@ -3570,6 +4078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Ephraim',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 35 },
   },
   {
     id: 'Becorath_1',
@@ -3626,6 +4136,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hittite, also called Anah',
+    primaryReference: { book: 'Genesis', chapter: 26, verseStart: 34 },
   },
   {
     id: 'Beeri_2',
@@ -3634,6 +4146,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hosea',
+    primaryReference: { book: 'Hosea', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Bela_1',
@@ -3642,6 +4156,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Edom, his city was Dinhabah',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 32 },
   },
   {
     id: 'Bela_2',
@@ -3650,6 +4166,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Benjamin',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 21 },
   },
   {
     id: 'Bela_3',
@@ -3658,6 +4176,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azaz, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 8 },
   },
   {
     id: 'Belshazzar_1',
@@ -3714,6 +4234,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Aram the king whom Naaman served, King Asa supported, and who warred…',
+    primaryReference: { book: '1 Kings', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Ben-hadad_2',
@@ -3722,6 +4244,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Aram, son of Hazael',
+    primaryReference: { book: '2 Kings', chapter: 13, verseStart: 3 },
   },
   {
     id: 'Ben-hail_1',
@@ -3762,6 +4286,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'over the Cherethites and the Pelethites, the fifth of "the thirty" of David\'s…',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 18 },
   },
   {
     id: 'Benaiah_2',
@@ -3770,6 +4296,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Pirathonite, eighteenth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 30 },
   },
   {
     id: 'Benaiah_3',
@@ -3778,6 +4306,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 36 },
   },
   {
     id: 'Benaiah_4',
@@ -3786,6 +4316,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper, a trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Benaiah_5',
@@ -3794,6 +4326,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel',
+    primaryReference: { book: '2 Chronicles', chapter: 20, verseStart: 14 },
   },
   {
     id: 'Benaiah_6',
@@ -3802,6 +4336,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Benaiah_7',
@@ -3810,6 +4346,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Parosh who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 25 },
   },
   {
     id: 'Benaiah_8',
@@ -3818,6 +4356,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Benaiah_9',
@@ -3826,6 +4366,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 35 },
   },
   {
     id: 'Benaiah_10',
@@ -3834,6 +4376,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Nebo who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 43 },
   },
   {
     id: 'Benaiah_11',
@@ -3842,6 +4386,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pelatiah',
+    primaryReference: { book: 'Ezekiel', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Benhanan_1',
@@ -3866,6 +4412,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'twelfth-born son of Jacob and Rachel',
+    primaryReference: { book: 'Genesis', chapter: 35, verseStart: 18 },
   },
   {
     id: 'Benjamin_2',
@@ -3874,6 +4422,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bilhan',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Benjamin_3',
@@ -3882,6 +4432,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 32 },
   },
   {
     id: 'Benjamin_4',
@@ -3890,6 +4442,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'carried out repairs in front of their house',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Beno_1',
@@ -3906,6 +4460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Bela, King of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 32 },
   },
   {
     id: 'Beor_2',
@@ -3914,6 +4470,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Balaam',
+    primaryReference: { book: 'Numbers', chapter: 22, verseStart: 5 },
   },
   {
     id: 'Bera_1',
@@ -3946,6 +4504,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshullam',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 20 },
   },
   {
     id: 'Berechiah_2',
@@ -3954,6 +4514,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimea',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 39 },
   },
   {
     id: 'Berechiah_3',
@@ -3962,6 +4524,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asa',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 16 },
   },
   {
     id: 'Berechiah_4',
@@ -3970,6 +4534,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshillemoth, aided defeated Judaites',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 12 },
   },
   {
     id: 'Berechiah_5',
@@ -3978,6 +4544,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Meshullam',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Berechiah_6',
@@ -3986,6 +4554,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zechariah the prophet',
+    primaryReference: { book: 'Zechariah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Beri_1',
@@ -4002,6 +4572,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asher',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 17 },
   },
   {
     id: 'Beriah_2',
@@ -4010,6 +4582,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ephraim',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 23 },
   },
   {
     id: 'Beriah_3',
@@ -4018,6 +4592,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 13 },
   },
   {
     id: 'Beriah_4',
@@ -4026,6 +4602,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shimei',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 10 },
   },
   {
     id: 'Bernice_1',
@@ -4098,6 +4676,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'called by G-d in the construction of the tabernacle',
+    primaryReference: { book: 'Exodus', chapter: 31, verseStart: 2 },
   },
   {
     id: 'Bezalel_2',
@@ -4106,6 +4686,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Bezer_1',
@@ -4170,6 +4752,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifteenth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 14 },
   },
   {
     id: 'Bilgah_2',
@@ -4178,6 +4762,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the priests who came up with Zerubbabel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 5 },
   },
   {
     id: 'Bilgai_1',
@@ -4202,6 +4788,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ezer',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 27 },
   },
   {
     id: 'Bilhan_2',
@@ -4210,6 +4798,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jediael (also called Ashbel)',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Bilshan_1',
@@ -4242,6 +4832,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Noadiah',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Binnui_2',
@@ -4250,6 +4842,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Binnui_3',
@@ -4258,6 +4852,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 38 },
   },
   {
     id: 'Binnui_4',
@@ -4266,6 +4862,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired a section of the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Birsha_1',
@@ -4346,6 +4944,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leader of the tribe of Dan to apportion the Land',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 22 },
   },
   {
     id: 'Bukki_2',
@@ -4354,6 +4954,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abishua and father of Uzzi',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 5 },
   },
   {
     id: 'Bukkiah_1',
@@ -4378,6 +4980,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on the Levites platform',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Bunni_2',
@@ -4386,6 +4990,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hashabiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 15 },
   },
   {
     id: 'Buz_1',
@@ -4394,6 +5000,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nahor',
+    primaryReference: { book: 'Genesis', chapter: 22, verseStart: 21 },
   },
   {
     id: 'Buz_2',
@@ -4402,6 +5010,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jahdo, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Buzi_1',
@@ -4418,6 +5028,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'Caesar during Jesus\' ministry Tiberius Caesar',
+    primaryReference: { book: 'Matthew', chapter: 22, verseStart: 17 },
   },
   {
     id: 'Caesar_2',
@@ -4426,6 +5038,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the Caesar against whom Paul has committed no offense The Caesar to whom Paul…',
+    primaryReference: { book: 'Acts', chapter: 25, verseStart: 8 },
   },
   {
     id: 'Caesar Augustus_1',
@@ -4514,6 +5128,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuben',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 9 },
   },
   {
     id: 'Carmi_2',
@@ -4522,6 +5138,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Achan, son of Zabdi from the tribe of Judah',
+    primaryReference: { book: 'Joshua', chapter: 7, verseStart: 1 },
   },
   {
     id: 'Carshena_1',
@@ -4586,6 +5204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zedekiah',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 11 },
   },
   {
     id: 'Chenaanah_2',
@@ -4594,6 +5214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bilhan',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Chenani_1',
@@ -4690,6 +5312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'Roman Emperor during whose reign there was a famine Tiberius Claudius Caesar…',
+    primaryReference: { book: 'Acts', chapter: 11, verseStart: 28 },
   },
   {
     id: 'Claudius_2',
@@ -4698,6 +5322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'commander of the Roman garrison in Jerusalem',
+    primaryReference: { book: 'Acts', chapter: 23, verseStart: 26 },
   },
   {
     id: 'Clement_1',
@@ -4786,6 +5412,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ham',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 6 },
   },
   {
     id: 'Cush_2',
@@ -4794,6 +5422,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Benjamite (Psalm 7:0)',
+    primaryReference: { book: 'Psalms', chapter: 7, verseStart: 0 },
   },
   {
     id: 'Cushan-rishathaim_1',
@@ -4810,6 +5440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shelamiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 14 },
   },
   {
     id: 'Cushi_2',
@@ -4818,6 +5450,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zephaniah the prophet',
+    primaryReference: { book: 'Zephaniah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Cyrus_1',
@@ -4858,6 +5492,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Ithamar who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 2 },
   },
   {
     id: 'Daniel_2',
@@ -4866,6 +5502,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet of the book of Daniel',
+    primaryReference: { book: 'Ezekiel', chapter: 14, verseStart: 14 },
   },
   {
     id: 'Darda_1',
@@ -4882,6 +5520,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Persia',
+    primaryReference: { book: 'Ezra', chapter: 4, verseStart: 5 },
   },
   {
     id: 'Darius_2',
@@ -4890,6 +5530,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahaseurus, a Mede',
+    primaryReference: { book: 'Daniel', chapter: 9, verseStart: 1 },
   },
   {
     id: 'Darkon_1',
@@ -4930,6 +5572,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Rebekah\'s nurse',
+    primaryReference: { book: 'Genesis', chapter: 35, verseStart: 8 },
   },
   {
     id: 'Deborah_2',
@@ -4938,6 +5582,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a prophetess and judge in Israel',
+    primaryReference: { book: 'Judges', chapter: 4, verseStart: 4 },
   },
   {
     id: 'Dedan_1',
@@ -4946,6 +5592,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Raamah',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 7 },
   },
   {
     id: 'Dedan_2',
@@ -4954,6 +5602,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jokshan',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Delaiah_1',
@@ -4962,6 +5612,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Delaiah_2',
@@ -4970,6 +5622,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'twenty-third-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 18 },
   },
   {
     id: 'Delaiah_3',
@@ -4978,6 +5632,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'unable to give evidence if they were from Israel',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 60 },
   },
   {
     id: 'Delaiah_4',
@@ -4986,6 +5642,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shemaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Delaiah_5',
@@ -4994,6 +5652,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah, an official',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 12 },
   },
   {
     id: 'Delilah_1',
@@ -5018,6 +5678,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a silversmith who stirred up the workmen of Ephesus',
+    primaryReference: { book: 'Acts', chapter: 19, verseStart: 24 },
   },
   {
     id: 'Demetrius_2',
@@ -5026,6 +5688,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'has received (good) testimony from everyone',
+    primaryReference: { book: '3 John', chapter: 1, verseStart: 12 },
   },
   {
     id: 'Deuel_1',
@@ -5098,6 +5762,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seir and chief in Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 21 },
   },
   {
     id: 'Dishon_2',
@@ -5106,6 +5772,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Anah',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 25 },
   },
   {
     id: 'Dodai_1',
@@ -5138,6 +5806,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Puah',
+    primaryReference: { book: 'Judges', chapter: 10, verseStart: 1 },
   },
   {
     id: 'Dodo_2',
@@ -5146,6 +5816,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'an Ahohite father of Eleazar, one of David\'s mighty men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 9 },
   },
   {
     id: 'Doeg_1',
@@ -5186,6 +5858,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Gaal',
+    primaryReference: { book: 'Judges', chapter: 9, verseStart: 26 },
   },
   {
     id: 'Ebed_2',
@@ -5194,6 +5868,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Adin, son of Jonathan who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 6 },
   },
   {
     id: 'Ebed-melech_1',
@@ -5210,6 +5886,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shem, son of Shelah',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Eber_2',
@@ -5218,6 +5896,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 13 },
   },
   {
     id: 'Eber_3',
@@ -5226,6 +5906,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 12 },
   },
   {
     id: 'Eber_4',
@@ -5234,6 +5916,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 22 },
   },
   {
     id: 'Eber_5',
@@ -5242,6 +5926,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amok',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Ebiasaph_1',
@@ -5266,6 +5952,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Beriah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 15 },
   },
   {
     id: 'Eder_2',
@@ -5274,6 +5962,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mushi',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 23 },
   },
   {
     id: 'Eglah_1',
@@ -5306,6 +5996,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'raised up by the LORD as a deliverer for Israel who killed Eglon',
+    primaryReference: { book: 'Judges', chapter: 3, verseStart: 15 },
   },
   {
     id: 'Ehud_2',
@@ -5314,6 +6006,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bilhan',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Eker_1',
@@ -5338,6 +6032,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 41 },
   },
   {
     id: 'Elah_2',
@@ -5346,6 +6042,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Baasha and King of Israel',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 6 },
   },
   {
     id: 'Elah_3',
@@ -5354,6 +6052,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hoshea, King of Israel',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 30 },
   },
   {
     id: 'Elah_4',
@@ -5362,6 +6062,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Caleb',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 15 },
   },
   {
     id: 'Elah_5',
@@ -5370,6 +6072,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uzzi',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Elam_1',
@@ -5378,6 +6082,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shem',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Elam_2',
@@ -5386,6 +6092,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 24 },
   },
   {
     id: 'Elam_3',
@@ -5394,6 +6102,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth-born son of Meshelemiah [Shallum]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 3 },
   },
   {
     id: 'Elam_4',
@@ -5402,6 +6112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity father of Jehiel…',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 7 },
   },
   {
     id: 'Elam_5',
@@ -5410,6 +6122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '"the other Elam" whose sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 31 },
   },
   {
     id: 'Elasah_1',
@@ -5418,6 +6132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Elasah_2',
@@ -5426,6 +6142,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaphan',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 3 },
   },
   {
     id: 'Eldaah_1',
@@ -5466,6 +6184,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Helez',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 39 },
   },
   {
     id: 'Eleasah_2',
@@ -5474,6 +6194,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Raphah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 37 },
   },
   {
     id: 'Eleazar_1',
@@ -5482,6 +6204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Aaron',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 23 },
   },
   {
     id: 'Eleazar_2',
@@ -5490,6 +6214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'consecrated to keep the ark in Kiriath-jearim',
+    primaryReference: { book: '1 Samuel', chapter: 7, verseStart: 1 },
   },
   {
     id: 'Eleazar_3',
@@ -5498,6 +6224,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second of "the thirty" of David\'s men, son of Dodo',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 9 },
   },
   {
     id: 'Eleazar_4',
@@ -5506,6 +6234,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mahli',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 21 },
   },
   {
     id: 'Eleazar_5',
@@ -5514,6 +6244,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mahli',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 28 },
   },
   {
     id: 'Eleazar_6',
@@ -5522,6 +6254,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest, descendant of Phinehas',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Eleazar_7',
@@ -5530,6 +6264,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Parosh who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 25 },
   },
   {
     id: 'Eleazar_8',
@@ -5538,6 +6274,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'with the officials and priests in the house of G-d',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 42 },
   },
   {
     id: 'Eleazar_9',
@@ -5546,6 +6284,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliud in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 15 },
   },
   {
     id: 'Elhanan_1',
@@ -5562,6 +6302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest of Israel in Shiloh',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 3 },
   },
   {
     id: 'Eli_2',
@@ -5570,6 +6312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Eliab_1',
@@ -5578,6 +6322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Zebulun during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 9 },
   },
   {
     id: 'Eliab_2',
@@ -5586,6 +6332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Dathan and Abiram from the tribe of Reuben',
+    primaryReference: { book: 'Numbers', chapter: 16, verseStart: 1 },
   },
   {
     id: 'Eliab_3',
@@ -5594,6 +6342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Jesse brother of David',
+    primaryReference: { book: '1 Samuel', chapter: 16, verseStart: 6 },
   },
   {
     id: 'Eliab_4',
@@ -5602,6 +6352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 9 },
   },
   {
     id: 'Eliab_5',
@@ -5610,6 +6362,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Eliada_1',
@@ -5618,6 +6372,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 16 },
   },
   {
     id: 'Eliada_2',
@@ -5626,6 +6382,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Rezon',
+    primaryReference: { book: '1 Kings', chapter: 11, verseStart: 23 },
   },
   {
     id: 'Eliada_3',
@@ -5634,6 +6392,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander,000 under Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 17 },
   },
   {
     id: 'Eliahba_1',
@@ -5650,6 +6410,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'over the household of Hezekiah',
+    primaryReference: { book: '2 Kings', chapter: 18, verseStart: 18 },
   },
   {
     id: 'Eliakim_2',
@@ -5666,6 +6428,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest with a trumpet',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 41 },
   },
   {
     id: 'Eliakim_4',
@@ -5674,6 +6438,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Abihud in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 13 },
   },
   {
     id: 'Eliakim_5',
@@ -5682,6 +6448,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Eliam_1',
@@ -5690,6 +6458,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Bathsheba\'s father',
+    primaryReference: { book: '2 Samuel', chapter: 11, verseStart: 3 },
   },
   {
     id: 'Eliam_2',
@@ -5698,6 +6468,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahithophel, twenty-eighth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 34 },
   },
   {
     id: 'Eliasaph_1',
@@ -5706,6 +6478,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Gad during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 14 },
   },
   {
     id: 'Eliasaph_2',
@@ -5714,6 +6488,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'leader of the Gershonites',
+    primaryReference: { book: 'Numbers', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Eliashib_1',
@@ -5722,6 +6498,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Eliashib_2',
@@ -5730,6 +6508,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'eleventh-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 12 },
   },
   {
     id: 'Eliashib_3',
@@ -5738,6 +6518,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jehohanan in whose house Ezra mourned',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 6 },
   },
   {
     id: 'Eliashib_4',
@@ -5746,6 +6528,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite singer who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 24 },
   },
   {
     id: 'Eliashib_5',
@@ -5754,6 +6538,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 27 },
   },
   {
     id: 'Eliashib_6',
@@ -5762,6 +6548,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 36 },
   },
   {
     id: 'Eliashib_7',
@@ -5770,6 +6558,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the high priest with Nehemiah during the reconstruction of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 1 },
   },
   {
     id: 'Eliashib_8',
@@ -5778,6 +6568,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joiakim',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 10 },
   },
   {
     id: 'Eliathah_1',
@@ -5802,6 +6594,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventh-born son of Meshelemiah [Shallum]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 3 },
   },
   {
     id: 'Eliehoenai_2',
@@ -5810,6 +6604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab and son of Zerahiah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Eliel_1',
@@ -5818,6 +6614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Eliel_2',
@@ -5826,6 +6624,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 20 },
   },
   {
     id: 'Eliel_3',
@@ -5834,6 +6634,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 22 },
   },
   {
     id: 'Eliel_4',
@@ -5842,6 +6644,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Mahavite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 46 },
   },
   {
     id: 'Eliel_5',
@@ -5850,6 +6654,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'counted among the mighty men of David\'s armies',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 47 },
   },
   {
     id: 'Eliel_6',
@@ -5858,6 +6664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventh among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 11 },
   },
   {
     id: 'Eliel_7',
@@ -5866,6 +6674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of the sons of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 9 },
   },
   {
     id: 'Eliel_8',
@@ -5874,6 +6684,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Elienai_1',
@@ -5890,6 +6702,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Damascus',
+    primaryReference: { book: 'Genesis', chapter: 15, verseStart: 2 },
   },
   {
     id: 'Eliezer_2',
@@ -5898,6 +6712,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Moses\' second son',
+    primaryReference: { book: 'Exodus', chapter: 18, verseStart: 4 },
   },
   {
     id: 'Eliezer_3',
@@ -5906,6 +6722,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Eliezer_4',
@@ -5914,6 +6732,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 24 },
   },
   {
     id: 'Eliezer_5',
@@ -5922,6 +6742,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Reubenites, son of Zichri',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 16 },
   },
   {
     id: 'Eliezer_6',
@@ -5930,6 +6752,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophet, son of Dodavahu',
+    primaryReference: { book: '2 Chronicles', chapter: 20, verseStart: 37 },
   },
   {
     id: 'Eliezer_7',
@@ -5938,6 +6762,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Priest Ezra sent to Iddo, married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Eliezer_8',
@@ -5946,6 +6772,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 31 },
   },
   {
     id: 'Eliezer_9',
@@ -5954,6 +6782,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Elihoreph_1',
@@ -5970,6 +6800,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jeroham and ancestor of Samuel',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Elihu_2',
@@ -5978,6 +6810,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Elihu_3',
@@ -5986,6 +6820,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah [Shemaiah], a valiant man',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 7 },
   },
   {
     id: 'Elihu_4',
@@ -5994,6 +6830,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Judahites, brother of David',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 18 },
   },
   {
     id: 'Elihu_5',
@@ -6002,6 +6840,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Barachel, who spoke to Job',
+    primaryReference: { book: 'Job', chapter: 32, verseStart: 2 },
   },
   {
     id: 'Elijah_1',
@@ -6010,6 +6850,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, Tishbite, who was of the settlers of Gilead',
+    primaryReference: { book: '1 Kings', chapter: 17, verseStart: 1 },
   },
   {
     id: 'Elijah_2',
@@ -6018,6 +6860,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham [Jeremoth v 14]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 27 },
   },
   {
     id: 'Elijah_3',
@@ -6026,6 +6870,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Elijah_4',
@@ -6034,6 +6880,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Elika_1',
@@ -6058,6 +6906,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Neariah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Elioenai_2',
@@ -6066,6 +6916,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 36 },
   },
   {
     id: 'Elioenai_3',
@@ -6074,6 +6926,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Elioenai_4',
@@ -6082,6 +6936,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Elioenai_5',
@@ -6090,6 +6946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 27 },
   },
   {
     id: 'Elioenai_6',
@@ -6098,6 +6956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest with a trumpet',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 41 },
   },
   {
     id: 'Eliphaz_1',
@@ -6106,6 +6966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Esau',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 4 },
   },
   {
     id: 'Eliphaz_2',
@@ -6114,6 +6976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Temanite, friend of Job',
+    primaryReference: { book: 'Job', chapter: 2, verseStart: 11 },
   },
   {
     id: 'Eliphelehu_1',
@@ -6130,6 +6994,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 16 },
   },
   {
     id: 'Eliphelet_2',
@@ -6138,6 +7004,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahasbai, twenty-seventh of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 34 },
   },
   {
     id: 'Eliphelet_3',
@@ -6146,6 +7014,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David [his OTHER son named Eliphelet]',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 6 },
   },
   {
     id: 'Eliphelet_4',
@@ -6154,6 +7024,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eshek',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 39 },
   },
   {
     id: 'Eliphelet_5',
@@ -6162,6 +7034,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Adonikam, went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 13 },
   },
   {
     id: 'Eliphelet_6',
@@ -6170,6 +7044,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hashum who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 33 },
   },
   {
     id: 'Elisha_1',
@@ -6194,6 +7070,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Ephraim during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 10 },
   },
   {
     id: 'Elishama_2',
@@ -6202,6 +7080,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 16 },
   },
   {
     id: 'Elishama_3',
@@ -6210,6 +7090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 25 },
   },
   {
     id: 'Elishama_4',
@@ -6218,6 +7100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jekamiah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 41 },
   },
   {
     id: 'Elishama_5',
@@ -6226,6 +7110,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Elishama_6',
@@ -6234,6 +7120,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the scribe, an official',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 12 },
   },
   {
     id: 'Elishaphat_1',
@@ -6298,6 +7186,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Korah',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 24 },
   },
   {
     id: 'Elkanah_2',
@@ -6306,6 +7196,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Samuel',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Elkanah_3',
@@ -6314,6 +7206,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Assir',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 23 },
   },
   {
     id: 'Elkanah_4',
@@ -6322,6 +7216,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Amasai and Ahimoth and son of Joel',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 25 },
   },
   {
     id: 'Elkanah_5',
@@ -6330,6 +7226,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zophai [Zuph] and son of Mahath',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 26 },
   },
   {
     id: 'Elkanah_6',
@@ -6338,6 +7236,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'lived in the villages of the Netophathites',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 16 },
   },
   {
     id: 'Elkanah_7',
@@ -6346,6 +7246,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Korahite',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 6 },
   },
   {
     id: 'Elkanah_8',
@@ -6354,6 +7256,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second to King Ahaz',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 7 },
   },
   {
     id: 'Elmadam_1',
@@ -6378,6 +7282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'from Jerusalem, father of Nehushta, an official',
+    primaryReference: { book: '2 Kings', chapter: 24, verseStart: 8 },
   },
   {
     id: 'Elnathan_2',
@@ -6386,6 +7292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Elnathan_3',
@@ -6394,6 +7302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second Levite Ezra sent to Iddo named Elnathan',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Elnathan_4',
@@ -6402,6 +7312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite teacher Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Elon_1',
@@ -6410,6 +7322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hittite, father of Basemath, Esau\'s wife',
+    primaryReference: { book: 'Genesis', chapter: 26, verseStart: 34 },
   },
   {
     id: 'Elon_2',
@@ -6418,6 +7332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zebulun',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 14 },
   },
   {
     id: 'Elon_3',
@@ -6426,6 +7342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zebulun who judged Israel',
+    primaryReference: { book: 'Judges', chapter: 12, verseStart: 11 },
   },
   {
     id: 'Elpaal_1',
@@ -6450,6 +7368,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ninth among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 12 },
   },
   {
     id: 'Elzabad_2',
@@ -6458,6 +7378,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah [Shemaiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 7 },
   },
   {
     id: 'Elzaphan_1',
@@ -6482,6 +7404,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Cain',
+    primaryReference: { book: 'Genesis', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Enoch_2',
@@ -6490,6 +7414,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jared',
+    primaryReference: { book: 'Genesis', chapter: 5, verseStart: 18 },
   },
   {
     id: 'Enosh_1',
@@ -6522,6 +7448,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Midian and grandson of Abraham through Keturah',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Ephah_2',
@@ -6530,6 +7458,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Chelubai\'s [Caleb\'s] concubine',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Ephah_3',
@@ -6538,6 +7468,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahdai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Ephai_1',
@@ -6554,6 +7486,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Midian and grandson of Abraham through Keturah',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Epher_2',
@@ -6562,6 +7496,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ezrah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Epher_3',
@@ -6570,6 +7506,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Ephlal_1',
@@ -6618,6 +7556,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Judah',
+    primaryReference: { book: 'Genesis', chapter: 38, verseStart: 3 },
   },
   {
     id: 'Er_2',
@@ -6626,6 +7566,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shelah son of Judah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 21 },
   },
   {
     id: 'Er_3',
@@ -6634,6 +7576,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 28 },
   },
   {
     id: 'Eran_1',
@@ -6650,6 +7594,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'one of the men who ministered to Paul',
+    primaryReference: { book: 'Acts', chapter: 19, verseStart: 22 },
   },
   {
     id: 'Erastus_2',
@@ -6658,6 +7604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the city treasurer',
+    primaryReference: { book: 'Romans', chapter: 16, verseStart: 23 },
   },
   {
     id: 'Eri_1',
@@ -6714,6 +7662,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mered and Bithia',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Eshtemoa_2',
@@ -6722,6 +7672,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Maacathite, the grandson of Hodiah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 19 },
   },
   {
     id: 'Eshton_1',
@@ -6746,6 +7698,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 31 },
   },
   {
     id: 'Ethan_2',
@@ -6754,6 +7708,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zimmah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 42 },
   },
   {
     id: 'Ethan_3',
@@ -6762,6 +7718,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kishi',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 44 },
   },
   {
     id: 'Ethbaal_1',
@@ -6858,6 +7816,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gad',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 16 },
   },
   {
     id: 'Ezbon_2',
@@ -6866,6 +7826,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 7 },
   },
   {
     id: 'Ezekiel_1',
@@ -6882,6 +7844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seir and chief in Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 21 },
   },
   {
     id: 'Ezer_2',
@@ -6890,6 +7854,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hur',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 4 },
   },
   {
     id: 'Ezer_3',
@@ -6898,6 +7864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'grandson of Ephraim',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 21 },
   },
   {
     id: 'Ezer_4',
@@ -6906,6 +7874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'first among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 9 },
   },
   {
     id: 'Ezer_5',
@@ -6914,6 +7884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the wall in front of the ascent of the armory',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Ezra_1',
@@ -6978,6 +7950,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventh-born son of Jacob, son of Zilpah, Leah\'s handmaid',
+    primaryReference: { book: 'Genesis', chapter: 30, verseStart: 11 },
   },
   {
     id: 'Gad_2',
@@ -6986,6 +7960,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, the seer',
+    primaryReference: { book: '1 Samuel', chapter: 22, verseStart: 5 },
   },
   {
     id: 'Gaddi_1',
@@ -7034,6 +8010,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'Paul\'s traveling companion from Macedonia',
+    primaryReference: { book: 'Acts', chapter: 19, verseStart: 29 },
   },
   {
     id: 'Gaius_2',
@@ -7042,6 +8020,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a believer from Derbe',
+    primaryReference: { book: 'Acts', chapter: 20, verseStart: 4 },
   },
   {
     id: 'Galal_1',
@@ -7066,6 +8046,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Manasseh during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 10 },
   },
   {
     id: 'Gamaliel_2',
@@ -7074,6 +8056,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a Pharisee and member of the Council',
+    primaryReference: { book: 'Acts', chapter: 5, verseStart: 34 },
   },
   {
     id: 'Gamul_1',
@@ -7106,6 +8090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Chelubai [Caleb] by Ephah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Gazez_2',
@@ -7114,6 +8100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Haran',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Gazzam_1',
@@ -7138,6 +8126,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahikam, appointed King of Judah by Nebuchadnezzar',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 22 },
   },
   {
     id: 'Gedaliah_2',
@@ -7146,6 +8136,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeduthun, chosen second by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Gedaliah_3',
@@ -7154,6 +8146,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 18 },
   },
   {
     id: 'Gedaliah_4',
@@ -7162,6 +8156,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Gedaliah_5',
@@ -7170,6 +8166,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'grandfather of Zephaniah the prophet',
+    primaryReference: { book: 'Zephaniah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Gedor_1',
@@ -7178,6 +8176,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Penuel',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 4 },
   },
   {
     id: 'Gedor_2',
@@ -7186,6 +8186,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mered and "his Jewish wife"',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 18 },
   },
   {
     id: 'Gedor_3',
@@ -7194,6 +8196,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 31 },
   },
   {
     id: 'Gehazi_1',
@@ -7218,6 +8222,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hilkiah',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 3 },
   },
   {
     id: 'Gemariah_2',
@@ -7226,6 +8232,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaphan the scribe',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 10 },
   },
   {
     id: 'Genubath_1',
@@ -7242,6 +8250,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Benjamin, son of Bela',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 21 },
   },
   {
     id: 'Gera_2',
@@ -7250,6 +8260,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Benjamite, father of Ehud',
+    primaryReference: { book: 'Judges', chapter: 3, verseStart: 15 },
   },
   {
     id: 'Gera_3',
@@ -7258,6 +8270,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shimei, son of Bela',
+    primaryReference: { book: '2 Samuel', chapter: 16, verseStart: 5 },
   },
   {
     id: 'Gera_4',
@@ -7266,6 +8280,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ehud, "carried them into exile"',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Gershom_1',
@@ -7274,6 +8290,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Moses\' first son',
+    primaryReference: { book: 'Exodus', chapter: 2, verseStart: 22 },
   },
   {
     id: 'Gershom_2',
@@ -7282,6 +8300,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jonathan, son of Manasseh',
+    primaryReference: { book: 'Judges', chapter: 18, verseStart: 30 },
   },
   {
     id: 'Gershom_3',
@@ -7290,6 +8310,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Phinehas who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 2 },
   },
   {
     id: 'Gershon_1',
@@ -7362,6 +8384,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Giddel_2',
@@ -7370,6 +8394,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Solomon\'s servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 56 },
   },
   {
     id: 'Gideon_1',
@@ -7402,6 +8428,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a son of Machir, grandson of Manasseh',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 29 },
   },
   {
     id: 'Gilead_2',
@@ -7410,6 +8438,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the father of Jephthah with a harlot',
+    primaryReference: { book: 'Judges', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Gilead_3',
@@ -7418,6 +8448,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Michael, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Ginath_1',
@@ -7458,6 +8490,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 4 },
   },
   {
     id: 'Gog_2',
@@ -7466,6 +8500,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prince of Rosh, Meshech, and Tubal',
+    primaryReference: { book: 'Ezekiel', chapter: 38, verseStart: 2 },
   },
   {
     id: 'Goliath_1',
@@ -7482,6 +8518,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Japheth',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 2 },
   },
   {
     id: 'Gomer_2',
@@ -7490,6 +8528,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Hosea\'s harlotrous wife',
+    primaryReference: { book: 'Hosea', chapter: 1, verseStart: 3 },
   },
   {
     id: 'Guni_1',
@@ -7498,6 +8538,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Naphtali',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 24 },
   },
   {
     id: 'Guni_2',
@@ -7506,6 +8548,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Abdiel, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 15 },
   },
   {
     id: 'Haahashtari_1',
@@ -7562,6 +8606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'eighth-born son of Ishmael',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 15 },
   },
   {
     id: 'Hadad_2',
@@ -7570,6 +8616,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Edom, successor to Husham, his city was Avith',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 35 },
   },
   {
     id: 'Hadad_3',
@@ -7578,6 +8626,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Edomite',
+    primaryReference: { book: '1 Kings', chapter: 11, verseStart: 14 },
   },
   {
     id: 'Hadadezer_1',
@@ -7706,6 +8756,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventh-chosen priest for the twenty-four courses, his descendants could not…',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 10 },
   },
   {
     id: 'Hakkoz_2',
@@ -7714,6 +8766,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Uriah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Hakupha_1',
@@ -7810,6 +8864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 23 },
   },
   {
     id: 'Hanan_2',
@@ -7818,6 +8874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azel',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 38 },
   },
   {
     id: 'Hanan_3',
@@ -7826,6 +8884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Maacah and Joshaphat the Mithnite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 43 },
   },
   {
     id: 'Hanan_4',
@@ -7834,6 +8894,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant, explained the law to the people',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Hanan_5',
@@ -7842,6 +8904,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Hanan_6',
@@ -7850,6 +8914,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 10 },
   },
   {
     id: 'Hanan_7',
@@ -7858,6 +8924,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their kinsmen',
+    primaryReference: { book: 'Nehemiah', chapter: 13, verseStart: 13 },
   },
   {
     id: 'Hanan_8',
@@ -7866,6 +8934,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'had a chamber in the Temple',
+    primaryReference: { book: 'Jeremiah', chapter: 35, verseStart: 4 },
   },
   {
     id: 'Hanani_1',
@@ -7874,6 +8944,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jehu',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 1 },
   },
   {
     id: 'Hanani_2',
@@ -7882,6 +8954,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman, chosen eighteenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Hanani_3',
@@ -7890,6 +8964,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Immer who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 20 },
   },
   {
     id: 'Hanani_4',
@@ -7898,6 +8974,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'brother of Nehemiah',
+    primaryReference: { book: 'Nehemiah', chapter: 1, verseStart: 2 },
   },
   {
     id: 'Hananiah_1',
@@ -7906,6 +8984,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zerubbabel',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Hananiah_2',
@@ -7914,6 +8994,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 24 },
   },
   {
     id: 'Hananiah_3',
@@ -7922,6 +9004,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman, chosen sixteenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Hananiah_4',
@@ -7930,6 +9014,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the king\'s officer over Jeiel and Maaseiah',
+    primaryReference: { book: '2 Chronicles', chapter: 26, verseStart: 11 },
   },
   {
     id: 'Hananiah_5',
@@ -7938,6 +9024,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bebai who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 28 },
   },
   {
     id: 'Hananiah_6',
@@ -7946,6 +9034,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the perfumers, made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 8 },
   },
   {
     id: 'Hananiah_7',
@@ -7954,6 +9044,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the wall of Jerusalem, named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Hananiah_8',
@@ -7962,6 +9054,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the commander of the fortress in Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Hananiah_9',
@@ -7970,6 +9064,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeremiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 12 },
   },
   {
     id: 'Hananiah_10',
@@ -7978,6 +9074,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the [false] prophet, son of Azzur',
+    primaryReference: { book: 'Jeremiah', chapter: 28, verseStart: 1 },
   },
   {
     id: 'Hananiah_11',
@@ -7986,6 +9084,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shelemiah',
+    primaryReference: { book: 'Jeremiah', chapter: 37, verseStart: 13 },
   },
   {
     id: 'Hananiah_12',
@@ -7994,6 +9094,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chosen for Nebuchadnezzar\'s service along with Daniel',
+    primaryReference: { book: 'Daniel', chapter: 1, verseStart: 6 },
   },
   {
     id: 'Hannah_1',
@@ -8010,6 +9112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leader of the tribe of Manasseh to apportion the Land',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 23 },
   },
   {
     id: 'Hanniel_2',
@@ -8018,6 +9122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ulla [Jephunneh]',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 39 },
   },
   {
     id: 'Hanoch_1',
@@ -8026,6 +9132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Midian and grandson of Abraham through Keturah',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Hanoch_2',
@@ -8034,6 +9142,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuben',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 9 },
   },
   {
     id: 'Hanun_1',
@@ -8042,6 +9152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of the Ammonites',
+    primaryReference: { book: '2 Samuel', chapter: 10, verseStart: 1 },
   },
   {
     id: 'Hanun_2',
@@ -8050,6 +9162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the Valley Gate and the wall to the Refuse Gate',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 13 },
   },
   {
     id: 'Hanun_3',
@@ -8058,6 +9172,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the sixth son of Zalaph, repaired a section of Jerusalem\'s wall',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Happizzez_1',
@@ -8074,6 +9190,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Terah',
+    primaryReference: { book: 'Genesis', chapter: 11, verseStart: 26 },
   },
   {
     id: 'Haran_2',
@@ -8082,6 +9200,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Chelubai [Caleb] by Ephah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Haran_3',
@@ -8090,6 +9210,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei within the family of Ladan',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 9 },
   },
   {
     id: 'Harbona_1',
@@ -8138,6 +9260,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 8 },
   },
   {
     id: 'Harim_2',
@@ -8146,6 +9270,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity named on the sealed…',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 32 },
   },
   {
     id: 'Harim_3',
@@ -8154,6 +9280,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 39 },
   },
   {
     id: 'Harim_4',
@@ -8162,6 +9290,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Malchijah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 11 },
   },
   {
     id: 'Hariph_1',
@@ -8234,6 +9364,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amaziah, Levite during the return',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 45 },
   },
   {
     id: 'Hashabiah_2',
@@ -8242,6 +9374,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeduthun, chosen twelfth by lot, descendant of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Hashabiah_3',
@@ -8250,6 +9384,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Levites, son of Kemuel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 17 },
   },
   {
     id: 'Hashabiah_4',
@@ -8258,6 +9394,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent to Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 19 },
   },
   {
     id: 'Hashabiah_5',
@@ -8266,6 +9404,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of half the district of Keilah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 17 },
   },
   {
     id: 'Hashabiah_6',
@@ -8274,6 +9414,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Levite',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 9 },
   },
   {
     id: 'Hashabiah_7',
@@ -8282,6 +9424,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mattaniah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 22 },
   },
   {
     id: 'Hashabiah_8',
@@ -8290,6 +9434,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hilkiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 21 },
   },
   {
     id: 'Hashabnah_1',
@@ -8306,6 +9452,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hattush',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 10 },
   },
   {
     id: 'Hashabneiah_2',
@@ -8314,6 +9462,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'exhorted Israel to bless the Lord',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 5 },
   },
   {
     id: 'Hashbaddanah_1',
@@ -8338,6 +9488,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 19 },
   },
   {
     id: 'Hashum_2',
@@ -8346,6 +9498,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s left hand as he read from the Law named on the sealed document…',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Hassenaah_1',
@@ -8362,6 +9516,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Benjamin',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 7 },
   },
   {
     id: 'Hassenuah_2',
@@ -8370,6 +9526,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Judah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 9 },
   },
   {
     id: 'Hasshub_1',
@@ -8378,6 +9536,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azrikam',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 14 },
   },
   {
     id: 'Hasshub_2',
@@ -8386,6 +9546,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired a section of wall and the Tower of Furnaces, son of Pahath-moab',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 11 },
   },
   {
     id: 'Hasshub_3',
@@ -8394,6 +9556,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'carried out repairs in front of their house',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Hassophereth_1',
@@ -8458,6 +9622,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shecaniah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 22 },
   },
   {
     id: 'Hattush_2',
@@ -8466,6 +9632,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 10 },
   },
   {
     id: 'Hattush_3',
@@ -8474,6 +9642,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 4 },
   },
   {
     id: 'Havilah_1',
@@ -8482,6 +9652,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Cush',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 7 },
   },
   {
     id: 'Havilah_2',
@@ -8490,6 +9662,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joktan',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Hazael_1',
@@ -8546,6 +9720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Beriah',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 17 },
   },
   {
     id: 'Heber_2',
@@ -8554,6 +9730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Kenite, husband of Jael who killed Sisera',
+    primaryReference: { book: 'Judges', chapter: 4, verseStart: 11 },
   },
   {
     id: 'Heber_3',
@@ -8562,6 +9740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mered and "his Jewish wife"',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 18 },
   },
   {
     id: 'Heber_4',
@@ -8570,6 +9750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Hebron_1',
@@ -8578,6 +9760,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kohath',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Hebron_2',
@@ -8586,6 +9770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mareshah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 42 },
   },
   {
     id: 'Hegai_1',
@@ -8610,6 +9796,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Netophathite of Othniel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 15 },
   },
   {
     id: 'Heldai_2',
@@ -8618,6 +9806,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the exiles returned from Babylon',
+    primaryReference: { book: 'Zechariah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Heleb_1',
@@ -8642,6 +9832,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Paltite, tenth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 26 },
   },
   {
     id: 'Helez_2',
@@ -8650,6 +9842,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azariah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 39 },
   },
   {
     id: 'Helkai_1',
@@ -8682,6 +9876,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zerah',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 31 },
   },
   {
     id: 'Heman_2',
@@ -8690,6 +9886,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the singer, son of Joel, decendant of Kohath, father of fourteen sons and three…',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 33 },
   },
   {
     id: 'Hemdan_1',
@@ -8706,6 +9904,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of the other half of the district of Keilah and father of Bavvai',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 18 },
   },
   {
     id: 'Henadad_2',
@@ -8714,6 +9914,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Binnui, a Levite',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Hepher_1',
@@ -8722,6 +9924,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gilead',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 32 },
   },
   {
     id: 'Hepher_2',
@@ -8730,6 +9934,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ashhur and Naarah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 6 },
   },
   {
     id: 'Hephzibah_1',
@@ -8778,6 +9984,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the king',
+    primaryReference: { book: 'Matthew', chapter: 2, verseStart: 1 },
   },
   {
     id: 'Herod_2',
@@ -8794,6 +10002,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the king of Judea Herod Agrippa I',
+    primaryReference: { book: 'Acts', chapter: 12, verseStart: 1 },
   },
   {
     id: 'Herodias_1',
@@ -8826,6 +10036,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of Ahaz He trusted in the LORD, the God of israel',
+    primaryReference: { book: '2 Kings', chapter: 16, verseStart: 20 },
   },
   {
     id: 'Hezekiah_2',
@@ -8834,6 +10046,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 16 },
   },
   {
     id: 'Hezekiah_3',
@@ -8842,6 +10056,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'great-great-grandfather of Zephaniah the prophet',
+    primaryReference: { book: 'Zephaniah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Hezion_1',
@@ -8858,6 +10074,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventeenth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 15 },
   },
   {
     id: 'Hezir_2',
@@ -8866,6 +10084,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 20 },
   },
   {
     id: 'Hezro_1',
@@ -8882,6 +10102,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuben',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 9 },
   },
   {
     id: 'Hezron_2',
@@ -8890,6 +10112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Perez and grandson of Judah',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 12 },
   },
   {
     id: 'Hiddai_1',
@@ -8914,6 +10138,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Eliakim',
+    primaryReference: { book: '2 Kings', chapter: 18, verseStart: 18 },
   },
   {
     id: 'Hilkiah_2',
@@ -8922,6 +10148,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the high priest of King Josiah\'s reign',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 4 },
   },
   {
     id: 'Hilkiah_3',
@@ -8930,6 +10158,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shallum and father of Azariah, stood on Ezra\'s right hand as he read…',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 13 },
   },
   {
     id: 'Hilkiah_4',
@@ -8938,6 +10168,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amzi',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 45 },
   },
   {
     id: 'Hilkiah_5',
@@ -8946,6 +10178,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Hosah',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 11 },
   },
   {
     id: 'Hilkiah_6',
@@ -8954,6 +10188,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshullam',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Hillel_1',
@@ -8978,6 +10214,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Tyre',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 11 },
   },
   {
     id: 'Hiram_2',
@@ -8986,6 +10224,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'worked to build Solomon\'s temple',
+    primaryReference: { book: '1 Kings', chapter: 7, verseStart: 13 },
   },
   {
     id: 'Hivi_1',
@@ -9026,6 +10266,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Hodaviah_2',
@@ -9034,6 +10276,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Hodaviah_3',
@@ -9042,6 +10286,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zophah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 37 },
   },
   {
     id: 'Hodaviah_4',
@@ -9050,6 +10296,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hassenuah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 7 },
   },
   {
     id: 'Hodaviah_5',
@@ -9058,6 +10306,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 40 },
   },
   {
     id: 'Hodesh_1',
@@ -9074,6 +10324,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons were the fathers of Keilah and Eshtemoa',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 19 },
   },
   {
     id: 'Hodiah_2',
@@ -9082,6 +10334,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people and exhorted Israel to bless the Lord',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Hodiah_3',
@@ -9090,6 +10344,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of two individuals named Hodiah in the sealed document of (v10 and v13)',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 13 },
   },
   {
     id: 'Hodiah_4',
@@ -9098,6 +10354,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 18 },
   },
   {
     id: 'Hoglah_1',
@@ -9138,6 +10396,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Lotan',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 22 },
   },
   {
     id: 'Hori_2',
@@ -9146,6 +10406,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shaphat',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 5 },
   },
   {
     id: 'Hosah_1',
@@ -9170,6 +10432,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'followed the choir to the right on top of the wall',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 32 },
   },
   {
     id: 'Hoshaiah_2',
@@ -9178,6 +10442,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jezaniah [Jaazaniah] and a Maacathite',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Hoshama_1',
@@ -9194,6 +10460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elah who killed King Pekah and became King of Israel in his place',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 30 },
   },
   {
     id: 'Hoshea_2',
@@ -9202,6 +10470,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Ephraimites, son of Azaziah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 20 },
   },
   {
     id: 'Hoshea_3',
@@ -9210,6 +10480,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Hotham_1',
@@ -9218,6 +10490,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heber',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 32 },
   },
   {
     id: 'Hotham_2',
@@ -9226,6 +10500,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Aroerite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 44 },
   },
   {
     id: 'Hothir_1',
@@ -9274,6 +10550,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'supported Moses\' hands during the battle against Amalek at Rephidim',
+    primaryReference: { book: 'Exodus', chapter: 17, verseStart: 10 },
   },
   {
     id: 'Hur_2',
@@ -9282,6 +10560,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Midian',
+    primaryReference: { book: 'Numbers', chapter: 31, verseStart: 8 },
   },
   {
     id: 'Hur_3',
@@ -9290,6 +10570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of half the district of Jerusalem and father of Rephaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 9 },
   },
   {
     id: 'Huram-abi_1',
@@ -9322,6 +10604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Archite, David\'s friend',
+    primaryReference: { book: '2 Samuel', chapter: 15, verseStart: 32 },
   },
   {
     id: 'Hushai_2',
@@ -9330,6 +10614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Baana',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 16 },
   },
   {
     id: 'Husham_1',
@@ -9346,6 +10632,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Dan',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 23 },
   },
   {
     id: 'Hushim_2',
@@ -9354,6 +10642,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Aher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 12 },
   },
   {
     id: 'Hushim_3',
@@ -9362,6 +10652,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Shaharaim',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 8 },
   },
   {
     id: 'Hymenaeus_1',
@@ -9442,6 +10734,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ahinadab',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 14 },
   },
   {
     id: 'Iddo_2',
@@ -9450,6 +10744,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Iddo_3',
@@ -9458,6 +10754,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Manassehites in Gilead, son of Zechariah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 21 },
   },
   {
     id: 'Iddo_4',
@@ -9466,6 +10764,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the seer who had visions concerning Jeroboam',
+    primaryReference: { book: '2 Chronicles', chapter: 9, verseStart: 29 },
   },
   {
     id: 'Iddo_5',
@@ -9474,6 +10774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '[grand] father of Zechariah the prophet',
+    primaryReference: { book: 'Ezra', chapter: 5, verseStart: 1 },
   },
   {
     id: 'Iddo_6',
@@ -9482,6 +10784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leading man at the place Casiphia',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Iezer_1',
@@ -9498,6 +10802,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '1 of spies- from Issachar',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 7 },
   },
   {
     id: 'Igal_2',
@@ -9506,6 +10812,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nathan, thirty-first of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 36 },
   },
   {
     id: 'Igal_3',
@@ -9514,6 +10822,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shecaniah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 22 },
   },
   {
     id: 'Igdaliah_1',
@@ -9554,6 +10864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Meshillemith, priest',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Immer_2',
@@ -9562,6 +10874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixteenth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 14 },
   },
   {
     id: 'Immer_3',
@@ -9570,6 +10884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zadok',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Imna_1',
@@ -9586,6 +10902,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asher',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 17 },
   },
   {
     id: 'Imnah_2',
@@ -9594,6 +10912,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Kore, the gatekeeper',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 14 },
   },
   {
     id: 'Imrah_1',
@@ -9610,6 +10930,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bani',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Imri_2',
@@ -9618,6 +10940,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zaccur',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 2 },
   },
   {
     id: 'Iob_1',
@@ -9642,6 +10966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Jairite, priest to David',
+    primaryReference: { book: '2 Samuel', chapter: 20, verseStart: 26 },
   },
   {
     id: 'Ira_2',
@@ -9650,6 +10976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ikkesh the Tekoite, eleventh of "the thirty" of David\'s men in charge of…',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 26 },
   },
   {
     id: 'Ira_3',
@@ -9658,6 +10986,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Ithrite, thirty-fifth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 38 },
   },
   {
     id: 'Irad_1',
@@ -9770,6 +11100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Appaim',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 31 },
   },
   {
     id: 'Ishi_2',
@@ -9778,6 +11110,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zoheth and father of Ben-zoheth',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 20 },
   },
   {
     id: 'Ishi_3',
@@ -9786,6 +11120,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Ishma_1',
@@ -9802,6 +11138,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abram and Hagar',
+    primaryReference: { book: 'Genesis', chapter: 16, verseStart: 11 },
   },
   {
     id: 'Ishmael_2',
@@ -9810,6 +11148,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nethaniah, a captain of Judean forces during the Babylonian captivity',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Ishmael_3',
@@ -9818,6 +11158,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azel',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 38 },
   },
   {
     id: 'Ishmael_4',
@@ -9826,6 +11168,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zebadiah',
+    primaryReference: { book: '2 Chronicles', chapter: 19, verseStart: 11 },
   },
   {
     id: 'Ishmael_5',
@@ -9834,6 +11178,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Johanan, supported Joash as king of Judah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Ishmael_6',
@@ -9842,6 +11188,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Ishmaiah_1',
@@ -9890,6 +11238,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asher',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 17 },
   },
   {
     id: 'Ishvi_2',
@@ -9898,6 +11248,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Saul',
+    primaryReference: { book: '1 Samuel', chapter: 14, verseStart: 49 },
   },
   {
     id: 'Ismachiah_1',
@@ -9914,6 +11266,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ninth-born son of Jacob, son of Leah',
+    primaryReference: { book: 'Genesis', chapter: 30, verseStart: 18 },
   },
   {
     id: 'Issachar_2',
@@ -9922,6 +11276,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'seventh-born son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 5 },
   },
   {
     id: 'Isshiah_1',
@@ -9930,6 +11286,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izrahiah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 3 },
   },
   {
     id: 'Isshiah_2',
@@ -9938,6 +11296,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Korahite',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 6 },
   },
   {
     id: 'Isshiah_3',
@@ -9946,6 +11306,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Uzziel',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 20 },
   },
   {
     id: 'Isshiah_4',
@@ -9954,6 +11316,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehabiah, son of Eliezer, son of Moses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 21 },
   },
   {
     id: 'Isshijah_1',
@@ -9978,6 +11342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeshaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Ithiel_2',
@@ -9986,6 +11352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'audience of Agur',
+    primaryReference: { book: 'Proverbs', chapter: 30, verseStart: 1 },
   },
   {
     id: 'Ithmah_1',
@@ -10010,6 +11378,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Dishon',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 26 },
   },
   {
     id: 'Ithran_2',
@@ -10018,6 +11388,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zophah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 37 },
   },
   {
     id: 'Ithream_1',
@@ -10042,6 +11414,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kohath',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Izhar_2',
@@ -10050,6 +11424,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ashhur and Helah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 7 },
   },
   {
     id: 'Izliah_1',
@@ -10114,6 +11490,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Mezobaite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 47 },
   },
   {
     id: 'Jaasiel_2',
@@ -10122,6 +11500,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Benjaminites, son of Abner',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 21 },
   },
   {
     id: 'Jaasu_1',
@@ -10138,6 +11518,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of the Maacathite, a captain of Judean forces during the Babylonian…',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Jaazaniah_2',
@@ -10146,6 +11528,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeremiah, the Rechabite',
+    primaryReference: { book: 'Jeremiah', chapter: 35, verseStart: 3 },
   },
   {
     id: 'Jaazaniah_3',
@@ -10154,6 +11538,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaphan',
+    primaryReference: { book: 'Ezekiel', chapter: 8, verseStart: 11 },
   },
   {
     id: 'Jaazaniah_4',
@@ -10162,6 +11548,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azzur',
+    primaryReference: { book: 'Ezekiel', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Jaaziah_1',
@@ -10226,6 +11614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Simeon',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 10 },
   },
   {
     id: 'Jachin_2',
@@ -10234,6 +11624,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 10 },
   },
   {
     id: 'Jachin_3',
@@ -10242,6 +11634,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'twenty-first-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 17 },
   },
   {
     id: 'Jachin_4',
@@ -10250,6 +11644,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest who lived in Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 10 },
   },
   {
     id: 'Jacob_1',
@@ -10258,6 +11654,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Isaac',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 26 },
   },
   {
     id: 'Jacob_2',
@@ -10266,6 +11664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Matthan in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 15 },
   },
   {
     id: 'Jada_1',
@@ -10290,6 +11690,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Jaddua_2',
@@ -10298,6 +11700,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jonathan',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 11 },
   },
   {
     id: 'Jadon_1',
@@ -10322,6 +11726,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Jahath_2',
@@ -10330,6 +11736,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Libni',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 20 },
   },
   {
     id: 'Jahath_3',
@@ -10338,6 +11746,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gershom',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 43 },
   },
   {
     id: 'Jahath_4',
@@ -10346,6 +11756,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shimei',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 10 },
   },
   {
     id: 'Jahath_5',
@@ -10354,6 +11766,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shelomith (Shelomoth), son of Izhar',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 22 },
   },
   {
     id: 'Jahath_6',
@@ -10362,6 +11776,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'foreman over reconstruction of the Temple during Josiah\'s reign',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 12 },
   },
   {
     id: 'Jahaziel_1',
@@ -10370,6 +11786,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Benjamite who came to David\'s aid at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 4 },
   },
   {
     id: 'Jahaziel_2',
@@ -10378,6 +11796,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 19 },
   },
   {
     id: 'Jahaziel_3',
@@ -10386,6 +11806,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Spirit of the Lord came upon him during Jehoshaphat\'s reign',
+    primaryReference: { book: '2 Chronicles', chapter: 20, verseStart: 14 },
   },
   {
     id: 'Jahaziel_4',
@@ -10394,6 +11816,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shecaniah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 5 },
   },
   {
     id: 'Jahdai_1',
@@ -10466,6 +11890,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captured the region of Argob and called it Havvoth-jair',
+    primaryReference: { book: 'Numbers', chapter: 32, verseStart: 41 },
   },
   {
     id: 'Jair_2',
@@ -10474,6 +11900,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Gileadite who judged Israel for twenty-two years judge of Israel, sons cities…',
+    primaryReference: { book: 'Judges', chapter: 10, verseStart: 3 },
   },
   {
     id: 'Jair_3',
@@ -10482,6 +11910,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Mordecai',
+    primaryReference: { book: 'Esther', chapter: 2, verseStart: 5 },
   },
   {
     id: 'Jairus_1',
@@ -10506,6 +11936,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 19 },
   },
   {
     id: 'Jakim_2',
@@ -10514,6 +11946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'twelfth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 12 },
   },
   {
     id: 'Jalam_1',
@@ -10546,6 +11980,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Zebedee fisherman, one of the Twelve',
+    primaryReference: { book: 'Matthew', chapter: 4, verseStart: 21 },
   },
   {
     id: 'James_2',
@@ -10554,6 +11990,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'disciple of the Messiah one of the Twelve',
+    primaryReference: { book: 'Matthew', chapter: 10, verseStart: 3 },
   },
   {
     id: 'James_3',
@@ -10562,6 +12000,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: '"brother" of Jesus, son of Mary',
+    primaryReference: { book: 'Matthew', chapter: 13, verseStart: 55 },
   },
   {
     id: 'James_4',
@@ -10570,6 +12010,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the father of Judas (Thaddaeus)',
+    primaryReference: { book: 'Luke', chapter: 6, verseStart: 16 },
   },
   {
     id: 'Jamin_1',
@@ -10578,6 +12020,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Simeon',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 10 },
   },
   {
     id: 'Jamin_2',
@@ -10586,6 +12030,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ram, son of Jerahmeel',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 27 },
   },
   {
     id: 'Jamin_3',
@@ -10594,6 +12040,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Jamlech_1',
@@ -10642,6 +12090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Lachish during the conquest of the Land King of Lachish',
+    primaryReference: { book: 'Joshua', chapter: 10, verseStart: 3 },
   },
   {
     id: 'Japhia_2',
@@ -10650,6 +12100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 15 },
   },
   {
     id: 'Japhlet_1',
@@ -10802,6 +12254,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimri, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 37 },
   },
   {
     id: 'Jedaiah_2',
@@ -10810,6 +12264,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, of the house of Jeshua',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 10 },
   },
   {
     id: 'Jedaiah_3',
@@ -10818,6 +12274,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 7 },
   },
   {
     id: 'Jedaiah_4',
@@ -10826,6 +12284,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem opposite his house',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 10 },
   },
   {
     id: 'Jedaiah_5',
@@ -10834,6 +12294,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, son of Joiarib',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 10 },
   },
   {
     id: 'Jedaiah_6',
@@ -10842,6 +12304,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the exiles returned from Babylon',
+    primaryReference: { book: 'Zechariah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Jediael_1',
@@ -10850,6 +12314,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimri',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 45 },
   },
   {
     id: 'Jediael_2',
@@ -10858,6 +12324,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Jediael_3',
@@ -10866,6 +12334,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Meshelemiah [Shallum]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 2 },
   },
   {
     id: 'Jedidah_1',
@@ -10890,6 +12360,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zip, Ziphah, Tira, and Asarel',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 16 },
   },
   {
     id: 'Jehallelel_2',
@@ -10898,6 +12370,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah, Merarite during reign of Hezekiah',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 12 },
   },
   {
     id: 'Jehdeiah_1',
@@ -10906,6 +12380,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shebuel (Shubael), son of Gershom, son of Moses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 20 },
   },
   {
     id: 'Jehdeiah_2',
@@ -10914,6 +12390,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Meronothite in charge of David\'s donkeys',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 30 },
   },
   {
     id: 'Jehezkel_1',
@@ -10938,6 +12416,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper, son of Ladan [Libni]',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Jehiel_2',
@@ -10946,6 +12426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hachmoni, tutored David\'s sons',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 32 },
   },
   {
     id: 'Jehiel_3',
@@ -10954,6 +12436,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 21, verseStart: 2 },
   },
   {
     id: 'Jehiel_4',
@@ -10962,6 +12446,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Heman',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 14 },
   },
   {
     id: 'Jehiel_5',
@@ -10970,6 +12456,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Obadiah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 9 },
   },
   {
     id: 'Jehiel_6',
@@ -10978,6 +12466,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elam and father of Shecaniah',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 2 },
   },
   {
     id: 'Jehiel_7',
@@ -10986,6 +12476,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Jehiel_8',
@@ -10994,6 +12486,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Jehikhiah_1',
@@ -11026,6 +12520,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel, son of Jehu',
+    primaryReference: { book: '2 Kings', chapter: 10, verseStart: 35 },
   },
   {
     id: 'Jehoahaz_2',
@@ -11034,6 +12530,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of Josiah He did evil in the sight of the LORD',
+    primaryReference: { book: '2 Kings', chapter: 23, verseStart: 30 },
   },
   {
     id: 'Jehohanan_1',
@@ -11042,6 +12540,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'in his house, Ezra mourned over the unfaithfulness of Israel',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 6 },
   },
   {
     id: 'Jehohanan_2',
@@ -11050,6 +12550,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bebai who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 28 },
   },
   {
     id: 'Jehohanan_3',
@@ -11058,6 +12560,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Tobiah who married daughter of Meshullam',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Jehohanan_4',
@@ -11066,6 +12570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amariah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 13 },
   },
   {
     id: 'Jehoiachin_1',
@@ -11082,6 +12588,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Benaiah, a priest',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 18 },
   },
   {
     id: 'Jehoiada_2',
@@ -11090,6 +12598,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest who protected Joash in his youth',
+    primaryReference: { book: '2 Kings', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Jehoiada_3',
@@ -11098,6 +12608,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest replaced by Shemaiah the Nehelamite',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 26 },
   },
   {
     id: 'Jehoiarib_1',
@@ -11106,6 +12618,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, Joiarib in',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 10 },
   },
   {
     id: 'Jehoiarib_2',
@@ -11114,6 +12628,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'first-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 7 },
   },
   {
     id: 'Jehonadab_1',
@@ -11130,6 +12646,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Jehonathan_2',
@@ -11138,6 +12656,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 18 },
   },
   {
     id: 'Jehoram_1',
@@ -11146,6 +12666,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah and son of Jehoshaphat',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 50 },
   },
   {
     id: 'Jehoram_2',
@@ -11154,6 +12676,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel and son of Ahab',
+    primaryReference: { book: '2 Kings', chapter: 1, verseStart: 17 },
   },
   {
     id: 'Jehoram_3',
@@ -11162,6 +12686,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Jehoshaphat_1',
@@ -11170,6 +12696,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahilud and recorder in David\'s kingdom',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Jehoshaphat_2',
@@ -11178,6 +12706,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of Solomon\'s twelve deputies, in Issachar',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Jehoshaphat_3',
@@ -11186,6 +12716,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asa and King of Judah',
+    primaryReference: { book: '1 Kings', chapter: 15, verseStart: 24 },
   },
   {
     id: 'Jehoshaphat_4',
@@ -11194,6 +12726,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nimshi, father of Jehu',
+    primaryReference: { book: '2 Kings', chapter: 9, verseStart: 2 },
   },
   {
     id: 'Jehosheba_1',
@@ -11210,6 +12744,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'killed King Joash',
+    primaryReference: { book: '2 Kings', chapter: 12, verseStart: 21 },
   },
   {
     id: 'Jehozabad_2',
@@ -11218,6 +12754,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 4 },
   },
   {
     id: 'Jehozabad_3',
@@ -11226,6 +12764,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander,000 under Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 18 },
   },
   {
     id: 'Jehozadak_1',
@@ -11234,6 +12774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seriah went with Judah into exile by Nebuchadnezzar',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 14 },
   },
   {
     id: 'Jehozadak_2',
@@ -11242,6 +12784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joshua the high priest',
+    primaryReference: { book: 'Haggai', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Jehu_1',
@@ -11250,6 +12794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 1 },
   },
   {
     id: 'Jehu_2',
@@ -11258,6 +12804,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'anointed king over Israel at the direction of Elisha',
+    primaryReference: { book: '1 Kings', chapter: 19, verseStart: 16 },
   },
   {
     id: 'Jehu_3',
@@ -11266,6 +12814,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Obed',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 38 },
   },
   {
     id: 'Jehu_4',
@@ -11274,6 +12824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joshibiah, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 35 },
   },
   {
     id: 'Jehu_5',
@@ -11282,6 +12834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Anathothite',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Jehubbah_1',
@@ -11314,6 +12868,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 7 },
   },
   {
     id: 'Jeiel_2',
@@ -11322,6 +12878,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the father of [the city of ] Gibeon',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 35 },
   },
   {
     id: 'Jeiel_3',
@@ -11330,6 +12888,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hotham the Aroerite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 44 },
   },
   {
     id: 'Jeiel_4',
@@ -11338,6 +12898,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Jeiel_5',
@@ -11346,6 +12908,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mattaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 20, verseStart: 14 },
   },
   {
     id: 'Jeiel_6',
@@ -11354,6 +12918,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the scribe who prepared Uzziah\'s army divisions',
+    primaryReference: { book: '2 Chronicles', chapter: 26, verseStart: 11 },
   },
   {
     id: 'Jeiel_7',
@@ -11362,6 +12928,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elizaphan [Elzaphan]',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 13 },
   },
   {
     id: 'Jeiel_8',
@@ -11370,6 +12938,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Nebo who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 43 },
   },
   {
     id: 'Jekameam_1',
@@ -11386,6 +12956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shallum',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 41 },
   },
   {
     id: 'Jekamiah_2',
@@ -11394,6 +12966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoiachin [Jeconiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 18 },
   },
   {
     id: 'Jekuthiel_1',
@@ -11434,6 +13008,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Caleb',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 6 },
   },
   {
     id: 'Jephunneh_2',
@@ -11442,6 +13018,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jether [Ithran]',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 38 },
   },
   {
     id: 'Jerah_1',
@@ -11458,6 +13036,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hezron, son of Perez',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 9 },
   },
   {
     id: 'Jerahmeel_2',
@@ -11466,6 +13046,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kish, descendant of Mahli',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 29 },
   },
   {
     id: 'Jerahmeel_3',
@@ -11474,6 +13056,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of King Jehoiakim (Eliakim), sent to sieze Baruch and Jeremiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 26 },
   },
   {
     id: 'Jered_1',
@@ -11498,6 +13082,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Libnah, father of Hamutal',
+    primaryReference: { book: '2 Kings', chapter: 23, verseStart: 31 },
   },
   {
     id: 'Jeremiah_2',
@@ -11506,6 +13092,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of households in Manasseh',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 24 },
   },
   {
     id: 'Jeremiah_3',
@@ -11514,6 +13102,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Benjamite who came to David\'s aid at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 4 },
   },
   {
     id: 'Jeremiah_4',
@@ -11522,6 +13112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 10 },
   },
   {
     id: 'Jeremiah_5',
@@ -11530,6 +13122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'tenth among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 13 },
   },
   {
     id: 'Jeremiah_6',
@@ -11538,6 +13132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, son of Hilkiah',
+    primaryReference: { book: '2 Chronicles', chapter: 35, verseStart: 25 },
   },
   {
     id: 'Jeremiah_7',
@@ -11546,6 +13142,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 2 },
   },
   {
     id: 'Jeremiah_8',
@@ -11554,6 +13152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Habazziniah, the Rechabite',
+    primaryReference: { book: 'Jeremiah', chapter: 35, verseStart: 3 },
   },
   {
     id: 'Jeremoth_1',
@@ -11562,6 +13162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Jeremoth_2',
@@ -11570,6 +13172,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 14 },
   },
   {
     id: 'Jeremoth_3',
@@ -11578,6 +13182,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mushi',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 23 },
   },
   {
     id: 'Jeremoth_4',
@@ -11586,6 +13192,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Naphtalites, son of Azriel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 19 },
   },
   {
     id: 'Jeremoth_5',
@@ -11594,6 +13202,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Jeremoth_6',
@@ -11602,6 +13212,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 27 },
   },
   {
     id: 'Jeremoth_7',
@@ -11610,6 +13222,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Jeriah_1',
@@ -11642,6 +13256,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 7 },
   },
   {
     id: 'Jerimoth_2',
@@ -11650,6 +13266,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'came to David\'s aid at Ziklag came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 5 },
   },
   {
     id: 'Jerimoth_3',
@@ -11658,6 +13276,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman, chosen fifteenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Jerimoth_4',
@@ -11666,6 +13286,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the son of David',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 18 },
   },
   {
     id: 'Jerimoth_5',
@@ -11674,6 +13296,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Jerioth_1',
@@ -11690,6 +13314,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Solomon\'s servant, son of Nebat, who rebelled against him, and was later made…',
+    primaryReference: { book: '1 Kings', chapter: 11, verseStart: 26 },
   },
   {
     id: 'Jeroboam_2',
@@ -11698,6 +13324,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel, son of Joash [Jehoash]',
+    primaryReference: { book: '2 Kings', chapter: 13, verseStart: 13 },
   },
   {
     id: 'Jeroham_1',
@@ -11706,6 +13334,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elkanah and grandfather of Samuel',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Jeroham_2',
@@ -11714,6 +13344,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ibneiah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Jeroham_3',
@@ -11722,6 +13354,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Jeroham_4',
@@ -11730,6 +13364,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'from Gedor came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 7 },
   },
   {
     id: 'Jeroham_5',
@@ -11738,6 +13374,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azarel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 22 },
   },
   {
     id: 'Jeroham_6',
@@ -11746,6 +13384,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Jeroham_7',
@@ -11754,6 +13394,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pelaliah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 12 },
   },
   {
     id: 'Jerubbesheth_1',
@@ -11778,6 +13420,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 21 },
   },
   {
     id: 'Jeshaiah_2',
@@ -11786,6 +13430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeduthun, chosen eighth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Jeshaiah_3',
@@ -11794,6 +13440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam, son of Athaliah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Jeshaiah_4',
@@ -11802,6 +13450,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent to Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 19 },
   },
   {
     id: 'Jeshaiah_5',
@@ -11810,6 +13460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Benjamin',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Jeshebeab_1',
@@ -11850,6 +13502,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ninth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 11 },
   },
   {
     id: 'Jeshua_2',
@@ -11858,6 +13512,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their brothers',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 15 },
   },
   {
     id: 'Jeshua_3',
@@ -11866,6 +13522,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Jeshua_4',
@@ -11874,6 +13532,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 6 },
   },
   {
     id: 'Jeshua_5',
@@ -11882,6 +13542,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite whose sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 40 },
   },
   {
     id: 'Jeshua_6',
@@ -11890,6 +13552,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of Mizpah and father of Ezer',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Jeshua_7',
@@ -11898,6 +13562,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people, stood on the Levites platform, and exhorted…',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Jeshua_8',
@@ -11906,6 +13572,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azaniah, a levite rather than priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 9 },
   },
   {
     id: 'Jesimiel_1',
@@ -11938,6 +13606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Gideon',
+    primaryReference: { book: 'Judges', chapter: 8, verseStart: 20 },
   },
   {
     id: 'Jether_2',
@@ -11946,6 +13616,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jada',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 32 },
   },
   {
     id: 'Jether_3',
@@ -11954,6 +13626,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ezrah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Jetheth_1',
@@ -11978,6 +13652,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zerah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 6 },
   },
   {
     id: 'Jeuel_2',
@@ -11986,6 +13662,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Adonikam, went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 13 },
   },
   {
     id: 'Jeush_1',
@@ -11994,6 +13672,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Esau and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 5 },
   },
   {
     id: 'Jeush_2',
@@ -12002,6 +13682,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bilhan',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Jeush_3',
@@ -12010,6 +13692,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eshek',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 39 },
   },
   {
     id: 'Jeush_4',
@@ -12018,6 +13702,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shimei',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 10 },
   },
   {
     id: 'Jeush_5',
@@ -12026,6 +13712,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehoboam and Mahalath',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 19 },
   },
   {
     id: 'Jeuz_1',
@@ -12042,6 +13730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Ahab',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 31 },
   },
   {
     id: 'Jezebel_2',
@@ -12050,6 +13740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'teaches and leads people astray',
+    primaryReference: { book: 'Revelation', chapter: 2, verseStart: 20 },
   },
   {
     id: 'Jezer_1',
@@ -12082,6 +13774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Etam',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 3 },
   },
   {
     id: 'Jezreel_2',
@@ -12090,6 +13784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hosea and Gomer',
+    primaryReference: { book: 'Hosea', chapter: 1, verseStart: 4 },
   },
   {
     id: 'Jidlaph_1',
@@ -12106,6 +13802,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zeruiah, commander of David\'s army',
+    primaryReference: { book: '1 Samuel', chapter: 26, verseStart: 6 },
   },
   {
     id: 'Joab_2',
@@ -12114,6 +13812,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seraiah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 14 },
   },
   {
     id: 'Joab_3',
@@ -12122,6 +13822,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 6 },
   },
   {
     id: 'Joah_1',
@@ -12130,6 +13832,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Hezekiah\'s recorder',
+    primaryReference: { book: '2 Kings', chapter: 18, verseStart: 18 },
   },
   {
     id: 'Joah_2',
@@ -12138,6 +13842,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zimmah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Joah_3',
@@ -12146,6 +13852,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-born son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 4 },
   },
   {
     id: 'Joah_4',
@@ -12154,6 +13862,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sent by Josiah to repair the house of the Lord',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 8 },
   },
   {
     id: 'Joahaz_1',
@@ -12186,6 +13896,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the angel of the Lord sat under his oak in Ophrah',
+    primaryReference: { book: 'Judges', chapter: 6, verseStart: 11 },
   },
   {
     id: 'Joash_2',
@@ -12194,6 +13906,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King Ahab\'s son',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 26 },
   },
   {
     id: 'Joash_3',
@@ -12202,6 +13916,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of Ahaziah',
+    primaryReference: { book: '2 Kings', chapter: 11, verseStart: 2 },
   },
   {
     id: 'Joash_4',
@@ -12210,6 +13926,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel, son of Jehoahaz',
+    primaryReference: { book: '2 Kings', chapter: 13, verseStart: 9 },
   },
   {
     id: 'Joash_5',
@@ -12218,6 +13936,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shelah, son of Judah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 22 },
   },
   {
     id: 'Joash_6',
@@ -12226,6 +13946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Joash_7',
@@ -12234,6 +13956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaah',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Joash_8',
@@ -12242,6 +13966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'in charge of the David\'s stores of oil',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 28 },
   },
   {
     id: 'Job_1',
@@ -12258,6 +13984,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joktan',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Jobab_2',
@@ -12266,6 +13994,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Edom, successor to Bela',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 33 },
   },
   {
     id: 'Jobab_3',
@@ -12274,6 +14004,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Madon, one of thirty-one kings defeated by Joshua King of Madon',
+    primaryReference: { book: 'Joshua', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Jobab_4',
@@ -12282,6 +14014,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaharaim',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 9 },
   },
   {
     id: 'Jobab_5',
@@ -12290,6 +14024,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 18 },
   },
   {
     id: 'Jochebed_1',
@@ -12322,6 +14058,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn of Samuel',
+    primaryReference: { book: '1 Samuel', chapter: 8, verseStart: 2 },
   },
   {
     id: 'Joel_2',
@@ -12330,6 +14068,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 35 },
   },
   {
     id: 'Joel_3',
@@ -12338,6 +14078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shemaiah, lived in Aroer, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 4 },
   },
   {
     id: 'Joel_4',
@@ -12346,6 +14088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 12 },
   },
   {
     id: 'Joel_5',
@@ -12354,6 +14098,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izrahiah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 3 },
   },
   {
     id: 'Joel_6',
@@ -12362,6 +14108,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of the sons of Gershom, son of Ladan',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 7 },
   },
   {
     id: 'Joel_7',
@@ -12370,6 +14118,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Manassehites, son of Pedaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 20 },
   },
   {
     id: 'Joel_8',
@@ -12378,6 +14128,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Kohathite during reign of Hezekiah',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 12 },
   },
   {
     id: 'Joel_9',
@@ -12386,6 +14138,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Nebo who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 43 },
   },
   {
     id: 'Joel_10',
@@ -12394,6 +14148,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of Benjamites',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 9 },
   },
   {
     id: 'Joel_11',
@@ -12402,6 +14158,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, son of Pethuel',
+    primaryReference: { book: 'Joel', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Joelah_1',
@@ -12434,6 +14192,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Beriah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Joha_2',
@@ -12442,6 +14202,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Tizite, brother of Jediael',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 45 },
   },
   {
     id: 'Johanan_1',
@@ -12450,6 +14212,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kareah, a captain of Judean forces during the Babylonian captivity',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Johanan_2',
@@ -12458,6 +14222,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Johanan_3',
@@ -12466,6 +14232,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azariah and father of Azariah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 9 },
   },
   {
     id: 'Johanan_4',
@@ -12474,6 +14242,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Benjamite who came to David\'s aid at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 4 },
   },
   {
     id: 'Johanan_5',
@@ -12482,6 +14252,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'eighth among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 12 },
   },
   {
     id: 'Johanan_6',
@@ -12490,6 +14262,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixth-born son of Meshelemiah [Shallum]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 3 },
   },
   {
     id: 'Johanan_7',
@@ -12498,6 +14272,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander,000 under Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 15 },
   },
   {
     id: 'Johanan_8',
@@ -12506,6 +14282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ishmael',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Johanan_9',
@@ -12514,6 +14292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah, who aided defeated Judaites',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 12 },
   },
   {
     id: 'Johanan_10',
@@ -12522,6 +14302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Azgad, son of Hakkatan who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 12 },
   },
   {
     id: 'John_1',
@@ -12530,6 +14312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the baptist',
+    primaryReference: { book: 'Matthew', chapter: 3, verseStart: 1 },
   },
   {
     id: 'John_2',
@@ -12538,6 +14322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Zebedee fisherman, one of the Twelve, author of the book of John',
+    primaryReference: { book: 'Matthew', chapter: 4, verseStart: 21 },
   },
   {
     id: 'John_3',
@@ -12546,6 +14332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the father of Peter and Andrew',
+    primaryReference: { book: 'John', chapter: 1, verseStart: 42 },
   },
   {
     id: 'John_4',
@@ -12554,6 +14342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a man of high-priestly descent',
+    primaryReference: { book: 'Acts', chapter: 4, verseStart: 6 },
   },
   {
     id: 'John_5',
@@ -12562,6 +14352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'also called Mark a companion of Barnabas and Saul',
+    primaryReference: { book: 'Acts', chapter: 12, verseStart: 12 },
   },
   {
     id: 'Joiada_1',
@@ -12570,6 +14362,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the Old Gate',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 6 },
   },
   {
     id: 'Joiada_2',
@@ -12578,6 +14372,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliashib',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 10 },
   },
   {
     id: 'Joiada_3',
@@ -12586,6 +14382,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliashib the high priest',
+    primaryReference: { book: 'Nehemiah', chapter: 13, verseStart: 28 },
   },
   {
     id: 'Joiakim_1',
@@ -12594,6 +14392,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeshua and father of Eliashib',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 10 },
   },
   {
     id: 'Joiakim_2',
@@ -12602,6 +14402,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, son of Jeshua, son of Jozadak',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 26 },
   },
   {
     id: 'Joiarib_1',
@@ -12610,6 +14412,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite teacher Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Joiarib_2',
@@ -12618,6 +14422,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zechariah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 5 },
   },
   {
     id: 'Joiarib_3',
@@ -12626,6 +14432,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, father of Jedaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 10 },
   },
   {
     id: 'Jokim_1',
@@ -12682,6 +14490,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest of the Danites',
+    primaryReference: { book: 'Judges', chapter: 18, verseStart: 30 },
   },
   {
     id: 'Jonathan_2',
@@ -12690,6 +14500,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of King Saul',
+    primaryReference: { book: '1 Samuel', chapter: 13, verseStart: 2 },
   },
   {
     id: 'Jonathan_3',
@@ -12698,6 +14510,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abiathar the priest',
+    primaryReference: { book: '2 Samuel', chapter: 15, verseStart: 27 },
   },
   {
     id: 'Jonathan_4',
@@ -12706,6 +14520,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei, David\'s brother',
+    primaryReference: { book: '2 Samuel', chapter: 21, verseStart: 21 },
   },
   {
     id: 'Jonathan_5',
@@ -12714,6 +14530,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliahba, twenty-fourth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 32 },
   },
   {
     id: 'Jonathan_6',
@@ -12722,6 +14540,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jada',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 32 },
   },
   {
     id: 'Jonathan_7',
@@ -12730,6 +14550,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'in charge of the other storehouses, son of Uzziah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 25 },
   },
   {
     id: 'Jonathan_8',
@@ -12738,6 +14560,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ebed who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 6 },
   },
   {
     id: 'Jonathan_9',
@@ -12746,6 +14570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'opposed Israel\'s decision to set apart foreign wives',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Jonathan_10',
@@ -12754,6 +14580,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joiada',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 11 },
   },
   {
     id: 'Jonathan_11',
@@ -12762,6 +14590,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Malluch [Malluchi]',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 14 },
   },
   {
     id: 'Jonathan_12',
@@ -12770,6 +14600,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 35 },
   },
   {
     id: 'Jonathan_13',
@@ -12778,6 +14610,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the scribe in whose house Jeremiah was jailed',
+    primaryReference: { book: 'Jeremiah', chapter: 37, verseStart: 20 },
   },
   {
     id: 'Jonathan_14',
@@ -12786,6 +14620,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kareah',
+    primaryReference: { book: 'Jeremiah', chapter: 40, verseStart: 8 },
   },
   {
     id: 'Jorah_1',
@@ -12810,6 +14646,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Toi',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 10 },
   },
   {
     id: 'Joram_2',
@@ -12818,6 +14656,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeshaiah [Isshiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 25 },
   },
   {
     id: 'Jorim_1',
@@ -12850,6 +14690,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'eleventh-born son of Jacob and Rachel',
+    primaryReference: { book: 'Genesis', chapter: 30, verseStart: 24 },
   },
   {
     id: 'Joseph_2',
@@ -12858,6 +14700,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Igal',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 7 },
   },
   {
     id: 'Joseph_3',
@@ -12866,6 +14710,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asaph',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 2 },
   },
   {
     id: 'Joseph_4',
@@ -12874,6 +14720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 42 },
   },
   {
     id: 'Joseph_5',
@@ -12882,6 +14730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shebaniah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 14 },
   },
   {
     id: 'Joseph_6',
@@ -12890,6 +14740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Jacob in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 16 },
   },
   {
     id: 'Joseph_7',
@@ -12898,6 +14750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: '"brother" of Jesus, son of Mary',
+    primaryReference: { book: 'Matthew', chapter: 13, verseStart: 55 },
   },
   {
     id: 'Joseph_8',
@@ -12906,6 +14760,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'of Arimethea, a member of the Council',
+    primaryReference: { book: 'Matthew', chapter: 27, verseStart: 57 },
   },
   {
     id: 'Joseph_9',
@@ -12914,6 +14770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Joseph_10',
@@ -12922,6 +14780,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Joseph_11',
@@ -12930,6 +14790,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'candidate to replace Judas Iscariot in the twelve',
+    primaryReference: { book: 'Acts', chapter: 1, verseStart: 23 },
   },
   {
     id: 'Joseph_12',
@@ -12954,6 +14816,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Mithnite',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 43 },
   },
   {
     id: 'Joshaphat_2',
@@ -12962,6 +14826,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 24 },
   },
   {
     id: 'Joshaviah_1',
@@ -13002,6 +14868,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '1 of spies (called Hoshea)- from Ephraim, servant of Moses',
+    primaryReference: { book: 'Exodus', chapter: 17, verseStart: 9 },
   },
   {
     id: 'Joshua_2',
@@ -13010,6 +14878,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Beth-shemite',
+    primaryReference: { book: '1 Samuel', chapter: 6, verseStart: 14 },
   },
   {
     id: 'Joshua_3',
@@ -13018,6 +14888,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the governor of Beersheba',
+    primaryReference: { book: '2 Kings', chapter: 23, verseStart: 8 },
   },
   {
     id: 'Joshua_4',
@@ -13026,6 +14898,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'high priest of Haggai\'s time',
+    primaryReference: { book: 'Haggai', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Joshua_5',
@@ -13034,6 +14908,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Josiah_1',
@@ -13042,6 +14918,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophesied son of the house of David, King of Judah and son of Amon He did…',
+    primaryReference: { book: '1 Kings', chapter: 13, verseStart: 2 },
   },
   {
     id: 'Josiah_2',
@@ -13050,6 +14928,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zephaniah',
+    primaryReference: { book: 'Zechariah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Josiphiah_1',
@@ -13066,6 +14946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'youngest son of Gideon (Jerubbaal)',
+    primaryReference: { book: 'Judges', chapter: 9, verseStart: 5 },
   },
   {
     id: 'Jotham_2',
@@ -13074,6 +14956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, son of King Uzziah [Azariah]',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 5 },
   },
   {
     id: 'Jotham_3',
@@ -13082,6 +14966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahdai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Jozabad_1',
@@ -13090,6 +14976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Gederathite',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 4 },
   },
   {
     id: 'Jozabad_2',
@@ -13098,6 +14986,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Jozabad_3',
@@ -13106,6 +14996,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Jozabad_4',
@@ -13114,6 +15006,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Jozabad_5',
@@ -13122,6 +15016,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite present at the counting of the silver, gold, and utensils',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Jozabad_6',
@@ -13130,6 +15026,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Jozabad_7',
@@ -13138,6 +15036,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Jozabad_8',
@@ -13146,6 +15046,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Jozacar_1',
@@ -13186,6 +15088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fourth-born son of Jacob, son of Leah',
+    primaryReference: { book: 'Genesis', chapter: 29, verseStart: 35 },
   },
   {
     id: 'Judah_2',
@@ -13194,6 +15098,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Judah_3',
@@ -13202,6 +15108,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second in command of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 9 },
   },
   {
     id: 'Judah_4',
@@ -13210,6 +15118,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the Levites who came up with Zerubabbel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 8 },
   },
   {
     id: 'Judah_5',
@@ -13218,6 +15128,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Judas_1',
@@ -13234,6 +15146,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: '"brother" of Jesus, son of Mary',
+    primaryReference: { book: 'Matthew', chapter: 13, verseStart: 55 },
   },
   {
     id: 'Judas_3',
@@ -13242,6 +15156,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'someone who rose up in the days of the census of Galilee',
+    primaryReference: { book: 'Acts', chapter: 5, verseStart: 37 },
   },
   {
     id: 'Judas_4',
@@ -13250,6 +15166,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the man at whose house in Damascus Saul/Paul was staying',
+    primaryReference: { book: 'Acts', chapter: 9, verseStart: 11 },
   },
   {
     id: 'Judas_5',
@@ -13258,6 +15176,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'called Barsabbas, a leading man among the brethren',
+    primaryReference: { book: 'Acts', chapter: 15, verseStart: 22 },
   },
   {
     id: 'Judith_1',
@@ -13306,6 +15226,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 40 },
   },
   {
     id: 'Kadmiel_2',
@@ -13314,6 +15236,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on the Levites platform and exhorted Israel to bless the Lord',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Kallai_1',
@@ -13378,6 +15302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nahor',
+    primaryReference: { book: 'Genesis', chapter: 22, verseStart: 21 },
   },
   {
     id: 'Kemuel_2',
@@ -13386,6 +15312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leader of the tribe of Ephraim to apportion the Land',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 24 },
   },
   {
     id: 'Kemuel_3',
@@ -13394,6 +15322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hashabiah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 17 },
   },
   {
     id: 'Kenan_1',
@@ -13410,6 +15340,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliphaz and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 11 },
   },
   {
     id: 'Kenaz_2',
@@ -13418,6 +15350,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Othniel, brother of Caleb',
+    primaryReference: { book: 'Joshua', chapter: 15, verseStart: 17 },
   },
   {
     id: 'Kenaz_3',
@@ -13426,6 +15360,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elah and grandson of Caleb',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 15 },
   },
   {
     id: 'Keren-happuch_1',
@@ -13474,6 +15410,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a mighty man of valor [',
+    primaryReference: { book: '1 Samuel', chapter: 9, verseStart: 1 },
   },
   {
     id: 'Kish_2',
@@ -13482,6 +15420,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 30 },
   },
   {
     id: 'Kish_3',
@@ -13490,6 +15430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mahli',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 21 },
   },
   {
     id: 'Kish_4',
@@ -13498,6 +15440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Benjamite, father of Shimei',
+    primaryReference: { book: 'Esther', chapter: 2, verseStart: 5 },
   },
   {
     id: 'Kishi_1',
@@ -13530,6 +15474,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Maaseiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Kolaiah_2',
@@ -13538,6 +15484,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ahab',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 21 },
   },
   {
     id: 'Korah_1',
@@ -13546,6 +15494,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Esau and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 5 },
   },
   {
     id: 'Korah_2',
@@ -13554,6 +15504,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of Edom and son of Eliphaz',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 16 },
   },
   {
     id: 'Korah_3',
@@ -13562,6 +15514,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izhar who rebelled against G-d and Moses (Numbers chapter 16)',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Korah_4',
@@ -13570,6 +15524,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 43 },
   },
   {
     id: 'Kore_1',
@@ -13578,6 +15534,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shallum, descendant of Korah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 19 },
   },
   {
     id: 'Kore_2',
@@ -13586,6 +15544,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite gatekeeper of the eastern gate',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 14 },
   },
   {
     id: 'Koz_1',
@@ -13658,6 +15618,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Methushael',
+    primaryReference: { book: 'Genesis', chapter: 4, verseStart: 18 },
   },
   {
     id: 'Lamech_2',
@@ -13666,6 +15628,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Methuselah',
+    primaryReference: { book: 'Genesis', chapter: 5, verseStart: 25 },
   },
   {
     id: 'Lappidoth_1',
@@ -13682,6 +15646,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the poor man of the parable',
+    primaryReference: { book: 'Luke', chapter: 16, verseStart: 20 },
   },
   {
     id: 'Lazarus_2',
@@ -13690,6 +15656,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'brother of Mary and Martha who was resurrected Lazarus of Bethany',
+    primaryReference: { book: 'John', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Leah_1',
@@ -13754,6 +15722,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-born son of Jacob, son of Leah',
+    primaryReference: { book: 'Genesis', chapter: 29, verseStart: 34 },
   },
   {
     id: 'Levi_2',
@@ -13762,6 +15732,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Levi_3',
@@ -13770,6 +15742,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Libni_1',
@@ -13778,6 +15752,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gershon',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 17 },
   },
   {
     id: 'Libni_2',
@@ -13786,6 +15762,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mahli (1CH6:29)',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 29 },
   },
   {
     id: 'Lihki_1',
@@ -13850,6 +15828,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a prophet and teacher in Antioch',
+    primaryReference: { book: 'Acts', chapter: 13, verseStart: 1 },
   },
   {
     id: 'Lucius_2',
@@ -13858,6 +15838,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a kinsman of Paul',
+    primaryReference: { book: 'Romans', chapter: 16, verseStart: 21 },
   },
   {
     id: 'Lud_1',
@@ -13866,6 +15848,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mizraim',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 13 },
   },
   {
     id: 'Lud_2',
@@ -13874,6 +15858,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shem',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Luke_1',
@@ -13906,6 +15892,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nahor via his concubine, Reumah',
+    primaryReference: { book: 'Genesis', chapter: 22, verseStart: 24 },
   },
   {
     id: 'Maacah_2',
@@ -13914,6 +15902,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Talmai, King of Geshur',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 3 },
   },
   {
     id: 'Maacah_3',
@@ -13922,6 +15912,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'mother of Abijam and Asa, daughter of Uriel of Gibeah',
+    primaryReference: { book: '1 Kings', chapter: 15, verseStart: 2 },
   },
   {
     id: 'Maacah_4',
@@ -13930,6 +15922,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Chelubai\'s [Caleb\'s] concubine',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 48 },
   },
   {
     id: 'Maacah_5',
@@ -13938,6 +15932,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Machir and sister of Huppim and Shuppim',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 15 },
   },
   {
     id: 'Maacah_6',
@@ -13946,6 +15942,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Jeiel',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 29 },
   },
   {
     id: 'Maacah_7',
@@ -13954,6 +15952,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'mother of Hanan',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 43 },
   },
   {
     id: 'Maacah_8',
@@ -13962,6 +15962,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shephatiah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 16 },
   },
   {
     id: 'Maadai_1',
@@ -13994,6 +15996,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Maaseiah_2',
@@ -14002,6 +16006,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Adaiah, supported Joash as king of Judah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Maaseiah_3',
@@ -14010,6 +16016,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the official who prepared Uzziah\'s army divisions',
+    primaryReference: { book: '2 Chronicles', chapter: 26, verseStart: 11 },
   },
   {
     id: 'Maaseiah_4',
@@ -14018,6 +16026,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of King Ahaz',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 7 },
   },
   {
     id: 'Maaseiah_5',
@@ -14026,6 +16036,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sent by Josiah to repair the house of the Lord',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 8 },
   },
   {
     id: 'Maaseiah_6',
@@ -14034,6 +16046,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest who had married a foreign wife, son of Harim',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 18 },
   },
   {
     id: 'Maaseiah_7',
@@ -14042,6 +16056,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Maaseiah_8',
@@ -14050,6 +16066,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Maaseiah_9',
@@ -14058,6 +16076,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 23 },
   },
   {
     id: 'Maaseiah_10',
@@ -14066,6 +16086,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s right hand as he read from the Law and explained the law to the…',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Maaseiah_11',
@@ -14074,6 +16096,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Baruch',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 5 },
   },
   {
     id: 'Maaseiah_12',
@@ -14082,6 +16106,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ithiel',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Maaseiah_13',
@@ -14090,6 +16116,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest with a trumpet',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 41 },
   },
   {
     id: 'Maaseiah_14',
@@ -14098,6 +16126,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zephaniah',
+    primaryReference: { book: 'Jeremiah', chapter: 21, verseStart: 1 },
   },
   {
     id: 'Maath_1',
@@ -14122,6 +16152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'twenty-fourth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 18 },
   },
   {
     id: 'Maaziah_2',
@@ -14130,6 +16162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 8 },
   },
   {
     id: 'Machbannai_1',
@@ -14162,6 +16196,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Manasseh',
+    primaryReference: { book: 'Genesis', chapter: 50, verseStart: 23 },
   },
   {
     id: 'Machir_2',
@@ -14170,6 +16206,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the person who sheltered Jonathan\'s son Mephibosheth',
+    primaryReference: { book: '2 Samuel', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Machnadebai_1',
@@ -14234,6 +16272,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kenan',
+    primaryReference: { book: 'Genesis', chapter: 5, verseStart: 12 },
   },
   {
     id: 'Mahalalel_2',
@@ -14242,6 +16282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Perez',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Mahalath_1',
@@ -14250,6 +16292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Ishmael, sister of Nebaioth, and wife of Esau also called Basemath',
+    primaryReference: { book: 'Genesis', chapter: 28, verseStart: 9 },
   },
   {
     id: 'Mahalath_2',
@@ -14258,6 +16302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Jerimoth and Abihail and wife of Rehoboam',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 18 },
   },
   {
     id: 'Maharai_1',
@@ -14274,6 +16320,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amasai',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 35 },
   },
   {
     id: 'Mahath_2',
@@ -14282,6 +16330,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Mahazioth_1',
@@ -14298,6 +16348,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Zelophehad',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 33 },
   },
   {
     id: 'Mahlah_2',
@@ -14306,6 +16358,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Hammolecheth',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 18 },
   },
   {
     id: 'Mahli_1',
@@ -14314,6 +16368,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Merari',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 19 },
   },
   {
     id: 'Mahli_2',
@@ -14322,6 +16378,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mushi',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 47 },
   },
   {
     id: 'Mahli_3',
@@ -14330,6 +16388,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mushi',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 23 },
   },
   {
     id: 'Mahlon_1',
@@ -14386,6 +16446,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ethni',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 40 },
   },
   {
     id: 'Malchijah_2',
@@ -14394,6 +16456,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pashhur, stood on Ezra\'s left hand as he read from the Law',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Malchijah_3',
@@ -14402,6 +16466,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 9 },
   },
   {
     id: 'Malchijah_4',
@@ -14410,6 +16476,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Parosh who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 25 },
   },
   {
     id: 'Malchijah_5',
@@ -14418,6 +16486,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Parosh who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 25 },
   },
   {
     id: 'Malchijah_6',
@@ -14426,6 +16496,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 31 },
   },
   {
     id: 'Malchijah_7',
@@ -14434,6 +16506,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired a section of wall and the Tower of Furnaces',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 11 },
   },
   {
     id: 'Malchijah_8',
@@ -14442,6 +16516,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the Refuse Gate',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 14 },
   },
   {
     id: 'Malchijah_9',
@@ -14450,6 +16526,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the goldsmiths who repaired the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 31 },
   },
   {
     id: 'Malchijah_10',
@@ -14458,6 +16536,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pashhur and son of King Zedekiah',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Malchiram_1',
@@ -14490,6 +16570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hashabiah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 44 },
   },
   {
     id: 'Malluch_2',
@@ -14498,6 +16580,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife named on the sealed document…',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Malluch_3',
@@ -14506,6 +16590,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 32 },
   },
   {
     id: 'Malluch_4',
@@ -14514,6 +16600,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 4 },
   },
   {
     id: 'Mamre_1',
@@ -14546,6 +16634,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Joseph',
+    primaryReference: { book: 'Genesis', chapter: 41, verseStart: 51 },
   },
   {
     id: 'Manasseh_2',
@@ -14554,6 +16644,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Gershom',
+    primaryReference: { book: 'Judges', chapter: 18, verseStart: 30 },
   },
   {
     id: 'Manasseh_3',
@@ -14562,6 +16654,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah and son of Hezekiah He did evil in the sight of the LORD',
+    primaryReference: { book: '2 Kings', chapter: 20, verseStart: 21 },
   },
   {
     id: 'Manasseh_4',
@@ -14570,6 +16664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Manasseh_5',
@@ -14578,6 +16674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hashum who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 33 },
   },
   {
     id: 'Manoah_1',
@@ -14610,6 +16708,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ziph',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 42 },
   },
   {
     id: 'Mareshah_2',
@@ -14618,6 +16718,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Laadah',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 21 },
   },
   {
     id: 'Marsena_1',
@@ -14642,6 +16744,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'wife of Joseph, and mother of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 16 },
   },
   {
     id: 'Mary_2',
@@ -14650,6 +16754,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'one of the women who followed Jesus from the Galilee from whom seven demons had…',
+    primaryReference: { book: 'Matthew', chapter: 27, verseStart: 56 },
   },
   {
     id: 'Mary_3',
@@ -14658,6 +16764,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'sister of Martha',
+    primaryReference: { book: 'Luke', chapter: 10, verseStart: 39 },
   },
   {
     id: 'Mary_4',
@@ -14666,6 +16774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'of Clopas',
+    primaryReference: { book: 'John', chapter: 19, verseStart: 25 },
   },
   {
     id: 'Mary_5',
@@ -14674,6 +16784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'mother of John also called Mark',
+    primaryReference: { book: 'Acts', chapter: 12, verseStart: 12 },
   },
   {
     id: 'Mary_6',
@@ -14682,6 +16794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'Mary of Rome of whom Paul wrote',
+    primaryReference: { book: 'Romans', chapter: 16, verseStart: 6 },
   },
   {
     id: 'Mash_1',
@@ -14714,6 +16828,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest of Baal',
+    primaryReference: { book: '2 Kings', chapter: 11, verseStart: 18 },
   },
   {
     id: 'Mattan_2',
@@ -14722,6 +16838,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shephatiah',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Mattaniah_1',
@@ -14730,6 +16848,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: ['Mattaniah'],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Judah, uncle of Jehoiachin He did evil in the sight of the LORD',
+    primaryReference: { book: '2 Kings', chapter: 24, verseStart: 17 },
   },
   {
     id: 'Mattaniah_2',
@@ -14738,6 +16858,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mica, Levite',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 15 },
   },
   {
     id: 'Mattaniah_3',
@@ -14746,6 +16868,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman, chosen ninth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Mattaniah_4',
@@ -14754,6 +16878,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Asaph',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 13 },
   },
   {
     id: 'Mattaniah_5',
@@ -14762,6 +16888,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Mattaniah_6',
@@ -14770,6 +16898,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 27 },
   },
   {
     id: 'Mattaniah_7',
@@ -14778,6 +16908,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Pahath-moab who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 30 },
   },
   {
     id: 'Mattaniah_8',
@@ -14786,6 +16918,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 37 },
   },
   {
     id: 'Mattaniah_9',
@@ -14794,6 +16928,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Mica, gatekeeper',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 17 },
   },
   {
     id: 'Mattaniah_10',
@@ -14802,6 +16938,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'grandfather of Hanan',
+    primaryReference: { book: 'Nehemiah', chapter: 13, verseStart: 13 },
   },
   {
     id: 'Mattatha_1',
@@ -14818,6 +16956,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 25 },
   },
   {
     id: 'Mattathias_2',
@@ -14826,6 +16966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 26 },
   },
   {
     id: 'Mattattah_1',
@@ -14842,6 +16984,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hashum who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 33 },
   },
   {
     id: 'Mattenai_2',
@@ -14850,6 +16994,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 37 },
   },
   {
     id: 'Mattenai_3',
@@ -14858,6 +17004,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joiarib',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 19 },
   },
   {
     id: 'Matthan_1',
@@ -14874,6 +17022,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Matthat_2',
@@ -14882,6 +17032,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Matthew_1',
@@ -14906,6 +17058,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn of Shallum',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 31 },
   },
   {
     id: 'Mattithiah_2',
@@ -14914,6 +17068,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Mattithiah_3',
@@ -14922,6 +17078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeduthun, chosen fourteenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Mattithiah_4',
@@ -14930,6 +17088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Nebo who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 43 },
   },
   {
     id: 'Mattithiah_5',
@@ -14938,6 +17098,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s right hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Medad_1',
@@ -14962,6 +17124,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of King Hadar',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 39 },
   },
   {
     id: 'Mehetabel_2',
@@ -14970,6 +17134,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Delaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Mehida_1',
@@ -15018,6 +17184,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Melchi_2',
@@ -15026,6 +17194,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 28 },
   },
   {
     id: 'Melchizedek_1',
@@ -15090,6 +17260,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jonathan',
+    primaryReference: { book: '2 Samuel', chapter: 4, verseStart: 4 },
   },
   {
     id: 'Mephibosheth_2',
@@ -15098,6 +17270,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Saul',
+    primaryReference: { book: '2 Samuel', chapter: 21, verseStart: 8 },
   },
   {
     id: 'Merab_1',
@@ -15122,6 +17296,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Amariah, Levite',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 6 },
   },
   {
     id: 'Meraioth_2',
@@ -15130,6 +17306,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahitub',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 11 },
   },
   {
     id: 'Meraioth_3',
@@ -15138,6 +17316,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahitub',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Merari_1',
@@ -15162,6 +17342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uriah the priest',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Meremoth_2',
@@ -15170,6 +17352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 36 },
   },
   {
     id: 'Meres_1',
@@ -15186,6 +17370,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Moab',
+    primaryReference: { book: '2 Kings', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Mesha_2',
@@ -15194,6 +17380,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Cheubai [Caleb]',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 42 },
   },
   {
     id: 'Mesha_3',
@@ -15202,6 +17390,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaharaim',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 9 },
   },
   {
     id: 'Meshech_1',
@@ -15218,6 +17408,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Berechiah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Meshezabel_2',
@@ -15226,6 +17418,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pethahiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 24 },
   },
   {
     id: 'Meshillemith_1',
@@ -15266,6 +17460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azaliah',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 3 },
   },
   {
     id: 'Meshullam_2',
@@ -15274,6 +17470,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zerubbabel',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Meshullam_3',
@@ -15282,6 +17480,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 13 },
   },
   {
     id: 'Meshullam_4',
@@ -15290,6 +17490,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Meshullam_5',
@@ -15298,6 +17500,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shephatiah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Meshullam_6',
@@ -15306,6 +17510,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshillemith',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Meshullam_7',
@@ -15314,6 +17520,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'foreman over reconstruction of the Temple during Josiah\'s reign',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 12 },
   },
   {
     id: 'Meshullam_8',
@@ -15322,6 +17530,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Meshullam_9',
@@ -15330,6 +17540,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'opposed Israel\'s decision to set apart foreign wives',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Meshullam_10',
@@ -15338,6 +17550,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 29 },
   },
   {
     id: 'Meshullam_11',
@@ -15346,6 +17560,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Meshullam_12',
@@ -15354,6 +17570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the Old Gate',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 6 },
   },
   {
     id: 'Meshullam_13',
@@ -15362,6 +17580,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s left hand as he read from the Law, son of Ginnethon',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Meshullam_14',
@@ -15370,6 +17590,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joed',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Meshullam_15',
@@ -15378,6 +17600,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zadok',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Meshullam_16',
@@ -15386,6 +17610,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ezra',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 13 },
   },
   {
     id: 'Meshullemeth_1',
@@ -15434,6 +17660,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fourth-born son of Ishmael',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 13 },
   },
   {
     id: 'Mibsam_2',
@@ -15442,6 +17670,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shallum, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 25 },
   },
   {
     id: 'Mibzar_1',
@@ -15458,6 +17688,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mephibosheth',
+    primaryReference: { book: '2 Samuel', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Mica_2',
@@ -15466,6 +17698,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zichri',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 15 },
   },
   {
     id: 'Micah_1',
@@ -15474,6 +17708,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'who stole 1100 pieces of silver from his mother',
+    primaryReference: { book: 'Judges', chapter: 17, verseStart: 1 },
   },
   {
     id: 'Micah_2',
@@ -15482,6 +17718,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 5 },
   },
   {
     id: 'Micah_3',
@@ -15490,6 +17728,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Uzziel',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 20 },
   },
   {
     id: 'Micah_4',
@@ -15498,6 +17738,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Moresheth authored the book of Micah',
+    primaryReference: { book: 'Jeremiah', chapter: 26, verseStart: 18 },
   },
   {
     id: 'Micaiah_1',
@@ -15506,6 +17748,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophet',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 8 },
   },
   {
     id: 'Micaiah_2',
@@ -15514,6 +17758,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Achbor',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 12 },
   },
   {
     id: 'Micaiah_3',
@@ -15522,6 +17768,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of Jehoshaphat, sent to teach',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 7 },
   },
   {
     id: 'Micaiah_4',
@@ -15530,6 +17778,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zaccur',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 35 },
   },
   {
     id: 'Micaiah_5',
@@ -15538,6 +17788,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest with a trumpet',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 41 },
   },
   {
     id: 'Micaiah_6',
@@ -15546,6 +17798,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gemariah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 11 },
   },
   {
     id: 'Michael_1',
@@ -15554,6 +17808,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Sethur',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 13 },
   },
   {
     id: 'Michael_2',
@@ -15562,6 +17818,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeshishai, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 13 },
   },
   {
     id: 'Michael_3',
@@ -15570,6 +17828,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Baaseiah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 40 },
   },
   {
     id: 'Michael_4',
@@ -15578,6 +17838,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izrahiah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 3 },
   },
   {
     id: 'Michael_5',
@@ -15586,6 +17848,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Beriah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Michael_6',
@@ -15594,6 +17858,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Michael_7',
@@ -15602,6 +17868,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 21, verseStart: 2 },
   },
   {
     id: 'Michael_8',
@@ -15610,6 +17878,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zebadiah who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 8 },
   },
   {
     id: 'Michael_9',
@@ -15618,6 +17888,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: 'Daniel', chapter: 10, verseStart: 13 },
   },
   {
     id: 'Michal_1',
@@ -15650,6 +17922,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 9 },
   },
   {
     id: 'Mijamin_2',
@@ -15658,6 +17932,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Parosh who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 25 },
   },
   {
     id: 'Mijamin_3',
@@ -15666,6 +17942,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 7 },
   },
   {
     id: 'Mikloth_1',
@@ -15674,6 +17952,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 32 },
   },
   {
     id: 'Mikloth_2',
@@ -15682,6 +17962,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer of Dodai\'s second division',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 4 },
   },
   {
     id: 'Mikneiah_1',
@@ -15706,6 +17988,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Nahor\'s wife (and niece), the daughter of Haran',
+    primaryReference: { book: 'Genesis', chapter: 11, verseStart: 29 },
   },
   {
     id: 'Milcah_2',
@@ -15714,6 +17998,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Zelophehad',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 33 },
   },
   {
     id: 'Miniamin_1',
@@ -15722,6 +18008,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their brothers',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 15 },
   },
   {
     id: 'Miniamin_2',
@@ -15730,6 +18018,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ancestor of Piltai',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 17 },
   },
   {
     id: 'Miniamin_3',
@@ -15738,6 +18028,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest with a trumpet',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 41 },
   },
   {
     id: 'Miriam_1',
@@ -15746,6 +18038,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sister of Moses',
+    primaryReference: { book: 'Exodus', chapter: 15, verseStart: 20 },
   },
   {
     id: 'Miriam_2',
@@ -15754,6 +18048,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Mered and Bithia',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Mirmah_1',
@@ -15770,6 +18066,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uzziel',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 22 },
   },
   {
     id: 'Mishael_2',
@@ -15778,6 +18076,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s left hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Mishael_3',
@@ -15786,6 +18086,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chosen for Nebuchadnezzar\'s service along with Daniel',
+    primaryReference: { book: 'Daniel', chapter: 1, verseStart: 6 },
   },
   {
     id: 'Misham_1',
@@ -15802,6 +18104,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth-born son of Ishmael',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 14 },
   },
   {
     id: 'Mishma_2',
@@ -15810,6 +18114,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mibsam, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 25 },
   },
   {
     id: 'Mishmannah_1',
@@ -15834,6 +18140,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'treasurer of Cyrus',
+    primaryReference: { book: 'Ezra', chapter: 1, verseStart: 8 },
   },
   {
     id: 'Mithredath_2',
@@ -15842,6 +18150,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wrote against Judah',
+    primaryReference: { book: 'Ezra', chapter: 4, verseStart: 7 },
   },
   {
     id: 'Mizraim_1',
@@ -15898,6 +18208,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Mordecai_2',
@@ -15906,6 +18218,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Jew who lived in Susa',
+    primaryReference: { book: 'Esther', chapter: 2, verseStart: 5 },
   },
   {
     id: 'Moses_1',
@@ -15922,6 +18236,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Chelubai [Caleb] by Ephah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 46 },
   },
   {
     id: 'Moza_2',
@@ -15930,6 +18246,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zimri',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 36 },
   },
   {
     id: 'Muppim_1',
@@ -15962,6 +18280,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sister of Tubal-cain',
+    primaryReference: { book: 'Genesis', chapter: 4, verseStart: 22 },
   },
   {
     id: 'Naamah_2',
@@ -15970,6 +18290,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Ammonitess, mother of Rehoboam )',
+    primaryReference: { book: '1 Kings', chapter: 14, verseStart: 21 },
   },
   {
     id: 'Naaman_1',
@@ -15978,6 +18300,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Benjamin, son of Bela',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 21 },
   },
   {
     id: 'Naaman_2',
@@ -15986,6 +18310,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of the army of the king of Aram',
+    primaryReference: { book: '2 Kings', chapter: 5, verseStart: 1 },
   },
   {
     id: 'Naaman_3',
@@ -15994,6 +18320,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ehud',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Naarah_1',
@@ -16026,6 +18354,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Aaron, died for offering strange fire to the LORD',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 23 },
   },
   {
     id: 'Nadab_2',
@@ -16034,6 +18364,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroboam',
+    primaryReference: { book: '1 Kings', chapter: 14, verseStart: 20 },
   },
   {
     id: 'Nadab_3',
@@ -16042,6 +18374,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shammai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 28 },
   },
   {
     id: 'Nadab_4',
@@ -16050,6 +18384,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 30 },
   },
   {
     id: 'Naggai_1',
@@ -16090,6 +18426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of the Ammonites',
+    primaryReference: { book: '1 Samuel', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Nahash_2',
@@ -16098,6 +18436,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '2 Samuel', chapter: 17, verseStart: 25 },
   },
   {
     id: 'Nahath_1',
@@ -16106,6 +18446,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuel and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 13 },
   },
   {
     id: 'Nahath_2',
@@ -16114,6 +18456,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the consecrated things under Conaniah',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 13 },
   },
   {
     id: 'Nahbi_1',
@@ -16130,6 +18474,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Serug',
+    primaryReference: { book: 'Genesis', chapter: 11, verseStart: 22 },
   },
   {
     id: 'Nahor_2',
@@ -16138,6 +18484,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Terah',
+    primaryReference: { book: 'Genesis', chapter: 11, verseStart: 26 },
   },
   {
     id: 'Nahshon_1',
@@ -16154,6 +18502,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Elkoshite, prophet of the book of Nahum',
+    primaryReference: { book: 'Nahum', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Nahum_2',
@@ -16162,6 +18512,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 25 },
   },
   {
     id: 'Naomi_1',
@@ -16210,6 +18562,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Nathan_2',
@@ -16218,6 +18572,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet',
+    primaryReference: { book: '2 Samuel', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Nathan_3',
@@ -16226,6 +18582,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Zobah',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 36 },
   },
   {
     id: 'Nathan_4',
@@ -16234,6 +18592,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 5 },
   },
   {
     id: 'Nathan_5',
@@ -16242,6 +18602,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a priest, father of Zabud',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 5 },
   },
   {
     id: 'Nathan_6',
@@ -16250,6 +18612,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Attai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 36 },
   },
   {
     id: 'Nathan_7',
@@ -16258,6 +18622,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 11 },
   },
   {
     id: 'Nathan_8',
@@ -16266,6 +18632,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 39 },
   },
   {
     id: 'Nathan-melech_1',
@@ -16282,6 +18650,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shecaniah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 22 },
   },
   {
     id: 'Neariah_2',
@@ -16290,6 +18660,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ishi, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 42 },
   },
   {
     id: 'Nebai_1',
@@ -16370,6 +18742,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity, son of Hacaliah cup-bearer to…',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Nehemiah_2',
@@ -16378,6 +18752,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 16 },
   },
   {
     id: 'Nehushta_1',
@@ -16410,6 +18786,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izhar',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Nepheg_2',
@@ -16418,6 +18796,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 15 },
   },
   {
     id: 'Nephisim_1',
@@ -16450,6 +18830,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Babylonian official who sat in the Middle Gate of Jerusalem',
+    primaryReference: { book: 'Jeremiah', chapter: 39, verseStart: 3 },
   },
   {
     id: 'Nergal-sar-ezer_2',
@@ -16458,6 +18840,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Rab-mag [high official]',
+    primaryReference: { book: 'Jeremiah', chapter: 39, verseStart: 3 },
   },
   {
     id: 'Neri_1',
@@ -16490,6 +18874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of the tribe of Issachar during the census',
+    primaryReference: { book: 'Numbers', chapter: 1, verseStart: 8 },
   },
   {
     id: 'Nethanel_2',
@@ -16498,6 +18884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fourth-born son of Jesse',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 14 },
   },
   {
     id: 'Nethanel_3',
@@ -16506,6 +18894,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 24 },
   },
   {
     id: 'Nethanel_4',
@@ -16514,6 +18904,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the scribe, father of Shemaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 6 },
   },
   {
     id: 'Nethanel_5',
@@ -16522,6 +18914,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth-born son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 4 },
   },
   {
     id: 'Nethanel_6',
@@ -16530,6 +18924,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of Jehoshaphat, sent to teach',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 7 },
   },
   {
     id: 'Nethanel_7',
@@ -16538,6 +18934,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jedaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 21 },
   },
   {
     id: 'Nethaniah_1',
@@ -16546,6 +18944,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ishmael, one of the captains of Judean forces',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Nethaniah_2',
@@ -16554,6 +18954,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asaph, chosen fifth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 2 },
   },
   {
     id: 'Nethaniah_3',
@@ -16562,6 +18964,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Nethaniah_4',
@@ -16570,6 +18974,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shelemiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 14 },
   },
   {
     id: 'Neziah_1',
@@ -16626,6 +19032,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite present at the counting of the silver, gold, and utensils',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Noadiah_2',
@@ -16634,6 +19042,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophetess who tried to frighten Nehemiah',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 14 },
   },
   {
     id: 'Noah_1',
@@ -16642,6 +19052,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Lamech',
+    primaryReference: { book: 'Genesis', chapter: 5, verseStart: 29 },
   },
   {
     id: 'Noah_2',
@@ -16650,6 +19062,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Zelophehad',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 33 },
   },
   {
     id: 'Nobah_1',
@@ -16698,6 +19112,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'feared the Lord, sent by Jehoshaphat to teach',
+    primaryReference: { book: '1 Kings', chapter: 18, verseStart: 3 },
   },
   {
     id: 'Obadiah_2',
@@ -16706,6 +19122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 21 },
   },
   {
     id: 'Obadiah_3',
@@ -16714,6 +19132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izrahiah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 3 },
   },
   {
     id: 'Obadiah_4',
@@ -16722,6 +19142,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azel',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 38 },
   },
   {
     id: 'Obadiah_5',
@@ -16730,6 +19152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 16 },
   },
   {
     id: 'Obadiah_6',
@@ -16738,6 +19162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second among the Gadites to go to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 9 },
   },
   {
     id: 'Obadiah_7',
@@ -16746,6 +19172,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ishmaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 19 },
   },
   {
     id: 'Obadiah_8',
@@ -16754,6 +19182,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'foreman over reconstruction of the Temple during Josiah\'s reign',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 12 },
   },
   {
     id: 'Obadiah_9',
@@ -16762,6 +19192,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Joab, son of Jehiel who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 9 },
   },
   {
     id: 'Obadiah_10',
@@ -16770,6 +19202,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 5 },
   },
   {
     id: 'Obadiah_11',
@@ -16778,6 +19212,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite gatekeeper',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 25 },
   },
   {
     id: 'Obadiah_12',
@@ -16786,6 +19222,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet',
+    primaryReference: { book: 'Obadiah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Obal_1',
@@ -16802,6 +19240,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ruth and father of Jesse',
+    primaryReference: { book: 'Ruth', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Obed_2',
@@ -16810,6 +19250,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ephlal',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 37 },
   },
   {
     id: 'Obed_3',
@@ -16818,6 +19260,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'counted among the mighty men of David\'s armies',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 47 },
   },
   {
     id: 'Obed_4',
@@ -16826,6 +19270,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah [Shemaiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 7 },
   },
   {
     id: 'Obed_5',
@@ -16834,6 +19280,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Azariah',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Obed-edom_1',
@@ -16842,6 +19290,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Gittite in whose house the ark of the covenant rested',
+    primaryReference: { book: '2 Samuel', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Obed-edom_2',
@@ -16850,6 +19300,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper, the south gate',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Obil_1',
@@ -16938,6 +19390,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander of the army and king over Israel he "did evil in the sight of the…',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 16 },
   },
   {
     id: 'Omri_2',
@@ -16946,6 +19400,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Becher',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 8 },
   },
   {
     id: 'Omri_3',
@@ -16954,6 +19410,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Imri',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Omri_4',
@@ -16962,6 +19420,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Issacharites, son of Michael',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 18 },
   },
   {
     id: 'On_1',
@@ -16978,6 +19438,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shobal',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 23 },
   },
   {
     id: 'Onam_2',
@@ -16986,6 +19448,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jerahmeel and Atarah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 26 },
   },
   {
     id: 'Onan_1',
@@ -17082,6 +19546,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sixth-born son of Jesse',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 15 },
   },
   {
     id: 'Ozem_2',
@@ -17090,6 +19556,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jerahmeel',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 25 },
   },
   {
     id: 'Paarai_1',
@@ -17146,6 +19614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '1 of spies- from Benjamin',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 9 },
   },
   {
     id: 'Palti_2',
@@ -17154,6 +19624,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Michal\'s new husband',
+    primaryReference: { book: '1 Samuel', chapter: 25, verseStart: 44 },
   },
   {
     id: 'Paltiel_1',
@@ -17194,6 +19666,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 3 },
   },
   {
     id: 'Parosh_2',
@@ -17202,6 +19676,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Pedaiah named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 25 },
   },
   {
     id: 'Parshandatha_1',
@@ -17234,6 +19710,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eshton',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 12 },
   },
   {
     id: 'Paseah_2',
@@ -17242,6 +19720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 49 },
   },
   {
     id: 'Paseah_3',
@@ -17250,6 +19730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joiada',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 6 },
   },
   {
     id: 'Pashhur_1',
@@ -17258,6 +19740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Malchijah, priest',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 12 },
   },
   {
     id: 'Pashhur_2',
@@ -17266,6 +19750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Immer, chief officer in the Temple',
+    primaryReference: { book: 'Jeremiah', chapter: 20, verseStart: 1 },
   },
   {
     id: 'Pashhur_3',
@@ -17274,6 +19760,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Gedaliah',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Pashhur_4',
@@ -17282,6 +19770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Malchijah',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Pathrus_1',
@@ -17322,6 +19812,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'from Rumah, father of Zebidah',
+    primaryReference: { book: '2 Kings', chapter: 23, verseStart: 36 },
   },
   {
     id: 'Pedaiah_2',
@@ -17330,6 +19822,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoiachin [Jeconiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 18 },
   },
   {
     id: 'Pedaiah_3',
@@ -17338,6 +19832,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joel',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 20 },
   },
   {
     id: 'Pedaiah_4',
@@ -17346,6 +19842,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 25 },
   },
   {
     id: 'Pedaiah_5',
@@ -17354,6 +19852,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s left hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Pedaiah_6',
@@ -17362,6 +19862,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kolaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Pekah_1',
@@ -17386,6 +19888,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elioenai',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 24 },
   },
   {
     id: 'Pelaiah_2',
@@ -17394,6 +19898,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Pelaliah_1',
@@ -17410,6 +19916,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 21 },
   },
   {
     id: 'Pelatiah_2',
@@ -17418,6 +19926,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ishi, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 42 },
   },
   {
     id: 'Pelatiah_3',
@@ -17426,6 +19936,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'non-Levite leader named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 22 },
   },
   {
     id: 'Pelatiah_4',
@@ -17434,6 +19946,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Benaiah',
+    primaryReference: { book: 'Ezekiel', chapter: 11, verseStart: 1 },
   },
   {
     id: 'Peleg_1',
@@ -17450,6 +19964,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahdai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Pelet_2',
@@ -17458,6 +19974,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azmaveth',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Peleth_1',
@@ -17466,6 +19984,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of On',
+    primaryReference: { book: 'Numbers', chapter: 16, verseStart: 1 },
   },
   {
     id: 'Peleth_2',
@@ -17474,6 +19994,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jonathan',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 33 },
   },
   {
     id: 'Peninnah_1',
@@ -17490,6 +20012,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hur',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 4 },
   },
   {
     id: 'Penuel_2',
@@ -17498,6 +20022,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 25 },
   },
   {
     id: 'Peresh_1',
@@ -17538,6 +20064,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'nineteenth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 16 },
   },
   {
     id: 'Pethahiah_2',
@@ -17546,6 +20074,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Pethahiah_3',
@@ -17554,6 +20084,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'exhorted Israel to bless the Lord',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 5 },
   },
   {
     id: 'Pethahiah_4',
@@ -17562,6 +20094,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the king\'s representative in all matters concerning the people',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 24 },
   },
   {
     id: 'Pethuel_1',
@@ -17618,6 +20152,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'disciple of the Messiah one of the Twelve, from the city of Bethsaida of Galilee',
+    primaryReference: { book: 'Matthew', chapter: 10, verseStart: 3 },
   },
   {
     id: 'Philip_2',
@@ -17626,6 +20162,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'brother of Herod',
+    primaryReference: { book: 'Matthew', chapter: 14, verseStart: 3 },
   },
   {
     id: 'Philip_3',
@@ -17634,6 +20172,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'chosen to serve the widows of the Hellenistic Jews called "the evangelist" in',
+    primaryReference: { book: 'Acts', chapter: 6, verseStart: 5 },
   },
   {
     id: 'Philologus_1',
@@ -17650,6 +20190,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Eleazar\'s son, Aaron\'s grandson given a covenant of peace and perpetual…',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 25 },
   },
   {
     id: 'Phinehas_2',
@@ -17658,6 +20200,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eli, a corrupt priest',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 3 },
   },
   {
     id: 'Phlegon_1',
@@ -17810,6 +20354,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Hebrew midwife of Exodus',
+    primaryReference: { book: 'Exodus', chapter: 1, verseStart: 15 },
   },
   {
     id: 'Puah_2',
@@ -17818,6 +20364,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a descendant of Issachar and father of Tola',
+    primaryReference: { book: 'Judges', chapter: 10, verseStart: 1 },
   },
   {
     id: 'Publius_1',
@@ -17970,6 +20518,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hezron in the lineage of King David',
+    primaryReference: { book: 'Ruth', chapter: 4, verseStart: 19 },
   },
   {
     id: 'Ram_2',
@@ -17978,6 +20528,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Jerahmeel',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 25 },
   },
   {
     id: 'Ram_3',
@@ -17986,6 +20538,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'ancestor of Barachel',
+    primaryReference: { book: 'Job', chapter: 32, verseStart: 2 },
   },
   {
     id: 'Ramiah_1',
@@ -18002,6 +20556,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ishbi-benob some translations have "the giant" instead of "Raphah"',
+    primaryReference: { book: '2 Samuel', chapter: 21, verseStart: 16 },
   },
   {
     id: 'Raphah_2',
@@ -18010,6 +20566,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Binea',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 37 },
   },
   {
     id: 'Raphu_1',
@@ -18026,6 +20584,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shobal',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Reaiah_2',
@@ -18034,6 +20594,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Micah, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 5 },
   },
   {
     id: 'Reaiah_3',
@@ -18042,6 +20604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Reba_1',
@@ -18066,6 +20630,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander of Ish-bosheth\'s military',
+    primaryReference: { book: '2 Samuel', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Rechab_2',
@@ -18074,6 +20640,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jehonadab, a Kenite Rechabite clan',
+    primaryReference: { book: '2 Kings', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Rechab_3',
@@ -18082,6 +20650,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of the district of Beth-haccherem and father of Malchijah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 14 },
   },
   {
     id: 'Reelaiah_1',
@@ -18122,6 +20692,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hadadezer',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 3 },
   },
   {
     id: 'Rehob_2',
@@ -18130,6 +20702,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Levite',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 11 },
   },
   {
     id: 'Rehoboam_1',
@@ -18146,6 +20720,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity [called Nehum ]',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Rehum_2',
@@ -18154,6 +20730,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the commander who wrote against Judah',
+    primaryReference: { book: 'Ezra', chapter: 4, verseStart: 8 },
   },
   {
     id: 'Rehum_3',
@@ -18162,6 +20740,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'supervised the Levites\' repairs to the wall named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 17 },
   },
   {
     id: 'Rehum_4',
@@ -18170,6 +20750,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the priests who came up with Zerubbabel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Rei_1',
@@ -18186,6 +20768,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Midian',
+    primaryReference: { book: 'Numbers', chapter: 31, verseStart: 8 },
   },
   {
     id: 'Rekem_2',
@@ -18194,6 +20778,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 43 },
   },
   {
     id: 'Remaliah_1',
@@ -18226,6 +20812,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 21 },
   },
   {
     id: 'Rephaiah_2',
@@ -18234,6 +20822,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ishi, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 42 },
   },
   {
     id: 'Rephaiah_3',
@@ -18242,6 +20832,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Tola',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Rephaiah_4',
@@ -18250,6 +20842,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 9 },
   },
   {
     id: 'Resheph_1',
@@ -18282,6 +20876,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Esau',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 4 },
   },
   {
     id: 'Reuel_2',
@@ -18290,6 +20886,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Moses\' father-in-law Reuel was a Kenite',
+    primaryReference: { book: 'Exodus', chapter: 2, verseStart: 16 },
   },
   {
     id: 'Reuel_3',
@@ -18298,6 +20896,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ibnijah',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Reumah_1',
@@ -18314,6 +20914,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Aram',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 37 },
   },
   {
     id: 'Rezin_2',
@@ -18322,6 +20924,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 48 },
   },
   {
     id: 'Rezon_1',
@@ -18474,6 +21078,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Benjamin',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 8 },
   },
   {
     id: 'Sallai_2',
@@ -18482,6 +21088,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Kallai',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Sallu_1',
@@ -18490,6 +21098,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshullam',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 7 },
   },
   {
     id: 'Sallu_2',
@@ -18498,6 +21108,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshullam',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 7 },
   },
   {
     id: 'Sallu_3',
@@ -18506,6 +21118,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the priests who came up with Zerubbabel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 7 },
   },
   {
     id: 'Salma_1',
@@ -18570,6 +21184,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the leader of the tribe of Simeon to apportion the Land',
+    primaryReference: { book: 'Numbers', chapter: 34, verseStart: 20 },
   },
   {
     id: 'Samuel_2',
@@ -18578,6 +21194,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elkanah and Hannah',
+    primaryReference: { book: '1 Samuel', chapter: 1, verseStart: 20 },
   },
   {
     id: 'Samuel_3',
@@ -18586,6 +21204,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Tola',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Sanballat_1',
@@ -18690,6 +21310,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'youngest son of Hiel who died when his father rebuilt Jericho',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 34 },
   },
   {
     id: 'Segub_2',
@@ -18698,6 +21320,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hezron, father of Jair',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 21 },
   },
   {
     id: 'Seir_1',
@@ -18778,6 +21402,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'secretary to David',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Seraiah_2',
@@ -18786,6 +21412,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the chief priest who was killed by the king of Babylon',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 18 },
   },
   {
     id: 'Seraiah_3',
@@ -18794,6 +21422,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Tanhumeth, a captain of Judean forces during the Babylonian captivity',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 23 },
   },
   {
     id: 'Seraiah_4',
@@ -18802,6 +21432,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kenaz',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 13 },
   },
   {
     id: 'Seraiah_5',
@@ -18810,6 +21442,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asiel, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 35 },
   },
   {
     id: 'Seraiah_6',
@@ -18818,6 +21452,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity [called Azariah in ]',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Seraiah_7',
@@ -18826,6 +21462,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 2 },
   },
   {
     id: 'Seraiah_8',
@@ -18834,6 +21472,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest, son of Hilkiah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Seraiah_9',
@@ -18842,6 +21482,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Azriel, sent to sieze Baruch and Jeremiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 26 },
   },
   {
     id: 'Seraiah_10',
@@ -18850,6 +21492,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: 'Jeremiah', chapter: 51, verseStart: 59 },
   },
   {
     id: 'Sered_1',
@@ -18898,6 +21542,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahdai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 47 },
   },
   {
     id: 'Shaaph_2',
@@ -18906,6 +21552,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Chelubai [Caleb] by Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 49 },
   },
   {
     id: 'Shaashgaz_1',
@@ -18922,6 +21570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Levite who opposed Israel\'s decision to set apart foreign wives',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Shabbethai_2',
@@ -18930,6 +21580,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Shaharaim_1',
@@ -18946,6 +21598,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'conspired against King Zechariah and became king of Israel in his place',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 10 },
   },
   {
     id: 'Shallum_2',
@@ -18954,6 +21608,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'husband of Huldah the prophetess',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 14 },
   },
   {
     id: 'Shallum_3',
@@ -18962,6 +21618,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Sismai',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 40 },
   },
   {
     id: 'Shallum_4',
@@ -18970,6 +21628,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Josiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 15 },
   },
   {
     id: 'Shallum_5',
@@ -18978,6 +21638,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shaul, son of Simeon',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 25 },
   },
   {
     id: 'Shallum_6',
@@ -18986,6 +21648,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zadok and father of Hilkiah, Levite',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 12 },
   },
   {
     id: 'Shallum_7',
@@ -18994,6 +21658,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the gatekeepers, to the east, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 17 },
   },
   {
     id: 'Shallum_8',
@@ -19002,6 +21668,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jehikhiah, who aided defeated Judaites',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 12 },
   },
   {
     id: 'Shallum_9',
@@ -19010,6 +21678,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite singer who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 24 },
   },
   {
     id: 'Shallum_10',
@@ -19018,6 +21688,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 42 },
   },
   {
     id: 'Shallum_11',
@@ -19026,6 +21698,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'he and his daughters made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 12 },
   },
   {
     id: 'Shallum_12',
@@ -19034,6 +21708,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the Fountain Gate',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 15 },
   },
   {
     id: 'Shallum_13',
@@ -19042,6 +21718,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hanamel, Jeremiah\'s uncle',
+    primaryReference: { book: 'Jeremiah', chapter: 32, verseStart: 7 },
   },
   {
     id: 'Shalmai_1',
@@ -19106,6 +21784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuel and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 13 },
   },
   {
     id: 'Shammah_2',
@@ -19114,6 +21794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-born son of Jesse brother of David',
+    primaryReference: { book: '1 Samuel', chapter: 16, verseStart: 9 },
   },
   {
     id: 'Shammah_3',
@@ -19122,6 +21804,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third of "the thirty" of David\'s men, son of Agee',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 11 },
   },
   {
     id: 'Shammah_4',
@@ -19130,6 +21814,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Harodite, eighth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 25 },
   },
   {
     id: 'Shammah_5',
@@ -19138,6 +21824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hararite, twenty-fifth of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 23, verseStart: 33 },
   },
   {
     id: 'Shammai_1',
@@ -19146,6 +21834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Onam, son of Jerahmeel',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 28 },
   },
   {
     id: 'Shammai_2',
@@ -19154,6 +21844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rekem',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 44 },
   },
   {
     id: 'Shammai_3',
@@ -19162,6 +21854,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mered and Bithia',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 17 },
   },
   {
     id: 'Shammua_1',
@@ -19170,6 +21864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '1 of spies- from Reuben',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 4 },
   },
   {
     id: 'Shammua_2',
@@ -19178,6 +21874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Shammua_3',
@@ -19186,6 +21884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bilgah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 18 },
   },
   {
     id: 'Shamsherai_1',
@@ -19210,6 +21910,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'scribe of King Josiah He was sent to repair the house of the Lord',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 3 },
   },
   {
     id: 'Shaphan_2',
@@ -19218,6 +21920,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elasah',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 3 },
   },
   {
     id: 'Shaphan_3',
@@ -19226,6 +21930,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jaazaniah',
+    primaryReference: { book: 'Ezekiel', chapter: 8, verseStart: 11 },
   },
   {
     id: 'Shaphat_1',
@@ -19234,6 +21940,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '1 of spies- from Simeon',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 5 },
   },
   {
     id: 'Shaphat_2',
@@ -19242,6 +21950,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elisha the prophet',
+    primaryReference: { book: '1 Kings', chapter: 19, verseStart: 16 },
   },
   {
     id: 'Shaphat_3',
@@ -19250,6 +21960,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shecaniah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 22 },
   },
   {
     id: 'Shaphat_4',
@@ -19258,6 +21970,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second chief in Bashan, Gadite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 12 },
   },
   {
     id: 'Shaphat_5',
@@ -19266,6 +21980,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'in charge of David\'s cattle in the valleys, son of Adlai',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 29 },
   },
   {
     id: 'Sharai_1',
@@ -19290,6 +22006,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'killed King Sennacherib of Assyria son of Sennacherib',
+    primaryReference: { book: '2 Kings', chapter: 19, verseStart: 37 },
   },
   {
     id: 'Sharezer_2',
@@ -19298,6 +22016,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'emissary from Bethel seeking the favor of the LORD',
+    primaryReference: { book: 'Zechariah', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Shashai_1',
@@ -19322,6 +22042,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Edom, successor to Samlah, from Rehoboth on the [Euphrates] river',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 37 },
   },
   {
     id: 'Shaul_2',
@@ -19330,6 +22052,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Simeon and a Canaanite woman',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 10 },
   },
   {
     id: 'Shaul_3',
@@ -19338,6 +22062,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uzziah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 24 },
   },
   {
     id: 'Sheal_1',
@@ -19354,6 +22080,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoiachin [Jeconiah]',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 17 },
   },
   {
     id: 'Shealtiel_2',
@@ -19362,6 +22090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Zerubbabel',
+    primaryReference: { book: 'Ezra', chapter: 3, verseStart: 2 },
   },
   {
     id: 'Shealtiel_3',
@@ -19370,6 +22100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 27 },
   },
   {
     id: 'Shear-jashub_1',
@@ -19394,6 +22126,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Raamah',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 7 },
   },
   {
     id: 'Sheba_2',
@@ -19402,6 +22136,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joktan',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 28 },
   },
   {
     id: 'Sheba_3',
@@ -19410,6 +22146,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jokshan',
+    primaryReference: { book: 'Genesis', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Sheba_4',
@@ -19418,6 +22156,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a worthless fellow, son of Bichri',
+    primaryReference: { book: '2 Samuel', chapter: 20, verseStart: 1 },
   },
   {
     id: 'Sheba_5',
@@ -19426,6 +22166,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 13 },
   },
   {
     id: 'Shebaniah_1',
@@ -19434,6 +22176,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 24 },
   },
   {
     id: 'Shebaniah_2',
@@ -19442,6 +22186,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on the Levites platform and exhorted Israel to bless the Lord',
+    primaryReference: { book: 'Nehemiah', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Shebaniah_3',
@@ -19450,6 +22196,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 4 },
   },
   {
     id: 'Shebaniah_4',
@@ -19458,6 +22206,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second Levite named Shebaniah in the sealed document of (v10 and v12)',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 10 },
   },
   {
     id: 'Sheber_1',
@@ -19482,6 +22232,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Gershom, officer over the treasures',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 16 },
   },
   {
     id: 'Shebuel_2',
@@ -19490,6 +22242,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman, chosen thirteenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Shecaniah_1',
@@ -19498,6 +22252,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 21 },
   },
   {
     id: 'Shecaniah_2',
@@ -19506,6 +22262,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'tenth-chosen priest for the twenty-four courses',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 11 },
   },
   {
     id: 'Shecaniah_3',
@@ -19514,6 +22272,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their brothers',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 15 },
   },
   {
     id: 'Shecaniah_4',
@@ -19522,6 +22282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu, son of Jahaziel who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 5 },
   },
   {
     id: 'Shecaniah_5',
@@ -19530,6 +22292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehiel',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 2 },
   },
   {
     id: 'Shecaniah_6',
@@ -19538,6 +22302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shemaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Shecaniah_7',
@@ -19546,6 +22312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father-in-law of Tobiah',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Shecaniah_8',
@@ -19554,6 +22322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the priests who came up with Zerubbabel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 3 },
   },
   {
     id: 'Shechem_1',
@@ -19562,6 +22332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hamor, the Hivite who raped Dinah',
+    primaryReference: { book: 'Genesis', chapter: 33, verseStart: 19 },
   },
   {
     id: 'Shechem_2',
@@ -19570,6 +22342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gilead',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 31 },
   },
   {
     id: 'Shechem_3',
@@ -19578,6 +22352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemida',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 19 },
   },
   {
     id: 'Shedeur_1',
@@ -19610,6 +22386,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Arpachshad',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 24 },
   },
   {
     id: 'Shelah_2',
@@ -19618,6 +22396,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-born son of Judah',
+    primaryReference: { book: 'Genesis', chapter: 38, verseStart: 5 },
   },
   {
     id: 'Shelemiah_1',
@@ -19626,6 +22406,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 39 },
   },
   {
     id: 'Shelemiah_2',
@@ -19634,6 +22416,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 41 },
   },
   {
     id: 'Shelemiah_3',
@@ -19642,6 +22426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Hananiah',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Shelemiah_4',
@@ -19650,6 +22436,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'priest appointed by Nehemiah',
+    primaryReference: { book: 'Nehemiah', chapter: 13, verseStart: 13 },
   },
   {
     id: 'Shelemiah_5',
@@ -19658,6 +22446,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Cushi',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 14 },
   },
   {
     id: 'Shelemiah_6',
@@ -19666,6 +22456,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Adbeel, sent to sieze Baruch and Jeremiah',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 26 },
   },
   {
     id: 'Shelemiah_7',
@@ -19674,6 +22466,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Irijah',
+    primaryReference: { book: 'Jeremiah', chapter: 37, verseStart: 13 },
   },
   {
     id: 'Shelemiah_8',
@@ -19682,6 +22476,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jucal',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Sheleph_1',
@@ -19714,6 +22510,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'mother of the unnamed man who cursed the Name',
+    primaryReference: { book: 'Leviticus', chapter: 24, verseStart: 11 },
   },
   {
     id: 'Shelomith_2',
@@ -19722,6 +22520,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Zerubbabel',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Shelomith_3',
@@ -19730,6 +22530,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Izhar',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 18 },
   },
   {
     id: 'Shelomith_4',
@@ -19738,6 +22540,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehoboam and Maacah',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 20 },
   },
   {
     id: 'Shelomith_5',
@@ -19746,6 +22550,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani, son of Josiphia who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 10 },
   },
   {
     id: 'Shelomoth_1',
@@ -19754,6 +22560,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei within the family of Ladan',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 9 },
   },
   {
     id: 'Shelomoth_2',
@@ -19762,6 +22570,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zichri - had charge of treasures and gifts from David and others',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 25 },
   },
   {
     id: 'Shelumiel_1',
@@ -19786,6 +22596,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hebron',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 43 },
   },
   {
     id: 'Shema_2',
@@ -19794,6 +22606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joel, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 8 },
   },
   {
     id: 'Shema_3',
@@ -19802,6 +22616,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 13 },
   },
   {
     id: 'Shema_4',
@@ -19810,6 +22626,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s right hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Shemaah_1',
@@ -19826,6 +22644,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the man of G-d a prophet',
+    primaryReference: { book: '1 Kings', chapter: 12, verseStart: 22 },
   },
   {
     id: 'Shemaiah_2',
@@ -19834,6 +22654,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shecaniah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 22 },
   },
   {
     id: 'Shemaiah_3',
@@ -19842,6 +22664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shimri, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 37 },
   },
   {
     id: 'Shemaiah_4',
@@ -19850,6 +22674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joel, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 4 },
   },
   {
     id: 'Shemaiah_5',
@@ -19858,6 +22684,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hasshub',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 14 },
   },
   {
     id: 'Shemaiah_6',
@@ -19866,6 +22694,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Galal',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 16 },
   },
   {
     id: 'Shemaiah_7',
@@ -19874,6 +22704,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of the sons of Elizaphan',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 8 },
   },
   {
     id: 'Shemaiah_8',
@@ -19882,6 +22714,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nethanel the scribe',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 6 },
   },
   {
     id: 'Shemaiah_9',
@@ -19890,6 +22724,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'firstborn son of Obed-edom',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 4 },
   },
   {
     id: 'Shemaiah_10',
@@ -19898,6 +22734,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Shemaiah_11',
@@ -19906,6 +22744,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Jeduthun',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 14 },
   },
   {
     id: 'Shemaiah_12',
@@ -19914,6 +22754,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'distributed portions to their brothers',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 15 },
   },
   {
     id: 'Shemaiah_13',
@@ -19922,6 +22764,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Adonikam, went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 13 },
   },
   {
     id: 'Shemaiah_14',
@@ -19930,6 +22774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 16 },
   },
   {
     id: 'Shemaiah_15',
@@ -19938,6 +22784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Shemaiah_16',
@@ -19946,6 +22794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 31 },
   },
   {
     id: 'Shemaiah_17',
@@ -19954,6 +22804,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Shemaiah_18',
@@ -19962,6 +22814,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'suggested Nehemiah hide in the Temple',
+    primaryReference: { book: 'Nehemiah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Shemaiah_19',
@@ -19970,6 +22824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 8 },
   },
   {
     id: 'Shemaiah_20',
@@ -19978,6 +22834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Uriah, from Kiriath-jearim',
+    primaryReference: { book: 'Jeremiah', chapter: 26, verseStart: 20 },
   },
   {
     id: 'Shemaiah_21',
@@ -19986,6 +22844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Nehelamite who prophesied a lie',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 24 },
   },
   {
     id: 'Shemariah_1',
@@ -19994,6 +22854,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'came to David\'s aid at Ziklag came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 5 },
   },
   {
     id: 'Shemariah_2',
@@ -20002,6 +22864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehoboam and Mahalath',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 19 },
   },
   {
     id: 'Shemariah_3',
@@ -20010,6 +22874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 32 },
   },
   {
     id: 'Shemariah_4',
@@ -20018,6 +22884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 41 },
   },
   {
     id: 'Shemeber_1',
@@ -20042,6 +22910,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'sold the hill of Samaria (Shomron) to King Omri',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 24 },
   },
   {
     id: 'Shemer_2',
@@ -20050,6 +22920,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mahli',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 46 },
   },
   {
     id: 'Shemida_1',
@@ -20066,6 +22938,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Shemiramoth_2',
@@ -20074,6 +22948,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Shenazzar_1',
@@ -20090,6 +22966,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fifth-born son of King David',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Shephatiah_2',
@@ -20098,6 +22976,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuel',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Shephatiah_3',
@@ -20106,6 +22986,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Haruphite came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 5 },
   },
   {
     id: 'Shephatiah_4',
@@ -20114,6 +22996,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief officer for the Simeonites, son of Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 16 },
   },
   {
     id: 'Shephatiah_5',
@@ -20122,6 +23006,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'his sons (descendants) returned to Judah after captivity',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 4 },
   },
   {
     id: 'Shephatiah_6',
@@ -20130,6 +23016,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Solomon\'s servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 57 },
   },
   {
     id: 'Shephatiah_7',
@@ -20138,6 +23026,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mahalalel',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Shephatiah_8',
@@ -20146,6 +23036,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mattan',
+    primaryReference: { book: 'Jeremiah', chapter: 38, verseStart: 1 },
   },
   {
     id: 'Shepho_1',
@@ -20162,6 +23054,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a man of insight sent to Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 18 },
   },
   {
     id: 'Sherebiah_2',
@@ -20170,6 +23064,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'explained the law to the people, stood on the Levites platform, and exhorted…',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Sheresh_1',
@@ -20226,6 +23122,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'scribe for King David (',
+    primaryReference: { book: '2 Samuel', chapter: 20, verseStart: 25 },
   },
   {
     id: 'Sheva_2',
@@ -20234,6 +23132,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Chelubai [Caleb] by Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 49 },
   },
   {
     id: 'Shilhi_1',
@@ -20266,6 +23166,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uzzah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 30 },
   },
   {
     id: 'Shimea_2',
@@ -20274,6 +23176,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Michael',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 39 },
   },
   {
     id: 'Shimeah_1',
@@ -20298,6 +23202,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gershon',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 17 },
   },
   {
     id: 'Shimei_2',
@@ -20306,6 +23212,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of the house of Saul who threw stones at King David',
+    primaryReference: { book: '2 Samuel', chapter: 16, verseStart: 5 },
   },
   {
     id: 'Shimei_3',
@@ -20314,6 +23222,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of Solomon\'s twelve deputies, in Benjamin',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 18 },
   },
   {
     id: 'Shimei_4',
@@ -20322,6 +23232,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pedaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Shimei_5',
@@ -20330,6 +23242,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zaccur, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 26 },
   },
   {
     id: 'Shimei_6',
@@ -20338,6 +23252,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gog, Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 4 },
   },
   {
     id: 'Shimei_7',
@@ -20346,6 +23262,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Libni',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 29 },
   },
   {
     id: 'Shimei_8',
@@ -20354,6 +23272,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahath',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 42 },
   },
   {
     id: 'Shimei_9',
@@ -20362,6 +23282,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ladan [Libni] as he was included in the "fathers\' households of Ladan"',
+    primaryReference: { book: '1 Chronicles', chapter: 23, verseStart: 9 },
   },
   {
     id: 'Shimei_10',
@@ -20370,6 +23292,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeduthun, chosen tenth by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 3 },
   },
   {
     id: 'Shimei_11',
@@ -20378,6 +23302,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Ramathite in charge of David\'s vineyards',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 27 },
   },
   {
     id: 'Shimei_12',
@@ -20386,6 +23312,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Heman',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 14 },
   },
   {
     id: 'Shimei_13',
@@ -20394,6 +23322,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'officer in charge of the consecrated things',
+    primaryReference: { book: '2 Chronicles', chapter: 31, verseStart: 12 },
   },
   {
     id: 'Shimei_14',
@@ -20402,6 +23332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Shimei_15',
@@ -20410,6 +23342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hashum who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 33 },
   },
   {
     id: 'Shimei_16',
@@ -20418,6 +23352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bani who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 38 },
   },
   {
     id: 'Shimei_17',
@@ -20426,6 +23362,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jair',
+    primaryReference: { book: 'Esther', chapter: 2, verseStart: 5 },
   },
   {
     id: 'Shimeon_1',
@@ -20458,6 +23396,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shemaiah, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 37 },
   },
   {
     id: 'Shimri_2',
@@ -20466,6 +23406,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jediael',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 45 },
   },
   {
     id: 'Shimri_3',
@@ -20474,6 +23416,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hosah- made firstborn',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 10 },
   },
   {
     id: 'Shimri_4',
@@ -20482,6 +23426,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elizaphan [Elzaphan]',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 13 },
   },
   {
     id: 'Shimron_1',
@@ -20570,6 +23516,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of David',
+    primaryReference: { book: '2 Samuel', chapter: 5, verseStart: 14 },
   },
   {
     id: 'Shobab_2',
@@ -20578,6 +23526,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Cheubai [Caleb]',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 18 },
   },
   {
     id: 'Shobach_1',
@@ -20602,6 +23552,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seir and chief in Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 20 },
   },
   {
     id: 'Shobal_2',
@@ -20610,6 +23562,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hur who founded Kiriath-jearim',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 50 },
   },
   {
     id: 'Shobek_1',
@@ -20642,6 +23596,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'mother of Jehozabad, a Moabitess',
+    primaryReference: { book: '2 Kings', chapter: 12, verseStart: 21 },
   },
   {
     id: 'Shomer_2',
@@ -20650,6 +23606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heber',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 32 },
   },
   {
     id: 'Shua_1',
@@ -20658,6 +23616,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Canaanite father of Judah\'s wife',
+    primaryReference: { book: 'Genesis', chapter: 38, verseStart: 2 },
   },
   {
     id: 'Shua_2',
@@ -20666,6 +23626,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Heber',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 32 },
   },
   {
     id: 'Shuah_1',
@@ -20714,6 +23676,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Ephraim',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 35 },
   },
   {
     id: 'Shuthelah_2',
@@ -20722,6 +23686,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zabad',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 21 },
   },
   {
     id: 'Siaha_1',
@@ -20770,6 +23736,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second-born son of Jacob, son of Leah',
+    primaryReference: { book: 'Genesis', chapter: 29, verseStart: 33 },
   },
   {
     id: 'Simeon_2',
@@ -20778,6 +23746,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the righteous and devout man in Jerusalem looking for the consolation of Israel',
+    primaryReference: { book: 'Luke', chapter: 2, verseStart: 25 },
   },
   {
     id: 'Simeon_3',
@@ -20786,6 +23756,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 30 },
   },
   {
     id: 'Simeon_4',
@@ -20794,6 +23766,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'a prophet and teacher in Antioch',
+    primaryReference: { book: 'Acts', chapter: 13, verseStart: 1 },
   },
   {
     id: 'Simon_1',
@@ -20810,6 +23784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'disciple of the Messiah, the zealot one of the Twelve',
+    primaryReference: { book: 'Matthew', chapter: 10, verseStart: 4 },
   },
   {
     id: 'Simon_3',
@@ -20818,6 +23794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: '"brother" of Jesus, son of Mary',
+    primaryReference: { book: 'Matthew', chapter: 13, verseStart: 55 },
   },
   {
     id: 'Simon_4',
@@ -20826,6 +23804,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the leper',
+    primaryReference: { book: 'Matthew', chapter: 26, verseStart: 6 },
   },
   {
     id: 'Simon_5',
@@ -20834,6 +23814,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'man of Cyrene who bore Messiah\'s cross',
+    primaryReference: { book: 'Matthew', chapter: 27, verseStart: 32 },
   },
   {
     id: 'Simon_6',
@@ -20842,6 +23824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the Pharisee invited Jesus to dine in his house',
+    primaryReference: { book: 'Luke', chapter: 7, verseStart: 40 },
   },
   {
     id: 'Simon_7',
@@ -20850,6 +23834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'father of Judas',
+    primaryReference: { book: 'John', chapter: 6, verseStart: 71 },
   },
   {
     id: 'Simon_8',
@@ -20858,6 +23844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the magician',
+    primaryReference: { book: 'Acts', chapter: 8, verseStart: 9 },
   },
   {
     id: 'Simon_9',
@@ -20866,6 +23854,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'the tanner with whom Peter stayed in Joppa',
+    primaryReference: { book: 'Acts', chapter: 9, verseStart: 43 },
   },
   {
     id: 'Sini_1',
@@ -20882,6 +23872,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander of Jabin\'s army lived in Harosheth-hagoyim, captain of the army of…',
+    primaryReference: { book: 'Judges', chapter: 4, verseStart: 2 },
   },
   {
     id: 'Sisera_2',
@@ -20890,6 +23882,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 53 },
   },
   {
     id: 'Sismai_1',
@@ -21034,6 +24028,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wrote against Judah',
+    primaryReference: { book: 'Ezra', chapter: 4, verseStart: 7 },
   },
   {
     id: 'Tabeel_2',
@@ -21042,6 +24038,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'enemies wanted to set his son over Judah as king',
+    primaryReference: { book: 'Isaiah', chapter: 7, verseStart: 6 },
   },
   {
     id: 'Tabitha_1',
@@ -21082,6 +24080,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Assir',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 24 },
   },
   {
     id: 'Tahath_2',
@@ -21090,6 +24090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ephraim',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 20 },
   },
   {
     id: 'Tahath_3',
@@ -21098,6 +24100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eleadah',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 20 },
   },
   {
     id: 'Tahpenes_1',
@@ -21122,6 +24126,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Anak one of three sons of Anak that Joshua drove out from…',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 22 },
   },
   {
     id: 'Talmai_2',
@@ -21130,6 +24136,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Geshur',
+    primaryReference: { book: '2 Samuel', chapter: 3, verseStart: 3 },
   },
   {
     id: 'Talmon_1',
@@ -21146,6 +24154,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'wife of Er, and mother of Perez and Zerah by Judah',
+    primaryReference: { book: 'Genesis', chapter: 38, verseStart: 6 },
   },
   {
     id: 'Tamar_2',
@@ -21154,6 +24164,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Absalom\'s sister, daughter of David',
+    primaryReference: { book: '2 Samuel', chapter: 13, verseStart: 1 },
   },
   {
     id: 'Tamar_3',
@@ -21162,6 +24174,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'daughter of Absalom',
+    primaryReference: { book: '2 Samuel', chapter: 14, verseStart: 27 },
   },
   {
     id: 'Tanhumeth_1',
@@ -21202,6 +24216,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Javan',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 4 },
   },
   {
     id: 'Tarshish_2',
@@ -21210,6 +24226,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bilhan',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 10 },
   },
   {
     id: 'Tarshish_3',
@@ -21218,6 +24236,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the seven princes of Persia and Media',
+    primaryReference: { book: 'Esther', chapter: 1, verseStart: 14 },
   },
   {
     id: 'Tartan_1',
@@ -21410,6 +24430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shallum',
+    primaryReference: { book: '2 Kings', chapter: 22, verseStart: 14 },
   },
   {
     id: 'Tikvah_2',
@@ -21418,6 +24440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'opposed Israel\'s decision to set apart foreign wives',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 15 },
   },
   {
     id: 'Tilon_1',
@@ -21442,6 +24466,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'concubine of Esau\'s son Eliphaz and sister of Lotan',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 12 },
   },
   {
     id: 'Timna_2',
@@ -21450,6 +24476,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 40 },
   },
   {
     id: 'Timon_1',
@@ -21538,6 +24566,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'unable to give evidence if they were from Israel',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 60 },
   },
   {
     id: 'Tobiah_2',
@@ -21546,6 +24576,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Ammonite official who opposed Nehemiah',
+    primaryReference: { book: 'Nehemiah', chapter: 2, verseStart: 10 },
   },
   {
     id: 'Tobijah_1',
@@ -21554,6 +24586,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Tobijah_2',
@@ -21562,6 +24596,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'one of the exiles returned from Babylon',
+    primaryReference: { book: 'Zechariah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Togarmah_1',
@@ -21594,6 +24630,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Issachar',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 13 },
   },
   {
     id: 'Tola_2',
@@ -21602,6 +24640,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a descendant of Issachar who arose to save Israel',
+    primaryReference: { book: 'Judges', chapter: 10, verseStart: 1 },
   },
   {
     id: 'Trophimus_1',
@@ -21682,6 +24722,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Peresh',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 16 },
   },
   {
     id: 'Ulam_2',
@@ -21690,6 +24732,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eshek',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 39 },
   },
   {
     id: 'Unni_1',
@@ -21698,6 +24742,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Unni_2',
@@ -21706,6 +24752,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'among the Levites who came up with Zerubabbel',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 9 },
   },
   {
     id: 'Urbanus_1',
@@ -21722,6 +24770,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Bezalel',
+    primaryReference: { book: 'Exodus', chapter: 31, verseStart: 2 },
   },
   {
     id: 'Uri_2',
@@ -21730,6 +24780,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Geber',
+    primaryReference: { book: '1 Kings', chapter: 4, verseStart: 19 },
   },
   {
     id: 'Uri_3',
@@ -21738,6 +24790,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite gatekeeper who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 24 },
   },
   {
     id: 'Uriah_1',
@@ -21746,6 +24800,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hittite, thirty-seventh of "the thirty" of David\'s men',
+    primaryReference: { book: '2 Samuel', chapter: 11, verseStart: 3 },
   },
   {
     id: 'Uriah_2',
@@ -21754,6 +24810,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest, father of Meremoth',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 33 },
   },
   {
     id: 'Uriah_3',
@@ -21762,6 +24820,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'stood on Ezra\'s right hand as he read from the Law',
+    primaryReference: { book: 'Nehemiah', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Uriah_4',
@@ -21770,6 +24830,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophesied in the name of the LORD',
+    primaryReference: { book: 'Jeremiah', chapter: 26, verseStart: 20 },
   },
   {
     id: 'Uriel_1',
@@ -21794,6 +24856,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ammihud',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 4 },
   },
   {
     id: 'Uthai_2',
@@ -21802,6 +24866,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bigvai, went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 14 },
   },
   {
     id: 'Uz_1',
@@ -21810,6 +24876,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Aram',
+    primaryReference: { book: 'Genesis', chapter: 10, verseStart: 23 },
   },
   {
     id: 'Uz_2',
@@ -21818,6 +24886,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nahor',
+    primaryReference: { book: 'Genesis', chapter: 22, verseStart: 21 },
   },
   {
     id: 'Uz_3',
@@ -21826,6 +24896,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Dishan',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 28 },
   },
   {
     id: 'Uzai_1',
@@ -21850,6 +24922,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'owner of the garden where Manasseh was buried',
+    primaryReference: { book: '2 Kings', chapter: 21, verseStart: 18 },
   },
   {
     id: 'Uzza_2',
@@ -21858,6 +24932,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'temple servant',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 49 },
   },
   {
     id: 'Uzzah_1',
@@ -21866,6 +24942,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abinadab who died for touching the ark',
+    primaryReference: { book: '2 Samuel', chapter: 6, verseStart: 3 },
   },
   {
     id: 'Uzzah_2',
@@ -21874,6 +24952,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 29 },
   },
   {
     id: 'Uzzah_3',
@@ -21882,6 +24962,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Gera',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 7 },
   },
   {
     id: 'Uzzi_1',
@@ -21890,6 +24972,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bukki and father of Zerhiah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 5 },
   },
   {
     id: 'Uzzi_2',
@@ -21898,6 +24982,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Tola',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 2 },
   },
   {
     id: 'Uzzi_3',
@@ -21906,6 +24992,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 7 },
   },
   {
     id: 'Uzzi_4',
@@ -21914,6 +25002,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Michri',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 8 },
   },
   {
     id: 'Uzzi_5',
@@ -21922,6 +25012,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the Levites in Jerusalem, son of Bani',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 22 },
   },
   {
     id: 'Uzzi_6',
@@ -21930,6 +25022,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jedaiah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 19 },
   },
   {
     id: 'Uzzia_1',
@@ -21946,6 +25040,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Uriel',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 24 },
   },
   {
     id: 'Uzziah_2',
@@ -21954,6 +25050,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Harim who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 21 },
   },
   {
     id: 'Uzziah_3',
@@ -21962,6 +25060,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Zechariah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Uzziel_1',
@@ -21970,6 +25070,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Kohath',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 18 },
   },
   {
     id: 'Uzziel_2',
@@ -21978,6 +25080,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ishi, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 42 },
   },
   {
     id: 'Uzziel_3',
@@ -21986,6 +25090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bela',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 7 },
   },
   {
     id: 'Uzziel_4',
@@ -21994,6 +25100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Heman',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 4 },
   },
   {
     id: 'Uzziel_5',
@@ -22002,6 +25110,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Jeduthun',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 14 },
   },
   {
     id: 'Uzziel_6',
@@ -22010,6 +25120,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 8 },
   },
   {
     id: 'Vaizatha_1',
@@ -22058,6 +25170,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Nathan',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 36 },
   },
   {
     id: 'Zabad_2',
@@ -22066,6 +25180,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ephraim',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 21 },
   },
   {
     id: 'Zabad_3',
@@ -22074,6 +25190,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahlai',
+    primaryReference: { book: '1 Chronicles', chapter: 11, verseStart: 41 },
   },
   {
     id: 'Zabad_4',
@@ -22082,6 +25200,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Zattu who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 27 },
   },
   {
     id: 'Zabad_5',
@@ -22090,6 +25210,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Hashum who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 33 },
   },
   {
     id: 'Zabad_6',
@@ -22098,6 +25220,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Nebo who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 43 },
   },
   {
     id: 'Zabbai_1',
@@ -22106,6 +25230,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Bebai who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 28 },
   },
   {
     id: 'Zabbai_2',
@@ -22114,6 +25240,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Baruch',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 20 },
   },
   {
     id: 'Zabbud_1',
@@ -22130,6 +25258,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Carmi, father of Achan who took forbidden things from Jericho',
+    primaryReference: { book: 'Joshua', chapter: 7, verseStart: 1 },
   },
   {
     id: 'Zabdi_2',
@@ -22138,6 +25268,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 19 },
   },
   {
     id: 'Zabdi_3',
@@ -22146,6 +25278,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Shiphmite in charge of David\'s vineyard produce',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 27 },
   },
   {
     id: 'Zabdiel_1',
@@ -22154,6 +25288,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jashobeam, descendant of Perez',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 2 },
   },
   {
     id: 'Zabdiel_2',
@@ -22162,6 +25298,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'overseer of the priests and son of Haggedolim',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 14 },
   },
   {
     id: 'Zabud_1',
@@ -22194,6 +25332,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Shammua',
+    primaryReference: { book: 'Numbers', chapter: 13, verseStart: 4 },
   },
   {
     id: 'Zaccur_2',
@@ -22202,6 +25342,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hammuel, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 26 },
   },
   {
     id: 'Zaccur_3',
@@ -22210,6 +25352,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jaaziah',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 27 },
   },
   {
     id: 'Zaccur_4',
@@ -22218,6 +25362,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asaph, chosen third by lot',
+    primaryReference: { book: '1 Chronicles', chapter: 25, verseStart: 2 },
   },
   {
     id: 'Zaccur_5',
@@ -22226,6 +25372,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'rebuilt part of the Jerusalem wall',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 2 },
   },
   {
     id: 'Zaccur_6',
@@ -22234,6 +25382,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a Levite',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 12 },
   },
   {
     id: 'Zacharias_1',
@@ -22250,6 +25400,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ahitub and priest during King David\'s reign, a mighty of valor',
+    primaryReference: { book: '2 Samuel', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Zadok_2',
@@ -22258,6 +25410,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jerusha',
+    primaryReference: { book: '2 Kings', chapter: 15, verseStart: 33 },
   },
   {
     id: 'Zadok_3',
@@ -22266,6 +25420,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '(grand)son of Ahitub and father of Shallum',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 12 },
   },
   {
     id: 'Zadok_4',
@@ -22274,6 +25430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made repairs to the wall of Jerusalem named on the sealed document of',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 4 },
   },
   {
     id: 'Zadok_5',
@@ -22282,6 +25440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'repaired Jerusalem\'s wall in front of his house',
+    primaryReference: { book: 'Nehemiah', chapter: 3, verseStart: 29 },
   },
   {
     id: 'Zadok_6',
@@ -22290,6 +25450,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meraioth',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 11 },
   },
   {
     id: 'Zadok_7',
@@ -22298,6 +25460,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'son of Azor in the lineage of the Messiah',
+    primaryReference: { book: 'Matthew', chapter: 1, verseStart: 14 },
   },
   {
     id: 'Zaham_1',
@@ -22362,6 +25526,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Beriah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 15 },
   },
   {
     id: 'Zebadiah_2',
@@ -22370,6 +25536,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Elpaal',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 17 },
   },
   {
     id: 'Zebadiah_3',
@@ -22378,6 +25546,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham of Gedor came to David at Ziklag',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 7 },
   },
   {
     id: 'Zebadiah_4',
@@ -22386,6 +25556,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'third-born son of Meshelemiah [Shallum]',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 2 },
   },
   {
     id: 'Zebadiah_5',
@@ -22394,6 +25566,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asahel over the fourth division',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 7 },
   },
   {
     id: 'Zebadiah_6',
@@ -22402,6 +25576,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Levite sent by Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 8 },
   },
   {
     id: 'Zebadiah_7',
@@ -22410,6 +25586,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Ishmael, in charge of all that pertains to the king',
+    primaryReference: { book: '2 Chronicles', chapter: 19, verseStart: 11 },
   },
   {
     id: 'Zebadiah_8',
@@ -22418,6 +25596,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shephatiah, son of Michael who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 8 },
   },
   {
     id: 'Zebadiah_9',
@@ -22426,6 +25606,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Immer who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 20 },
   },
   {
     id: 'Zebah_1',
@@ -22482,6 +25664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Israel, son of Jeroboam',
+    primaryReference: { book: '2 Kings', chapter: 14, verseStart: 29 },
   },
   {
     id: 'Zechariah_2',
@@ -22490,6 +25674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Abi, the mother of Hezekiah',
+    primaryReference: { book: '2 Kings', chapter: 18, verseStart: 2 },
   },
   {
     id: 'Zechariah_3',
@@ -22498,6 +25684,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Reubenite',
+    primaryReference: { book: '1 Chronicles', chapter: 5, verseStart: 7 },
   },
   {
     id: 'Zechariah_4',
@@ -22506,6 +25694,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Meshelemiah [Shallum], gatekeeper',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 21 },
   },
   {
     id: 'Zechariah_5',
@@ -22514,6 +25704,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'second rank Levite, gatekeeper, a trumpeter',
+    primaryReference: { book: '1 Chronicles', chapter: 15, verseStart: 18 },
   },
   {
     id: 'Zechariah_6',
@@ -22522,6 +25714,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Isshiah',
+    primaryReference: { book: '1 Chronicles', chapter: 24, verseStart: 25 },
   },
   {
     id: 'Zechariah_7',
@@ -22530,6 +25724,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'fourth-born son of Hosah',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 11 },
   },
   {
     id: 'Zechariah_8',
@@ -22538,6 +25734,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Iddo',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 21 },
   },
   {
     id: 'Zechariah_9',
@@ -22546,6 +25744,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'official of Jehoshaphat, sent to teach',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 7 },
   },
   {
     id: 'Zechariah_10',
@@ -22554,6 +25754,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Jahaziel and son of Benaiah',
+    primaryReference: { book: '2 Chronicles', chapter: 20, verseStart: 14 },
   },
   {
     id: 'Zechariah_11',
@@ -22562,6 +25764,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoshaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 21, verseStart: 2 },
   },
   {
     id: 'Zechariah_12',
@@ -22570,6 +25774,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoiada the priest',
+    primaryReference: { book: '2 Chronicles', chapter: 24, verseStart: 20 },
   },
   {
     id: 'Zechariah_13',
@@ -22578,6 +25784,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet of the book of Zechariah, who went up with Ezra',
+    primaryReference: { book: '2 Chronicles', chapter: 26, verseStart: 5 },
   },
   {
     id: 'Zechariah_14',
@@ -22586,6 +25794,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Asaph',
+    primaryReference: { book: '2 Chronicles', chapter: 29, verseStart: 13 },
   },
   {
     id: 'Zechariah_15',
@@ -22594,6 +25804,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'foreman over reconstruction of the Temple during Josiah\'s reign',
+    primaryReference: { book: '2 Chronicles', chapter: 34, verseStart: 12 },
   },
   {
     id: 'Zechariah_16',
@@ -22602,6 +25814,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Shecaniah, a Levite Ezra sent to Iddo',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 3 },
   },
   {
     id: 'Zechariah_17',
@@ -22610,6 +25824,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Bebai who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 11 },
   },
   {
     id: 'Zechariah_18',
@@ -22618,6 +25834,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'descendant of Elam who had married a foreign wife',
+    primaryReference: { book: 'Ezra', chapter: 10, verseStart: 26 },
   },
   {
     id: 'Zechariah_19',
@@ -22626,6 +25844,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Amariah',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 4 },
   },
   {
     id: 'Zechariah_20',
@@ -22634,6 +25854,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of the Shilonite',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 5 },
   },
   {
     id: 'Zechariah_21',
@@ -22642,6 +25864,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pashhur',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 12 },
   },
   {
     id: 'Zechariah_22',
@@ -22650,6 +25874,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jonathan',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 35 },
   },
   {
     id: 'Zechariah_23',
@@ -22658,6 +25884,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeberechiah who witnessed Isaiah\'s naming of his son',
+    primaryReference: { book: 'Isaiah', chapter: 8, verseStart: 2 },
   },
   {
     id: 'Zecher_1',
@@ -22674,6 +25902,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'made horns of iron',
+    primaryReference: { book: '1 Kings', chapter: 22, verseStart: 11 },
   },
   {
     id: 'Zedekiah_2',
@@ -22682,6 +25912,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Eliakim [Jehoiakim]',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 16 },
   },
   {
     id: 'Zedekiah_3',
@@ -22690,6 +25922,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'Aaronic priest',
+    primaryReference: { book: 'Nehemiah', chapter: 10, verseStart: 1 },
   },
   {
     id: 'Zedekiah_4',
@@ -22698,6 +25932,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'prophesied falsely, son of Maaseiah',
+    primaryReference: { book: 'Jeremiah', chapter: 29, verseStart: 21 },
   },
   {
     id: 'Zedekiah_5',
@@ -22706,6 +25942,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hananiah, an official',
+    primaryReference: { book: 'Jeremiah', chapter: 36, verseStart: 12 },
   },
   {
     id: 'Zeeb_1',
@@ -22730,6 +25968,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Hepher who had only daughters',
+    primaryReference: { book: 'Numbers', chapter: 26, verseStart: 33 },
   },
   {
     id: 'Zelophehad_2',
@@ -22738,6 +25978,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: '',
+    primaryReference: { book: '1 Chronicles', chapter: 7, verseStart: 15 },
   },
   {
     id: 'Zemar_1',
@@ -22770,6 +26012,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the second-in-charge priest who was killed by the king of Babylon',
+    primaryReference: { book: '2 Kings', chapter: 25, verseStart: 18 },
   },
   {
     id: 'Zephaniah_2',
@@ -22778,6 +26022,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the priest, son of Maaseiah',
+    primaryReference: { book: 'Jeremiah', chapter: 21, verseStart: 1 },
   },
   {
     id: 'Zephaniah_3',
@@ -22786,6 +26032,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the prophet, the son of Cushi',
+    primaryReference: { book: 'Zephaniah', chapter: 1, verseStart: 1 },
   },
   {
     id: 'Zephaniah_4',
@@ -22794,6 +26042,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Josiah',
+    primaryReference: { book: 'Zechariah', chapter: 6, verseStart: 10 },
   },
   {
     id: 'Zepho_1',
@@ -22810,6 +26060,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Reuel and chief of Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 13 },
   },
   {
     id: 'Zerah_2',
@@ -22818,6 +26070,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'of Bozrah',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 33 },
   },
   {
     id: 'Zerah_3',
@@ -22826,6 +26080,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Judah and Tamar',
+    primaryReference: { book: 'Genesis', chapter: 38, verseStart: 30 },
   },
   {
     id: 'Zerah_4',
@@ -22834,6 +26090,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Iddo',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Zerah_5',
@@ -22842,6 +26100,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Adaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 41 },
   },
   {
     id: 'Zerah_6',
@@ -22850,6 +26110,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Ethiopian',
+    primaryReference: { book: '2 Chronicles', chapter: 14, verseStart: 9 },
   },
   {
     id: 'Zerahiah_1',
@@ -22858,6 +26120,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Meraioth',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 6 },
   },
   {
     id: 'Zerahiah_2',
@@ -22866,6 +26130,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Eliehoenai who went up with Ezra',
+    primaryReference: { book: 'Ezra', chapter: 8, verseStart: 4 },
   },
   {
     id: 'Zeresh_1',
@@ -22914,6 +26180,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Pedaiah',
+    primaryReference: { book: '1 Chronicles', chapter: 3, verseStart: 19 },
   },
   {
     id: 'Zerubbabel_2',
@@ -22922,6 +26190,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'returned to Judah after the Babylonian captivity, son of Shealtiel',
+    primaryReference: { book: 'Ezra', chapter: 2, verseStart: 2 },
   },
   {
     id: 'Zerubbabel_3',
@@ -22930,6 +26200,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'New Testament',
     categories: ['Other'],
+    identityHint: 'in the lineage of Messiah',
+    primaryReference: { book: 'Luke', chapter: 3, verseStart: 27 },
   },
   {
     id: 'Zeruiah_1',
@@ -22986,6 +26258,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'the Hivite and grandfather of Oholibamah, Esau\'s wife',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 2 },
   },
   {
     id: 'Zibeon_2',
@@ -22994,6 +26268,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Seir and chief in Edom',
+    primaryReference: { book: 'Genesis', chapter: 36, verseStart: 20 },
   },
   {
     id: 'Zibia_1',
@@ -23018,6 +26294,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Izhar',
+    primaryReference: { book: 'Exodus', chapter: 6, verseStart: 21 },
   },
   {
     id: 'Zichri_2',
@@ -23026,6 +26304,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 19 },
   },
   {
     id: 'Zichri_3',
@@ -23034,6 +26314,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shashak',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 23 },
   },
   {
     id: 'Zichri_4',
@@ -23042,6 +26324,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeroham [Jeremoth v 14]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 27 },
   },
   {
     id: 'Zichri_5',
@@ -23050,6 +26334,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Asaph',
+    primaryReference: { book: '1 Chronicles', chapter: 9, verseStart: 15 },
   },
   {
     id: 'Zichri_6',
@@ -23058,6 +26344,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Joram',
+    primaryReference: { book: '1 Chronicles', chapter: 26, verseStart: 25 },
   },
   {
     id: 'Zichri_7',
@@ -23066,6 +26354,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Eliezer',
+    primaryReference: { book: '1 Chronicles', chapter: 27, verseStart: 16 },
   },
   {
     id: 'Zichri_8',
@@ -23074,6 +26364,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Amasiah',
+    primaryReference: { book: '2 Chronicles', chapter: 17, verseStart: 16 },
   },
   {
     id: 'Zichri_9',
@@ -23082,6 +26374,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Elishaphat',
+    primaryReference: { book: '2 Chronicles', chapter: 23, verseStart: 1 },
   },
   {
     id: 'Zichri_10',
@@ -23090,6 +26384,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'a mighty man of Ephraim',
+    primaryReference: { book: '2 Chronicles', chapter: 28, verseStart: 7 },
   },
   {
     id: 'Zichri_11',
@@ -23098,6 +26394,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Joel',
+    primaryReference: { book: 'Nehemiah', chapter: 11, verseStart: 9 },
   },
   {
     id: 'Zichri_12',
@@ -23106,6 +26404,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Abijah',
+    primaryReference: { book: 'Nehemiah', chapter: 12, verseStart: 17 },
   },
   {
     id: 'Ziha_1',
@@ -23130,6 +26430,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei [Shema v13]',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 20 },
   },
   {
     id: 'Zillethai_2',
@@ -23138,6 +26440,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'captain of thousands who defected to David',
+    primaryReference: { book: '1 Chronicles', chapter: 12, verseStart: 20 },
   },
   {
     id: 'Zilpah_1',
@@ -23154,6 +26458,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jahath',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 20 },
   },
   {
     id: 'Zimmah_2',
@@ -23162,6 +26468,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shimei',
+    primaryReference: { book: '1 Chronicles', chapter: 6, verseStart: 42 },
   },
   {
     id: 'Zimran_1',
@@ -23178,6 +26486,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'man pierced by Phinehas',
+    primaryReference: { book: 'Numbers', chapter: 25, verseStart: 14 },
   },
   {
     id: 'Zimri_2',
@@ -23186,6 +26496,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'commander of Elah\'s chariots',
+    primaryReference: { book: '1 Kings', chapter: 16, verseStart: 9 },
   },
   {
     id: 'Zimri_3',
@@ -23194,6 +26506,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehoadda',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 36 },
   },
   {
     id: 'Zina_1',
@@ -23210,6 +26524,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Mesha',
+    primaryReference: { book: '1 Chronicles', chapter: 2, verseStart: 42 },
   },
   {
     id: 'Ziph_2',
@@ -23218,6 +26534,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jehallelel',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 16 },
   },
   {
     id: 'Ziphah_1',
@@ -23258,6 +26576,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Shiphi, Simeonite',
+    primaryReference: { book: '1 Chronicles', chapter: 4, verseStart: 37 },
   },
   {
     id: 'Ziza_2',
@@ -23266,6 +26586,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Rehoboam and Maacah',
+    primaryReference: { book: '2 Chronicles', chapter: 11, verseStart: 20 },
   },
   {
     id: 'Zobebah_1',
@@ -23282,6 +26604,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'father of Ephron who sold the cave at Machpelah to Abraham',
+    primaryReference: { book: 'Genesis', chapter: 23, verseStart: 8 },
   },
   {
     id: 'Zohar_2',
@@ -23290,6 +26614,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Simeon',
+    primaryReference: { book: 'Genesis', chapter: 46, verseStart: 10 },
   },
   {
     id: 'Zoheth_1',
@@ -23338,6 +26664,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'head of a household in Midian and father of Cozbi',
+    primaryReference: { book: 'Numbers', chapter: 25, verseStart: 15 },
   },
   {
     id: 'Zur_2',
@@ -23346,6 +26674,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'King of Midian',
+    primaryReference: { book: 'Numbers', chapter: 31, verseStart: 8 },
   },
   {
     id: 'Zur_3',
@@ -23354,6 +26684,8 @@ export const characterSearchIndex: CharacterSummary[] = [
     alternateNames: [],
     testament: 'Old Testament',
     categories: ['Other'],
+    identityHint: 'son of Jeiel and Maacah',
+    primaryReference: { book: '1 Chronicles', chapter: 8, verseStart: 30 },
   },
   {
     id: 'Zuriel_1',

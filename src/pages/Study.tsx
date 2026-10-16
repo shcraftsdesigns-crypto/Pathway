@@ -228,12 +228,42 @@ export default function Study() {
     useState(false)
   const [characterChoices, setCharacterChoices] =
     useState<CharacterChoice[]>([])
+  const [characterSuggestions, setCharacterSuggestions] =
+    useState<CharacterSummary[]>([])
+  const [characterSuggestionsLoading, setCharacterSuggestionsLoading] =
+    useState(false)
   const [selectedCharacterSlug, setSelectedCharacterSlug] =
     useState('')
 
   const preloadCharacter = (slug: string) => {
     preloadCharacterProfile()
     preloadCharacterBySlug(slug)
+  }
+
+  const updateCharacterSuggestions = async (value: string) => {
+    const query = value.trim()
+
+    if (studyType !== 'character' || query.length < 2) {
+      setCharacterSuggestions([])
+      setCharacterSuggestionsLoading(false)
+      return
+    }
+
+    setCharacterSuggestionsLoading(true)
+
+    try {
+      const matches = await searchCharacterSummaries({
+        query,
+        testament: null,
+        category: null,
+      })
+
+      setCharacterSuggestions(matches.slice(0, 8))
+    } catch {
+      setCharacterSuggestions([])
+    } finally {
+      setCharacterSuggestionsLoading(false)
+    }
   }
 
   const generatePersonalStudy = async () => {
@@ -249,6 +279,7 @@ export default function Study() {
     setStudyError('')
     setGeneratedStudy(null)
     setGeneratedStudySaved(false)
+    setCharacterSuggestions([])
 
     if (studyType !== 'character') {
       setCharacterChoices([])
@@ -576,6 +607,7 @@ export default function Study() {
                   setGeneratedStudy(null)
                   setStudyError('')
                   setCharacterChoices([])
+                  setCharacterSuggestions([])
                   setSelectedCharacterSlug('')
                 }}
                 className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${
@@ -607,10 +639,18 @@ export default function Study() {
             type="text"
             value={studySubject}
             onChange={(event) => {
-              setStudySubject(event.target.value)
+              const value = event.target.value
+
+              setStudySubject(value)
               setCharacterChoices([])
               setSelectedCharacterSlug('')
               setStudyError('')
+
+              if (studyType === 'character') {
+                void updateCharacterSuggestions(value)
+              } else {
+                setCharacterSuggestions([])
+              }
             }}
             maxLength={120}
             placeholder={
@@ -623,6 +663,84 @@ export default function Study() {
             className="mt-2 w-full rounded-xl border border-line bg-bg px-4 py-3 outline-none focus:border-acc"
           />
         </div>
+
+        {studyType === 'character' &&
+          studySubject.trim().length >= 2 &&
+          (characterSuggestionsLoading ||
+            characterSuggestions.length > 0) && (
+            <div className="mt-2 overflow-hidden rounded-xl border border-line bg-bg">
+              {characterSuggestionsLoading ? (
+                <p className="px-4 py-3 text-sm text-mute">
+                  Searching biblical characters...
+                </p>
+              ) : (
+                <div
+                  role="listbox"
+                  aria-label="Biblical character suggestions"
+                  className="divide-y divide-line"
+                >
+                  {characterSuggestions.map((character) => (
+                    <button
+                      key={character.id}
+                      type="button"
+                      role="option"
+                      aria-selected={
+                        studySubject.trim().toLowerCase() ===
+                        character.name.toLowerCase()
+                      }
+                      onClick={() => {
+                        setStudySubject(character.name)
+                        setCharacterSuggestions([])
+                        setCharacterChoices([])
+                        setSelectedCharacterSlug(character.slug)
+                        setStudyError('')
+                        preloadCharacter(character.slug)
+                      }}
+                      className="block w-full px-4 py-3 text-left hover:bg-accbg focus:bg-accbg focus:outline-none"
+                    >
+                      <span className="block font-semibold">
+                        {character.name}
+                      </span>
+
+                      <span className="mt-0.5 block text-xs text-mute">
+                        {[
+                          character.testament,
+                          ...character.categories,
+                        ].join(' • ')}
+                      </span>
+
+                      {character.alternateNames?.length ? (
+                        <span className="mt-1 block text-xs text-mute">
+                          Also known as:{' '}
+                          {character.alternateNames.join(', ')}
+                        </span>
+                      ) : null}
+
+                      {character.identityHint ? (
+                        <span className="mt-1 block text-sm text-mute">
+                          {character.identityHint}
+                        </span>
+                      ) : null}
+
+                      {character.primaryReference ? (
+                        <span className="mt-1 block text-xs font-medium text-mute">
+                          {character.primaryReference.book}{' '}
+                          {character.primaryReference.chapter}
+                          {character.primaryReference.verseStart != null
+                            ? `:${character.primaryReference.verseStart}${
+                                character.primaryReference.verseEnd != null
+                                  ? `–${character.primaryReference.verseEnd}`
+                                  : ''
+                              }`
+                            : ''}
+                        </span>
+                      ) : null}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
         {studyType === 'character' &&
           characterChoices.length > 0 && (

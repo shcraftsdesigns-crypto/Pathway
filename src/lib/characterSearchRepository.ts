@@ -42,6 +42,22 @@ export async function searchCharacterSummaries({
 
   if (!q) return matches
 
+  const exactMatches = matches.filter((character) => {
+    const name = character.name.toLowerCase()
+    const alternateNames = (character.alternateNames ?? []).map(
+      (value) => value.toLowerCase(),
+    )
+
+    return (
+      name === q ||
+      alternateNames.some((value) => value === q)
+    )
+  })
+
+  if (exactMatches.length > 0) {
+    return exactMatches
+  }
+
   const score = (character: CharacterSummary): number => {
     const name = character.name.toLowerCase()
     const alternateNames = (character.alternateNames ?? []).map(
