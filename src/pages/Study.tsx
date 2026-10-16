@@ -30,6 +30,7 @@ import type {
 } from '@/types'
 import { bibleBooks } from '@/data/bibleBooks'
 import { saveGeneratedStudy } from '@/lib/studyStorage'
+import { getBibleChapter } from '@/lib/bibleService'
 
 interface CharacterChoice {
   summary: CharacterSummary
@@ -132,6 +133,88 @@ const GUIDED_STUDIES: GuidedStudy[] = [
   },
 ]
 
+
+function normalizeBibleBookName(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/\./g, '')
+    .replace(/\s+/g, ' ')
+}
+
+function parseBiblePassage(value: string) {
+  const input = value.trim()
+
+  const match = input.match(
+    /^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?$/,
+  )
+
+  if (!match) {
+    return null
+  }
+
+  const [, rawBook, rawChapter, rawVerseStart, rawVerseEnd] =
+    match
+
+  const normalizedBook =
+    normalizeBibleBookName(rawBook)
+
+  const book = bibleBooks.find((candidate) => {
+    const names = [
+      candidate.name,
+      candidate.abbreviation,
+      candidate.id,
+    ]
+
+    return names.some(
+      (name) =>
+        normalizeBibleBookName(name) === normalizedBook,
+    )
+  })
+
+  if (!book) {
+    return null
+  }
+
+  const chapter = Number(rawChapter)
+  const verseStart = rawVerseStart
+    ? Number(rawVerseStart)
+    : undefined
+  const verseEnd = rawVerseEnd
+    ? Number(rawVerseEnd)
+    : undefined
+
+  if (
+    !Number.isInteger(chapter) ||
+    chapter < 1 ||
+    chapter > book.chapters
+  ) {
+    return null
+  }
+
+  if (
+    verseStart !== undefined &&
+    (!Number.isInteger(verseStart) || verseStart < 1)
+  ) {
+    return null
+  }
+
+  if (
+    verseEnd !== undefined &&
+    (!Number.isInteger(verseEnd) ||
+      verseEnd < (verseStart ?? 1))
+  ) {
+    return null
+  }
+
+  return {
+    book,
+    chapter,
+    verseStart,
+    verseEnd,
+  }
+}
+
 export default function Study() {
   const [studyType, setStudyType] =
     useState<StudyPlanType>('character')
@@ -181,6 +264,7 @@ export default function Study() {
 
     try {
       let characterContext
+      let bibleContext
 
       if (studyType === 'character') {
         const matches = await searchCharacterSummaries({
@@ -269,6 +353,79 @@ export default function Study() {
 
         characterContext =
           buildAICharacterContext(character)
+      } else if (studyType === 'passage') {
+        const parsedPassage =
+          parseBiblePassage(rawSubject)
+
+        if (!parsedPassage) {
+          setStudyError(
+            'Enter a valid Bible passage such as Genesis 12, John 3:16, or Romans 8:28-30.',
+          )
+          return
+        }
+
+        const {
+          book,
+          chapter,
+          verseStart,
+          verseEnd,
+        } = parsedPassage
+
+        const content = await getBibleChapter(
+          'bsb',
+          book.id,
+          chapter,
+        )
+
+        let verses = content.verses
+
+        if (verseStart !== undefined) {
+          verses = verses.filter((verse) => {
+            const number = Number.parseInt(
+              verse.number,
+              10,
+            )
+
+            if (!Number.isFinite(number)) {
+              return false
+            }
+
+            return (
+              number >= verseStart &&
+              number <= (verseEnd ?? verseStart)
+            )
+          })
+
+          if (verses.length === 0) {
+            setStudyError(
+              `Pathway could not find that verse range in ${book.name} ${chapter}.`,
+            )
+            return
+          }
+        }
+
+        subject =
+          verseStart === undefined
+            ? `${book.name} ${chapter}`
+            : `${book.name} ${chapter}:${verseStart}${
+                verseEnd !== undefined
+                  ? `-${verseEnd}`
+                  : ''
+              }`
+
+        setStudySubject(subject)
+
+        bibleContext = {
+          bookId: book.id,
+          bookName: book.name,
+          chapter,
+          translation:
+            content.translation.abbreviation,
+          verses: verses.map((verse) => ({
+            number: verse.number,
+            text: verse.text,
+          })),
+        }
       } else if (studyType === 'topic') {
         subject = rawSubject
           .toLowerCase()
@@ -286,14 +443,19 @@ export default function Study() {
           'and 3 to 5 reflection questions. Cite relevant Scripture references. ' +
           'Do not invent biblical details or references.',
         contextType:
-          studyType === 'character' ? 'character' : 'study',
-        character: characterContext,
-        study:
           studyType === 'character'
-            ? undefined
-            : {
-                topic: `${studyType}:${subject}`,
-              },
+            ? 'character'
+            : studyType === 'passage'
+              ? 'bible'
+              : 'study',
+        character: characterContext,
+        bible: bibleContext,
+        study:
+          studyType === 'topic'
+            ? {
+                topic: `topic:${subject}`,
+              }
+            : undefined,
       })
 
       setGeneratedStudy(result)
