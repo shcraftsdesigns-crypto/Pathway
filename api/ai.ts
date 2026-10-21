@@ -34,6 +34,156 @@ function setSecurityHeaders(response: VercelResponse): void {
   response.setHeader('Referrer-Policy', 'no-referrer')
 }
 
+function isPlainObject(
+  value: unknown,
+): value is Record<string, unknown> {
+  return (
+    typeof value === 'object' &&
+    value !== null &&
+    !Array.isArray(value)
+  )
+}
+
+function validateBibleContext(
+  value: unknown,
+): Record<string, unknown> | null {
+  if (!isPlainObject(value)) {
+    return null
+  }
+
+  const bookId =
+    typeof value.bookId === 'string'
+      ? value.bookId.trim()
+      : ''
+
+  const bookName =
+    typeof value.bookName === 'string'
+      ? value.bookName.trim()
+      : ''
+
+  const translation =
+    typeof value.translation === 'string'
+      ? value.translation.trim()
+      : ''
+
+  const chapter = value.chapter
+
+  if (
+    !bookId ||
+    bookId.length > 20 ||
+    !bookName ||
+    bookName.length > 50 ||
+    !translation ||
+    translation.length > 30 ||
+    !Number.isInteger(chapter) ||
+    (chapter as number) < 1 ||
+    (chapter as number) > 200 ||
+    !Array.isArray(value.verses) ||
+    value.verses.length < 1 ||
+    value.verses.length > 200
+  ) {
+    return null
+  }
+
+  const verses = []
+
+  for (const item of value.verses) {
+    if (!isPlainObject(item)) {
+      return null
+    }
+
+    const number =
+      typeof item.number === 'string'
+        ? item.number.trim()
+        : ''
+
+    const verseText =
+      typeof item.text === 'string'
+        ? item.text.trim()
+        : ''
+
+    if (
+      !number ||
+      number.length > 20 ||
+      !verseText ||
+      verseText.length > 2000
+    ) {
+      return null
+    }
+
+    verses.push({
+      number,
+      text: verseText,
+    })
+  }
+
+  return {
+    bookId,
+    bookName,
+    chapter,
+    translation,
+    verses,
+  }
+}
+
+function validateStudyContext(
+  value: unknown,
+): Record<string, unknown> | null {
+  if (!isPlainObject(value)) {
+    return null
+  }
+
+  const normalized: Record<string, unknown> = {}
+
+  if (value.topic !== undefined) {
+    if (
+      typeof value.topic !== 'string' ||
+      !value.topic.trim() ||
+      value.topic.trim().length > 500
+    ) {
+      return null
+    }
+
+    normalized.topic = value.topic.trim()
+  }
+
+  if (value.characterSlugs !== undefined) {
+    if (
+      !Array.isArray(value.characterSlugs) ||
+      value.characterSlugs.length > 20
+    ) {
+      return null
+    }
+
+    const characterSlugs = []
+
+    for (const item of value.characterSlugs) {
+      if (
+        typeof item !== 'string' ||
+        !item.trim() ||
+        item.trim().length > 100
+      ) {
+        return null
+      }
+
+      characterSlugs.push(
+        item.trim().toLowerCase(),
+      )
+    }
+
+    normalized.characterSlugs = characterSlugs
+  }
+
+  if (
+    normalized.topic === undefined &&
+    normalized.characterSlugs === undefined
+  ) {
+    return null
+  }
+
+  return normalized
+}
+
 const PATHWAY_RULES = `
 You are Pathway AI, a Bible-study assistant.
 
@@ -209,7 +359,43 @@ export default async function handler(
 
     body.contextType = contextType
 
+    if (contextType === 'general') {
+      delete body.character
+      delete body.bible
+      delete body.study
+    }
+
+    if (contextType === 'bible') {
+      const bible = validateBibleContext(body.bible)
+
+      if (!bible) {
+        return response.status(400).json({
+          error: 'Invalid Bible study context.',
+        })
+      }
+
+      body.bible = bible
+      delete body.character
+      delete body.study
+    }
+
+    if (contextType === 'study') {
+      const study = validateStudyContext(body.study)
+
+      if (!study) {
+        return response.status(400).json({
+          error: 'Invalid personal study context.',
+        })
+      }
+
+      body.study = study
+      delete body.character
+      delete body.bible
+    }
+
     if (contextType === 'character') {
+      delete body.bible
+      delete body.study
       if (
         !body.character ||
         typeof body.character !== 'object' ||
