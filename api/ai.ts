@@ -18,16 +18,6 @@ const VALID_CONTEXT_TYPES = new Set([
 ])
 
 function getRequestSize(request: VercelRequest): number {
-  const contentLength = request.headers['content-length']
-
-  if (typeof contentLength === 'string') {
-    const parsed = Number.parseInt(contentLength, 10)
-
-    if (Number.isFinite(parsed) && parsed >= 0) {
-      return parsed
-    }
-  }
-
   try {
     return Buffer.byteLength(
       JSON.stringify(request.body ?? {}),
