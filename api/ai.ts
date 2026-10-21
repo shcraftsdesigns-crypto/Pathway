@@ -379,12 +379,9 @@ export default async function handler(
     }
 
     if (!groqResponse.ok) {
-      const groqError = await groqResponse.text()
-
       console.error(
-        'Groq request failed:',
+        'Groq request failed with status:',
         groqResponse.status,
-        groqError.slice(0, 1000),
       )
 
       return response.status(502).json({
@@ -425,8 +422,7 @@ export default async function handler(
         lastBrace <= firstBrace
       ) {
         console.error(
-          'Pathway AI returned invalid JSON:',
-          normalizedContent.slice(0, 500),
+          'Pathway AI returned invalid JSON.',
         )
 
         return response.status(502).json({
@@ -443,8 +439,7 @@ export default async function handler(
         )
       } catch {
         console.error(
-          'Pathway AI returned invalid JSON:',
-          normalizedContent.slice(0, 500),
+          'Pathway AI returned invalid JSON.',
         )
 
         return response.status(502).json({
@@ -699,8 +694,8 @@ export default async function handler(
       scriptureCitations: validatedScriptureCitations,
       limitations,
     })
-  } catch (error) {
-    console.error('Pathway AI server error:', error)
+  } catch {
+    console.error('Pathway AI server error.')
 
     return response.status(500).json({
       error: 'Pathway AI could not answer right now.',
