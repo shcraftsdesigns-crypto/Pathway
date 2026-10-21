@@ -3,6 +3,8 @@ import { Bot, Send, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { askPathwayAI } from '@/lib/ai/provider'
+import { getBibleChapter } from '@/lib/bibleService'
+import { findBiblePassage } from '@/lib/bibleReference'
 import { bibleBooks } from '@/data/bibleBooks'
 import type {
   AIBibleContext,
@@ -95,11 +97,65 @@ export default function PathwayAIPanel({
     setResponse(null)
 
     try {
+      let requestContextType = contextType
+      let requestBible = bible
+
+      if (contextType === 'general') {
+        const passage = findBiblePassage(trimmed)
+
+        if (passage) {
+          const content = await getBibleChapter(
+            'bsb',
+            passage.book.id,
+            passage.chapter,
+          )
+
+          let verses = content.verses
+
+          if (passage.verseStart !== undefined) {
+            verses = verses.filter((verse) => {
+              const number = Number.parseInt(
+                verse.number,
+                10,
+              )
+
+              return (
+                Number.isFinite(number) &&
+                number >= passage.verseStart! &&
+                number <= (
+                  passage.verseEnd ??
+                  passage.verseStart!
+                )
+              )
+            })
+
+            if (verses.length === 0) {
+              throw new Error(
+                `Pathway could not find that verse range in ${passage.book.name} ${passage.chapter}.`,
+              )
+            }
+          }
+
+          requestContextType = 'bible'
+          requestBible = {
+            bookId: passage.book.id,
+            bookName: passage.book.name,
+            chapter: passage.chapter,
+            translation:
+              content.translation.abbreviation,
+            verses: verses.map((verse) => ({
+              number: verse.number,
+              text: verse.text,
+            })),
+          }
+        }
+      }
+
       const result = await askPathwayAI({
         question: trimmed,
-        contextType,
+        contextType: requestContextType,
         character,
-        bible,
+        bible: requestBible,
         study,
       })
 

@@ -31,6 +31,10 @@ import type {
 import { bibleBooks } from '@/data/bibleBooks'
 import { saveGeneratedStudy } from '@/lib/studyStorage'
 import { getBibleChapter } from '@/lib/bibleService'
+import {
+  formatParsedBiblePassage,
+  parseBiblePassage,
+} from '@/lib/bibleReference'
 
 interface CharacterChoice {
   summary: CharacterSummary
@@ -133,87 +137,6 @@ const GUIDED_STUDIES: GuidedStudy[] = [
   },
 ]
 
-
-function normalizeBibleBookName(value: string) {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/\./g, '')
-    .replace(/\s+/g, ' ')
-}
-
-function parseBiblePassage(value: string) {
-  const input = value.trim()
-
-  const match = input.match(
-    /^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?$/,
-  )
-
-  if (!match) {
-    return null
-  }
-
-  const [, rawBook, rawChapter, rawVerseStart, rawVerseEnd] =
-    match
-
-  const normalizedBook =
-    normalizeBibleBookName(rawBook)
-
-  const book = bibleBooks.find((candidate) => {
-    const names = [
-      candidate.name,
-      candidate.abbreviation,
-      candidate.id,
-    ]
-
-    return names.some(
-      (name) =>
-        normalizeBibleBookName(name) === normalizedBook,
-    )
-  })
-
-  if (!book) {
-    return null
-  }
-
-  const chapter = Number(rawChapter)
-  const verseStart = rawVerseStart
-    ? Number(rawVerseStart)
-    : undefined
-  const verseEnd = rawVerseEnd
-    ? Number(rawVerseEnd)
-    : undefined
-
-  if (
-    !Number.isInteger(chapter) ||
-    chapter < 1 ||
-    chapter > book.chapters
-  ) {
-    return null
-  }
-
-  if (
-    verseStart !== undefined &&
-    (!Number.isInteger(verseStart) || verseStart < 1)
-  ) {
-    return null
-  }
-
-  if (
-    verseEnd !== undefined &&
-    (!Number.isInteger(verseEnd) ||
-      verseEnd < (verseStart ?? 1))
-  ) {
-    return null
-  }
-
-  return {
-    book,
-    chapter,
-    verseStart,
-    verseEnd,
-  }
-}
 
 export default function Study() {
   const [studyType, setStudyType] =
@@ -436,13 +359,7 @@ export default function Study() {
         }
 
         subject =
-          verseStart === undefined
-            ? `${book.name} ${chapter}`
-            : `${book.name} ${chapter}:${verseStart}${
-                verseEnd !== undefined
-                  ? `-${verseEnd}`
-                  : ''
-              }`
+          formatParsedBiblePassage(parsedPassage)
 
         setStudySubject(subject)
 
