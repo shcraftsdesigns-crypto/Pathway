@@ -28,6 +28,69 @@ export default function MyStudy() {
   const [editingId, setEditingId] = useState<string | null>(
     null,
   )
+  const [sharingId, setSharingId] = useState<string | null>(
+    null,
+  )
+  const [shareMessage, setShareMessage] = useState<{
+    studyId: string
+    message: string
+    error: boolean
+  } | null>(null)
+
+  const shareStudy = async (
+    study: (typeof data.savedStudies)[number],
+  ) => {
+    setSharingId(study.id)
+    setShareMessage(null)
+
+    try {
+      const response = await fetch('/api/shared-studies', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          study: {
+            type: study.type,
+            subject: study.subject,
+            answer: study.answer,
+            sections: study.sections,
+            scriptureCitations: study.scriptureCitations,
+            limitations: study.limitations,
+          },
+        }),
+      })
+
+      const result = await response.json()
+
+      if (
+        !response.ok ||
+        typeof result?.id !== 'string'
+      ) {
+        throw new Error('Share request failed')
+      }
+
+      const shareUrl =
+        `${window.location.origin}/shared-study/${result.id}`
+
+      await navigator.clipboard.writeText(shareUrl)
+
+      setShareMessage({
+        studyId: study.id,
+        message: 'Share link copied.',
+        error: false,
+      })
+    } catch {
+      setShareMessage({
+        studyId: study.id,
+        message:
+          'Pathway could not create the share link. Please try again.',
+        error: true,
+      })
+    } finally {
+      setSharingId(null)
+    }
+  }
 
   const savedIds = new Set(
     data.savedCharacters.map((character) => character.id),
@@ -378,6 +441,17 @@ export default function MyStudy() {
                       : 'Mark complete'}
                   </button>
 
+                  <button
+                    type="button"
+                    onClick={() => void shareStudy(study)}
+                    disabled={sharingId === study.id}
+                    className="inline-flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {sharingId === study.id
+                      ? 'Sharing...'
+                      : 'Share'}
+                  </button>
+
                   <p className="text-xs text-mute">
                     Saved{' '}
                     {new Date(
@@ -385,6 +459,19 @@ export default function MyStudy() {
                     ).toLocaleDateString()}
                   </p>
                 </div>
+
+                {shareMessage?.studyId === study.id && (
+                  <p
+                    className={
+                      shareMessage.error
+                        ? 'mt-3 text-sm text-red-600'
+                        : 'mt-3 text-sm font-semibold text-acc'
+                    }
+                    role="status"
+                  >
+                    {shareMessage.message}
+                  </p>
+                )}
               </article>
             ))}
           </div>

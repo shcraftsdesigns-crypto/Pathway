@@ -339,12 +339,9 @@ export default async function handler(
     )
 
     if (!supabaseResponse.ok) {
-      const errorText = (await supabaseResponse.text()).slice(0, 500)
-
       console.error(
         'Shared study database insert failed:',
         supabaseResponse.status,
-        errorText,
       )
 
       return response.status(502).json({
