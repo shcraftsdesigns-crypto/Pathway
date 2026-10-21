@@ -7,6 +7,7 @@ const MODEL = 'openai/gpt-oss-120b'
 
 const MAX_REQUEST_BYTES = 75_000
 const MAX_CONTEXT_BYTES = 60_000
+const GROQ_TIMEOUT_MS = 30_000
 
 const VALID_CONTEXT_TYPES = new Set([
   'general',
@@ -164,6 +165,19 @@ export default async function handler(
     })
   }
 
+  const contentType = request.headers['content-type']
+
+  if (
+    typeof contentType !== 'string' ||
+    !contentType
+      .toLowerCase()
+      .startsWith('application/json')
+  ) {
+    return response.status(415).json({
+      error: 'Content-Type must be application/json.',
+    })
+  }
+
   const apiKey = process.env.GROQ_API_KEY
 
   if (!apiKey) {
@@ -232,33 +246,62 @@ export default async function handler(
       })
     }
 
-    const groqResponse = await fetch(GROQ_URL, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        messages: [
-          {
-            role: 'system',
-            content: PATHWAY_RULES,
-          },
-          {
-            role: 'user',
-            content: [
-              context,
-              '',
-              'QUESTION:',
-              question,
-            ].join('\n'),
-          },
-        ],
-        temperature: 0.2,
-        max_completion_tokens: 2400,
-      }),
-    })
+    const controller = new AbortController()
+    const timeout = setTimeout(
+      () => controller.abort(),
+      GROQ_TIMEOUT_MS,
+    )
+
+    let groqResponse: Response
+
+    try {
+      groqResponse = await fetch(GROQ_URL, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          model: MODEL,
+          messages: [
+            {
+              role: 'system',
+              content: PATHWAY_RULES,
+            },
+            {
+              role: 'user',
+              content: [
+                context,
+                '',
+                'QUESTION:',
+                question,
+              ].join('\n'),
+            },
+          ],
+          temperature: 0.2,
+          max_completion_tokens: 2400,
+        }),
+        signal: controller.signal,
+      })
+    } catch (error) {
+      if (
+        error instanceof Error &&
+        error.name === 'AbortError'
+      ) {
+        return response.status(504).json({
+          error:
+            'Pathway AI took too long to respond. Please try again.',
+        })
+      }
+
+      console.error('Groq request failed.')
+
+      return response.status(502).json({
+        error: 'Pathway AI could not answer right now.',
+      })
+    } finally {
+      clearTimeout(timeout)
+    }
 
     if (!groqResponse.ok) {
       const groqError = await groqResponse.text()
