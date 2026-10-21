@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
+import { getAuthoritativeAICharacter } from './aiCharacterAuthority.generated.js'
 
 const GROQ_URL =
   'https://api.groq.com/openai/v1/chat/completions'
@@ -217,6 +218,80 @@ export default async function handler(
     }
 
     body.contextType = contextType
+
+    if (contextType === 'character') {
+      if (
+        !body.character ||
+        typeof body.character !== 'object' ||
+        Array.isArray(body.character)
+      ) {
+        return response.status(400).json({
+          error: 'Invalid biblical character context.',
+        })
+      }
+
+      const suppliedCharacter =
+        body.character as Record<string, unknown>
+
+      const suppliedIdentity =
+        suppliedCharacter.character
+
+      if (
+        !suppliedIdentity ||
+        typeof suppliedIdentity !== 'object' ||
+        Array.isArray(suppliedIdentity)
+      ) {
+        return response.status(400).json({
+          error: 'Invalid biblical character identity.',
+        })
+      }
+
+      const identity =
+        suppliedIdentity as Record<string, unknown>
+
+      const slug =
+        typeof identity.slug === 'string'
+          ? identity.slug.trim().toLowerCase()
+          : ''
+
+      const suppliedId =
+        typeof identity.id === 'string'
+          ? identity.id.trim()
+          : ''
+
+      if (!slug || !suppliedId) {
+        return response.status(400).json({
+          error: 'Biblical character identity is required.',
+        })
+      }
+
+      const authoritative =
+        getAuthoritativeAICharacter(slug)
+
+      if (
+        !authoritative ||
+        authoritative.id !== suppliedId
+      ) {
+        return response.status(400).json({
+          error: 'Unknown or mismatched biblical character identity.',
+        })
+      }
+
+      body.character = {
+        character: {
+          id: authoritative.id,
+          name: authoritative.name,
+          slug: authoritative.slug,
+          alternateNames: authoritative.alternateNames,
+          testament: authoritative.testament,
+          subtitle: authoritative.subtitle,
+          shortDescription:
+            authoritative.shortDescription,
+        },
+        verifiedReferences:
+          authoritative.verifiedReferences,
+      }
+    }
 
     const question =
       typeof body.question === 'string'
