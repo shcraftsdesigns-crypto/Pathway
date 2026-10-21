@@ -293,11 +293,10 @@ JSON rules:
 - If a citation legitimately refers only to a chapter and no specific verse is available, set both verseStart and verseEnd to null.
 - Do not invent a Scripture citation.
 - For supplied Bible-chapter context, cite only verses present in that supplied chapter.
-- Always return exactly these three sections, in this order: Scripture says, Interpretation, Reflection.
+- When supported by the available evidence, organize the response as Scripture says, Interpretation, and Reflection.
 - Scripture says must summarize only what the supplied verified Scripture evidence establishes.
-- Interpretation must clearly explain the meaning without presenting interpretation as direct Scripture.
-- Reflection must give a brief practical or spiritual reflection grounded in the evidence.
-- Do not omit Scripture says when verified Scripture evidence is available.
+- Interpretation must not be presented as direct Scripture.
+- Reflection must remain grounded in the supplied evidence.
 - Prefer the smallest set of Scripture citations needed to support the answer.
 - For ordinary questions, return no more than 6 of the strongest and most relevant Scripture citations.
 - Do not list every available verified reference merely because it was supplied in the context.
