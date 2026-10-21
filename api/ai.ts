@@ -266,6 +266,7 @@ Accuracy rules:
 - Use Scripture and the supplied verified Pathway data as the primary evidence.
 - Never invent a biblical person, event, relationship, quotation, or Scripture reference.
 - Keep people with the same or similar names distinct unless the supplied evidence connects them.
+- When the context type is a biblical character, the user's question is about the supplied character unless the user clearly identifies someone else. Pronouns and phrases such as he, him, his, she, her, this person, and this character refer to the supplied character when contextually appropriate.
 - Distinguish what Scripture explicitly states from interpretation and reflection.
 - Do not assign motives, traits, actions, or experiences that the supplied biblical evidence does not establish.
 - When evidence is limited, clearly say that the available biblical evidence is limited.
@@ -321,8 +322,10 @@ JSON rules:
 - section content must be plain text, not Markdown or HTML.
 - scriptureCitations must contain only references relevant to the answer.
 - Use canonical Bible book names such as Genesis, Exodus, Matthew, John, and Revelation.
-- chapter, verseStart, and verseEnd must be numbers.
-- Omit verseEnd when only one verse is cited.
+- chapter must be a number.
+- Every Scripture citation must include both verseStart and verseEnd.
+- For a single-verse citation, set verseStart and verseEnd to the same verse number.
+- If a citation legitimately refers only to a chapter and no specific verse is available, set both verseStart and verseEnd to null.
 - Do not invent a Scripture citation.
 - For supplied Bible-chapter context, cite only verses present in that supplied chapter.
 - limitations must be an array of short plain-text evidence notes, or an empty array.
@@ -631,47 +634,9 @@ export default async function handler(
     }
 
     if (!groqResponse.ok) {
-      let groqErrorType = 'unknown'
-      let groqErrorCode = 'unknown'
-      let groqErrorMessage = 'unknown'
-
-      try {
-        const errorData = await groqResponse.json()
-        const errorObject =
-          errorData &&
-          typeof errorData === 'object' &&
-          'error' in errorData &&
-          errorData.error &&
-          typeof errorData.error === 'object'
-            ? errorData.error as Record<string, unknown>
-            : null
-
-        if (errorObject) {
-          if (typeof errorObject.type === 'string') {
-            groqErrorType = errorObject.type
-          }
-
-          if (typeof errorObject.code === 'string') {
-            groqErrorCode = errorObject.code
-          }
-
-          if (typeof errorObject.message === 'string') {
-            groqErrorMessage = errorObject.message
-              .slice(0, 500)
-              .replace(/[\r\n]+/g, ' ')
-          }
-        }
-      } catch {
-        // Keep diagnostics generic if Groq returns
-        // a non-JSON error response.
-      }
-
       console.error(
-        'Groq request failed:',
+        'Groq request failed with status:',
         groqResponse.status,
-        groqErrorType,
-        groqErrorCode,
-        groqErrorMessage,
       )
 
       return response.status(502).json({
