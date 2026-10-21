@@ -17,6 +17,81 @@ const VALID_CONTEXT_TYPES = new Set([
   'study',
 ])
 
+const PATHWAY_RESPONSE_FORMAT = {
+  type: 'json_schema',
+  json_schema: {
+    name: 'pathway_ai_response',
+    strict: true,
+    schema: {
+      type: 'object',
+      properties: {
+        answer: {
+          type: 'string',
+        },
+        sections: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              heading: {
+                type: 'string',
+              },
+              content: {
+                type: 'string',
+              },
+            },
+            required: [
+              'heading',
+              'content',
+            ],
+            additionalProperties: false,
+          },
+        },
+        scriptureCitations: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              book: {
+                type: 'string',
+              },
+              chapter: {
+                type: 'number',
+              },
+              verseStart: {
+                type: ['number', 'null'],
+              },
+              verseEnd: {
+                type: ['number', 'null'],
+              },
+            },
+            required: [
+              'book',
+              'chapter',
+              'verseStart',
+              'verseEnd',
+            ],
+            additionalProperties: false,
+          },
+        },
+        limitations: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
+        },
+      },
+      required: [
+        'answer',
+        'sections',
+        'scriptureCitations',
+        'limitations',
+      ],
+      additionalProperties: false,
+    },
+  },
+} as const
+
 function getRequestSize(request: VercelRequest): number {
   try {
     return Buffer.byteLength(
@@ -531,6 +606,7 @@ export default async function handler(
           ],
           temperature: 0.2,
           max_completion_tokens: 2400,
+          response_format: PATHWAY_RESPONSE_FORMAT,
         }),
         signal: controller.signal,
       })
