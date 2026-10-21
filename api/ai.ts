@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { getAuthoritativeAICharacter } from './aiCharacterAuthority.generated.js'
+import { getAuthoritativeAIBibleChapter } from './aiBibleAuthority.generated.js'
 
 const GROQ_URL =
   'https://api.groq.com/openai/v1/chat/completions'
@@ -128,17 +129,7 @@ function validateBibleContext(
 
   const bookId =
     typeof value.bookId === 'string'
-      ? value.bookId.trim()
-      : ''
-
-  const bookName =
-    typeof value.bookName === 'string'
-      ? value.bookName.trim()
-      : ''
-
-  const translation =
-    typeof value.translation === 'string'
-      ? value.translation.trim()
+      ? value.bookId.trim().toUpperCase()
       : ''
 
   const chapter = value.chapter
@@ -146,58 +137,32 @@ function validateBibleContext(
   if (
     !bookId ||
     bookId.length > 20 ||
-    !bookName ||
-    bookName.length > 50 ||
-    !translation ||
-    translation.length > 30 ||
     !Number.isInteger(chapter) ||
     (chapter as number) < 1 ||
-    (chapter as number) > 200 ||
-    !Array.isArray(value.verses) ||
-    value.verses.length < 1 ||
-    value.verses.length > 200
+    (chapter as number) > 200
   ) {
     return null
   }
 
-  const verses = []
+  const authoritativeChapter =
+    getAuthoritativeAIBibleChapter(
+      bookId,
+      chapter as number,
+    )
 
-  for (const item of value.verses) {
-    if (!isPlainObject(item)) {
-      return null
-    }
-
-    const number =
-      typeof item.number === 'string'
-        ? item.number.trim()
-        : ''
-
-    const verseText =
-      typeof item.text === 'string'
-        ? item.text.trim()
-        : ''
-
-    if (
-      !number ||
-      number.length > 20 ||
-      !verseText ||
-      verseText.length > 2000
-    ) {
-      return null
-    }
-
-    verses.push({
-      number,
-      text: verseText,
-    })
+  if (!authoritativeChapter) {
+    return null
   }
 
   return {
-    bookId,
-    bookName,
-    chapter,
-    translation,
-    verses,
+    bookId: authoritativeChapter.bookId,
+    bookName: authoritativeChapter.bookName,
+    chapter: authoritativeChapter.chapter,
+    translation: 'BSB',
+    verses: authoritativeChapter.verses.map((verse) => ({
+      number: String(verse.number),
+      text: verse.text,
+    })),
   }
 }
 
