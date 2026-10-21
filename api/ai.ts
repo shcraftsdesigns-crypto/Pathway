@@ -631,9 +631,47 @@ export default async function handler(
     }
 
     if (!groqResponse.ok) {
+      let groqErrorType = 'unknown'
+      let groqErrorCode = 'unknown'
+      let groqErrorMessage = 'unknown'
+
+      try {
+        const errorData = await groqResponse.json()
+        const errorObject =
+          errorData &&
+          typeof errorData === 'object' &&
+          'error' in errorData &&
+          errorData.error &&
+          typeof errorData.error === 'object'
+            ? errorData.error as Record<string, unknown>
+            : null
+
+        if (errorObject) {
+          if (typeof errorObject.type === 'string') {
+            groqErrorType = errorObject.type
+          }
+
+          if (typeof errorObject.code === 'string') {
+            groqErrorCode = errorObject.code
+          }
+
+          if (typeof errorObject.message === 'string') {
+            groqErrorMessage = errorObject.message
+              .slice(0, 500)
+              .replace(/[\r\n]+/g, ' ')
+          }
+        }
+      } catch {
+        // Keep diagnostics generic if Groq returns
+        // a non-JSON error response.
+      }
+
       console.error(
-        'Groq request failed with status:',
+        'Groq request failed:',
         groqResponse.status,
+        groqErrorType,
+        groqErrorCode,
+        groqErrorMessage,
       )
 
       return response.status(502).json({
