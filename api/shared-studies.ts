@@ -237,7 +237,6 @@ export default async function handler(
           method: 'GET',
           headers: {
             apikey: supabaseSecretKey,
-            Authorization: `Bearer ${supabaseSecretKey}`,
             Accept: 'application/json',
           },
           signal: controller.signal,
@@ -331,7 +330,6 @@ export default async function handler(
         method: 'POST',
         headers: {
           apikey: supabaseSecretKey,
-          Authorization: `Bearer ${supabaseSecretKey}`,
           'Content-Type': 'application/json',
           Prefer: 'return=representation',
         },
