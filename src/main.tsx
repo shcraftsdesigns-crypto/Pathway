@@ -7,14 +7,17 @@ import App from './App'
 import './index.css'
 import { localBibleProvider } from '@/lib/localBibleProvider'
 import { setBibleProvider } from '@/lib/bibleService'
+import { AuthProvider } from '@/contexts/AuthContext'
 
 setBibleProvider(localBibleProvider)
 setAIProvider(httpAIProvider)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AuthProvider>
   </StrictMode>,
 )

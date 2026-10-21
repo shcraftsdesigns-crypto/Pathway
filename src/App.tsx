@@ -16,6 +16,7 @@ import BibleChapter from '@/pages/BibleChapter'
 import NotFound from '@/pages/NotFound'
 import PathwayAI from '@/pages/PathwayAI'
 import SharedStudy from '@/pages/SharedStudy'
+import Account from '@/pages/Account'
 
 const loadCharacterProfile = () =>
   import('@/pages/CharacterProfile')
@@ -90,6 +91,11 @@ export default function App() {
         <Route
           path="shared-study/:id"
           element={<SharedStudy />}
+        />
+
+        <Route
+          path="account"
+          element={<Account />}
         />
 
         <Route
