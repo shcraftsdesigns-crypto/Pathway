@@ -634,9 +634,51 @@ export default async function handler(
     }
 
     if (!groqResponse.ok) {
+      let validationReason = 'unknown'
+
+      try {
+        const errorData = await groqResponse.json()
+        const errorObject =
+          errorData &&
+          typeof errorData === 'object' &&
+          'error' in errorData &&
+          errorData.error &&
+          typeof errorData.error === 'object'
+            ? errorData.error as Record<string, unknown>
+            : null
+
+        if (errorObject) {
+          const failedGeneration = errorObject.failed_generation
+
+          if (
+            failedGeneration &&
+            typeof failedGeneration === 'object' &&
+            'reason' in failedGeneration &&
+            typeof failedGeneration.reason === 'string'
+          ) {
+            validationReason = failedGeneration.reason
+              .slice(0, 300)
+              .replace(/[\r\n]+/g, ' ')
+          } else if (
+            typeof errorObject.message === 'string' &&
+            errorObject.message.includes('jsonschema:')
+          ) {
+            const schemaError =
+              errorObject.message.match(/jsonschema:[^\r\n]*/)?.[0]
+
+            if (schemaError) {
+              validationReason = schemaError.slice(0, 300)
+            }
+          }
+        }
+      } catch {
+        // Keep diagnostic generic.
+      }
+
       console.error(
-        'Groq request failed with status:',
+        'Groq structured response failure:',
         groqResponse.status,
+        validationReason,
       )
 
       return response.status(502).json({
