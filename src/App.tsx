@@ -28,6 +28,17 @@ export function preloadCharacterProfile(): void {
   void loadCharacterProfile()
 }
 
+function PageLoader() {
+  return (
+    <div
+      role="status"
+      className="py-12 text-center text-mute"
+    >
+      Loading…
+    </div>
+  )
+}
+
 function ProfileLoader() {
   return (
     <div
@@ -41,7 +52,7 @@ function ProfileLoader() {
 
 export default function App() {
   return (
-    <Suspense fallback={<ProfileLoader />}>
+    <Suspense fallback={<PageLoader />}>
       <Routes>
         <Route element={<MainLayout />}>
         <Route index element={<Home />} />
