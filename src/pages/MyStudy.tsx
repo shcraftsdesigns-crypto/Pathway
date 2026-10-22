@@ -4,6 +4,7 @@ import {
   BookOpen,
   CheckCircle2,
   FileText,
+  NotebookPen,
   Sparkles,
   Trash2,
 } from 'lucide-react'
@@ -163,7 +164,8 @@ export default function MyStudy() {
     data.savedCharacters.length > 0 ||
     notes.length > 0 ||
     completedCount > 0 ||
-    data.savedStudies.length > 0
+    data.savedStudies.length > 0 ||
+    data.bibleVerses.length > 0
 
   if (!hasStudyActivity) {
     return (
@@ -183,7 +185,7 @@ export default function MyStudy() {
     <div>
       <SectionHeader
         title="My Study"
-        subtitle="Your saved characters, AI-generated studies, personal notes, and study progress on this device."
+        subtitle="Your saved characters, Scripture bookmarks, AI-generated studies, personal notes, and study progress."
       />
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -328,6 +330,85 @@ export default function MyStudy() {
           </p>
         )}
       </section>
+
+      {data.bibleVerses.length > 0 && (
+        <section className="py-8">
+          <SectionHeader
+            title="Bible Bookmarks & Notes"
+            subtitle="Return to Scripture you bookmarked or annotated while reading."
+          />
+
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {data.bibleVerses
+              .filter(
+                (verse) =>
+                  verse.bookmarked ||
+                  verse.note.trim(),
+              )
+              .map((verse) => (
+                <article
+                  key={verse.id}
+                  className="card flex flex-col"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-mute">
+                        {verse.translation}
+                      </p>
+
+                      <h3 className="mt-1 text-xl">
+                        {verse.bookName} {verse.chapter}:{verse.verse}
+                      </h3>
+                    </div>
+
+                    {verse.bookmarked && (
+                      <Bookmark
+                        size={20}
+                        className="text-acc"
+                        fill="currentColor"
+                        aria-label="Bookmarked verse"
+                      />
+                    )}
+                  </div>
+
+                  <p className="mt-4 text-sm leading-6">
+                    <sup className="mr-2 text-xs font-semibold text-acc">
+                      {verse.verse}
+                    </sup>
+                    {verse.text}
+                  </p>
+
+                  {verse.note && (
+                    <div className="mt-4 rounded-xl border border-line bg-accbg/40 p-3">
+                      <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-mute">
+                        <NotebookPen
+                          size={15}
+                          aria-hidden="true"
+                        />
+                        Personal note
+                      </p>
+
+                      <p className="mt-2 whitespace-pre-wrap text-sm leading-6 text-mute">
+                        {verse.note}
+                      </p>
+                    </div>
+                  )}
+
+                  <Link
+                    to={`/bible/${verse.bookId}/${verse.chapter}?verse=${verse.verse}#verse-${verse.verse}`}
+                    className="mt-5 inline-flex items-center gap-2 font-semibold text-acc"
+                  >
+                    <BookOpen
+                      size={17}
+                      aria-hidden="true"
+                    />
+                    Read in Bible
+                  </Link>
+                </article>
+              ))}
+          </div>
+        </section>
+      )}
 
       {data.savedStudies.length > 0 && (
         <section className="py-8">
