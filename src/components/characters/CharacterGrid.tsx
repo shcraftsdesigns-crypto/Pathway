@@ -51,7 +51,7 @@ export default function CharacterGrid({
         <div className="mt-6 flex justify-center">
           <button
             type="button"
-            className="btn"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-5 py-2.5 font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc"
             onClick={() =>
               setVisibleCount((count) =>
                 Math.min(count + LOAD_MORE_COUNT, characters.length),

@@ -471,8 +471,8 @@ export default function MyStudy() {
                     }}
                     className={
                       study.completed
-                        ? 'inline-flex items-center gap-2 rounded-lg bg-accbg px-3 py-2 text-sm font-semibold text-acc'
-                        : 'inline-flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc'
+                        ? 'inline-flex items-center gap-2 inline-flex min-h-11 items-center rounded-xl bg-accbg px-3 py-2 text-sm font-semibold text-acc'
+                        : 'inline-flex min-h-11 items-center gap-2 rounded-xl border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc'
                     }
                   >
                     <CheckCircle2
@@ -488,7 +488,7 @@ export default function MyStudy() {
                     type="button"
                     onClick={() => void shareStudy(study)}
                     disabled={sharingId === study.id}
-                    className="inline-flex items-center gap-2 rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc disabled:cursor-not-allowed disabled:opacity-60"
+                    className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {sharingId === study.id
                       ? 'Sharing...'
@@ -526,7 +526,7 @@ export default function MyStudy() {
                   <div className="mt-3 flex flex-wrap gap-3">
                     <button
                       type="button"
-                      className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
+                      className="inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc"
                       onClick={() => {
                         void navigator.clipboard
                           .writeText(shareUrls[study.id])
@@ -554,7 +554,7 @@ export default function MyStudy() {
                       href={shareUrls[study.id]}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
+                      className="inline-flex items-center inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc"
                     >
                       Open shared study
                     </a>
@@ -606,7 +606,7 @@ export default function MyStudy() {
                       <div className="mt-3 flex flex-wrap gap-3">
                         <button
                           type="button"
-                          className="rounded-lg bg-acc px-4 py-2 text-sm font-semibold text-on"
+                          className="inline-flex min-h-11 items-center justify-center rounded-xl bg-acc px-4 py-2 text-sm font-semibold text-on"
                           onClick={() => {
                             const element =
                               document.getElementById(
@@ -627,7 +627,7 @@ export default function MyStudy() {
 
                         <button
                           type="button"
-                          className="rounded-lg border border-line px-4 py-2 text-sm font-semibold"
+                          className="inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-4 py-2 text-sm font-semibold"
                           onClick={() =>
                             setEditingId(null)
                           }

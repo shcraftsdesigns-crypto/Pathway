@@ -253,7 +253,7 @@ export default function Account() {
             type="button"
             disabled={submitting}
             onClick={() => void handleSignOut()}
-            className="mt-6 rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:border-acc hover:text-acc disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-6 inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc disabled:cursor-not-allowed disabled:opacity-60"
           >
             {submitting
               ? 'Signing out…'
@@ -412,7 +412,7 @@ export default function Account() {
         <button
           type="submit"
           disabled={submitting}
-          className="mt-6 rounded-lg bg-acc px-5 py-2.5 text-sm font-semibold text-on disabled:cursor-not-allowed disabled:opacity-60"
+          className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-acc px-5 py-2.5 text-sm font-semibold text-on transition-[transform,filter] hover:brightness-95 active:scale-[0.99] sm:w-auto disabled:cursor-not-allowed disabled:opacity-60"
         >
           {submitting
             ? 'Please wait…'

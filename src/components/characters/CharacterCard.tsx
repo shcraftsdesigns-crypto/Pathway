@@ -16,7 +16,7 @@ export default function CharacterCard({
   return (
     <Link
       to={`/characters/${c.slug}`}
-      className="card flex flex-col gap-1.5 hover:border-acc"
+      className="card flex flex-col gap-1.5 transition-[transform,border-color,box-shadow] hover:-translate-y-0.5 hover:border-acc hover:shadow-sm active:translate-y-0"
       onMouseEnter={preload}
       onFocus={preload}
       onTouchStart={preload}
