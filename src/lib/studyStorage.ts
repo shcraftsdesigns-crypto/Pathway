@@ -111,6 +111,11 @@ function writeStudyData(data: StudyData) {
   }
 }
 
+
+export function replaceStudyData(data: StudyData) {
+  writeStudyData(data)
+}
+
 export function isCharacterSaved(characterId: string) {
   return getStudyData().savedCharacters.some(
     (character) => character.id === characterId,
