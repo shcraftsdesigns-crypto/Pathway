@@ -79,11 +79,18 @@ export default function MyStudy() {
 
       const result = await response.json()
 
-      if (
-        !response.ok ||
-        typeof result?.id !== 'string'
-      ) {
-        throw new Error('Share request failed')
+      if (!response.ok) {
+        throw new Error(
+          typeof result?.error === 'string'
+            ? result.error
+            : 'Pathway could not create the share link. Please try again.',
+        )
+      }
+
+      if (typeof result?.id !== 'string') {
+        throw new Error(
+          'Pathway could not create the share link. Please try again.',
+        )
       }
 
       const shareUrl =
@@ -123,11 +130,13 @@ export default function MyStudy() {
           error: false,
         })
       }
-    } catch {
+    } catch (error) {
       setShareMessage({
         studyId: study.id,
         message:
-          'Pathway could not create the share link. Please try again.',
+          error instanceof Error
+            ? error.message
+            : 'Pathway could not create the share link. Please try again.',
         error: true,
       })
     } finally {
