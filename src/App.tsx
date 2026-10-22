@@ -7,16 +7,17 @@ import {
 
 import MainLayout from '@/layouts/MainLayout'
 import Home from '@/pages/Home'
-import Characters from '@/pages/Characters'
-import Study from '@/pages/Study'
-import MyStudy from '@/pages/MyStudy'
-import Bible from '@/pages/Bible'
-import BibleBook from '@/pages/BibleBook'
-import BibleChapter from '@/pages/BibleChapter'
-import NotFound from '@/pages/NotFound'
-import PathwayAI from '@/pages/PathwayAI'
-import SharedStudy from '@/pages/SharedStudy'
-import Account from '@/pages/Account'
+
+const Characters = lazy(() => import('@/pages/Characters'))
+const Study = lazy(() => import('@/pages/Study'))
+const MyStudy = lazy(() => import('@/pages/MyStudy'))
+const Bible = lazy(() => import('@/pages/Bible'))
+const BibleBook = lazy(() => import('@/pages/BibleBook'))
+const BibleChapter = lazy(() => import('@/pages/BibleChapter'))
+const NotFound = lazy(() => import('@/pages/NotFound'))
+const PathwayAI = lazy(() => import('@/pages/PathwayAI'))
+const SharedStudy = lazy(() => import('@/pages/SharedStudy'))
+const Account = lazy(() => import('@/pages/Account'))
 
 const loadCharacterProfile = () =>
   import('@/pages/CharacterProfile')
@@ -40,8 +41,9 @@ function ProfileLoader() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
+    <Suspense fallback={<ProfileLoader />}>
+      <Routes>
+        <Route element={<MainLayout />}>
         <Route index element={<Home />} />
 
         <Route
@@ -107,7 +109,8 @@ export default function App() {
           path="*"
           element={<Navigate to="/404" replace />}
         />
-      </Route>
-    </Routes>
+        </Route>
+      </Routes>
+    </Suspense>
   )
 }
