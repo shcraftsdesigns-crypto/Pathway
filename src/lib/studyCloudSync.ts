@@ -250,10 +250,49 @@ export async function syncStudyData(
 export async function uploadCurrentStudyData(
   userId: string,
 ) {
-  const studyData = getStudyData()
+  if (!supabase) {
+    throw new Error(
+      'Supabase is not configured.',
+    )
+  }
+
+  const localData = getStudyData()
+
+  const {
+    data,
+    error,
+  } = await supabase
+    .from('user_study_data')
+    .select('study_data')
+    .eq('user_id', userId)
+    .maybeSingle()
+
+  if (error) {
+    throw error
+  }
+
+  if (!data) {
+    await saveCloudStudyData(
+      userId,
+      localData,
+    )
+
+    return
+  }
+
+  const cloudData = normalizeStudyData(
+    data.study_data,
+  )
+
+  const mergedData = mergeStudyData(
+    localData,
+    cloudData,
+  )
+
+  replaceStudyData(mergedData)
 
   await saveCloudStudyData(
     userId,
-    studyData,
+    mergedData,
   )
 }
