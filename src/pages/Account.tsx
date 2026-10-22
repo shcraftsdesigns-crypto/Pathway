@@ -103,7 +103,7 @@ export default function Account() {
               email.trim(),
               {
                 redirectTo:
-                  `${window.location.origin}/account`,
+                  `${window.location.origin}/account?recovery=1`,
               },
             )
 
