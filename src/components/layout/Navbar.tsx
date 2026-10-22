@@ -5,11 +5,11 @@ import { NAV_ITEMS } from '@/lib/navigation'
 
 interface Props { theme: 'light' | 'dark'; onToggleTheme: () => void }
 
-const iconBtn = 'inline-flex h-10 min-w-10 items-center justify-center gap-1.5 rounded-full border border-line px-3'
+const iconBtn = 'inline-flex h-11 min-w-11 items-center justify-center gap-1.5 rounded-full border border-line px-3 transition-colors hover:bg-accbg hover:text-acc active:scale-[0.98]'
 
 export default function Navbar({ theme, onToggleTheme }: Props) {
   return (
-    <header className="sticky top-0 z-10 border-b border-line bg-bg pt-[env(safe-area-inset-top)]">
+    <header className="sticky top-0 z-10 border-b border-line bg-bg/95 pt-[env(safe-area-inset-top)] backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-5">
         <Logo />
         <nav aria-label="Main" className="ml-4 hidden gap-1 md:flex">

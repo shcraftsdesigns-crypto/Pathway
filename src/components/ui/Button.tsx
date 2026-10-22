@@ -25,7 +25,7 @@ export default function Button({
       onMouseEnter={onIntent}
       onFocus={onIntent}
       onTouchStart={onIntent}
-      className={`inline-block rounded-xl px-5 py-3 font-semibold ${styles}`}
+      className={`inline-flex min-h-11 items-center justify-center rounded-xl px-5 py-3 font-semibold transition-[transform,background-color,border-color,color] hover:brightness-95 active:scale-[0.98] ${styles}`}
     >
       {children}
     </Link>
