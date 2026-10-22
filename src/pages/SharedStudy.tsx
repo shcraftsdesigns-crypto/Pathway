@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
-import { bibleBooks } from '@/data/bibleBooks'
+import { parseBiblePassage } from '@/lib/bibleReference'
 
 interface SharedStudyCitation {
   book: string
@@ -30,14 +30,6 @@ interface SharedStudyResponse {
   id: string
   createdAt: string
   study: SharedStudyData
-}
-
-function normalizeBookName(value: string) {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/\./g, '')
-    .replace(/\s+/g, ' ')
 }
 
 export default function SharedStudy() {
@@ -193,24 +185,13 @@ export default function SharedStudy() {
                       : `:${citation.verseStart}`
                     : ''
 
-                  const normalizedBook =
-                    normalizeBookName(citation.book)
-
-                  const bibleBook = bibleBooks.find(
-                    (book) =>
-                      normalizeBookName(book.name) ===
-                        normalizedBook ||
-                      normalizeBookName(
-                        book.abbreviation,
-                      ) === normalizedBook ||
-                      normalizeBookName(book.id) ===
-                        normalizedBook,
-                  )
-
                   const referenceLabel =
                     `${citation.book} ${citation.chapter}${verses}`
 
-                  if (!bibleBook) {
+                  const passage =
+                    parseBiblePassage(referenceLabel)
+
+                  if (!passage) {
                     return (
                       <span
                         key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
@@ -229,7 +210,7 @@ export default function SharedStudy() {
                   return (
                     <Link
                       key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
-                      to={`/bible/${bibleBook.id}/${citation.chapter}${verseTarget}`}
+                      to={`/bible/${passage.book.id}/${citation.chapter}${verseTarget}`}
                       className="rounded-full border border-line px-3 py-1.5 text-sm font-semibold hover:border-acc hover:text-acc"
                     >
                       {referenceLabel}
