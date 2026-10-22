@@ -39,7 +39,19 @@ export default function MyStudy() {
 
   const [shareUrls, setShareUrls] = useState<
     Record<string, string>
-  >({})
+  >(() => {
+    try {
+      const stored = localStorage.getItem(
+        'pathway-shared-study-links',
+      )
+
+      return stored
+        ? (JSON.parse(stored) as Record<string, string>)
+        : {}
+    } catch {
+      return {}
+    }
+  })
 
   const shareStudy = async (
     study: (typeof data.savedStudies)[number],
@@ -77,10 +89,23 @@ export default function MyStudy() {
       const shareUrl =
         `${window.location.origin}/shared-study/${result.id}`
 
-      setShareUrls((current) => ({
-        ...current,
-        [study.id]: shareUrl,
-      }))
+      setShareUrls((current) => {
+        const next = {
+          ...current,
+          [study.id]: shareUrl,
+        }
+
+        try {
+          localStorage.setItem(
+            'pathway-shared-study-links',
+            JSON.stringify(next),
+          )
+        } catch {
+          // The share still works if local storage is unavailable.
+        }
+
+        return next
+      })
 
       try {
         await navigator.clipboard.writeText(shareUrl)
