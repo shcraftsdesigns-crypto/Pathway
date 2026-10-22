@@ -37,6 +37,10 @@ export default function MyStudy() {
     error: boolean
   } | null>(null)
 
+  const [shareUrls, setShareUrls] = useState<
+    Record<string, string>
+  >({})
+
   const shareStudy = async (
     study: (typeof data.savedStudies)[number],
   ) => {
@@ -73,13 +77,27 @@ export default function MyStudy() {
       const shareUrl =
         `${window.location.origin}/shared-study/${result.id}`
 
-      await navigator.clipboard.writeText(shareUrl)
+      setShareUrls((current) => ({
+        ...current,
+        [study.id]: shareUrl,
+      }))
 
-      setShareMessage({
-        studyId: study.id,
-        message: 'Share link copied.',
-        error: false,
-      })
+      try {
+        await navigator.clipboard.writeText(shareUrl)
+
+        setShareMessage({
+          studyId: study.id,
+          message: 'Share link created and copied.',
+          error: false,
+        })
+      } catch {
+        setShareMessage({
+          studyId: study.id,
+          message:
+            'Share link created. Use the buttons below to copy or open it.',
+          error: false,
+        })
+      }
     } catch {
       setShareMessage({
         studyId: study.id,
@@ -460,6 +478,12 @@ export default function MyStudy() {
                   </p>
                 </div>
 
+                <p className="mt-3 text-xs text-mute">
+                  Sharing includes this generated study and its
+                  Scripture references. Your personal notes and
+                  study progress are not included.
+                </p>
+
                 {shareMessage?.studyId === study.id && (
                   <p
                     className={
@@ -471,6 +495,45 @@ export default function MyStudy() {
                   >
                     {shareMessage.message}
                   </p>
+                )}
+
+                {shareUrls[study.id] && (
+                  <div className="mt-3 flex flex-wrap gap-3">
+                    <button
+                      type="button"
+                      className="rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
+                      onClick={() => {
+                        void navigator.clipboard
+                          .writeText(shareUrls[study.id])
+                          .then(() => {
+                            setShareMessage({
+                              studyId: study.id,
+                              message: 'Share link copied.',
+                              error: false,
+                            })
+                          })
+                          .catch(() => {
+                            setShareMessage({
+                              studyId: study.id,
+                              message:
+                                'Could not copy automatically. You can still open the shared study.',
+                              error: true,
+                            })
+                          })
+                      }}
+                    >
+                      Copy link
+                    </button>
+
+                    <a
+                      href={shareUrls[study.id]}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center rounded-lg border border-line px-3 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
+                    >
+                      Open shared study
+                    </a>
+                  </div>
                 )}
               </article>
             ))}

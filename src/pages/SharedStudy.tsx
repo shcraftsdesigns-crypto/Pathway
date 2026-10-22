@@ -47,6 +47,10 @@ export default function SharedStudy() {
     useState<SharedStudyResponse | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
+  const [copyMessage, setCopyMessage] = useState<{
+    message: string
+    error: boolean
+  } | null>(null)
 
   usePageTitle(
     sharedStudy
@@ -266,7 +270,31 @@ export default function SharedStudy() {
         </p>
       </article>
 
-      <div className="mt-6">
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
+          onClick={() => {
+            void navigator.clipboard
+              .writeText(window.location.href)
+              .then(() => {
+                setCopyMessage({
+                  message: 'Share link copied.',
+                  error: false,
+                })
+              })
+              .catch(() => {
+                setCopyMessage({
+                  message:
+                    'Could not copy the link automatically.',
+                  error: true,
+                })
+              })
+          }}
+        >
+          Copy share link
+        </button>
+
         <Link
           to="/"
           className="font-semibold text-acc hover:underline"
@@ -274,6 +302,19 @@ export default function SharedStudy() {
           Explore Pathway
         </Link>
       </div>
+
+      {copyMessage && (
+        <p
+          className={
+            copyMessage.error
+              ? 'mt-3 text-sm text-red-600'
+              : 'mt-3 text-sm font-semibold text-acc'
+          }
+          role="status"
+        >
+          {copyMessage.message}
+        </p>
+      )}
     </div>
   )
 }
