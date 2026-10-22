@@ -45,11 +45,25 @@ export interface SavedStudy {
   savedAt: string
 }
 
+export interface SavedBibleVerse {
+  id: string
+  bookId: string
+  bookName: string
+  chapter: number
+  verse: string
+  text: string
+  translation: string
+  bookmarked: boolean
+  note: string
+  updatedAt: string
+}
+
 export interface StudyData {
   savedCharacters: SavedCharacter[]
   notes: StudyNote[]
   progress: StudyProgress[]
   savedStudies: SavedStudy[]
+  bibleVerses: SavedBibleVerse[]
 }
 
 const STORAGE_KEY = 'pathway-study-v1'
@@ -59,6 +73,7 @@ const EMPTY_DATA: StudyData = {
   notes: [],
   progress: [],
   savedStudies: [],
+  bibleVerses: [],
 }
 
 function isBrowser() {
@@ -87,6 +102,9 @@ export function getStudyData(): StudyData {
         : [],
       savedStudies: Array.isArray(parsed.savedStudies)
         ? parsed.savedStudies
+        : [],
+      bibleVerses: Array.isArray(parsed.bibleVerses)
+        ? parsed.bibleVerses
         : [],
     }
   } catch {
@@ -308,3 +326,83 @@ export function toggleSavedStudyComplete(studyId: string) {
   return completed
 }
 
+
+
+export function getSavedBibleVerse(
+  bookId: string,
+  chapter: number,
+  verse: string,
+) {
+  const id = `${bookId}-${chapter}-${verse}`
+
+  return getStudyData().bibleVerses.find(
+    (entry) => entry.id === id,
+  )
+}
+
+export function toggleBibleVerseBookmark(
+  verse: Omit<
+    SavedBibleVerse,
+    'id' | 'bookmarked' | 'note' | 'updatedAt'
+  >,
+) {
+  const data = getStudyData()
+  const id = `${verse.bookId}-${verse.chapter}-${verse.verse}`
+  const existing = data.bibleVerses.find(
+    (entry) => entry.id === id,
+  )
+
+  const next: SavedBibleVerse = {
+    ...verse,
+    id,
+    bookmarked: !(existing?.bookmarked ?? false),
+    note: existing?.note ?? '',
+    updatedAt: new Date().toISOString(),
+  }
+
+  writeStudyData({
+    ...data,
+    bibleVerses: [
+      next,
+      ...data.bibleVerses.filter(
+        (entry) => entry.id !== id,
+      ),
+    ],
+  })
+
+  return next.bookmarked
+}
+
+export function saveBibleVerseNote(
+  verse: Omit<
+    SavedBibleVerse,
+    'id' | 'bookmarked' | 'note' | 'updatedAt'
+  >,
+  note: string,
+) {
+  const data = getStudyData()
+  const id = `${verse.bookId}-${verse.chapter}-${verse.verse}`
+  const existing = data.bibleVerses.find(
+    (entry) => entry.id === id,
+  )
+
+  const next: SavedBibleVerse = {
+    ...verse,
+    id,
+    bookmarked: existing?.bookmarked ?? false,
+    note: note.trim(),
+    updatedAt: new Date().toISOString(),
+  }
+
+  writeStudyData({
+    ...data,
+    bibleVerses: [
+      next,
+      ...data.bibleVerses.filter(
+        (entry) => entry.id !== id,
+      ),
+    ],
+  })
+
+  return next
+}

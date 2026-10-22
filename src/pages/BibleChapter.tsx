@@ -1,7 +1,9 @@
 import {
   ArrowLeft,
+  Bookmark,
   ChevronLeft,
   ChevronRight,
+  NotebookPen,
   RefreshCw,
 } from 'lucide-react'
 import {
@@ -27,6 +29,11 @@ import {
   getBibleChapter,
   getBibleTranslations,
 } from '@/lib/bibleService'
+import {
+  getSavedBibleVerse,
+  saveBibleVerseNote,
+  toggleBibleVerseBookmark,
+} from '@/lib/studyStorage'
 
 export default function BibleChapter() {
   const location = useLocation()
@@ -50,6 +57,9 @@ export default function BibleChapter() {
     useState<BibleChapterContent | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [studyVersion, setStudyVersion] = useState(0)
+  const [noteVerse, setNoteVerse] = useState<string | null>(null)
+  const [noteText, setNoteText] = useState('')
 
   usePageTitle(
     book && validChapter
@@ -306,23 +316,134 @@ export default function BibleChapter() {
                 </div>
               )}
 
-              {content.verses.map((verse) => (
-                <p
-                  key={verse.id}
-                  id={`verse-${verse.number}`}
-                  className={
-                    location.hash === `#verse-${verse.number}`
-                      ? 'scroll-mt-24 rounded-lg bg-accbg px-3 py-2 ring-1 ring-acc'
-                      : 'scroll-mt-24'
-                  }
-                >
-                  <sup className="mr-2 text-xs font-semibold text-acc">
-                    {verse.number}
-                  </sup>
+              {content.verses.map((verse) => {
+                const savedVerse = getSavedBibleVerse(
+                  book.id,
+                  chapter,
+                  verse.number,
+                )
+                void studyVersion
 
-                  {verse.text}
-                </p>
-              ))}
+                const verseData = {
+                  bookId: book.id,
+                  bookName: book.name,
+                  chapter,
+                  verse: verse.number,
+                  text: verse.text,
+                  translation: content.translation.abbreviation,
+                }
+
+                return (
+                  <div
+                    key={verse.id}
+                    id={`verse-${verse.number}`}
+                    className={
+                      location.hash === `#verse-${verse.number}`
+                        ? 'scroll-mt-24 rounded-lg bg-accbg px-3 py-2 ring-1 ring-acc'
+                        : savedVerse?.bookmarked
+                          ? 'scroll-mt-24 rounded-lg bg-accbg/50 px-3 py-2'
+                          : 'scroll-mt-24'
+                    }
+                  >
+                    <p>
+                      <sup className="mr-2 text-xs font-semibold text-acc">
+                        {verse.number}
+                      </sup>
+
+                      {verse.text}
+                    </p>
+
+                    <div className="mt-2 flex flex-wrap items-center gap-3 text-sm">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          toggleBibleVerseBookmark(verseData)
+                          setStudyVersion((value) => value + 1)
+                        }}
+                        className="inline-flex items-center gap-1.5 font-medium text-acc"
+                        aria-pressed={savedVerse?.bookmarked ?? false}
+                      >
+                        <Bookmark
+                          size={16}
+                          fill={
+                            savedVerse?.bookmarked
+                              ? 'currentColor'
+                              : 'none'
+                          }
+                          aria-hidden="true"
+                        />
+                        {savedVerse?.bookmarked
+                          ? 'Bookmarked'
+                          : 'Bookmark'}
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (noteVerse === verse.number) {
+                            setNoteVerse(null)
+                            return
+                          }
+
+                          setNoteVerse(verse.number)
+                          setNoteText(savedVerse?.note ?? '')
+                        }}
+                        className="inline-flex items-center gap-1.5 font-medium text-acc"
+                      >
+                        <NotebookPen size={16} aria-hidden="true" />
+                        {savedVerse?.note ? 'Edit note' : 'Add note'}
+                      </button>
+                    </div>
+
+                    {noteVerse === verse.number && (
+                      <div className="mt-3 space-y-2">
+                        <label
+                          htmlFor={`verse-note-${verse.number}`}
+                          className="block text-sm font-medium"
+                        >
+                          Personal note for {book.name} {chapter}:{verse.number}
+                        </label>
+
+                        <textarea
+                          id={`verse-note-${verse.number}`}
+                          value={noteText}
+                          onChange={(event) =>
+                            setNoteText(event.target.value)
+                          }
+                          rows={3}
+                          className="w-full rounded-xl border border-line bg-card px-3 py-2 text-base leading-6"
+                          placeholder="Write your personal study note…"
+                        />
+
+                        <div className="flex gap-3">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              saveBibleVerseNote(
+                                verseData,
+                                noteText,
+                              )
+                              setStudyVersion((value) => value + 1)
+                              setNoteVerse(null)
+                            }}
+                            className="rounded-xl bg-acc px-4 py-2 text-sm font-semibold text-white"
+                          >
+                            Save note
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={() => setNoteVerse(null)}
+                            className="px-2 py-2 text-sm font-medium text-mute"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
             </div>
 
             {(content.copyright ||

@@ -1,4 +1,5 @@
 import type {
+  SavedBibleVerse,
   SavedCharacter,
   SavedStudy,
   StudyData,
@@ -24,6 +25,7 @@ function normalizeStudyData(
       notes: [],
       progress: [],
       savedStudies: [],
+      bibleVerses: [],
     }
   }
 
@@ -43,6 +45,9 @@ function normalizeStudyData(
       : [],
     savedStudies: Array.isArray(data.savedStudies)
       ? data.savedStudies
+      : [],
+    bibleVerses: Array.isArray(data.bibleVerses)
+      ? data.bibleVerses
       : [],
   }
 }
@@ -143,6 +148,28 @@ function mergeSavedStudies(
   )
 }
 
+function mergeBibleVerses(
+  local: SavedBibleVerse[],
+  cloud: SavedBibleVerse[],
+) {
+  const merged = new Map<string, SavedBibleVerse>()
+
+  for (const verse of [...cloud, ...local]) {
+    const current = merged.get(verse.id)
+
+    if (
+      !current ||
+      verse.updatedAt > current.updatedAt
+    ) {
+      merged.set(verse.id, verse)
+    }
+  }
+
+  return [...merged.values()].sort((a, b) =>
+    b.updatedAt.localeCompare(a.updatedAt),
+  )
+}
+
 export function mergeStudyData(
   local: StudyData,
   cloud: StudyData,
@@ -163,6 +190,10 @@ export function mergeStudyData(
     savedStudies: mergeSavedStudies(
       local.savedStudies,
       cloud.savedStudies,
+    ),
+    bibleVerses: mergeBibleVerses(
+      local.bibleVerses,
+      cloud.bibleVerses,
     ),
   }
 }
