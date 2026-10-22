@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 
 const MAX_REQUEST_BYTES = 50_000
@@ -30,6 +31,69 @@ function setSecurityHeaders(response: VercelResponse): void {
   response.setHeader('Cache-Control', 'no-store')
   response.setHeader('X-Content-Type-Options', 'nosniff')
   response.setHeader('Referrer-Policy', 'no-referrer')
+}
+
+function getRateLimitKey(request: VercelRequest): string {
+  const forwardedFor = request.headers['x-forwarded-for']
+  const forwardedValue = Array.isArray(forwardedFor)
+    ? forwardedFor[0]
+    : forwardedFor
+
+  const clientIdentifier =
+    forwardedValue?.split(',')[0]?.trim() ||
+    request.socket?.remoteAddress ||
+    'unknown'
+
+  return createHash('sha256')
+    .update(`pathway-shared-study:${clientIdentifier}`)
+    .digest('hex')
+}
+
+async function checkShareRateLimit(
+  supabaseUrl: string,
+  supabaseSecretKey: string,
+  rateKey: string,
+): Promise<boolean> {
+  const controller = new AbortController()
+  const timeout = setTimeout(
+    () => controller.abort(),
+    SUPABASE_TIMEOUT_MS,
+  )
+
+  try {
+    const rateLimitResponse = await fetch(
+      `${supabaseUrl.replace(/\/+$/, '')}/rest/v1/rpc/check_shared_study_rate_limit`,
+      {
+        method: 'POST',
+        headers: {
+          apikey: supabaseSecretKey,
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          p_rate_key: rateKey,
+          p_limit: 10,
+          p_window_seconds: 60,
+        }),
+        signal: controller.signal,
+      },
+    )
+
+    if (!rateLimitResponse.ok) {
+      console.error(
+        'Shared study rate-limit check failed:',
+        rateLimitResponse.status,
+      )
+      return false
+    }
+
+    return (await rateLimitResponse.json()) === true
+  } catch {
+    console.error('Shared study rate-limit check failed.')
+    return false
+  } finally {
+    clearTimeout(timeout)
+  }
 }
 
 function getRequestSize(request: VercelRequest): number {
@@ -314,6 +378,19 @@ export default async function handler(
   if (!study) {
     return response.status(400).json({
       error: 'The shared study is invalid.',
+    })
+  }
+
+  const rateLimitAllowed = await checkShareRateLimit(
+    supabaseUrl,
+    supabaseSecretKey,
+    getRateLimitKey(request),
+  )
+
+  if (!rateLimitAllowed) {
+    response.setHeader('Retry-After', '60')
+    return response.status(429).json({
+      error: 'Too many share links were created. Please wait a minute and try again.',
     })
   }
 
