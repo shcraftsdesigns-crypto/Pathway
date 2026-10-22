@@ -27,7 +27,9 @@ export default function Navbar({ theme, onToggleTheme }: Props) {
         <button type="button" onClick={onToggleTheme} className={iconBtn} aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}>
           {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
         </button>
-        <button type="button" className={iconBtn} aria-label="Profile (coming soon)" title="Profile — coming soon"><User size={18} /></button>
+        <Link to="/account" className={iconBtn} aria-label="Account" title="Account">
+          <User size={18} aria-hidden="true" />
+        </Link>
       </div>
     </header>
   )
