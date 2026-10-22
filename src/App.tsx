@@ -29,14 +29,7 @@ export function preloadCharacterProfile(): void {
 }
 
 function PageLoader() {
-  return (
-    <div
-      role="status"
-      className="py-12 text-center text-mute"
-    >
-      Loading…
-    </div>
-  )
+  return <div className="min-h-24" aria-hidden="true" />
 }
 
 function ProfileLoader() {
