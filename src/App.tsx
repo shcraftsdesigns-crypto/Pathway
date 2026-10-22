@@ -18,6 +18,10 @@ const NotFound = lazy(() => import('@/pages/NotFound'))
 const PathwayAI = lazy(() => import('@/pages/PathwayAI'))
 const SharedStudy = lazy(() => import('@/pages/SharedStudy'))
 const Account = lazy(() => import('@/pages/Account'))
+const About = lazy(() => import('@/pages/About'))
+const Help = lazy(() => import('@/pages/Help'))
+const Privacy = lazy(() => import('@/pages/Privacy'))
+const Terms = lazy(() => import('@/pages/Terms'))
 
 const loadCharacterProfile = () =>
   import('@/pages/CharacterProfile')
@@ -103,6 +107,11 @@ export default function App() {
           path="account"
           element={<Account />}
         />
+
+        <Route path="about" element={<About />} />
+        <Route path="help" element={<Help />} />
+        <Route path="privacy" element={<Privacy />} />
+        <Route path="terms" element={<Terms />} />
 
         <Route
           path="404"
