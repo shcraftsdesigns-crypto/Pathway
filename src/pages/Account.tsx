@@ -3,6 +3,7 @@ import {
   useState,
   type FormEvent,
 } from 'react'
+import { useNavigate } from 'react-router-dom'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { useAuth } from '@/contexts/AuthContext'
 import { usePageTitle } from '@/hooks/usePageTitle'
@@ -16,6 +17,7 @@ type AuthMode =
 
 export default function Account() {
   usePageTitle('Account')
+  const navigate = useNavigate()
 
   const {
     user,
@@ -182,6 +184,7 @@ export default function Account() {
       }
 
       setMessage('Signed in successfully.')
+      navigate('/')
     } catch (caught) {
       setError(
         caught instanceof Error
