@@ -22,7 +22,25 @@ export const httpAIProvider: AIProvider = {
       body: JSON.stringify(request),
     })
 
-    const data = (await response.json()) as APIResponse
+    const responseText = await response.text()
+
+    if (!responseText.trim()) {
+      throw new Error(
+        response.ok
+          ? 'Pathway AI returned an empty response. Please try again.'
+          : `Pathway AI request failed (${response.status}). Please try again.`
+      )
+    }
+
+    let data: APIResponse
+
+    try {
+      data = JSON.parse(responseText) as APIResponse
+    } catch {
+      throw new Error(
+        'Pathway AI returned an incomplete response. Please try again.'
+      )
+    }
 
     if (!response.ok) {
       throw new Error(
