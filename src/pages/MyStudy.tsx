@@ -165,7 +165,7 @@ export default function MyStudy() {
     notes.length > 0 ||
     completedCount > 0 ||
     data.savedStudies.length > 0 ||
-    data.bibleVerses.length > 0
+    (data.bibleVerses?.length ?? 0) > 0
 
   if (!hasStudyActivity) {
     return (
@@ -331,7 +331,7 @@ export default function MyStudy() {
         )}
       </section>
 
-      {data.bibleVerses.length > 0 && (
+      {(data.bibleVerses?.length ?? 0) > 0 && (
         <section className="py-8">
           <SectionHeader
             title="Bible Bookmarks & Notes"
