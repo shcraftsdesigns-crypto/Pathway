@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.shcraftsdesigns.pathway",
+      "sha256_cert_fingerprints": [
+        "91:7E:98:20:A0:5E:21:6F:B4:AC:11:85:3A:2D:AF:63:1F:1E:31:03:CC:DB:F5:21:56:D1:12:BF:9F:12:BF:60"
+      ]
+    }
+  }
+]
