@@ -54,6 +54,22 @@ export default function MyStudy() {
     }
   })
 
+  const [studySearch, setStudySearch] = useState('')
+  const [studyTypeFilter, setStudyTypeFilter] = useState<
+    'all' | 'character' | 'passage' | 'topic'
+  >('all')
+
+  const filteredSavedStudies = data.savedStudies.filter((study) => {
+    const matchesType =
+      studyTypeFilter === 'all' || study.type === studyTypeFilter
+
+    const query = studySearch.trim().toLowerCase()
+    const matchesSearch =
+      !query || study.subject.toLowerCase().includes(query)
+
+    return matchesType && matchesSearch
+  })
+
   const shareStudy = async (
     study: (typeof data.savedStudies)[number],
   ) => {
@@ -417,8 +433,61 @@ export default function MyStudy() {
             subtitle="Continue the personal Bible studies you generated with Pathway AI."
           />
 
-          <div className="mt-5 grid gap-4 lg:grid-cols-2">
-            {data.savedStudies.map((study) => (
+          <div className="mt-5 rounded-2xl border border-line p-4">
+            <label
+              htmlFor="saved-study-search"
+              className="text-sm font-semibold"
+            >
+              Search your studies
+            </label>
+
+            <input
+              id="saved-study-search"
+              type="search"
+              value={studySearch}
+              onChange={(event) => setStudySearch(event.target.value)}
+              placeholder="Search by character, passage, or topic..."
+              className="mt-2 min-h-11 w-full rounded-xl border border-line bg-transparent px-3 py-2 text-sm outline-none transition-colors focus:border-acc"
+            />
+
+            <div
+              className="mt-4 flex flex-wrap gap-2"
+              aria-label="Filter saved studies"
+            >
+              {(
+                [
+                  ['all', 'All'],
+                  ['character', 'Character'],
+                  ['passage', 'Bible Passage'],
+                  ['topic', 'Topic'],
+                ] as const
+              ).map(([value, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  onClick={() => setStudyTypeFilter(value)}
+                  className={
+                    studyTypeFilter === value
+                      ? 'min-h-11 rounded-xl bg-acc px-3 py-2 text-sm font-semibold text-white'
+                      : 'min-h-11 rounded-xl border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc'
+                  }
+                  aria-pressed={studyTypeFilter === value}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            <p className="mt-3 text-sm text-mute">
+              Showing {filteredSavedStudies.length} of{' '}
+              {data.savedStudies.length}{' '}
+              {data.savedStudies.length === 1 ? 'study' : 'studies'}
+            </p>
+          </div>
+
+          {filteredSavedStudies.length > 0 ? (
+            <div className="mt-5 grid gap-4 lg:grid-cols-2">
+              {filteredSavedStudies.map((study) => (
               <article
                 key={study.id}
                 className="card flex flex-col"
@@ -651,8 +720,16 @@ export default function MyStudy() {
                   </div>
                 )}
               </article>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-5 rounded-2xl border border-dashed border-line p-6 text-center">
+              <p className="font-semibold">No matching studies</p>
+              <p className="mt-1 text-sm text-mute">
+                Try another search or choose a different study type.
+              </p>
+            </div>
+          )}
         </section>
       )}
 
