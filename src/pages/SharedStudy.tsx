@@ -32,6 +32,24 @@ interface SharedStudyResponse {
   study: SharedStudyData
 }
 
+const studyTypeLabels: Record<SharedStudyData['type'], string> = {
+  character: 'Character Study',
+  passage: 'Bible Passage Study',
+  topic: 'Topic Study',
+}
+
+const studyTypeDescriptions: Record<
+  SharedStudyData['type'],
+  string
+> = {
+  character:
+    'Explore what Scripture establishes about this biblical character.',
+  passage:
+    'Explore this Bible passage with Scripture-centered study and reflection.',
+  topic:
+    'Explore this biblical topic through Scripture, interpretation, and reflection.',
+}
+
 export default function SharedStudy() {
   const { id } = useParams<{ id: string }>()
 
@@ -46,7 +64,7 @@ export default function SharedStudy() {
 
   usePageTitle(
     sharedStudy
-      ? `${sharedStudy.study.subject} — Shared Study`
+      ? `${sharedStudy.study.subject} — ${studyTypeLabels[sharedStudy.study.type]}`
       : 'Shared Study',
   )
 
@@ -133,48 +151,78 @@ export default function SharedStudy() {
   }
 
   const { study } = sharedStudy
+  const studyTypeLabel = studyTypeLabels[study.type]
+  const studyTypeDescription =
+    studyTypeDescriptions[study.type]
 
   return (
-    <div className="py-8">
-      <SectionHeader
-        title={study.subject}
-        subtitle="A study shared from Pathway."
-      />
-
-      <article className="card mt-6">
-        <p className="text-xs font-semibold uppercase tracking-wide text-acc">
-          {study.type} study
+    <div className="mx-auto max-w-4xl py-8 sm:py-12">
+      <header className="rounded-2xl border border-line bg-accbg/40 px-5 py-7 sm:px-8 sm:py-9">
+        <p className="text-xs font-semibold uppercase tracking-widest text-acc">
+          Shared from Pathway
         </p>
 
+        <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+          {study.subject}
+        </h1>
+
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <span className="rounded-full border border-line bg-white/50 px-3 py-1.5 text-sm font-semibold text-acc">
+            {studyTypeLabel}
+          </span>
+
+          <span className="text-sm text-mute">
+            Shared{' '}
+            {new Date(
+              sharedStudy.createdAt,
+            ).toLocaleDateString()}
+          </span>
+        </div>
+
+        <p className="mt-5 max-w-2xl text-sm leading-7 text-mute sm:text-base">
+          {studyTypeDescription}
+        </p>
+      </header>
+
+      <article className="card mt-6 sm:p-8">
         {study.sections.length > 0 ? (
-          <div className="mt-5 space-y-6">
+          <div className="space-y-7">
             {study.sections.map((section, index) => (
               <section
                 key={`${section.heading}-${index}`}
+                className={
+                  index === 0
+                    ? ''
+                    : 'border-t border-line pt-7'
+                }
               >
-                <h2 className="text-lg">
+                <h2 className="text-xl font-semibold">
                   {section.heading}
                 </h2>
 
-                <p className="mt-2 whitespace-pre-wrap text-sm leading-7 text-mute">
+                <p className="mt-3 whitespace-pre-wrap text-sm leading-7 text-mute sm:text-base">
                   {section.content}
                 </p>
               </section>
             ))}
           </div>
         ) : (
-          <p className="mt-5 whitespace-pre-wrap leading-7 text-mute">
+          <p className="whitespace-pre-wrap text-sm leading-7 text-mute sm:text-base">
             {study.answer}
           </p>
         )}
 
         {study.scriptureCitations.length > 0 && (
-          <div className="mt-7">
-            <h2 className="text-base">
+          <section className="mt-8 border-t border-line pt-7">
+            <h2 className="text-xl font-semibold">
               Scripture references
             </h2>
 
-            <div className="mt-3 flex flex-wrap gap-2">
+            <p className="mt-1 text-sm text-mute">
+              Open a reference to continue reading it in Pathway.
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
               {study.scriptureCitations.map(
                 (citation, index) => {
                   const verses = citation.verseStart
@@ -195,7 +243,7 @@ export default function SharedStudy() {
                     return (
                       <span
                         key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
-                        className="rounded-full border border-line px-3 py-1.5 text-sm"
+                        className="rounded-full border border-line px-3 py-2 text-sm"
                       >
                         {referenceLabel}
                       </span>
@@ -211,7 +259,7 @@ export default function SharedStudy() {
                     <Link
                       key={`${citation.book}-${citation.chapter}-${citation.verseStart ?? 0}-${index}`}
                       to={`/bible/${passage.book.id}/${citation.chapter}${verseTarget}`}
-                      className="rounded-full border border-line px-3 py-1.5 text-sm font-semibold hover:border-acc hover:text-acc"
+                      className="rounded-full border border-line px-3 py-2 text-sm font-semibold transition-colors hover:border-acc hover:bg-accbg hover:text-acc"
                     >
                       {referenceLabel}
                     </Link>
@@ -219,83 +267,97 @@ export default function SharedStudy() {
                 },
               )}
             </div>
-          </div>
+          </section>
         )}
 
         {study.limitations.length > 0 && (
-          <div className="mt-7">
-            <h2 className="text-base">
+          <section className="mt-8 border-t border-line pt-7">
+            <h2 className="text-xl font-semibold">
               Study notes
             </h2>
 
-            <div className="mt-2 space-y-2">
+            <div className="mt-3 space-y-3">
               {study.limitations.map(
                 (limitation, index) => (
                   <p
                     key={index}
-                    className="text-sm text-mute"
+                    className="text-sm leading-6 text-mute"
                   >
                     {limitation}
                   </p>
                 ),
               )}
             </div>
-          </div>
+          </section>
         )}
-
-        <p className="mt-7 text-xs text-mute">
-          Shared{' '}
-          {new Date(
-            sharedStudy.createdAt,
-          ).toLocaleDateString()}
-        </p>
       </article>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          className="rounded-lg border border-line px-4 py-2 text-sm font-semibold hover:border-acc hover:text-acc"
-          onClick={() => {
-            void navigator.clipboard
-              .writeText(window.location.href)
-              .then(() => {
-                setCopyMessage({
-                  message: 'Share link copied.',
-                  error: false,
-                })
-              })
-              .catch(() => {
-                setCopyMessage({
-                  message:
-                    'Could not copy the link automatically.',
-                  error: true,
-                })
-              })
-          }}
-        >
-          Copy share link
-        </button>
+      <section className="card mt-6">
+        <h2 className="text-lg font-semibold">
+          Continue studying with Pathway
+        </h2>
 
-        <Link
-          to="/"
-          className="font-semibold text-acc hover:underline"
-        >
-          Explore Pathway
-        </Link>
-      </div>
-
-      {copyMessage && (
-        <p
-          className={
-            copyMessage.error
-              ? 'mt-3 text-sm text-red-600'
-              : 'mt-3 text-sm font-semibold text-acc'
-          }
-          role="status"
-        >
-          {copyMessage.message}
+        <p className="mt-2 text-sm leading-6 text-mute">
+          Explore biblical characters, read Scripture, and create your own personal Bible studies.
         </p>
-      )}
+
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <Link
+            to="/study"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-acc px-4 py-2 text-sm font-semibold text-on"
+          >
+            Create a study
+          </Link>
+
+          <Link
+            to="/"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-acc hover:text-acc"
+          >
+            Explore Pathway
+          </Link>
+
+          <button
+            type="button"
+            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-acc hover:text-acc"
+            onClick={() => {
+              void navigator.clipboard
+                .writeText(window.location.href)
+                .then(() => {
+                  setCopyMessage({
+                    message: 'Share link copied.',
+                    error: false,
+                  })
+                })
+                .catch(() => {
+                  setCopyMessage({
+                    message:
+                      'Could not copy the link automatically.',
+                    error: true,
+                  })
+                })
+            }}
+          >
+            Copy share link
+          </button>
+        </div>
+
+        {copyMessage && (
+          <p
+            className={
+              copyMessage.error
+                ? 'mt-3 text-sm text-red-600'
+                : 'mt-3 text-sm font-semibold text-acc'
+            }
+            role="status"
+          >
+            {copyMessage.message}
+          </p>
+        )}
+      </section>
+
+      <p className="mt-5 text-center text-xs leading-5 text-mute">
+        This shared page contains the generated study and its Scripture references. Personal notes, bookmarks, study progress, and account information are not included.
+      </p>
     </div>
   )
 }
