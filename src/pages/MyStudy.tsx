@@ -58,17 +58,46 @@ export default function MyStudy() {
   const [studyTypeFilter, setStudyTypeFilter] = useState<
     'all' | 'character' | 'passage' | 'topic'
   >('all')
+  const [studySort, setStudySort] = useState<
+    'newest' | 'oldest' | 'az' | 'incomplete' | 'completed'
+  >('newest')
 
-  const filteredSavedStudies = data.savedStudies.filter((study) => {
-    const matchesType =
-      studyTypeFilter === 'all' || study.type === studyTypeFilter
+  const filteredSavedStudies = data.savedStudies
+    .filter((study) => {
+      const matchesType =
+        studyTypeFilter === 'all' || study.type === studyTypeFilter
 
-    const query = studySearch.trim().toLowerCase()
-    const matchesSearch =
-      !query || study.subject.toLowerCase().includes(query)
+      const query = studySearch.trim().toLowerCase()
+      const matchesSearch =
+        !query || study.subject.toLowerCase().includes(query)
 
-    return matchesType && matchesSearch
-  })
+      return matchesType && matchesSearch
+    })
+    .sort((a, b) => {
+      if (studySort === 'oldest') {
+        return (
+          new Date(a.savedAt).getTime() -
+          new Date(b.savedAt).getTime()
+        )
+      }
+
+      if (studySort === 'az') {
+        return a.subject.localeCompare(b.subject)
+      }
+
+      if (studySort === 'incomplete') {
+        return Number(a.completed) - Number(b.completed)
+      }
+
+      if (studySort === 'completed') {
+        return Number(b.completed) - Number(a.completed)
+      }
+
+      return (
+        new Date(b.savedAt).getTime() -
+        new Date(a.savedAt).getTime()
+      )
+    })
 
   const shareStudy = async (
     study: (typeof data.savedStudies)[number],
@@ -476,6 +505,37 @@ export default function MyStudy() {
                   {label}
                 </button>
               ))}
+            </div>
+
+            <div className="mt-4">
+              <label
+                htmlFor="saved-study-sort"
+                className="text-sm font-semibold"
+              >
+                Sort studies
+              </label>
+
+              <select
+                id="saved-study-sort"
+                value={studySort}
+                onChange={(event) =>
+                  setStudySort(
+                    event.target.value as
+                      | 'newest'
+                      | 'oldest'
+                      | 'az'
+                      | 'incomplete'
+                      | 'completed',
+                  )
+                }
+                className="mt-2 min-h-11 w-full rounded-xl border border-line bg-transparent px-3 py-2 text-sm outline-none transition-colors focus:border-acc sm:max-w-xs"
+              >
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="az">A–Z</option>
+                <option value="incomplete">Incomplete first</option>
+                <option value="completed">Completed first</option>
+              </select>
             </div>
 
             <p className="mt-3 text-sm text-mute">
