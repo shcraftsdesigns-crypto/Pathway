@@ -39,6 +39,21 @@ export default function Account() {
     useState<string | null>(null)
   const [error, setError] =
     useState<string | null>(null)
+useEffect(() => {
+  const params = new URLSearchParams(
+    window.location.search,
+  )
+
+  if (params.get('recovery') === '1') {
+    setMode('recovery')
+    setPassword('')
+    setConfirmPassword('')
+    setMessage(
+      'Enter a new password for your Pathway account.',
+    )
+    setError(null)
+  }
+}, [])
 
   useEffect(() => {
     if (!supabase) return
