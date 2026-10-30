@@ -1,0 +1,1 @@
+﻿Get-Clipboard | Set-Content -Path public\ads.txt -Encoding utf8
