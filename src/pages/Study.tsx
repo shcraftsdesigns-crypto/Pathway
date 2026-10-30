@@ -28,10 +28,10 @@ import type {
   BiblicalCharacter,
   CharacterSummary,
 } from '@/types'
-import { bibleBooks } from '@/data/bibleBooks'
 import { saveGeneratedStudy } from '@/lib/studyStorage'
 import { getBibleChapter } from '@/lib/bibleService'
 import {
+  findBiblePassage,
   formatParsedBiblePassage,
   parseBiblePassage,
 } from '@/lib/bibleReference'
@@ -802,18 +802,13 @@ export default function Study() {
                           : `:${citation.verseStart}`
                         : ''
 
-                      const normalizedBook = citation.book
-                        .trim()
-                        .toLowerCase()
+const referenceLabel =
+  `${citation.book} ${citation.chapter}${verses}`
 
-                      const bibleBook = bibleBooks.find(
-                        (book) =>
-                          book.name.toLowerCase() === normalizedBook ||
-                          book.id.toLowerCase() === normalizedBook,
-                      )
+const parsedCitation =
+  findBiblePassage(referenceLabel)
 
-                      const referenceLabel =
-                        `${citation.book} ${citation.chapter}${verses}`
+const bibleBook = parsedCitation?.book
 
                       if (!bibleBook) {
                         return (
