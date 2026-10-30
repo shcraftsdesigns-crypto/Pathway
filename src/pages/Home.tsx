@@ -32,13 +32,47 @@ export default function Home() {
         <SectionHeader title="Explore by Category" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{CHARACTER_CATEGORIES.map((c) => <CategoryCard key={c} category={c} />)}</div>
       </section>
-      <section className="py-6">
+            <section className="py-6">
         <SectionHeader title="How It Works" />
         <ol className="grid gap-4 md:grid-cols-3">
           {STEPS.map(([t, d], i) => (
-            <li key={t} className="card"><span className="grid h-8 w-8 place-items-center rounded-full bg-accbg font-semibold text-acc">{i + 1}</span><h3 className="mt-2 text-xl">{t}</h3><p className="text-mute">{d}</p></li>
+            <li key={t} className="card">
+              <span className="grid h-8 w-8 place-items-center rounded-full bg-accbg font-semibold text-acc">
+                {i + 1}
+              </span>
+              <h3 className="mt-2 text-xl">{t}</h3>
+              <p className="text-mute">{d}</p>
+            </li>
           ))}
         </ol>
+      </section>
+
+      <section className="py-10">
+        <SectionHeader title="Study Biblical Characters in Context" />
+        <div className="card max-w-4xl space-y-4">
+          <p className="text-mute">
+            Pathway helps you study the people of the Bible alongside the
+            Scripture passages that tell their stories. Character profiles,
+            timelines, references, and guided study tools help you move beyond
+            isolated facts and understand each person within the wider biblical
+            narrative.
+          </p>
+
+          <p className="text-mute">
+            Follow Scripture references directly into the Bible reader, explore
+            connected passages, save verses and notes, and build personal
+            studies that you can return to later. Pathway is designed to make
+            careful, contextual Bible study easier while keeping Scripture at
+            the center.
+          </p>
+
+          <p className="text-mute">
+            Pathway also provides AI-assisted tools for questions, summaries,
+            and structured reflection. These tools are designed to support Bible
+            study rather than replace Scripture, and important claims should
+            always be checked against the biblical text and its context.
+          </p>
+        </div>
       </section>
     </>
   )

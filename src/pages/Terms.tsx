@@ -59,7 +59,23 @@ export default function Terms() {
         </p>
       </InfoSection>
 
-      <p className="text-sm text-mute">Last updated: October 22, 2026.</p>
+            <InfoSection title="Advertising">
+        <p>
+          Pathway may display advertisements provided by third-party
+          advertising services. The appearance of an advertisement does not
+          constitute an endorsement or recommendation by Pathway of the
+          advertiser, its products, services, or claims.
+        </p>
+        <p>
+          Advertising providers may use cookies, identifiers, or similar
+          technologies as described in the Pathway Privacy Policy. Your use of
+          third-party websites, products, or services reached through
+          advertisements is subject to the terms and privacy practices of
+          those third parties.
+        </p>
+      </InfoSection>
+
+      <p className="text-sm text-mute">Last updated: October 30, 2026.</p>
     </InfoPage>
   )
 }

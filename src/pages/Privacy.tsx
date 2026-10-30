@@ -60,7 +60,40 @@ export default function Privacy() {
         </p>
       </InfoSection>
 
-      <p className="text-sm text-mute">Last updated: October 22, 2026.</p>
+            <InfoSection title="Advertising, cookies, and similar technologies">
+        <p>
+          Pathway may use third-party advertising services, including Google
+          AdSense on the website and, where available, Google AdMob in the
+          Android application. These services may use cookies, device or app
+          identifiers, IP addresses, and similar technologies to provide,
+          measure, personalize, and improve advertising.
+        </p>
+        <p>
+          Third-party vendors, including Google, may use advertising cookies
+          or similar technologies to serve ads based on a user's visits to
+          Pathway or other websites and apps. Where personalized advertising
+          is available, users may be provided with controls for managing their
+          advertising preferences.
+        </p>
+      </InfoSection>
+
+      <InfoSection title="Advertising consent and choices">
+        <p>
+          Where required by applicable law, Pathway will request consent before
+          using cookies or similar technologies for advertising or processing
+          personal data for personalized advertising. Users in regions where
+          consent requirements apply may be offered choices regarding
+          personalized advertising, non-personalized advertising, and related
+          data processing through an appropriate consent management platform.
+        </p>
+        <p>
+          Third-party advertising providers process information according to
+          their own privacy policies and provide their own privacy and
+          advertising controls.
+        </p>
+      </InfoSection>
+
+      <p className="text-sm text-mute">Last updated: October 30, 2026.</p>
     </InfoPage>
   )
 }
