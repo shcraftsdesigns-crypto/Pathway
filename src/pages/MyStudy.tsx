@@ -14,7 +14,7 @@ import EmptyState from '@/components/ui/EmptyState'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { usePageTitle } from '@/hooks/usePageTitle'
 import { useStudyData } from '@/hooks/useStudyData'
-import { bibleBooks } from '@/data/bibleBooks'
+import { findBiblePassage } from '@/lib/bibleReference'
 import {
   removeSavedCharacter,
   removeSavedStudy,
@@ -619,36 +619,14 @@ export default function MyStudy() {
                               : `:${citation.verseStart}`
                             : ''
 
-                          const normalizeBookName = (
-                            value: string,
-                          ) =>
-                            value
-                              .trim()
-                              .toLowerCase()
-                              .replace(/\./g, '')
-                              .replace(/\s+/g, ' ')
+                                                    const referenceLabel =
+                            `${citation.book} ${citation.chapter}${verses}`
 
-                          const normalizedBook =
-                            normalizeBookName(
-                              citation.book,
-                            )
+                          const parsedCitation =
+                            findBiblePassage(referenceLabel)
 
                           const bibleBook =
-                            bibleBooks.find(
-                              (book) =>
-                                normalizeBookName(
-                                  book.name,
-                                ) === normalizedBook ||
-                                normalizeBookName(
-                                  book.abbreviation,
-                                ) === normalizedBook ||
-                                normalizeBookName(
-                                  book.id,
-                                ) === normalizedBook,
-                            )
-
-                          const referenceLabel =
-                            `${citation.book} ${citation.chapter}${verses}`
+                            parsedCitation?.book
 
                           if (!bibleBook) {
                             return (
