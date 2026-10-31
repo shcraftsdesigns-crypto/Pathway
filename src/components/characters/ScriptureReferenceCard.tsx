@@ -1,7 +1,7 @@
 import { BookOpen } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-import { bibleBooks } from '@/data/bibleBooks'
+import { findBiblePassage } from '@/lib/bibleReference'
 import { formatReference } from '@/lib/scripture'
 import type { ScriptureReference } from '@/types'
 
@@ -9,22 +9,20 @@ interface Props {
   reference: ScriptureReference
   compact?: boolean
 }
-
-function getBibleBookId(bookReference: string) {
-  const normalized = bookReference.trim().toLowerCase()
-
-  const book = bibleBooks.find(
-    (item) =>
-      item.id.toLowerCase() === normalized ||
-      item.name.toLowerCase() === normalized ||
-      item.abbreviation.toLowerCase() === normalized,
-  )
-
-  return book?.id
+function getBibleBookId(
+  bookReference: string,
+  chapter: number,
+) {
+  return findBiblePassage(
+    `${bookReference} ${chapter}`,
+  )?.book.id
 }
 
 function getBibleLink(reference: ScriptureReference) {
-  const bookId = getBibleBookId(reference.book)
+  const bookId = getBibleBookId(
+    reference.book,
+    reference.chapter,
+  )
 
   if (!bookId) {
     return null

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import { askPathwayAI } from '@/lib/ai/provider'
 import { getBibleChapter } from '@/lib/bibleService'
 import { findBiblePassage } from '@/lib/bibleReference'
-import { bibleBooks } from '@/data/bibleBooks'
 import type {
   AIBibleContext,
   AICharacterContext,
@@ -33,17 +32,13 @@ function cleanAIText(value: string) {
     .replace(/\n{3,}/g, '\n\n')
     .trim()
 }
-
-function getCitationBookId(bookName: string) {
-  const normalized = bookName
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-
-  return bibleBooks.find(
-    (book) =>
-      book.name.toLowerCase() === normalized,
-  )?.id
+function getCitationBookId(
+  bookName: string,
+  chapter: number,
+) {
+  return findBiblePassage(
+    `${bookName} ${chapter}`,
+  )?.book.id
 }
 
 function getCitationLabel(
@@ -319,8 +314,11 @@ export default function PathwayAIPanel({
               <div className="mt-2 flex flex-wrap gap-2">
                 {response.scriptureCitations.map(
                   (citation, index) => {
-                    const bookId =
-                      getCitationBookId(citation.book)
+                   const bookId =
+                     getCitationBookId(
+                       citation.book,
+                       citation.chapter,
+              )
 
                     const label = getCitationLabel(
                       citation.book,
