@@ -1,4 +1,4 @@
-﻿import {
+import {
   bibleBooks,
   type BibleBook,
 } from '@/data/bibleBooks'
@@ -33,8 +33,7 @@ function getBookNames(book: BibleBook): string[] {
 }
 
 function findBibleBook(value: string) {
-  const normalizedValue = normalizeBibleBookName(value)
-  const normalized = normalizedValue === 'psalm' ? 'psalms' : normalizedValue
+  const normalized = normalizeBibleBookName(value)
 
   return bibleBooks.find((book) =>
     getBookNames(book).some(
@@ -97,7 +96,7 @@ export function parseBiblePassage(
   value: string,
 ): ParsedBiblePassage | null {
   const match = value.trim().match(
-    /^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-â€“]\s*(\d+))?)?$/,
+    /^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?$/,
   )
 
   if (!match) return null
@@ -120,7 +119,7 @@ export function findBiblePassage(
     .join('|')
 
   const pattern = new RegExp(
-    `(?:^|[^A-Za-z0-9])(${candidates})\\.?\\s+(\\d+)(?::(\\d+)(?:\\s*[-â€“]\\s*(\\d+))?)?`,
+    `(?:^|[^A-Za-z0-9])(${candidates})\\.?\\s+(\\d+)(?::(\\d+)(?:\\s*[-–]\\s*(\\d+))?)?`,
     'i',
   )
 
@@ -156,4 +155,3 @@ export function formatParsedBiblePassage(
       : ''
   }`
 }
-
