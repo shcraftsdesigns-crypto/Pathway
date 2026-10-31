@@ -869,7 +869,7 @@ export default async function handler(
               )
             })
           })
-        : scriptureCitations
+  : scriptureCitations
 
     const validatedScriptureCitations =
       body.contextType === 'bible' &&
@@ -944,7 +944,7 @@ export default async function handler(
               validRange
             )
           })
-        : scriptureCitations
+        : characterValidatedScriptureCitations
 
     const limitations = Array.isArray(result.limitations)
       ? result.limitations
