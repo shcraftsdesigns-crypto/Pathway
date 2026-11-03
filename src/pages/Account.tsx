@@ -285,11 +285,13 @@ useEffect(() => {
       )
     }
 
-    await supabase.auth.signOut()
+    await supabase.auth.signOut({
+  scope: 'local',
+})
 
-    window.localStorage.clear()
+window.localStorage.clear()
 
-    navigate('/', { replace: true })
+navigate('/', { replace: true })
   } catch (caught) {
     setError(
       caught instanceof Error
