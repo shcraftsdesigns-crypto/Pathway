@@ -1,3 +1,4 @@
+import deleteAccountHandler from '../api/delete-account'
 import aiHandler from '../api/ai'
 import sharedStudiesHandler from '../api/shared-studies'
 
@@ -88,7 +89,10 @@ async function createRequestAdapter(request: Request) {
 
 async function runHandler(
   request: Request,
-  handler: typeof aiHandler | typeof sharedStudiesHandler,
+  handler:
+  | typeof aiHandler
+  | typeof sharedStudiesHandler
+  | typeof deleteAccountHandler,
   env: Env,
 ): Promise<Response> {
   process.env.GROQ_API_KEY = env.GROQ_API_KEY
@@ -127,6 +131,14 @@ export default {
       return runHandler(
         request,
         sharedStudiesHandler,
+        env,
+      )
+    }
+
+    if (url.pathname === '/api/delete-account') {
+      return runHandler(
+        request,
+        deleteAccountHandler,
         env,
       )
     }

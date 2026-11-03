@@ -86,6 +86,23 @@ export default function Privacy() {
           personalized advertising, non-personalized advertising, and related
           data processing through an appropriate consent management platform.
         </p>
+        <InfoSection title="Account and data deletion">
+  <p>
+    You can permanently delete your Pathway account
+    and associated cloud study data from the Account
+    page while signed in.
+  </p>
+  <p>
+    Instructions for account deletion are available
+    at the Pathway account deletion page.
+  </p>
+  <a
+    href="/delete-account"
+    className="font-semibold text-acc underline"
+  >
+    Account deletion instructions
+  </a>
+</InfoSection>
         <p>
           Third-party advertising providers process information according to
           their own privacy policies and provide their own privacy and
@@ -93,7 +110,7 @@ export default function Privacy() {
         </p>
       </InfoSection>
 
-      <p className="text-sm text-mute">Last updated: October 30, 2026.</p>
+      <p className="text-sm text-mute">Last updated: November 3, 2026.</p>
     </InfoPage>
   )
 }

@@ -228,6 +228,79 @@ useEffect(() => {
     }
   }
 
+  const handleDeleteAccount = async () => {
+  if (!supabase) {
+    setError('Account deletion is not available.')
+    return
+  }
+
+  const confirmed = window.confirm(
+    'Permanently delete your Pathway account and cloud study data? This action cannot be undone.',
+  )
+
+  if (!confirmed) return
+
+  const finalConfirmation = window.prompt(
+    'Type DELETE to permanently delete your Pathway account.',
+  )
+
+  if (finalConfirmation !== 'DELETE') {
+    return
+  }
+
+  setSubmitting(true)
+  setMessage(null)
+  setError(null)
+
+  try {
+    const {
+      data: { session },
+    } = await supabase.auth.getSession()
+
+    if (!session?.access_token) {
+      throw new Error(
+        'Your session is no longer valid. Please sign in again.',
+      )
+    }
+
+    const deleteResponse = await fetch(
+      '/api/delete-account',
+      {
+        method: 'DELETE',
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+        },
+      },
+    )
+
+    const result = (await deleteResponse.json()) as {
+      success?: boolean
+      error?: string
+    }
+
+    if (!deleteResponse.ok || !result.success) {
+      throw new Error(
+        result.error ??
+          'Pathway could not delete your account.',
+      )
+    }
+
+    await supabase.auth.signOut()
+
+    window.localStorage.clear()
+
+    navigate('/', { replace: true })
+  } catch (caught) {
+    setError(
+      caught instanceof Error
+        ? caught.message
+        : 'Pathway could not delete your account. Please try again.',
+    )
+  } finally {
+    setSubmitting(false)
+  }
+}
+
   if (user && mode !== 'recovery') {
     return (
       <div className="py-8">
@@ -274,6 +347,31 @@ useEffect(() => {
               ? 'Signing out…'
               : 'Sign out'}
           </button>
+
+            <div className="mt-8 border-t border-line pt-6">
+            <h3 className="font-semibold text-red-700">
+              Delete account
+            </h3>
+
+            <p className="mt-2 text-sm text-mute">
+              Permanently delete your Pathway account
+              and cloud study data. This action cannot
+              be undone.
+            </p>
+
+            <button
+              type="button"
+              disabled={submitting}
+              onClick={() =>
+                void handleDeleteAccount()
+              }
+              className="mt-4 inline-flex min-h-11 items-center justify-center rounded-xl border border-red-600 px-4 py-2 text-sm font-semibold text-red-700 transition-colors hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {submitting
+                ? 'Please wait…'
+                : 'Delete account'}
+            </button>
+          </div>
 
           {message && (
             <p

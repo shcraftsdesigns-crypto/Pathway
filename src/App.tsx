@@ -21,6 +21,7 @@ const Account = lazy(() => import('@/pages/Account'))
 const About = lazy(() => import('@/pages/About'))
 const Help = lazy(() => import('@/pages/Help'))
 const Privacy = lazy(() => import('@/pages/Privacy'))
+const DeleteAccount = lazy(() => import('@/pages/DeleteAccount'))
 const Terms = lazy(() => import('@/pages/Terms'))
 
 const loadCharacterProfile = () =>
@@ -111,6 +112,10 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="help" element={<Help />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route
+          path="delete-account"
+          element={<DeleteAccount />}
+/>
         <Route path="terms" element={<Terms />} />
 
         <Route
